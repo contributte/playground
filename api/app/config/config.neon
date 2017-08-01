@@ -1,0 +1,60 @@
+application:
+	mapping:
+		*: App\Presenters\*Presenter
+
+di:
+	debugger: %debugMode%
+
+extensions:
+	api: Contributte\Api\Bridges\DI\ApiExtension
+	middlewares: Contributte\Middlewares\DI\NetteMiddlewareExtension
+
+services:
+	router: App\RouterFactory::createRouter
+
+	# API / Controllers
+	- App\Controllers\UsersController
+	- App\Controllers\BooksController
+
+	# Middlewares
+	middleware.tracy: Contributte\Middlewares\Middleware\TracyMiddleware
+	middleware.basepath: Contributte\Middlewares\Middleware\AutoBasePathMiddleware
+	middleware.router: Contributte\Middlewares\Middleware\RouterMiddleware([
+		"^/api/{path:.+}": @middleware.api,
+		"^/{path:.*}": @middleware.presenter
+	])
+
+	# Case #1 (handle API request)[api/]
+	middleware.api:
+		class: Contributte\Api\Bridges\Middlewares\ApiDataMiddleware([
+			Contributte\Api\Bridges\Middlewares\ApiPrefix("/api"),
+			Contributte\Api\Bridges\Middlewares\ApiContentNegotiation([
+				Contributte\Api\Bridges\Middlewares\Negotiation\SuffixNegotiator([
+					"json": Contributte\Api\Bridges\Middlewares\Negotiation\Transformer\JsonTransformer(),
+					"debug": Contributte\Api\Bridges\Tracy\Negotiation\Transformer\DebugTransformer(),
+					"*": Contributte\Api\Bridges\Middlewares\Negotiation\Transformer\JsonTransformer()
+				])
+			]),
+			# TlapnetUnification (data:{}, status:{}, erro:{})
+			Contributte\Api\Bridges\Middlewares\ApiEmitter()
+		])
+
+	# Case #2 (handle classic nette application)
+	middleware.presenter:
+		class: Contributte\Middlewares\Middleware\PresenterMiddleware
+		setup:
+			- setErrorPresenter(Error)
+			- setCatchExceptions(FALSE)
+
+#	- {class: App\Middlewares\RootMiddleware, inject: true}
+
+api:
+	debug: off
+
+middlewares:
+#	root: @App\Middlewares\RootMiddleware
+
+	middlewares:
+		- @middleware.tracy
+		- @middleware.basepath
+		- @middleware.router
