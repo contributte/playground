@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/vojtech-dobes/nette.ajax.js/master/nette.ajax.js"></script>
+</head>
+<body>
+
+<h1>Snippet test</h1>
+
+{snippet #box}
+    Time: {=time()} <br>
+    Microtime {=microtime()}<br>
+    <button>Reload</button>
+{/snippet}
+
+
+<script type="text/javascript" n:syntax="double">
+    $(function () {
+        $.nette.init();
+        $('body').on('click', 'button', function () {
+            $.nette.ajax({url: {{link this}}});
+        });
+    });
+</script>
+</body>
+</html>
