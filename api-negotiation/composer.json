@@ -1,0 +1,18 @@
+{
+	"require": {
+		"php": ">= 5.6",
+		"nette/di": "^2.4.6",
+		"nette/http": "^2.4.4",
+		"nette/caching": "^2.5.2",
+		"nette/bootstrap": "^2.4.2",
+		"nette/robot-loader": "^2.4.2",
+		"tracy/tracy": "^2.4.5",
+		"contributte/api": "dev-master",
+		"contributte/middlewares": "^0.3.0",
+		"contributte/psr7-http-message": "^0.2.0",
+    "doctrine/annotations": "^1.4.0",
+    "nette/reflection": "^2.4.2"
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev"
+}

@@ -1,0 +1,9 @@
+# Composer
+/composer.lock
+/vendor
+
+# Nette
+/temp/*
+!/temp/
+/log/*
+!/log/

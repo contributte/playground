@@ -1,8 +1,5 @@
 <?php
 
-require __DIR__ . '/../../../api/vendor/autoload.php';
-require __DIR__ . '/../../../middlewares/vendor/autoload.php';
-require __DIR__ . '/../../../psr7-http-message/vendor/autoload.php';
 require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new Nette\Configurator;

@@ -1,0 +1,17 @@
+extensions:
+	api: Contributte\Api\DI\ApiExtension
+	middlewares: Contributte\Middlewares\DI\StandaloneMiddlewareExtension
+
+services:
+	- App\Controllers\UsersController
+
+api:
+	debug: %debugMode%
+
+middlewares:
+	middlewares:
+		- Contributte\Middlewares\TracyMiddleware
+		- Contributte\Middlewares\AutoBasePathMiddleware
+		- Contributte\Api\Middlewares\ApiMiddleware([
+			Contributte\Api\Middlewares\ApiEmitter()
+		])
