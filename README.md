@@ -8,7 +8,8 @@
 
 | Project | Packages | Description |
 |---------|----------|-------------|
-| [API](https://github.com/contributte/playground/tree/master/api) | api, middlewares, psr7-http-message | Tiny middlewares API application with PSR-7 |
+| [API - simple](https://github.com/contributte/playground/tree/master/api-simple) | api, middlewares, psr7-http-message | Tiny middlewares API application with PSR-7. |
+| [API - content negotiation](https://github.com/contributte/playground/tree/master/api-content-negotiation) | api, middlewares, psr7-http-message with power of content negotiation | Medium middlewares API application with PSR-7 and Content Negotiation.|
 
 ## Maintainers
 
