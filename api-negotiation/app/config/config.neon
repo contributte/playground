@@ -1,0 +1,23 @@
+extensions:
+	api: Contributte\Api\DI\ApiExtension
+	middlewares: Contributte\Middlewares\DI\StandaloneMiddlewareExtension
+
+services:
+	- App\Controllers\UsersController
+
+api:
+	debug: %debugMode%
+
+middlewares:
+	middlewares:
+		- Contributte\Middlewares\TracyMiddleware
+		- Contributte\Middlewares\AutoBasePathMiddleware
+		- Contributte\Api\Middlewares\ApiMiddleware([
+				Contributte\Api\Middlewares\ContentNegotiation([
+					Contributte\Api\Middlewares\Negotiation\SuffixNegotiator([
+						"*": Contributte\Api\Middlewares\Transformer\JsonTransformer(),
+						"debug": Contributte\Api\Middlewares\Transformer\DebugTransformer()
+					])
+				]),
+				Contributte\Api\Middlewares\ApiEmitter()
+			])
