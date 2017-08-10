@@ -20,6 +20,7 @@ php -S 0.0.0.0:8000 -t www www/index.php
 
 Navigates to:
 
+- `http://localhost:8000/`
 - `http://localhost:8000/users/`
 - `http://localhost:8000/users/users/1`
 - `http://localhost:8000/users/meta`
