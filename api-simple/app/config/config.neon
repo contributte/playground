@@ -1,17 +1,10 @@
 extensions:
 	api: Contributte\Api\DI\ApiExtension
+	api2middlewares: Contributte\Api\DI\Api2MiddlewareExtension
 	middlewares: Contributte\Middlewares\DI\StandaloneMiddlewareExtension
+	resource: Contributte\DI\Extension\ResourceExtension
 
-services:
-	- App\Controllers\UsersController
-
-api:
-	debug: %debugMode%
-
-middlewares:
-	middlewares:
-		- Contributte\Middlewares\TracyMiddleware
-		- Contributte\Middlewares\AutoBasePathMiddleware
-		- Contributte\Api\Middlewares\ApiMiddleware([
-			Contributte\Api\Middlewares\ApiEmitter()
-		])
+resource:
+	resources:
+		App\Controllers\:
+			paths: [%appDir%/controllers]
