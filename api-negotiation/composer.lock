@@ -4,41 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1bd3c2ec5e5d6fdc9be6ff5564b873c6",
+    "content-hash": "21a9c8553c5b0c5b13fbde7fb7393917",
     "packages": [
         {
             "name": "contributte/api",
-            "version": "dev-master",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/api.git",
-                "reference": "c548f49bca3b86112e8a8114ef44b0e81b916d30"
+                "reference": "1e47e93ac8531cb001a23040017c1ab36d0fa802"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/api/zipball/c548f49bca3b86112e8a8114ef44b0e81b916d30",
-                "reference": "c548f49bca3b86112e8a8114ef44b0e81b916d30",
+                "url": "https://api.github.com/repos/contributte/api/zipball/1e47e93ac8531cb001a23040017c1ab36d0fa802",
+                "reference": "1e47e93ac8531cb001a23040017c1ab36d0fa802",
                 "shasum": ""
             },
             "require": {
+                "contributte/middlewares": "^0.3.0",
+                "contributte/phpdoc": "^0.1.0",
                 "contributte/psr7-http-message": "^0.2.0",
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "contributte/middlewares": "^0.3.0",
-                "doctrine/annotations": "^1.3.1",
                 "mockery/mockery": "^0.9.9",
                 "nette/di": "^2.4.9",
-                "nette/reflection": "^2.4.1",
                 "ninjify/nunjuck": "^0.1.4",
                 "ninjify/qa": "^0.4.0",
-                "tracy/tracy": "^2.4.6"
+                "tracy/tracy": "^2.4.8"
             },
             "suggest": {
-                "contributte/middlewares": "for middlewares [ApiMiddleware]",
-                "doctrine/annotations": "to load annotations [DoctrineAnnotationLoader]",
                 "nette/di": "to register Nette extensions [ApiAnnotationsExtension]",
-                "nette/reflection": "for annotations [NetteAnnotationLoader]",
                 "tracy/tracy": "for tracy panel [ApiPanel]"
             },
             "type": "library",
@@ -76,7 +72,61 @@
                 "psr7",
                 "rest"
             ],
-            "time": "2017-08-08 08:54:26"
+            "time": "2017-08-11T14:33:15+00:00"
+        },
+        {
+            "name": "contributte/di",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/di.git",
+                "reference": "77275095506d6859b1c8139bb90642953e564fd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/di/zipball/77275095506d6859b1c8139bb90642953e564fd4",
+                "reference": "77275095506d6859b1c8139bb90642953e564fd4",
+                "shasum": ""
+            },
+            "require": {
+                "nette/di": "^2.4.5",
+                "nette/utils": "^2.4.2",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/reflection": "^2.4.0",
+                "nette/robot-loader": "^2.4.2",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/reflection": "to use AutoloadExtension[CompilerExtension]",
+                "nette/robot-loader": "to use AutoloadExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\DI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Extra contrib to nette/di",
+            "homepage": "https://github.com/contributte/di",
+            "keywords": [
+                "dependency",
+                "inject",
+                "nette"
+            ],
+            "time": "2017-08-07T15:35:03+00:00"
         },
         {
             "name": "contributte/middlewares",
@@ -84,17 +134,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "90687d6b6f41de5c59ed8d8f4c55d4bb73de129d"
+                "reference": "ea0d32ab6ab34f38c33120f6a8878fee9ae0b7b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/90687d6b6f41de5c59ed8d8f4c55d4bb73de129d",
-                "reference": "90687d6b6f41de5c59ed8d8f4c55d4bb73de129d",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/ea0d32ab6ab34f38c33120f6a8878fee9ae0b7b9",
+                "reference": "ea0d32ab6ab34f38c33120f6a8878fee9ae0b7b9",
                 "shasum": ""
             },
             "require": {
                 "contributte/psr7-http-message": "^0.2.0",
-                "nette/utils": "^2.4.7",
                 "php": ">= 5.6"
             },
             "require-dev": {
@@ -134,7 +183,61 @@
                 "middleware",
                 "nette"
             ],
-            "time": "2017-08-08T08:17:22+00:00"
+            "time": "2017-08-11T17:14:55+00:00"
+        },
+        {
+            "name": "contributte/phpdoc",
+            "version": "v0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/phpdoc.git",
+                "reference": "506cef70e91612ead5df8eabf4fee3b4ac7a68cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/phpdoc/zipball/506cef70e91612ead5df8eabf4fee3b4ac7a68cd",
+                "reference": "506cef70e91612ead5df8eabf4fee3b4ac7a68cd",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/annotations": "^1.4.0",
+                "doctrine/cache": "^1.6.2",
+                "nette/reflection": "^2.3.2",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.9",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.4.0"
+            },
+            "suggest": {
+                "nette/di": "to register Nette extensions [PhpDocExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\PhpDoc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Doctrine Annotations for Nette Framework",
+            "homepage": "https://github.com/contributte/phpdoc",
+            "keywords": [
+                "annotataions",
+                "nette",
+                "phpdoc",
+                "reflection"
+            ],
+            "time": "2017-08-11T11:49:35+00:00"
         },
         {
             "name": "contributte/psr7-http-message",
@@ -142,12 +245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "7142bb78bb585a6782c76429d394fc1f8be0eba7"
+                "reference": "4e972ddf53aa2421579708fa30c1b3abd8bdd1b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/7142bb78bb585a6782c76429d394fc1f8be0eba7",
-                "reference": "7142bb78bb585a6782c76429d394fc1f8be0eba7",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/4e972ddf53aa2421579708fa30c1b3abd8bdd1b0",
+                "reference": "4e972ddf53aa2421579708fa30c1b3abd8bdd1b0",
                 "shasum": ""
             },
             "require": {
@@ -192,7 +295,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-08-03T15:16:18+00:00"
+            "time": "2017-08-10T15:06:09+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -261,6 +364,80 @@
                 "parser"
             ],
             "time": "2017-07-22T10:58:02+00:00"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "v1.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "53d9518ffeb019c51d542ff60cb578f076d3ff16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/53d9518ffeb019c51d542ff60cb578f076d3ff16",
+                "reference": "53d9518ffeb019c51d542ff60cb578f076d3ff16",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^5.7",
+                "predis/predis": "~1.0"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "Caching library offering an object-oriented API for many cache backends",
+            "homepage": "http://www.doctrine-project.org",
+            "keywords": [
+                "cache",
+                "caching"
+            ],
+            "time": "2017-07-22T13:00:15+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -1113,11 +1290,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
-    "stability-flags": {
-        "contributte/api": 20
-    },
-    "prefer-stable": true,
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">= 5.6"
