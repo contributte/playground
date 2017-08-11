@@ -1,7 +1,7 @@
 extensions:
 	api: Contributte\Api\DI\ApiExtension
-	api2middlewares: Contributte\Api\DI\Api2MiddlewareExtension
-	middlewares: Contributte\Middlewares\DI\StandaloneMiddlewareExtension
+	api2middlewares: Contributte\Api\DI\Api2MiddlewaresExtension
+	middlewares: Contributte\Middlewares\DI\MiddlewaresExtension
 	resource: Contributte\DI\Extension\ResourceExtension
 
 resource:
