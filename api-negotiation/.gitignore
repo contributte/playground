@@ -1,8 +1,2 @@
 # Composer
 /vendor
-
-# Nette
-/temp/*
-!/temp/
-/log/*
-!/log/
