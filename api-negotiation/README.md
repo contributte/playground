@@ -13,7 +13,7 @@ composer install
 ## Usage
 
 ```sh
-php -S 0.0.0.0:8000 -t www www/index.php 
+composer webserver 
 ```
 
 ## Showcase

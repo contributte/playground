@@ -4,10 +4,13 @@
     "nette/bootstrap": "^2.4.4",
     "nette/http": "^2.4.6",
     "nette/robot-loader": "^2.4.3",
-    "tracy/tracy": "^2.4.8",
+    "tracy/tracy": "^2.4.9",
     "contributte/di": "^0.2.0",
     "contributte/api": "^0.3.0",
     "contributte/middlewares": "^0.3.0",
     "contributte/psr7-http-message": "^0.2.0"
+  },
+  "scripts": {
+    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
   }
 }
