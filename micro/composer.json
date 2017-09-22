@@ -1,0 +1,18 @@
+{
+  "require": {
+    "php": ">= 5.6",
+    "nette/bootstrap": "^2.4.4",
+    "tracy/tracy": "^2.4.9",
+    "apitte/core": "^0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\Controllers\\": "app/controllers"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
+  }
+}

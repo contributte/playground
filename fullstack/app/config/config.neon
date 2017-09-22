@@ -1,0 +1,16 @@
+extensions:
+	middlewares: Contributte\Middlewares\DI\MiddlewaresExtension
+	resource: Contributte\DI\Extension\ResourceExtension
+	api: Apitte\Core\DI\ApiExtension
+
+resource:
+	resources:
+		App\Controllers\:
+			paths: [%appDir%/controllers]
+
+api:
+	plugins:
+		Apitte\Debug\DI\DebugPlugin:
+		Apitte\Middlewares\DI\MiddlewaresPlugin:
+		Apitte\Negotiation\DI\NegotiationPlugin:
+			unification: on

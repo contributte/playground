@@ -1,0 +1,13 @@
+extensions:
+	middlewares: Contributte\Middlewares\DI\MiddlewaresExtension
+	api: Apitte\Core\DI\ApiExtension
+
+api:
+	plugins:
+		Apitte\Debug\DI\DebugPlugin:
+		Apitte\Middlewares\DI\MiddlewaresPlugin:
+
+services:
+	- App\Controllers\HomeController
+	- App\Controllers\UsersController
+	- App\Controllers\ErrorController

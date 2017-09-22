@@ -1,19 +1,16 @@
 # Playground
 
-:books: Examples of integration of Nettrine.
+:books: Examples of integration of Apitte.
 
 -----
 
-## Samples
+## Projects
 
-### Migrations
-
-- Nettrine + Contributte/Console
-- Kdyby
-
-### Orm
-
-- Orm
+| Project | Packages | Description |
+|---------|----------|-------------|
+| [Micro](https://github.com/apitte/playground/tree/master/micro) | core | Micro application with direct dispatching. |
+| [Simple](https://github.com/apitte/playground/tree/master/simple) | core, debug | Simple middleware application. |
+| [Fullstack](https://github.com/apitte/playground/tree/master/fullstack) | core, middlewares, negotiation, debud | Fullstack application with example of all plugins |
 
 ## Maintainers
 
@@ -27,15 +24,8 @@
         </br>
         <a href="https://github.com/f3l1x">Milan Felix Šulc</a>
       </td>
-      <td align="center">
-        <a href="https://github.com/benijo">
-            <img width="150" height="150" src="https://avatars3.githubusercontent.com/u/6731626?v=3&s=150">
-        </a>
-        </br>
-        <a href="https://github.com/benijo">Josef Benjač</a>
-      </td>
     </tr>
-  </tbody>
+  <tbody>
 </table>
 
 ---

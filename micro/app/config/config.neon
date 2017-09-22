@@ -1,0 +1,5 @@
+extensions:
+	api: Apitte\Core\DI\ApiExtension
+
+services:
+	- App\Controllers\HelloController
