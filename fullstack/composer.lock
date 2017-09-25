@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f736c43e656d6861fb87a650e086128a",
+    "content-hash": "878de7b4713eaf932becb246987b5e1d",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "965ceff0dce009d98f7a45d734a329dff1c11091"
+                "reference": "037a2bd95b07f12ad4a5552c33f87c8c4afe9df7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/965ceff0dce009d98f7a45d734a329dff1c11091",
-                "reference": "965ceff0dce009d98f7a45d734a329dff1c11091",
+                "url": "https://api.github.com/repos/apitte/core/zipball/037a2bd95b07f12ad4a5552c33f87c8c4afe9df7",
+                "reference": "037a2bd95b07f12ad4a5552c33f87c8c4afe9df7",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "json",
                 "rest"
             ],
-            "time": "2017-09-25T13:00:55+00:00"
+            "time": "2017-09-25T14:54:07+00:00"
         },
         {
             "name": "apitte/debug",
@@ -334,16 +334,16 @@
         },
         {
             "name": "contributte/di",
-            "version": "v0.2",
+            "version": "v0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "77275095506d6859b1c8139bb90642953e564fd4"
+                "reference": "6b68c977f8d99984af42a2ae48ba88e85325a739"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/77275095506d6859b1c8139bb90642953e564fd4",
-                "reference": "77275095506d6859b1c8139bb90642953e564fd4",
+                "url": "https://api.github.com/repos/contributte/di/zipball/6b68c977f8d99984af42a2ae48ba88e85325a739",
+                "reference": "6b68c977f8d99984af42a2ae48ba88e85325a739",
                 "shasum": ""
             },
             "require": {
@@ -384,7 +384,7 @@
                 "inject",
                 "nette"
             ],
-            "time": "2017-08-07T15:35:03+00:00"
+            "time": "2017-09-25T14:55:23+00:00"
         },
         {
             "name": "contributte/middlewares",
