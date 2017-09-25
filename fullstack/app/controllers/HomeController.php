@@ -13,7 +13,7 @@ use Apitte\Core\Http\ApiResponse;
  * @Controller
  * @RootPath("/")
  */
-final class HomeController extends BaseController
+final class HomeController extends BaseV1Controller
 {
 
 	/**

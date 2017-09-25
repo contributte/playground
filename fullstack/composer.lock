@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "679661ee3b9b2b4e6311dea756402ed7",
+    "content-hash": "f736c43e656d6861fb87a650e086128a",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "1ff682919e3361312dc9729a8aaa2ea5a3989891"
+                "reference": "965ceff0dce009d98f7a45d734a329dff1c11091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/1ff682919e3361312dc9729a8aaa2ea5a3989891",
-                "reference": "1ff682919e3361312dc9729a8aaa2ea5a3989891",
+                "url": "https://api.github.com/repos/apitte/core/zipball/965ceff0dce009d98f7a45d734a329dff1c11091",
+                "reference": "965ceff0dce009d98f7a45d734a329dff1c11091",
                 "shasum": ""
             },
             "require": {
@@ -60,7 +60,7 @@
                 "json",
                 "rest"
             ],
-            "time": "2017-09-22T08:58:31+00:00"
+            "time": "2017-09-25T13:00:55+00:00"
         },
         {
             "name": "apitte/debug",
@@ -119,17 +119,120 @@
             "time": "2017-09-21T15:20:54+00:00"
         },
         {
+            "name": "apitte/events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apitte/events.git",
+                "reference": "209dfb8a818d6790370631ad035a2b6e8d6d0fee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apitte/events/zipball/209dfb8a818d6790370631ad035a2b6e8d6d0fee",
+                "reference": "209dfb8a818d6790370631ad035a2b6e8d6d0fee",
+                "shasum": ""
+            },
+            "require": {
+                "apitte/core": "@dev",
+                "php": ">= 5.6",
+                "symfony/event-dispatcher": "^3.3.0"
+            },
+            "require-dev": {
+                "contributte/event-dispatcher": "~0.3.0",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apitte\\Events\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Apitte core library",
+            "homepage": "https://github.com/apitte/events",
+            "keywords": [
+                "api",
+                "json",
+                "middlewares",
+                "psr7",
+                "rest"
+            ],
+            "time": "2017-09-21T11:00:33+00:00"
+        },
+        {
+            "name": "apitte/mapping",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apitte/mapping.git",
+                "reference": "c0b5a0367c2a8efc583dcb4c6d14f430958be46e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apitte/mapping/zipball/c0b5a0367c2a8efc583dcb4c6d14f430958be46e",
+                "reference": "c0b5a0367c2a8efc583dcb4c6d14f430958be46e",
+                "shasum": ""
+            },
+            "require": {
+                "apitte/core": "^0.1.0",
+                "apitte/middlewares": "^0.1.0",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Apitte\\Mapping\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Apitte\\Mapping plugin",
+            "homepage": "https://github.com/apitte/mapping",
+            "keywords": [
+                "api",
+                "mapping"
+            ],
+            "time": "2017-09-25T13:06:00+00:00"
+        },
+        {
             "name": "apitte/middlewares",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "8483442ba6dfe7b772d10513d3b5ac838a567487"
+                "reference": "8f8557f645f13fa819e416b41d8774e2578ff922"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/8483442ba6dfe7b772d10513d3b5ac838a567487",
-                "reference": "8483442ba6dfe7b772d10513d3b5ac838a567487",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/8f8557f645f13fa819e416b41d8774e2578ff922",
+                "reference": "8f8557f645f13fa819e416b41d8774e2578ff922",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +275,7 @@
                 "psr7",
                 "rest"
             ],
-            "time": "2017-09-21T12:07:30+00:00"
+            "time": "2017-09-22T17:52:52+00:00"
         },
         {
             "name": "apitte/negotiation",
@@ -180,12 +283,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "0891603dc6d689db3a7c9309c532b55da18a3f36"
+                "reference": "75b4bd494079df50d13a67a94e7ee9b673302f80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/0891603dc6d689db3a7c9309c532b55da18a3f36",
-                "reference": "0891603dc6d689db3a7c9309c532b55da18a3f36",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/75b4bd494079df50d13a67a94e7ee9b673302f80",
+                "reference": "75b4bd494079df50d13a67a94e7ee9b673302f80",
                 "shasum": ""
             },
             "require": {
@@ -227,7 +330,7 @@
                 "psr7",
                 "rest"
             ],
-            "time": "2017-09-22T08:57:56+00:00"
+            "time": "2017-09-25T13:07:20+00:00"
         },
         {
             "name": "contributte/di",
@@ -1434,6 +1537,69 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
+            "name": "symfony/event-dispatcher",
+            "version": "v3.3.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/event-dispatcher.git",
+                "reference": "54ca9520a00386f83bca145819ad3b619aaa2485"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/54ca9520a00386f83bca145819ad3b619aaa2485",
+                "reference": "54ca9520a00386f83bca145819ad3b619aaa2485",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "conflict": {
+                "symfony/dependency-injection": "<3.3"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/config": "~2.8|~3.0",
+                "symfony/dependency-injection": "~3.3",
+                "symfony/expression-language": "~2.8|~3.0",
+                "symfony/stopwatch": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/dependency-injection": "",
+                "symfony/http-kernel": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\EventDispatcher\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony EventDispatcher Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-07-29T21:54:42+00:00"
+        },
+        {
             "name": "tracy/tracy",
             "version": "v2.4.9",
             "source": {
@@ -1504,7 +1670,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "apitte/events": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

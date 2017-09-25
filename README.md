@@ -10,7 +10,7 @@
 |---------|----------|-------------|
 | [Micro](https://github.com/apitte/playground/tree/master/micro) | core | Micro application with direct dispatching. |
 | [Simple](https://github.com/apitte/playground/tree/master/simple) | core, debug | Simple middleware application. |
-| [Fullstack](https://github.com/apitte/playground/tree/master/fullstack) | core, middlewares, negotiation, debug | Fullstack application with example of all plugins |
+| [Fullstack](https://github.com/apitte/playground/tree/master/fullstack) | core, middlewares, negotiation, mapping, debug | Fullstack application with example of all plugins |
 
 ## Maintainers
 
