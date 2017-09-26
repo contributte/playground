@@ -16,3 +16,4 @@ api:
 		Apitte\Negotiation\DI\NegotiationPlugin:
 			unification: on
 		Apitte\Mapping\DI\MappingPlugin:
+		Apitte\OpenApi\DI\OpenApiPlugin:
