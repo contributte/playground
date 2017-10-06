@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8853f54e850bb8057f44fb6d5b0646ca",
+    "content-hash": "48cfdba66456f716ead00e73ca012899",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "2a55b83759699bab72ff8e2591bb332579c5f464"
+                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/2a55b83759699bab72ff8e2591bb332579c5f464",
-                "reference": "2a55b83759699bab72ff8e2591bb332579c5f464",
+                "url": "https://api.github.com/repos/apitte/core/zipball/7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
+                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
                 "shasum": ""
             },
             "require": {
@@ -52,15 +52,17 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Apitte\\Core library for Nette Framework",
             "homepage": "https://github.com/apitte/core",
             "keywords": [
+                "annotation",
                 "api",
                 "core",
-                "json",
+                "http",
+                "nette",
                 "rest"
             ],
-            "time": "2017-09-22T09:16:25+00:00"
+            "time": "2017-10-06T06:23:27+00:00"
         },
         {
             "name": "apitte/debug",
@@ -68,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "22d4de4b5e4713a0f319df694e3bb7c55f26d88d"
+                "reference": "f9cd241f8cd5031fc824241bc1eb283eec9486e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/22d4de4b5e4713a0f319df694e3bb7c55f26d88d",
-                "reference": "22d4de4b5e4713a0f319df694e3bb7c55f26d88d",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/f9cd241f8cd5031fc824241bc1eb283eec9486e7",
+                "reference": "f9cd241f8cd5031fc824241bc1eb283eec9486e7",
                 "shasum": ""
             },
             "require": {
@@ -82,6 +84,7 @@
                 "tracy/tracy": "^2.4.9"
             },
             "require-dev": {
+                "apitte/mapping": "^0.1.0",
                 "apitte/negotiation": "^0.1.0",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
@@ -116,7 +119,7 @@
                 "psr7",
                 "rest"
             ],
-            "time": "2017-09-21T15:20:54+00:00"
+            "time": "2017-10-06T06:13:29+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -124,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "8483442ba6dfe7b772d10513d3b5ac838a567487"
+                "reference": "5f87c3d76e9f0962dcbda52520b35415300e570c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/8483442ba6dfe7b772d10513d3b5ac838a567487",
-                "reference": "8483442ba6dfe7b772d10513d3b5ac838a567487",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/5f87c3d76e9f0962dcbda52520b35415300e570c",
+                "reference": "5f87c3d76e9f0962dcbda52520b35415300e570c",
                 "shasum": ""
             },
             "require": {
@@ -172,7 +175,7 @@
                 "psr7",
                 "rest"
             ],
-            "time": "2017-09-21T12:07:30+00:00"
+            "time": "2017-10-06T06:22:37+00:00"
         },
         {
             "name": "contributte/middlewares",
@@ -180,12 +183,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "24747db9c1a00c0f8bd97a805ef643ae14ef508e"
+                "reference": "cc162fff67994a1c907eead4b5800387ffe4ce12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/24747db9c1a00c0f8bd97a805ef643ae14ef508e",
-                "reference": "24747db9c1a00c0f8bd97a805ef643ae14ef508e",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/cc162fff67994a1c907eead4b5800387ffe4ce12",
+                "reference": "cc162fff67994a1c907eead4b5800387ffe4ce12",
                 "shasum": ""
             },
             "require": {
@@ -193,12 +196,12 @@
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "nette/application": "^2.4.8",
-                "nette/di": "^2.4.9",
-                "nette/http": "^2.4.6",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.4.0",
-                "tracy/tracy": "^2.4.8"
+                "nette/application": "~2.4.9",
+                "nette/di": "~2.4.10",
+                "nette/http": "~2.4.7",
+                "ninjify/nunjuck": "~0.2.0",
+                "ninjify/qa": "~0.4.0",
+                "tracy/tracy": "~2.4.9"
             },
             "suggest": {
                 "nette/application": "to use PresenterMiddleware",
@@ -234,7 +237,7 @@
                 "middleware",
                 "nette"
             ],
-            "time": "2017-09-22T08:34:39+00:00"
+            "time": "2017-09-26T13:37:58+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -296,16 +299,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "25d9545cc83a78de9c5d7023de5d228856c6f2a4"
+                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/25d9545cc83a78de9c5d7023de5d228856c6f2a4",
-                "reference": "25d9545cc83a78de9c5d7023de5d228856c6f2a4",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/dbd60e11210621e72e58375ae845cf9faec9d6e6",
+                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/psr7": "^1.3.1",
+                "guzzlehttp/psr7": "~1.4.2",
                 "php": ">= 5.6"
             },
             "require-dev": {
@@ -351,7 +354,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-09-21T13:11:23+00:00"
+            "time": "2017-10-06T05:48:46+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1326,16 +1329,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.4.9",
+            "version": "v2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "efe45da0aa3a50ce5356be39f2168d7925d94f3d"
+                "reference": "5b302790edd71924dfe4ec44f499ef61df3f53a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/efe45da0aa3a50ce5356be39f2168d7925d94f3d",
-                "reference": "efe45da0aa3a50ce5356be39f2168d7925d94f3d",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/5b302790edd71924dfe4ec44f499ef61df3f53a2",
+                "reference": "5b302790edd71924dfe4ec44f499ef61df3f53a2",
                 "shasum": ""
             },
             "require": {
@@ -1389,7 +1392,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2017-08-16T17:13:36+00:00"
+            "time": "2017-10-04T18:43:42+00:00"
         }
     ],
     "packages-dev": [],
