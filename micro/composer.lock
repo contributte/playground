@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1e107b1271d5ccf8696a64c5a5e14d3e",
+    "content-hash": "42c43799b2ac31b59f6f2fe81b10b3bb",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "1ff682919e3361312dc9729a8aaa2ea5a3989891"
+                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/1ff682919e3361312dc9729a8aaa2ea5a3989891",
-                "reference": "1ff682919e3361312dc9729a8aaa2ea5a3989891",
+                "url": "https://api.github.com/repos/apitte/core/zipball/7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
+                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
                 "shasum": ""
             },
             "require": {
@@ -52,15 +52,17 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Apitte\\Core library for Nette Framework",
             "homepage": "https://github.com/apitte/core",
             "keywords": [
+                "annotation",
                 "api",
                 "core",
-                "json",
+                "http",
+                "nette",
                 "rest"
             ],
-            "time": "2017-09-22T08:58:31+00:00"
+            "time": "2017-10-06T06:23:27+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -122,16 +124,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "25d9545cc83a78de9c5d7023de5d228856c6f2a4"
+                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/25d9545cc83a78de9c5d7023de5d228856c6f2a4",
-                "reference": "25d9545cc83a78de9c5d7023de5d228856c6f2a4",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/dbd60e11210621e72e58375ae845cf9faec9d6e6",
+                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6",
                 "shasum": ""
             },
             "require": {
-                "guzzlehttp/psr7": "^1.3.1",
+                "guzzlehttp/psr7": "~1.4.2",
                 "php": ">= 5.6"
             },
             "require-dev": {
@@ -177,7 +179,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-09-21T13:11:23+00:00"
+            "time": "2017-10-06T05:48:46+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1021,16 +1023,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.4.9",
+            "version": "v2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "efe45da0aa3a50ce5356be39f2168d7925d94f3d"
+                "reference": "5b302790edd71924dfe4ec44f499ef61df3f53a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/efe45da0aa3a50ce5356be39f2168d7925d94f3d",
-                "reference": "efe45da0aa3a50ce5356be39f2168d7925d94f3d",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/5b302790edd71924dfe4ec44f499ef61df3f53a2",
+                "reference": "5b302790edd71924dfe4ec44f499ef61df3f53a2",
                 "shasum": ""
             },
             "require": {
@@ -1084,7 +1086,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2017-08-16T17:13:36+00:00"
+            "time": "2017-10-04T18:43:42+00:00"
         }
     ],
     "packages-dev": [],
