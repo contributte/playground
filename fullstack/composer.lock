@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "47cb849acc2e8cf9e2e5d2e881b3bc73",
+    "content-hash": "f18867a79c5dc52cfaf8d484f34c2cd6",
     "packages": [
         {
             "name": "apitte/core",
@@ -335,6 +335,56 @@
                 "rest"
             ],
             "time": "2017-10-06T06:22:29+00:00"
+        },
+        {
+            "name": "apitte/openapi",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apitte/openapi.git",
+                "reference": "f1aa18c948a679ed4c4a73aec77917c63253a64e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/f1aa18c948a679ed4c4a73aec77917c63253a64e",
+                "reference": "f1aa18c948a679ed4c4a73aec77917c63253a64e",
+                "shasum": ""
+            },
+            "require": {
+                "apitte/core": "^0.1.0",
+                "nette/di": "^2.4.10",
+                "php": ">= 5.6",
+                "tracy/tracy": "^2.4.9"
+            },
+            "require-dev": {
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Apitte\\OpenApi\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Apitte OpenApi library",
+            "homepage": "https://github.com/apitte/openapi",
+            "keywords": [
+                "api",
+                "json",
+                "openapi",
+                "rest"
+            ],
+            "time": "2017-10-02T11:42:16+00:00"
         },
         {
             "name": "contributte/di",
@@ -1675,7 +1725,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "apitte/events": 20
+        "apitte/events": 20,
+        "apitte/openapi": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
