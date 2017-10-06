@@ -6,8 +6,7 @@ use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RootPath;
-use Apitte\Core\Http\ApiRequest;
-use Apitte\Core\Http\ApiResponse;
+use RuntimeException;
 
 /**
  * @Controller
@@ -20,9 +19,9 @@ final class ErrorController extends BaseController
 	 * @Path("/")
 	 * @Method("GET")
 	 */
-	public function custom(ApiRequest $request, ApiResponse $response)
+	public function custom()
 	{
-		throw new \RuntimeException('Runtime exception', 0, NULL);
+		throw new RuntimeException('Unexpected exception', 0, NULL);
 	}
 
 }
