@@ -7,8 +7,9 @@ use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
 use Apitte\Core\Annotation\Controller\RootPath;
-use Apitte\Core\Http\ApiRequest;
-use Apitte\Core\Http\ApiResponse;
+use Apitte\Mapping\Http\ApiRequest;
+use Apitte\Mapping\Http\ApiResponse;
+use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
  * @Controller
@@ -25,10 +26,10 @@ final class UsersController extends BaseV1Controller
 	{
 		return $response
 			->withAddedHeader('xyz', 123)
-			->withData(['users' => [
+			->withEntity(ArrayEntity::from(['users' => [
 				['id' => 1, 'nick' => 'Chuck Norris'],
 				['id' => 2, 'nick' => 'Felix'],
-			]]);
+			]]));
 	}
 
 	/**
@@ -38,16 +39,15 @@ final class UsersController extends BaseV1Controller
 	 */
 	public function detail(ApiRequest $request, ApiResponse $response)
 	{
-		return $response
-			->withData(['user' => [
-				'id' => $request->getParameter('id'),
-				'type' => gettype($request->getParameter('id')),
-				'nick' => 'Felix',
-				'request' => [
-					'attributes' => $request->getAttributes(),
-					'parameters' => $request->getParameters(),
-				],
-			]]);
+		return ['user' => [
+			'id' => $request->getParameter('id'),
+			'type' => gettype($request->getParameter('id')),
+			'nick' => 'Felix',
+			'request' => [
+				'attributes' => $request->getAttributes(),
+				'parameters' => $request->getParameters(),
+			],
+		]];
 	}
 
 	/**
@@ -56,12 +56,11 @@ final class UsersController extends BaseV1Controller
 	 */
 	public function create(ApiRequest $request, ApiResponse $response)
 	{
-		return $response
-			->withData(['data' => [
-				'raw' => (string) $request->getBodyClone(),
-				'parsed' => $request->getParsedBody(),
-				'jsonbody' => $request->getJsonBody(),
-			]]);
+		return ['data' => [
+			'raw' => (string) $request->getBodyClone(),
+			'parsed' => $request->getParsedBody(),
+			'jsonbody' => $request->getJsonBody(),
+		]];
 	}
 
 	/**
@@ -70,14 +69,13 @@ final class UsersController extends BaseV1Controller
 	 */
 	public function meta(ApiRequest $request, ApiResponse $response)
 	{
-		return $response
-			->withData(['data' => [
-				'params' => $request->getQueryParams(),
-				'attributes' => $request->getAttributes(),
-				'cookies' => $request->getCookieParams(),
-				'server' => $request->getServerParams(),
-				'headers' => $request->getHeaders(),
-			]]);
+		return ['data' => [
+			'params' => $request->getQueryParams(),
+			'attributes' => $request->getAttributes(),
+			'cookies' => $request->getCookieParams(),
+			'server' => $request->getServerParams(),
+			'headers' => $request->getHeaders(),
+		]];
 	}
 
 }

@@ -6,8 +6,9 @@ use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RootPath;
-use Apitte\Core\Http\ApiRequest;
-use Apitte\Core\Http\ApiResponse;
+use Apitte\Mapping\Http\ApiRequest;
+use Apitte\Mapping\Http\ApiResponse;
+use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
  * @Controller
@@ -22,7 +23,7 @@ final class HomeController extends BaseV1Controller
 	 */
 	public function index(ApiRequest $request, ApiResponse $response)
 	{
-		return $response->withData(['data' => ['Welcome']]);
+		return $response->withEntity(ArrayEntity::from(['data' => ['Welcome']]));
 	}
 
 }

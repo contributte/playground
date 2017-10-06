@@ -7,6 +7,7 @@ use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RootPath;
 use Apitte\Core\Exception\Api\ClientErrorException;
+use Apitte\Core\Exception\Api\MessageException;
 use Apitte\Core\Exception\Api\ServerErrorException;
 use RuntimeException;
 
@@ -37,6 +38,17 @@ final class ErrorController extends BaseV1Controller
 		throw ServerErrorException::create()
 			->withCode(505)
 			->withContext(['a' => 'b']);
+	}
+
+	/**
+	 * @Path("/message")
+	 * @Method("GET")
+	 */
+	public function message()
+	{
+		throw MessageException::create()
+			->withCode(405)
+			->withMessage("Foobar");
 	}
 
 	/**
