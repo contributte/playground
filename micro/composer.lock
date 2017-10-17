@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4"
+                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
-                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
+                "url": "https://api.github.com/repos/apitte/core/zipball/1d13f99553c91066768a6b505e8ecd7625f55f2c",
+                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c",
                 "shasum": ""
             },
             "require": {
@@ -52,17 +52,17 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte\\Core library for Nette Framework",
+            "description": "Core API library in Apitte stack",
             "homepage": "https://github.com/apitte/core",
             "keywords": [
                 "annotation",
                 "api",
-                "core",
+                "apitte",
                 "http",
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-06T06:23:27+00:00"
+            "time": "2017-10-14T10:01:18+00:00"
         },
         {
             "name": "contributte/phpdoc",

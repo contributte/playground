@@ -3,16 +3,16 @@
 namespace App\Controllers;
 
 use Apitte\Core\Annotation\Controller\Controller;
+use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
-use Apitte\Core\Annotation\Controller\RootPath;
-use Apitte\Core\UI\Controller\AbstractController;
 use Apitte\Core\Http\ApiRequest;
 use Apitte\Core\Http\ApiResponse;
+use Apitte\Core\UI\Controller\AbstractController;
 
 /**
  * @Controller
- * @RootPath("/")
+ * @ControllerPath("/")
  */
 final class HelloController extends AbstractController
 {
