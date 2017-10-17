@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4"
+                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
-                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
+                "url": "https://api.github.com/repos/apitte/core/zipball/1d13f99553c91066768a6b505e8ecd7625f55f2c",
+                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c",
                 "shasum": ""
             },
             "require": {
@@ -52,17 +52,17 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte\\Core library for Nette Framework",
+            "description": "Core API library in Apitte stack",
             "homepage": "https://github.com/apitte/core",
             "keywords": [
                 "annotation",
                 "api",
-                "core",
+                "apitte",
                 "http",
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-06T06:23:27+00:00"
+            "time": "2017-10-14T10:01:18+00:00"
         },
         {
             "name": "apitte/debug",
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "f9cd241f8cd5031fc824241bc1eb283eec9486e7"
+                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/f9cd241f8cd5031fc824241bc1eb283eec9486e7",
-                "reference": "f9cd241f8cd5031fc824241bc1eb283eec9486e7",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
+                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
                 "shasum": ""
             },
             "require": {
@@ -110,16 +110,15 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Debugging tools for Apitte stack",
             "homepage": "https://github.com/apitte/debug",
             "keywords": [
                 "api",
-                "json",
-                "middlewares",
-                "psr7",
-                "rest"
+                "apitte",
+                "debugging",
+                "tracy"
             ],
-            "time": "2017-10-06T06:13:29+00:00"
+            "time": "2017-10-14T10:01:41+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -127,12 +126,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "5f87c3d76e9f0962dcbda52520b35415300e570c"
+                "reference": "b4c6c272e8460eaf319ded6c3d131647aac1808f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/5f87c3d76e9f0962dcbda52520b35415300e570c",
-                "reference": "5f87c3d76e9f0962dcbda52520b35415300e570c",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/b4c6c272e8460eaf319ded6c3d131647aac1808f",
+                "reference": "b4c6c272e8460eaf319ded6c3d131647aac1808f",
                 "shasum": ""
             },
             "require": {
@@ -166,16 +165,15 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Middlewares support for Apitte stack",
             "homepage": "https://github.com/apitte/middlewares",
             "keywords": [
+                "Relay",
                 "api",
-                "json",
-                "middlewares",
-                "psr7",
-                "rest"
+                "apitte",
+                "middlewares"
             ],
-            "time": "2017-10-06T06:22:37+00:00"
+            "time": "2017-10-14T10:04:56+00:00"
         },
         {
             "name": "contributte/middlewares",
@@ -183,12 +181,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "cc162fff67994a1c907eead4b5800387ffe4ce12"
+                "reference": "16b7399f0fee577a87759005166b4b5abdca9681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/cc162fff67994a1c907eead4b5800387ffe4ce12",
-                "reference": "cc162fff67994a1c907eead4b5800387ffe4ce12",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/16b7399f0fee577a87759005166b4b5abdca9681",
+                "reference": "16b7399f0fee577a87759005166b4b5abdca9681",
                 "shasum": ""
             },
             "require": {
@@ -206,7 +204,7 @@
             "suggest": {
                 "nette/application": "to use PresenterMiddleware",
                 "nette/di": "to use CompilerExtension(NetteMiddlewareExtension | StandaloneMiddlewareExtension)",
-                "nette/htt": "to use NetteMiddlewareExtension & NetteMiddlewareApplication",
+                "nette/http": "to use NetteMiddlewareExtension & NetteMiddlewareApplication",
                 "tracy/tracy": "to use TracyMiddleware"
             },
             "type": "library",
@@ -237,7 +235,7 @@
                 "middleware",
                 "nette"
             ],
-            "time": "2017-09-26T13:37:58+00:00"
+            "time": "2017-10-16T09:32:41+00:00"
         },
         {
             "name": "contributte/phpdoc",
