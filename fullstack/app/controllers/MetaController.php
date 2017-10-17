@@ -3,25 +3,38 @@
 namespace App\Controllers;
 
 use Apitte\Core\Annotation\Controller\Controller;
+use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
-use Apitte\Core\Annotation\Controller\RootPath;
 use Apitte\Core\Annotation\Controller\Tag;
-use Apitte\Core\Schema\ApiSchema;
+use Apitte\Core\Schema\Schema;
+use Apitte\Core\Schema\SchemaInspector;
 use Apitte\Mapping\Http\ApiRequest;
 use Apitte\Mapping\Http\ApiResponse;
 use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
  * @Controller
- * @RootPath("/meta")
+ * @ControllerPath("/meta")
  * @Tag(name="foo")
  */
 final class MetaController extends BaseV1Controller
 {
 
-	/** @var ApiSchema @inject */
-	public $schema;
+	/** @var Schema */
+	private $schema;
+
+	/** @var SchemaInspector */
+	private $inspector;
+
+	/**
+	 * @param Schema $schema
+	 */
+	public function __construct(Schema $schema)
+	{
+		$this->schema = $schema;
+		$this->inspector = new SchemaInspector($schema);
+	}
 
 	/**
 	 * @Path("/schema")
@@ -29,7 +42,7 @@ final class MetaController extends BaseV1Controller
 	 */
 	public function index(ApiRequest $request, ApiResponse $response)
 	{
-		return $response->withEntity(ArrayEntity::from(['schema' => $this->schema->getEndpointByGroup('apiv1')]));
+		return $response->withEntity(ArrayEntity::from(['schema' => $this->inspector->getEndpointByGroup('v1')]));
 	}
 
 	/**
@@ -38,7 +51,7 @@ final class MetaController extends BaseV1Controller
 	 */
 	public function foo(ApiRequest $request, ApiResponse $response)
 	{
-		return $response->withEntity(ArrayEntity::from(['schema' => $this->schema->getEndpointsByTag('foo')]));
+		return $response->withEntity(ArrayEntity::from(['schema' => $this->inspector->getEndpointsByTag('foo')]));
 	}
 
 }

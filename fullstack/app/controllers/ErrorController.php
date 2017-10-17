@@ -3,9 +3,9 @@
 namespace App\Controllers;
 
 use Apitte\Core\Annotation\Controller\Controller;
+use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
-use Apitte\Core\Annotation\Controller\RootPath;
 use Apitte\Core\Exception\Api\ClientErrorException;
 use Apitte\Core\Exception\Api\MessageException;
 use Apitte\Core\Exception\Api\ServerErrorException;
@@ -13,7 +13,7 @@ use RuntimeException;
 
 /**
  * @Controller
- * @RootPath("/error")
+ * @ControllerPath("/error")
  */
 final class ErrorController extends BaseV1Controller
 {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f18867a79c5dc52cfaf8d484f34c2cd6",
+    "content-hash": "91efce63cb6249d57ff09b9b0b74f9b6",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4"
+                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
-                "reference": "7aafea1ec5348d29f353c4e7f29de96c086a8fc4",
+                "url": "https://api.github.com/repos/apitte/core/zipball/1d13f99553c91066768a6b505e8ecd7625f55f2c",
+                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c",
                 "shasum": ""
             },
             "require": {
@@ -52,17 +52,17 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte\\Core library for Nette Framework",
+            "description": "Core API library in Apitte stack",
             "homepage": "https://github.com/apitte/core",
             "keywords": [
                 "annotation",
                 "api",
-                "core",
+                "apitte",
                 "http",
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-06T06:23:27+00:00"
+            "time": "2017-10-14T10:01:18+00:00"
         },
         {
             "name": "apitte/debug",
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "f9cd241f8cd5031fc824241bc1eb283eec9486e7"
+                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/f9cd241f8cd5031fc824241bc1eb283eec9486e7",
-                "reference": "f9cd241f8cd5031fc824241bc1eb283eec9486e7",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
+                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
                 "shasum": ""
             },
             "require": {
@@ -110,45 +110,43 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Debugging tools for Apitte stack",
             "homepage": "https://github.com/apitte/debug",
             "keywords": [
                 "api",
-                "json",
-                "middlewares",
-                "psr7",
-                "rest"
+                "apitte",
+                "debugging",
+                "tracy"
             ],
-            "time": "2017-10-06T06:13:29+00:00"
+            "time": "2017-10-14T10:01:41+00:00"
         },
         {
-            "name": "apitte/events",
+            "name": "apitte/fullstack",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/events.git",
-                "reference": "209dfb8a818d6790370631ad035a2b6e8d6d0fee"
+                "url": "https://github.com/apitte/fullstack.git",
+                "reference": "6dceef72a704bc61f1852113346386ec06bbf65a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/events/zipball/209dfb8a818d6790370631ad035a2b6e8d6d0fee",
-                "reference": "209dfb8a818d6790370631ad035a2b6e8d6d0fee",
+                "url": "https://api.github.com/repos/apitte/fullstack/zipball/6dceef72a704bc61f1852113346386ec06bbf65a",
+                "reference": "6dceef72a704bc61f1852113346386ec06bbf65a",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "@dev",
-                "php": ">= 5.6",
-                "symfony/event-dispatcher": "^3.3.0"
-            },
-            "require-dev": {
-                "contributte/event-dispatcher": "~0.3.0",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.4.0"
+                "apitte/core": "~0.1.0",
+                "apitte/debug": "~0.1.0",
+                "apitte/mapping": "~0.1.0",
+                "apitte/middlewares": "~0.1.0",
+                "apitte/negotiation": "~0.1.0",
+                "apitte/openapi": "~0.1.0",
+                "php": ">= 5.6"
             },
             "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Apitte\\Events\\": "src"
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -161,16 +159,16 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
-            "homepage": "https://github.com/apitte/events",
+            "description": "Apitte meta package with all features",
+            "homepage": "https://github.com/apitte/fullstack",
             "keywords": [
                 "api",
-                "json",
-                "middlewares",
-                "psr7",
+                "apitte",
+                "fullstack",
+                "meta",
                 "rest"
             ],
-            "time": "2017-09-21T11:00:33+00:00"
+            "time": "2017-10-14T08:49:51+00:00"
         },
         {
             "name": "apitte/mapping",
@@ -178,17 +176,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/mapping.git",
-                "reference": "77ff611ba289749a83eda8b8b0ea3cb847bab1b8"
+                "reference": "94f9bd21b733c3f091943969cf502cf9a2673af4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/mapping/zipball/77ff611ba289749a83eda8b8b0ea3cb847bab1b8",
-                "reference": "77ff611ba289749a83eda8b8b0ea3cb847bab1b8",
+                "url": "https://api.github.com/repos/apitte/mapping/zipball/94f9bd21b733c3f091943969cf502cf9a2673af4",
+                "reference": "94f9bd21b733c3f091943969cf502cf9a2673af4",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.1.0",
-                "apitte/middlewares": "^0.1.0",
                 "php": ">= 5.6"
             },
             "require-dev": {
@@ -216,13 +213,16 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte\\Mapping plugin",
+            "description": "Request mappers, transformers and decorators for Apitte stack",
             "homepage": "https://github.com/apitte/mapping",
             "keywords": [
                 "api",
-                "mapping"
+                "apitte",
+                "decorators",
+                "mapping",
+                "transformers"
             ],
-            "time": "2017-10-06T06:22:45+00:00"
+            "time": "2017-10-16T12:10:44+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -230,12 +230,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "5f87c3d76e9f0962dcbda52520b35415300e570c"
+                "reference": "b4c6c272e8460eaf319ded6c3d131647aac1808f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/5f87c3d76e9f0962dcbda52520b35415300e570c",
-                "reference": "5f87c3d76e9f0962dcbda52520b35415300e570c",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/b4c6c272e8460eaf319ded6c3d131647aac1808f",
+                "reference": "b4c6c272e8460eaf319ded6c3d131647aac1808f",
                 "shasum": ""
             },
             "require": {
@@ -269,16 +269,15 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Middlewares support for Apitte stack",
             "homepage": "https://github.com/apitte/middlewares",
             "keywords": [
+                "Relay",
                 "api",
-                "json",
-                "middlewares",
-                "psr7",
-                "rest"
+                "apitte",
+                "middlewares"
             ],
-            "time": "2017-10-06T06:22:37+00:00"
+            "time": "2017-10-14T10:04:56+00:00"
         },
         {
             "name": "apitte/negotiation",
@@ -286,12 +285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "a3ce50a14c16b21dcde7787776e268db67ac0db5"
+                "reference": "85b67a29bd3383192c738b852f1a208d5749d69a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/a3ce50a14c16b21dcde7787776e268db67ac0db5",
-                "reference": "a3ce50a14c16b21dcde7787776e268db67ac0db5",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/85b67a29bd3383192c738b852f1a208d5749d69a",
+                "reference": "85b67a29bd3383192c738b852f1a208d5749d69a",
                 "shasum": ""
             },
             "require": {
@@ -325,16 +324,15 @@
                     "homepage": "https://f3l1x.io"
                 }
             ],
-            "description": "Apitte core library",
+            "description": "Content-Negotiation support for Apitte stack",
             "homepage": "https://github.com/apitte/negotiation",
             "keywords": [
-                "api",
-                "json",
-                "middlewares",
-                "psr7",
-                "rest"
+                "apitte",
+                "content-negotiation",
+                "negotiation",
+                "view-resolver"
             ],
-            "time": "2017-10-06T06:22:29+00:00"
+            "time": "2017-10-16T12:11:31+00:00"
         },
         {
             "name": "apitte/openapi",
@@ -342,12 +340,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "f1aa18c948a679ed4c4a73aec77917c63253a64e"
+                "reference": "6993310a25390a591bc502eef05a3c15be4d49f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/f1aa18c948a679ed4c4a73aec77917c63253a64e",
-                "reference": "f1aa18c948a679ed4c4a73aec77917c63253a64e",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/6993310a25390a591bc502eef05a3c15be4d49f8",
+                "reference": "6993310a25390a591bc502eef05a3c15be4d49f8",
                 "shasum": ""
             },
             "require": {
@@ -361,6 +359,11 @@
                 "ninjify/qa": "^0.4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.1.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Apitte\\OpenApi\\": "src"
@@ -384,7 +387,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2017-10-02T11:42:16+00:00"
+            "time": "2017-10-12T17:12:51+00:00"
         },
         {
             "name": "contributte/di",
@@ -446,12 +449,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "cc162fff67994a1c907eead4b5800387ffe4ce12"
+                "reference": "16b7399f0fee577a87759005166b4b5abdca9681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/cc162fff67994a1c907eead4b5800387ffe4ce12",
-                "reference": "cc162fff67994a1c907eead4b5800387ffe4ce12",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/16b7399f0fee577a87759005166b4b5abdca9681",
+                "reference": "16b7399f0fee577a87759005166b4b5abdca9681",
                 "shasum": ""
             },
             "require": {
@@ -469,7 +472,7 @@
             "suggest": {
                 "nette/application": "to use PresenterMiddleware",
                 "nette/di": "to use CompilerExtension(NetteMiddlewareExtension | StandaloneMiddlewareExtension)",
-                "nette/htt": "to use NetteMiddlewareExtension & NetteMiddlewareApplication",
+                "nette/http": "to use NetteMiddlewareExtension & NetteMiddlewareApplication",
                 "tracy/tracy": "to use TracyMiddleware"
             },
             "type": "library",
@@ -500,7 +503,7 @@
                 "middleware",
                 "nette"
             ],
-            "time": "2017-09-26T13:37:58+00:00"
+            "time": "2017-10-16T09:32:41+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -1591,69 +1594,6 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
-            "name": "symfony/event-dispatcher",
-            "version": "v3.3.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "d7ba037e4b8221956ab1e221c73c9e27e05dd423"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/d7ba037e4b8221956ab1e221c73c9e27e05dd423",
-                "reference": "d7ba037e4b8221956ab1e221c73c9e27e05dd423",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "conflict": {
-                "symfony/dependency-injection": "<3.3"
-            },
-            "require-dev": {
-                "psr/log": "~1.0",
-                "symfony/config": "~2.8|~3.0",
-                "symfony/dependency-injection": "~3.3",
-                "symfony/expression-language": "~2.8|~3.0",
-                "symfony/stopwatch": "~2.8|~3.0"
-            },
-            "suggest": {
-                "symfony/dependency-injection": "",
-                "symfony/http-kernel": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "3.3-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\EventDispatcher\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony EventDispatcher Component",
-            "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
-        },
-        {
             "name": "tracy/tracy",
             "version": "v2.4.10",
             "source": {
@@ -1724,10 +1664,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "apitte/events": 20,
-        "apitte/openapi": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

@@ -3,17 +3,18 @@
 namespace App\Controllers;
 
 use Apitte\Core\Annotation\Controller\Controller;
+use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
-use Apitte\Core\Annotation\Controller\RootPath;
+use Apitte\Core\Annotation\Controller\RequestParameters;
 use Apitte\Mapping\Http\ApiRequest;
 use Apitte\Mapping\Http\ApiResponse;
 use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
  * @Controller
- * @RootPath("/users")
+ * @ControllerPath("/users")
  */
 final class UsersController extends BaseV1Controller
 {
@@ -35,9 +36,11 @@ final class UsersController extends BaseV1Controller
 	/**
 	 * @Path("/user/{id}")
 	 * @Method("GET")
-	 * @RequestParameter(name="id", type="int", description="My favourite user ID")
+	 * @RequestParameters({
+	 * 		@RequestParameter(name="id", type="int", description="My favourite user ID")
+	 * })
 	 */
-	public function detail(ApiRequest $request, ApiResponse $response)
+	public function detail(ApiRequest $request)
 	{
 		return ['user' => [
 			'id' => $request->getParameter('id'),
@@ -54,7 +57,7 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/create")
 	 * @Method("POST")
 	 */
-	public function create(ApiRequest $request, ApiResponse $response)
+	public function create(ApiRequest $request)
 	{
 		return ['data' => [
 			'raw' => (string) $request->getBodyClone(),
@@ -67,7 +70,7 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/meta")
 	 * @Method("GET")
 	 */
-	public function meta(ApiRequest $request, ApiResponse $response)
+	public function meta(ApiRequest $request)
 	{
 		return ['data' => [
 			'params' => $request->getQueryParams(),
