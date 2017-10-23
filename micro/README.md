@@ -1,4 +1,4 @@
-# Micor
+# Micro
 
 This micro application demonstrates usage of [`apitte/core`](https://github.com/apitte/core). 
 
