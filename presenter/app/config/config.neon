@@ -1,0 +1,27 @@
+application:
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+		Apitte: Apitte\Presenter\*Presenter
+
+extensions:
+	api: Apitte\Core\DI\ApiExtension
+	resource: Contributte\DI\Extension\ResourceExtension
+
+resource:
+	resources:
+		App\Controllers\:
+			paths: [%appDir%/controllers]
+			decorator:
+				inject: true
+
+api:
+	plugins:
+		Apitte\Debug\DI\DebugPlugin:
+		Apitte\Mapping\DI\MappingPlugin:
+		Apitte\OpenApi\DI\OpenApiPlugin:
+
+session:
+	expiration: 14 days
+
+services:
+	router: App\RouterFactory::createRouter
