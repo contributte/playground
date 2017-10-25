@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c"
+                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/1d13f99553c91066768a6b505e8ecd7625f55f2c",
-                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c",
+                "url": "https://api.github.com/repos/apitte/core/zipball/12048693950cbd23ec717af6a8b21c12ecef0071",
+                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-14T10:01:18+00:00"
+            "time": "2017-10-25T14:00:42+00:00"
         },
         {
             "name": "apitte/debug",
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4"
+                "reference": "ab30ee8d2071e005f7a928d60de83bb89347506a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
-                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/ab30ee8d2071e005f7a928d60de83bb89347506a",
+                "reference": "ab30ee8d2071e005f7a928d60de83bb89347506a",
                 "shasum": ""
             },
             "require": {
@@ -118,7 +118,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-10-14T10:01:41+00:00"
+            "time": "2017-10-25T14:05:39+00:00"
         },
         {
             "name": "apitte/middlewares",
