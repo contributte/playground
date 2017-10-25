@@ -5,6 +5,8 @@ namespace App\Controllers;
 use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\Negotiations;
+use Apitte\Core\Annotation\Controller\NegotiationSuffix;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
 use Apitte\Core\Annotation\Controller\RequestParameters;
@@ -22,15 +24,18 @@ final class UsersController extends BaseV1Controller
 	/**
 	 * @Path("/")
 	 * @Method("GET")
+	 * @Negotiations({
+	 * 		@NegotiationSuffix(suffix=".csv")
+	 * })
 	 */
 	public function index(ApiRequest $request, ApiResponse $response)
 	{
 		return $response
 			->withAddedHeader('xyz', 123)
-			->withEntity(ArrayEntity::from(['users' => [
+			->withEntity(ArrayEntity::from([
 				['id' => 1, 'nick' => 'Chuck Norris'],
 				['id' => 2, 'nick' => 'Felix'],
-			]]));
+			]));
 	}
 
 	/**

@@ -15,5 +15,6 @@ api:
 		Apitte\Middlewares\DI\MiddlewaresPlugin:
 		Apitte\Negotiation\DI\NegotiationPlugin:
 			unification: on
+			catchException: on
 		Apitte\Mapping\DI\MappingPlugin:
 		Apitte\OpenApi\DI\OpenApiPlugin:

@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c"
+                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/1d13f99553c91066768a6b505e8ecd7625f55f2c",
-                "reference": "1d13f99553c91066768a6b505e8ecd7625f55f2c",
+                "url": "https://api.github.com/repos/apitte/core/zipball/12048693950cbd23ec717af6a8b21c12ecef0071",
+                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-14T10:01:18+00:00"
+            "time": "2017-10-25T14:00:42+00:00"
         },
         {
             "name": "apitte/debug",
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4"
+                "reference": "ab30ee8d2071e005f7a928d60de83bb89347506a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
-                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/ab30ee8d2071e005f7a928d60de83bb89347506a",
+                "reference": "ab30ee8d2071e005f7a928d60de83bb89347506a",
                 "shasum": ""
             },
             "require": {
@@ -118,7 +118,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-10-14T10:01:41+00:00"
+            "time": "2017-10-25T14:05:39+00:00"
         },
         {
             "name": "apitte/fullstack",
@@ -176,12 +176,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/mapping.git",
-                "reference": "94f9bd21b733c3f091943969cf502cf9a2673af4"
+                "reference": "9a153b21c8b0dd1728f811f3317a4e8597a29cce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/mapping/zipball/94f9bd21b733c3f091943969cf502cf9a2673af4",
-                "reference": "94f9bd21b733c3f091943969cf502cf9a2673af4",
+                "url": "https://api.github.com/repos/apitte/mapping/zipball/9a153b21c8b0dd1728f811f3317a4e8597a29cce",
+                "reference": "9a153b21c8b0dd1728f811f3317a4e8597a29cce",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
                 "mapping",
                 "transformers"
             ],
-            "time": "2017-10-16T12:10:44+00:00"
+            "time": "2017-10-25T14:07:38+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -285,12 +285,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "85b67a29bd3383192c738b852f1a208d5749d69a"
+                "reference": "cf4b2af24f6ba8049dc2a4254d8ac1d98aa66ffe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/85b67a29bd3383192c738b852f1a208d5749d69a",
-                "reference": "85b67a29bd3383192c738b852f1a208d5749d69a",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/cf4b2af24f6ba8049dc2a4254d8ac1d98aa66ffe",
+                "reference": "cf4b2af24f6ba8049dc2a4254d8ac1d98aa66ffe",
                 "shasum": ""
             },
             "require": {
@@ -332,7 +332,7 @@
                 "negotiation",
                 "view-resolver"
             ],
-            "time": "2017-10-16T12:11:31+00:00"
+            "time": "2017-10-25T14:13:11+00:00"
         },
         {
             "name": "apitte/openapi",
