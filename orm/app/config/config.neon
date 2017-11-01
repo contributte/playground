@@ -1,0 +1,22 @@
+application:
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+session:
+	expiration: 14 days
+
+services:
+	router: App\Router\RouterFactory::createRouter
+
+extensions:
+	dbal: Nettrine\DBAL\DI\DbalExtension
+	annotations: Nettrine\Annotations\DI\AnnotationsExtension
+	orm: Nettrine\ORM\DI\OrmExtension
+
+dbal:
+	connection:
+		host: mariadb
+		driver: mysqli
+		dbname: ultra_database
+		user: root
+		password: root
