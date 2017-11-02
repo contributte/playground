@@ -9,6 +9,7 @@ services:
 	router: App\Router\RouterFactory::createRouter
 
 extensions:
+	console: Contributte\Console\DI\ConsoleExtension
 	dbal: Nettrine\DBAL\DI\DbalExtension
 	annotations: Nettrine\Annotations\DI\AnnotationsExtension
 	orm: Nettrine\ORM\DI\OrmExtension

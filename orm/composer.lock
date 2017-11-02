@@ -4,8 +4,86 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc02427106f70fe48c7a048746f8a1d0",
+    "content-hash": "29e12dfa85f2e1a06e2555ab55943803",
     "packages": [
+        {
+            "name": "contributte/console",
+            "version": "v0.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/console.git",
+                "reference": "f49f91f0a301ae97a7f25fb154630662e666b042"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/console/zipball/f49f91f0a301ae97a7f25fb154630662e666b042",
+                "reference": "f49f91f0a301ae97a7f25fb154630662e666b042",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.6",
+                "symfony/console": "^3.2.1"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.5",
+                "nette/http": "^2.4.3",
+                "ninjify/nunjuck": "^0.1.4",
+                "ninjify/qa": "^0.3.3"
+            },
+            "suggest": {
+                "nette/di": "to use ConsoleExtension[CompilerExtension]"
+            },
+            "type": "library",
+            "extra": {
+                "ninjify": {
+                    "qa": {
+                        "codesniffer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "codefixer": {
+                            "ruleset": "nette",
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        },
+                        "linter": {
+                            "folders": [
+                                "src",
+                                "tests"
+                            ]
+                        }
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Console\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://jfx.cz"
+                }
+            ],
+            "description": "Best console to Nette Framework",
+            "homepage": "https://github.com/contributte/console",
+            "keywords": [
+                "console",
+                "nette",
+                "symfony"
+            ],
+            "time": "2017-06-07T08:06:32+00:00"
+        },
         {
             "name": "doctrine/annotations",
             "version": "v1.4.0",
@@ -1795,12 +1873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/dbal.git",
-                "reference": "035a22cc7810a6ab7545f83a6a04c3ac040c5d37"
+                "reference": "0c0a84c58eb99195fdef57264c57299ce4f5072f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/dbal/zipball/035a22cc7810a6ab7545f83a6a04c3ac040c5d37",
-                "reference": "035a22cc7810a6ab7545f83a6a04c3ac040c5d37",
+                "url": "https://api.github.com/repos/nettrine/dbal/zipball/0c0a84c58eb99195fdef57264c57299ce4f5072f",
+                "reference": "0c0a84c58eb99195fdef57264c57299ce4f5072f",
                 "shasum": ""
             },
             "require": {
@@ -1836,7 +1914,7 @@
                 "doctrine",
                 "nette"
             ],
-            "time": "2017-11-01T11:13:26+00:00"
+            "time": "2017-11-02T16:36:01+00:00"
         },
         {
             "name": "nettrine/orm",
@@ -1844,12 +1922,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/orm.git",
-                "reference": "435fbf94c781c8c8aaa197cccdaff2933e218e22"
+                "reference": "52067250fd19bfda63377e24a8c4e17546c9107a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/orm/zipball/435fbf94c781c8c8aaa197cccdaff2933e218e22",
-                "reference": "435fbf94c781c8c8aaa197cccdaff2933e218e22",
+                "url": "https://api.github.com/repos/nettrine/orm/zipball/52067250fd19bfda63377e24a8c4e17546c9107a",
+                "reference": "52067250fd19bfda63377e24a8c4e17546c9107a",
                 "shasum": ""
             },
             "require": {
@@ -1886,7 +1964,7 @@
                 "nette",
                 "orm"
             ],
-            "time": "2017-11-01T14:14:02+00:00"
+            "time": "2017-11-02T16:37:35+00:00"
         },
         {
             "name": "psr/log",
