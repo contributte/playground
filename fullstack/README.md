@@ -26,7 +26,7 @@ Navigates to:
 
 - `http://localhost:8000/api/v1/`
 - `http://localhost:8000/api/v1/users/`
-- `http://localhost:8000/api/v1/users/users/1`
+- `http://localhost:8000/api/v1/users/user/1`
 - `http://localhost:8000/api/v1/users/meta`
 - `http://localhost:8000/api/v1/error/client`
 - `http://localhost:8000/api/v1/error/server`

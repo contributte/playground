@@ -24,6 +24,6 @@ Navigates to:
 
 - `http://localhost:8000/`
 - `http://localhost:8000/users/`
-- `http://localhost:8000/users/users/1`
+- `http://localhost:8000/users/user/1`
 - `http://localhost:8000/users/meta`
 - `http://localhost:8000/error/`
