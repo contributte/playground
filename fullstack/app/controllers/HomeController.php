@@ -6,8 +6,8 @@ use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
-use Apitte\Mapping\Http\ApiRequest;
-use Apitte\Mapping\Http\ApiResponse;
+use Apitte\Core\Http\ApiRequest;
+use Apitte\Core\Http\ApiResponse;
 use Apitte\Negotiation\Http\ArrayEntity;
 
 /**

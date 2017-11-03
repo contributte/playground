@@ -10,8 +10,8 @@
 |---------|----------|-------------|
 | [Micro](https://github.com/apitte/playground/tree/master/micro) | core | Micro application with direct dispatching. |
 | [Simple](https://github.com/apitte/playground/tree/master/simple) | core, debug | Simple middleware application. |
-| [Presenter](https://github.com/apitte/playground/tree/master/presenter) | core, presenter, debug, mapping, openapi | Simple Nette application integration. |
-| [Fullstack](https://github.com/apitte/playground/tree/master/fullstack) | core, middlewares, negotiation, mapping, debug, openapi | Fullstack application with example of all plugins |
+| [Presenter](https://github.com/apitte/playground/tree/master/presenter) | core, presenter, debug, openapi | Simple Nette application integration. |
+| [Fullstack](https://github.com/apitte/playground/tree/master/fullstack) | core, middlewares, negotiation, debug, openapi | Fullstack application with example of all plugins |
 
 ## Maintainers
 

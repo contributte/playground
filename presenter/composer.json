@@ -17,8 +17,7 @@
 		"tracy/tracy": "^2.4",
 		"apitte/core": "^0.1.0",
 		"apitte/debug": "^0.1.0",
-		"apitte/mapping": "^0.1.0",
-		"apitte/openapi": "dev-master",
+		"apitte/openapi": "^0.1.0",
 		"apitte/presenter": "dev-master",
 		"contributte/di": "^0.2.1"
 	},

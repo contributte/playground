@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "86c3025aec7d24ab9f7a6f0133a6eeb6",
+    "content-hash": "a9c1a570391f270eb3bc244dca6fc89b",
     "packages": [
         {
             "name": "apitte/core",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "68c7126f2683f7dc21a95da1a11b542c3e91ca33"
+                "reference": "feb896b800d02a64bac4b3b609d9221e92489545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/68c7126f2683f7dc21a95da1a11b542c3e91ca33",
-                "reference": "68c7126f2683f7dc21a95da1a11b542c3e91ca33",
+                "url": "https://api.github.com/repos/apitte/core/zipball/feb896b800d02a64bac4b3b609d9221e92489545",
+                "reference": "feb896b800d02a64bac4b3b609d9221e92489545",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-18T06:06:10+00:00"
+            "time": "2017-11-03T08:57:35+00:00"
         },
         {
             "name": "apitte/debug",
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4"
+                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
-                "reference": "f03b3e81b2c98274561737a021ce3d1eb5a7dcf4",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/e5936e9647ded4362924c786fc0a94fb6905a157",
+                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,6 @@
                 "tracy/tracy": "^2.4.9"
             },
             "require-dev": {
-                "apitte/mapping": "^0.1.0",
                 "apitte/negotiation": "^0.1.0",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
@@ -118,61 +117,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-10-14T10:01:41+00:00"
-        },
-        {
-            "name": "apitte/mapping",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/apitte/mapping.git",
-                "reference": "d14858f25af51d4ce1b139357cc6546cbabacdda"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/apitte/mapping/zipball/d14858f25af51d4ce1b139357cc6546cbabacdda",
-                "reference": "d14858f25af51d4ce1b139357cc6546cbabacdda",
-                "shasum": ""
-            },
-            "require": {
-                "apitte/core": "^0.1.0",
-                "php": ">= 5.6"
-            },
-            "require-dev": {
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Apitte\\Mapping\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Request mappers, transformers and decorators for Apitte stack",
-            "homepage": "https://github.com/apitte/mapping",
-            "keywords": [
-                "api",
-                "apitte",
-                "decorators",
-                "mapping",
-                "transformers"
-            ],
-            "time": "2017-10-18T06:06:58+00:00"
+            "time": "2017-11-03T09:36:08+00:00"
         },
         {
             "name": "apitte/openapi",
@@ -180,12 +125,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "6993310a25390a591bc502eef05a3c15be4d49f8"
+                "reference": "37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/6993310a25390a591bc502eef05a3c15be4d49f8",
-                "reference": "6993310a25390a591bc502eef05a3c15be4d49f8",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a",
+                "reference": "37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a",
                 "shasum": ""
             },
             "require": {
@@ -227,7 +172,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2017-10-12T17:12:51+00:00"
+            "time": "2017-11-02T09:24:14+00:00"
         },
         {
             "name": "apitte/presenter",
@@ -392,12 +337,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6"
+                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/dbd60e11210621e72e58375ae845cf9faec9d6e6",
-                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/162f371c2b561a7468d3f7a573563cc8fe4a6504",
+                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504",
                 "shasum": ""
             },
             "require": {
@@ -447,7 +392,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-10-06T05:48:46+00:00"
+            "time": "2017-10-26T11:24:58+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1956,7 +1901,6 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "apitte/openapi": 20,
         "apitte/presenter": 20
     },
     "prefer-stable": true,

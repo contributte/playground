@@ -5,13 +5,13 @@ namespace App\Controllers;
 use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
+use Apitte\Core\Annotation\Controller\Negotiation;
 use Apitte\Core\Annotation\Controller\Negotiations;
-use Apitte\Core\Annotation\Controller\NegotiationSuffix;
 use Apitte\Core\Annotation\Controller\Path;
 use Apitte\Core\Annotation\Controller\RequestParameter;
 use Apitte\Core\Annotation\Controller\RequestParameters;
-use Apitte\Mapping\Http\ApiRequest;
-use Apitte\Mapping\Http\ApiResponse;
+use Apitte\Core\Http\ApiRequest;
+use Apitte\Core\Http\ApiResponse;
 use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
@@ -25,7 +25,7 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/")
 	 * @Method("GET")
 	 * @Negotiations({
-	 * 		@NegotiationSuffix(suffix=".csv")
+	 * 		@Negotiation(suffix=".csv")
 	 * })
 	 */
 	public function index(ApiRequest $request, ApiResponse $response)

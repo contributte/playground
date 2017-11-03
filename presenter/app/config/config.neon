@@ -17,7 +17,6 @@ resource:
 api:
 	plugins:
 		Apitte\Debug\DI\DebugPlugin:
-		Apitte\Mapping\DI\MappingPlugin:
 		Apitte\OpenApi\DI\OpenApiPlugin:
 
 session:

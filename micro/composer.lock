@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071"
+                "reference": "feb896b800d02a64bac4b3b609d9221e92489545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/12048693950cbd23ec717af6a8b21c12ecef0071",
-                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071",
+                "url": "https://api.github.com/repos/apitte/core/zipball/feb896b800d02a64bac4b3b609d9221e92489545",
+                "reference": "feb896b800d02a64bac4b3b609d9221e92489545",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-25T14:00:42+00:00"
+            "time": "2017-11-03T08:57:35+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -124,12 +124,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6"
+                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/dbd60e11210621e72e58375ae845cf9faec9d6e6",
-                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/162f371c2b561a7468d3f7a573563cc8fe4a6504",
+                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-10-06T05:48:46+00:00"
+            "time": "2017-10-26T11:24:58+00:00"
         },
         {
             "name": "doctrine/annotations",

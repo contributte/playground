@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071"
+                "reference": "feb896b800d02a64bac4b3b609d9221e92489545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/12048693950cbd23ec717af6a8b21c12ecef0071",
-                "reference": "12048693950cbd23ec717af6a8b21c12ecef0071",
+                "url": "https://api.github.com/repos/apitte/core/zipball/feb896b800d02a64bac4b3b609d9221e92489545",
+                "reference": "feb896b800d02a64bac4b3b609d9221e92489545",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-10-25T14:00:42+00:00"
+            "time": "2017-11-03T08:57:35+00:00"
         },
         {
             "name": "apitte/debug",
@@ -70,12 +70,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "ab30ee8d2071e005f7a928d60de83bb89347506a"
+                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/ab30ee8d2071e005f7a928d60de83bb89347506a",
-                "reference": "ab30ee8d2071e005f7a928d60de83bb89347506a",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/e5936e9647ded4362924c786fc0a94fb6905a157",
+                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157",
                 "shasum": ""
             },
             "require": {
@@ -84,7 +84,6 @@
                 "tracy/tracy": "^2.4.9"
             },
             "require-dev": {
-                "apitte/mapping": "^0.1.0",
                 "apitte/negotiation": "^0.1.0",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
@@ -118,7 +117,7 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-10-25T14:05:39+00:00"
+            "time": "2017-11-03T09:36:08+00:00"
         },
         {
             "name": "apitte/fullstack",
@@ -126,18 +125,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/fullstack.git",
-                "reference": "6dceef72a704bc61f1852113346386ec06bbf65a"
+                "reference": "077dc09aa1c841dbea5b07ba1c848ce4246b93ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/fullstack/zipball/6dceef72a704bc61f1852113346386ec06bbf65a",
-                "reference": "6dceef72a704bc61f1852113346386ec06bbf65a",
+                "url": "https://api.github.com/repos/apitte/fullstack/zipball/077dc09aa1c841dbea5b07ba1c848ce4246b93ea",
+                "reference": "077dc09aa1c841dbea5b07ba1c848ce4246b93ea",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "~0.1.0",
                 "apitte/debug": "~0.1.0",
-                "apitte/mapping": "~0.1.0",
                 "apitte/middlewares": "~0.1.0",
                 "apitte/negotiation": "~0.1.0",
                 "apitte/openapi": "~0.1.0",
@@ -168,61 +166,7 @@
                 "meta",
                 "rest"
             ],
-            "time": "2017-10-14T08:49:51+00:00"
-        },
-        {
-            "name": "apitte/mapping",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/apitte/mapping.git",
-                "reference": "9a153b21c8b0dd1728f811f3317a4e8597a29cce"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/apitte/mapping/zipball/9a153b21c8b0dd1728f811f3317a4e8597a29cce",
-                "reference": "9a153b21c8b0dd1728f811f3317a4e8597a29cce",
-                "shasum": ""
-            },
-            "require": {
-                "apitte/core": "^0.1.0",
-                "php": ">= 5.6"
-            },
-            "require-dev": {
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Apitte\\Mapping\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Milan Felix Šulc",
-                    "homepage": "https://f3l1x.io"
-                }
-            ],
-            "description": "Request mappers, transformers and decorators for Apitte stack",
-            "homepage": "https://github.com/apitte/mapping",
-            "keywords": [
-                "api",
-                "apitte",
-                "decorators",
-                "mapping",
-                "transformers"
-            ],
-            "time": "2017-10-25T14:07:38+00:00"
+            "time": "2017-11-02T06:43:54+00:00"
         },
         {
             "name": "apitte/middlewares",
@@ -230,12 +174,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "b4c6c272e8460eaf319ded6c3d131647aac1808f"
+                "reference": "e9e42bb20b6ad24aaf3f3507110a8218cace1a00"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/b4c6c272e8460eaf319ded6c3d131647aac1808f",
-                "reference": "b4c6c272e8460eaf319ded6c3d131647aac1808f",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/e9e42bb20b6ad24aaf3f3507110a8218cace1a00",
+                "reference": "e9e42bb20b6ad24aaf3f3507110a8218cace1a00",
                 "shasum": ""
             },
             "require": {
@@ -277,7 +221,7 @@
                 "apitte",
                 "middlewares"
             ],
-            "time": "2017-10-14T10:04:56+00:00"
+            "time": "2017-11-03T09:07:51+00:00"
         },
         {
             "name": "apitte/negotiation",
@@ -285,18 +229,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "cf4b2af24f6ba8049dc2a4254d8ac1d98aa66ffe"
+                "reference": "d93c6b20fc7ecba744c0a25d29778dcffa8a7637"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/cf4b2af24f6ba8049dc2a4254d8ac1d98aa66ffe",
-                "reference": "cf4b2af24f6ba8049dc2a4254d8ac1d98aa66ffe",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/d93c6b20fc7ecba744c0a25d29778dcffa8a7637",
+                "reference": "d93c6b20fc7ecba744c0a25d29778dcffa8a7637",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.1.0",
-                "apitte/mapping": "^0.1.0",
-                "apitte/middlewares": "^0.1.0",
                 "php": ">= 5.6"
             },
             "require-dev": {
@@ -332,7 +274,7 @@
                 "negotiation",
                 "view-resolver"
             ],
-            "time": "2017-10-25T14:13:11+00:00"
+            "time": "2017-11-03T10:20:25+00:00"
         },
         {
             "name": "apitte/openapi",
@@ -340,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "6993310a25390a591bc502eef05a3c15be4d49f8"
+                "reference": "37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/6993310a25390a591bc502eef05a3c15be4d49f8",
-                "reference": "6993310a25390a591bc502eef05a3c15be4d49f8",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a",
+                "reference": "37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a",
                 "shasum": ""
             },
             "require": {
@@ -387,7 +329,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2017-10-12T17:12:51+00:00"
+            "time": "2017-11-02T09:24:14+00:00"
         },
         {
             "name": "contributte/di",
@@ -565,12 +507,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6"
+                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/dbd60e11210621e72e58375ae845cf9faec9d6e6",
-                "reference": "dbd60e11210621e72e58375ae845cf9faec9d6e6",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/162f371c2b561a7468d3f7a573563cc8fe4a6504",
+                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504",
                 "shasum": ""
             },
             "require": {
@@ -620,7 +562,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-10-06T05:48:46+00:00"
+            "time": "2017-10-26T11:24:58+00:00"
         },
         {
             "name": "doctrine/annotations",
