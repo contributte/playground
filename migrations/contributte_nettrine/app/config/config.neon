@@ -1,0 +1,29 @@
+### Nette core
+application:
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+services:
+	router: App\Router\RouterFactory::createRouter
+
+### Extensions
+extensions:
+
+	# Contributte\Console
+	console: Contributte\Console\DI\ConsoleExtension
+
+	# Nettrine stack
+	annotations: Nettrine\Annotations\DI\AnnotationsExtension
+	dbal: Nettrine\DBAL\DI\DbalExtension
+	orm: Nettrine\ORM\DI\OrmExtension
+
+	# Migrations
+	migrations: Nettrine\Migrations\DI\MigrationsExtension
+
+# Setup database connection
+dbal:
+	connection:
+		driver: mysqli
+		host: 127.0.0.1
+		dbname: nettrine_migrations
+		user: root
+		password:
