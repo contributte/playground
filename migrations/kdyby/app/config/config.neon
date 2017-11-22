@@ -1,0 +1,31 @@
+### Nette core
+application:
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+services:
+	router: App\Router\RouterFactory::createRouter
+
+### Extensions
+extensions:
+
+	# Kdyby/Doctrine stack
+	console: Kdyby\Console\DI\ConsoleExtension
+	annotations: Kdyby\Annotations\DI\AnnotationsExtension
+	events: Kdyby\Events\DI\EventsExtension
+	doctrine: Kdyby\Doctrine\DI\OrmExtension
+
+	# Migrations
+	migrations: Nettrine\Migrations\DI\MigrationsExtension
+
+# Setup database connection
+doctrine:
+	driver: mysqli
+	host: 127.0.0.1
+	dbname: nettrine_migrations
+	user: root
+	password:
+
+# Decorator for register commands
+decorator:
+	Symfony\Component\Console\Command\Command:
+		tags: [kdyby.console.command]
