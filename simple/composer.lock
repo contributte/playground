@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "48cfdba66456f716ead00e73ca012899",
+    "content-hash": "a00981b71cd453847585121118ef53c4",
     "packages": [
         {
             "name": "apitte/core",
-            "version": "dev-master",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "feb896b800d02a64bac4b3b609d9221e92489545"
+                "reference": "36d42e31b20e9f619dfe96b8a4201d124ed576bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/feb896b800d02a64bac4b3b609d9221e92489545",
-                "reference": "feb896b800d02a64bac4b3b609d9221e92489545",
+                "url": "https://api.github.com/repos/apitte/core/zipball/36d42e31b20e9f619dfe96b8a4201d124ed576bf",
+                "reference": "36d42e31b20e9f619dfe96b8a4201d124ed576bf",
                 "shasum": ""
             },
             "require": {
@@ -62,31 +62,31 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-11-03T08:57:35+00:00"
+            "time": "2017-11-23T12:47:38+00:00"
         },
         {
             "name": "apitte/debug",
-            "version": "dev-master",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157"
+                "reference": "6c06d85f2ac5a51f87ac83f503fb814f4ac8226d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/e5936e9647ded4362924c786fc0a94fb6905a157",
-                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/6c06d85f2ac5a51f87ac83f503fb814f4ac8226d",
+                "reference": "6c06d85f2ac5a51f87ac83f503fb814f4ac8226d",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "^0.1.0",
+                "apitte/core": "~0.1.0",
                 "php": ">= 5.6",
-                "tracy/tracy": "^2.4.9"
+                "tracy/tracy": "~2.4.9"
             },
             "require-dev": {
-                "apitte/negotiation": "^0.1.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "apitte/negotiation": "~0.1.0",
+                "ninjify/nunjuck": "~0.2.0",
+                "ninjify/qa": "~0.4.0"
             },
             "type": "library",
             "extra": {
@@ -117,31 +117,31 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-11-03T09:36:08+00:00"
+            "time": "2017-11-23T12:50:48+00:00"
         },
         {
             "name": "apitte/middlewares",
-            "version": "dev-master",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "e9e42bb20b6ad24aaf3f3507110a8218cace1a00"
+                "reference": "48fb733b18f8af49f26518042191c19c9a0d358e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/e9e42bb20b6ad24aaf3f3507110a8218cace1a00",
-                "reference": "e9e42bb20b6ad24aaf3f3507110a8218cace1a00",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/48fb733b18f8af49f26518042191c19c9a0d358e",
+                "reference": "48fb733b18f8af49f26518042191c19c9a0d358e",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "^0.1.0",
-                "contributte/middlewares": "^0.4.0",
+                "apitte/core": "~0.1.0",
+                "contributte/middlewares": "~0.5.0",
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.9",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "mockery/mockery": "~0.9.9",
+                "ninjify/nunjuck": "~0.2.0",
+                "ninjify/qa": "~0.4.0"
             },
             "type": "library",
             "extra": {
@@ -172,20 +172,20 @@
                 "apitte",
                 "middlewares"
             ],
-            "time": "2017-11-03T09:07:51+00:00"
+            "time": "2017-11-23T12:55:13+00:00"
         },
         {
             "name": "contributte/middlewares",
-            "version": "dev-master",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/middlewares.git",
-                "reference": "16b7399f0fee577a87759005166b4b5abdca9681"
+                "reference": "e93206de7f2d40bbdf737275bd84c2ba9a81526b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/middlewares/zipball/16b7399f0fee577a87759005166b4b5abdca9681",
-                "reference": "16b7399f0fee577a87759005166b4b5abdca9681",
+                "url": "https://api.github.com/repos/contributte/middlewares/zipball/e93206de7f2d40bbdf737275bd84c2ba9a81526b",
+                "reference": "e93206de7f2d40bbdf737275bd84c2ba9a81526b",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -234,7 +234,7 @@
                 "middleware",
                 "nette"
             ],
-            "time": "2017-10-16T09:32:41+00:00"
+            "time": "2017-11-15T11:48:53+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -292,16 +292,16 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "dev-master",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504"
+                "reference": "778418955649ec383e2cba24b4dd86deb021a432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/162f371c2b561a7468d3f7a573563cc8fe4a6504",
-                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/778418955649ec383e2cba24b4dd86deb021a432",
+                "reference": "778418955649ec383e2cba24b4dd86deb021a432",
                 "shasum": ""
             },
             "require": {
@@ -351,7 +351,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-10-26T11:24:58+00:00"
+            "time": "2017-11-10T12:11:17+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1394,9 +1394,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">= 5.6"

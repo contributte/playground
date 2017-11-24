@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "42c43799b2ac31b59f6f2fe81b10b3bb",
+    "content-hash": "096207123067b35c174e4d0afe40e9c9",
     "packages": [
         {
             "name": "apitte/core",
-            "version": "dev-master",
+            "version": "v0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "feb896b800d02a64bac4b3b609d9221e92489545"
+                "reference": "36d42e31b20e9f619dfe96b8a4201d124ed576bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/feb896b800d02a64bac4b3b609d9221e92489545",
-                "reference": "feb896b800d02a64bac4b3b609d9221e92489545",
+                "url": "https://api.github.com/repos/apitte/core/zipball/36d42e31b20e9f619dfe96b8a4201d124ed576bf",
+                "reference": "36d42e31b20e9f619dfe96b8a4201d124ed576bf",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-11-03T08:57:35+00:00"
+            "time": "2017-11-23T12:47:38+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -120,16 +120,16 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "dev-master",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504"
+                "reference": "778418955649ec383e2cba24b4dd86deb021a432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/162f371c2b561a7468d3f7a573563cc8fe4a6504",
-                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/778418955649ec383e2cba24b4dd86deb021a432",
+                "reference": "778418955649ec383e2cba24b4dd86deb021a432",
                 "shasum": ""
             },
             "require": {
@@ -179,7 +179,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-10-26T11:24:58+00:00"
+            "time": "2017-11-10T12:11:17+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1091,9 +1091,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": [],
-    "prefer-stable": true,
+    "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">= 5.6"

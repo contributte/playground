@@ -10,8 +10,6 @@
       "App\\Controllers\\": "app/controllers"
     }
   },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
   "scripts": {
     "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
   }
