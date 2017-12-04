@@ -11,6 +11,6 @@
     }
   },
   "scripts": {
-    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
+    "webserver": "php -S 0.0.0.0:8000 -t www index.php"
   }
 }
