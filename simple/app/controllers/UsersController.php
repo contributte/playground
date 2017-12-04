@@ -31,6 +31,18 @@ final class UsersController extends BaseController
 	}
 
 	/**
+	 * @Path("/pure")
+	 * @Method("GET")
+	 */
+	public function pure()
+	{
+		return ['users' => [
+			['id' => 3, 'nick' => 'Chuck Norris'],
+			['id' => 4, 'nick' => 'Felix'],
+		]];
+	}
+
+	/**
 	 * @Path("/user/{id}")
 	 * @Method("GET")
 	 */
