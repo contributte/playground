@@ -6,12 +6,22 @@
 
 ## Projects
 
+These example are divided into 2 categories. The first one is Apitte middlewares (PSR-7) based projects and 
+the second one is Nette based projects.
+
+### Apitte
+
 | Project | Packages | Description |
 |---------|----------|-------------|
-| [Micro](https://github.com/apitte/playground/tree/master/micro) | core | Micro application with direct dispatching. |
-| [Simple](https://github.com/apitte/playground/tree/master/simple) | core, debug | Simple middleware application. |
-| [Presenter](https://github.com/apitte/playground/tree/master/presenter) | core, presenter, debug, openapi | Simple Nette application integration. |
-| [Fullstack](https://github.com/apitte/playground/tree/master/fullstack) | core, middlewares, negotiation, debug, openapi | Fullstack application with example of all plugins |
+| [Micro](https://github.com/apitte/playground/tree/master/apitte/micro) | core | Micro application with direct dispatching. |
+| [Simple](https://github.com/apitte/playground/tree/master/apitte/simple) | core, debug | Simple middleware application. |
+| [Fullstack](https://github.com/apitte/playground/tree/master/apitte/fullstack) | core, middlewares, negotiation, debug, openapi | Fullstack application with example of all plugins |
+
+### Nette
+
+| Project | Packages | Description |
+|---------|----------|-------------|
+| [Nette](https://github.com/apitte/playground/tree/master/nette/simple) | core, presenter, debug, openapi | Simple Nette application integration. |
 
 ## Maintainers
 
