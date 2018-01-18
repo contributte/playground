@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9c1a570391f270eb3bc244dca6fc89b",
+    "content-hash": "21f83b1c5fc972f26c1c494fad26c081",
     "packages": [
         {
             "name": "apitte/core",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "feb896b800d02a64bac4b3b609d9221e92489545"
+                "reference": "893cfe5e1386df4f3a979e4b06193d9fa72b3298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/feb896b800d02a64bac4b3b609d9221e92489545",
-                "reference": "feb896b800d02a64bac4b3b609d9221e92489545",
+                "url": "https://api.github.com/repos/apitte/core/zipball/893cfe5e1386df4f3a979e4b06193d9fa72b3298",
+                "reference": "893cfe5e1386df4f3a979e4b06193d9fa72b3298",
                 "shasum": ""
             },
             "require": {
@@ -27,14 +27,14 @@
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.9",
-                "nette/di": "2.4.9",
+                "nette/di": "~2.4.10",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -62,36 +62,36 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-11-03T08:57:35+00:00"
+            "time": "2018-01-18T10:22:53+00:00"
         },
         {
             "name": "apitte/debug",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157"
+                "reference": "4e144f6c9b52d796380d515d4b1eb02d46337fee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/e5936e9647ded4362924c786fc0a94fb6905a157",
-                "reference": "e5936e9647ded4362924c786fc0a94fb6905a157",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/4e144f6c9b52d796380d515d4b1eb02d46337fee",
+                "reference": "4e144f6c9b52d796380d515d4b1eb02d46337fee",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "^0.1.0",
+                "apitte/core": "^0.2.0",
                 "php": ">= 5.6",
-                "tracy/tracy": "^2.4.9"
+                "tracy/tracy": "~2.4.10"
             },
             "require-dev": {
-                "apitte/negotiation": "^0.1.0",
+                "apitte/negotiation": "^0.2.0",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -117,27 +117,27 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-11-03T09:36:08+00:00"
+            "time": "2018-01-18T10:22:34+00:00"
         },
         {
             "name": "apitte/openapi",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a"
+                "reference": "5d6cac9a528e88c7e9be573e92174c68820d53f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a",
-                "reference": "37f2fedfb24a418f8526bf73ecc5278ee4f5ea1a",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/5d6cac9a528e88c7e9be573e92174c68820d53f4",
+                "reference": "5d6cac9a528e88c7e9be573e92174c68820d53f4",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "^0.1.0",
-                "nette/di": "^2.4.10",
+                "apitte/core": "^0.2.0",
+                "nette/di": "~2.4.10",
                 "php": ">= 5.6",
-                "tracy/tracy": "^2.4.9"
+                "tracy/tracy": "~2.4.10"
             },
             "require-dev": {
                 "ninjify/nunjuck": "^0.2.0",
@@ -146,7 +146,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -172,34 +172,39 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2017-11-02T09:24:14+00:00"
+            "time": "2018-01-18T10:21:50+00:00"
         },
         {
             "name": "apitte/presenter",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/presenter.git",
-                "reference": "2070c245af9f07275cc70e4d0ee045d10fc3a201"
+                "reference": "c6ba7482efbc13b982c900f93b9da051e471d6e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/presenter/zipball/2070c245af9f07275cc70e4d0ee045d10fc3a201",
-                "reference": "2070c245af9f07275cc70e4d0ee045d10fc3a201",
+                "url": "https://api.github.com/repos/apitte/presenter/zipball/c6ba7482efbc13b982c900f93b9da051e471d6e2",
+                "reference": "c6ba7482efbc13b982c900f93b9da051e471d6e2",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "dev-master",
-                "contributte/psr7-http-message": "dev-master",
-                "nette/application": "^2.4",
-                "nette/http": "^2.4",
+                "apitte/core": "^0.2.0",
+                "contributte/psr7-http-message": "^0.3.0",
+                "nette/application": "~2.4.9",
+                "nette/http": "~2.4.7",
                 "php": ">=5.6"
             },
             "require-dev": {
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.4.0"
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Apitte\\Presenter\\": "src/"
@@ -221,32 +226,32 @@
                 "api",
                 "nette"
             ],
-            "time": "2017-10-13T22:07:53+00:00"
+            "time": "2018-01-18T10:45:39+00:00"
         },
         {
             "name": "contributte/di",
-            "version": "v0.2.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "6b68c977f8d99984af42a2ae48ba88e85325a739"
+                "reference": "c114b12f6ed9b868a77b1631fb97c6b5ecbad360"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/6b68c977f8d99984af42a2ae48ba88e85325a739",
-                "reference": "6b68c977f8d99984af42a2ae48ba88e85325a739",
+                "url": "https://api.github.com/repos/contributte/di/zipball/c114b12f6ed9b868a77b1631fb97c6b5ecbad360",
+                "reference": "c114b12f6ed9b868a77b1631fb97c6b5ecbad360",
                 "shasum": ""
             },
             "require": {
-                "nette/di": "^2.4.5",
-                "nette/utils": "^2.4.2",
+                "nette/di": "^2.4.10",
+                "nette/utils": "^2.4.8",
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "nette/reflection": "^2.4.0",
-                "nette/robot-loader": "^2.4.2",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.3.3"
+                "nette/reflection": "^2.4.2",
+                "nette/robot-loader": "^2.4.3",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
             },
             "suggest": {
                 "nette/reflection": "to use AutoloadExtension[CompilerExtension]",
@@ -264,7 +269,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Sulc",
+                    "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -275,7 +280,7 @@
                 "inject",
                 "nette"
             ],
-            "time": "2017-09-25T14:55:23+00:00"
+            "time": "2017-11-21T16:32:18+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -333,16 +338,16 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "dev-master",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504"
+                "reference": "778418955649ec383e2cba24b4dd86deb021a432"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/162f371c2b561a7468d3f7a573563cc8fe4a6504",
-                "reference": "162f371c2b561a7468d3f7a573563cc8fe4a6504",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/778418955649ec383e2cba24b4dd86deb021a432",
+                "reference": "778418955649ec383e2cba24b4dd86deb021a432",
                 "shasum": ""
             },
             "require": {
@@ -378,7 +383,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Sulc",
+                    "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -392,20 +397,20 @@
                 "request",
                 "response"
             ],
-            "time": "2017-10-26T11:24:58+00:00"
+            "time": "2017-11-10T12:11:17+00:00"
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f"
+                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
+                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
                 "shasum": ""
             },
             "require": {
@@ -414,12 +419,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -460,7 +465,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-07-22T10:58:02+00:00"
+            "time": "2017-12-06T07:11:42+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1142,74 +1147,6 @@
             "time": "2017-07-10T23:47:08+00:00"
         },
         {
-            "name": "nette/forms",
-            "version": "v2.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/forms.git",
-                "reference": "70224011c6ca3941f5aeeb4efbe31d2cb3b13652"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/70224011c6ca3941f5aeeb4efbe31d2cb3b13652",
-                "reference": "70224011c6ca3941f5aeeb4efbe31d2cb3b13652",
-                "shasum": ""
-            },
-            "require": {
-                "nette/component-model": "~2.3",
-                "nette/http": "^2.3.8",
-                "nette/utils": "^2.4.6",
-                "php": ">=5.6.0"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "latte/latte": "~2.4",
-                "nette/di": "~2.4",
-                "nette/tester": "~2.0",
-                "tracy/tracy": "^2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "https://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "https://nette.org/contributors"
-                }
-            ],
-            "description": "?? Nette Forms: generating, validating and processing secure forms in PHP. Handy API, fully customizable, server & client side validation and mature design.",
-            "homepage": "https://nette.org",
-            "keywords": [
-                "Forms",
-                "bootstrap",
-                "csrf",
-                "javascript",
-                "nette",
-                "validation"
-            ],
-            "time": "2017-08-25T12:45:48+00:00"
-        },
-        {
             "name": "nette/http",
             "version": "v2.4.7",
             "source": {
@@ -1280,67 +1217,6 @@
                 "url"
             ],
             "time": "2017-08-24T21:04:00+00:00"
-        },
-        {
-            "name": "nette/mail",
-            "version": "v2.4.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/mail.git",
-                "reference": "2511b0cfa7c181c5fe333838152e308605594c53"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/mail/zipball/2511b0cfa7c181c5fe333838152e308605594c53",
-                "reference": "2511b0cfa7c181c5fe333838152e308605594c53",
-                "shasum": ""
-            },
-            "require": {
-                "ext-iconv": "*",
-                "nette/utils": "^2.4 || ~3.0.0",
-                "php": ">=5.6.0"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/di": "^2.4 || ~3.0.0",
-                "nette/tester": "^2.0",
-                "tracy/tracy": "^2.4"
-            },
-            "suggest": {
-                "ext-fileinfo": "to detect type of attached files"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "https://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "https://nette.org/contributors"
-                }
-            ],
-            "description": "Nette Mail: Sending E-mails",
-            "homepage": "https://nette.org",
-            "time": "2017-07-13T16:51:28+00:00"
         },
         {
             "name": "nette/neon",
@@ -1582,125 +1458,6 @@
             "time": "2017-07-11T00:21:10+00:00"
         },
         {
-            "name": "nette/safe-stream",
-            "version": "v2.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/safe-stream.git",
-                "reference": "0fcd45ae82be5817f4b3ad25bc8955968f355412"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/safe-stream/zipball/0fcd45ae82be5817f4b3ad25bc8955968f355412",
-                "reference": "0fcd45ae82be5817f4b3ad25bc8955968f355412",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/tester": "~1.7",
-                "tracy/tracy": "^2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.3-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/loader.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "https://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "https://nette.org/contributors"
-                }
-            ],
-            "description": "Nette SafeStream: atomic and safe manipulation with files via native PHP functions.",
-            "homepage": "https://nette.org",
-            "keywords": [
-                "atomic",
-                "filesystem",
-                "nette",
-                "safe"
-            ],
-            "time": "2017-07-13T18:20:37+00:00"
-        },
-        {
-            "name": "nette/security",
-            "version": "v2.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nette/security.git",
-                "reference": "8a3051f9b16d4d7bfa18b6b0ff6f9f6f418f9801"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nette/security/zipball/8a3051f9b16d4d7bfa18b6b0ff6f9f6f418f9801",
-                "reference": "8a3051f9b16d4d7bfa18b6b0ff6f9f6f418f9801",
-                "shasum": ""
-            },
-            "require": {
-                "nette/utils": "~2.4",
-                "php": ">=5.6.0"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
-            },
-            "require-dev": {
-                "nette/di": "~2.4",
-                "nette/http": "~2.4",
-                "nette/tester": "~2.0",
-                "tracy/tracy": "^2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.4-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "David Grudl",
-                    "homepage": "https://davidgrudl.com"
-                },
-                {
-                    "name": "Nette Community",
-                    "homepage": "https://nette.org/contributors"
-                }
-            ],
-            "description": "Nette Security: Access Control Component",
-            "homepage": "https://nette.org",
-            "time": "2017-07-11T09:41:59+00:00"
-        },
-        {
             "name": "nette/utils",
             "version": "v2.4.8",
             "source": {
@@ -1900,9 +1657,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "apitte/presenter": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

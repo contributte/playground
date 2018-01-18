@@ -25,4 +25,22 @@ final class HelloController extends BaseV1Controller
 		return $response->writeJsonBody(['hello' => ['world']]);
 	}
 
+	/**
+	 * @Path("/pure")
+	 * @Method("GET")
+	 */
+	public function pure()
+	{
+		return ['hello' => 'apitte'];
+	}
+
+	/**
+	 * @Path("/scalar")
+	 * @Method("GET")
+	 */
+	public function scalar()
+	{
+		return 'OK';
+	}
+
 }

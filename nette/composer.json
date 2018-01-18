@@ -1,0 +1,23 @@
+{
+  "require": {
+    "php": ">=5.6.0",
+    "nette/application": "~2.4.9",
+    "nette/bootstrap": "~2.4.5",
+    "nette/caching": "~2.5.6",
+    "nette/di": "~2.4.10",
+    "nette/http": "~2.4.7",
+    "nette/robot-loader": "~2.4.3",
+    "latte/latte": "~2.4.6",
+    "tracy/tracy": "~2.4.10",
+    "apitte/core": "^0.2.0",
+    "apitte/debug": "^0.2.0",
+    "apitte/openapi": "^0.2.0",
+    "apitte/presenter": "^0.2.0",
+    "contributte/di": "^0.2.1"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "webserver": "php -S 0.0.0.0:8000 -t www index.php"
+  }
+}
