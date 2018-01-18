@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "06b2b08fd434a2a953bcac2134c51870",
+    "content-hash": "ba9f8c1bb2a1520de6c0e3192935b4d2",
     "packages": [
         {
             "name": "apitte/core",
-            "version": "v0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "36d42e31b20e9f619dfe96b8a4201d124ed576bf"
+                "reference": "893cfe5e1386df4f3a979e4b06193d9fa72b3298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/36d42e31b20e9f619dfe96b8a4201d124ed576bf",
-                "reference": "36d42e31b20e9f619dfe96b8a4201d124ed576bf",
+                "url": "https://api.github.com/repos/apitte/core/zipball/893cfe5e1386df4f3a979e4b06193d9fa72b3298",
+                "reference": "893cfe5e1386df4f3a979e4b06193d9fa72b3298",
                 "shasum": ""
             },
             "require": {
@@ -27,14 +27,14 @@
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.9",
-                "nette/di": "2.4.9",
+                "nette/di": "~2.4.10",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -62,36 +62,36 @@
                 "nette",
                 "rest"
             ],
-            "time": "2017-11-23T12:47:38+00:00"
+            "time": "2018-01-18T10:22:53+00:00"
         },
         {
             "name": "apitte/debug",
-            "version": "v0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "6c06d85f2ac5a51f87ac83f503fb814f4ac8226d"
+                "reference": "4e144f6c9b52d796380d515d4b1eb02d46337fee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/6c06d85f2ac5a51f87ac83f503fb814f4ac8226d",
-                "reference": "6c06d85f2ac5a51f87ac83f503fb814f4ac8226d",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/4e144f6c9b52d796380d515d4b1eb02d46337fee",
+                "reference": "4e144f6c9b52d796380d515d4b1eb02d46337fee",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "~0.1.0",
+                "apitte/core": "^0.2.0",
                 "php": ">= 5.6",
-                "tracy/tracy": "~2.4.9"
+                "tracy/tracy": "~2.4.10"
             },
             "require-dev": {
-                "apitte/negotiation": "~0.1.0",
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.4.0"
+                "apitte/negotiation": "^0.2.0",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -117,34 +117,34 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2017-11-23T12:50:48+00:00"
+            "time": "2018-01-18T10:22:34+00:00"
         },
         {
             "name": "apitte/fullstack",
-            "version": "v0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/fullstack.git",
-                "reference": "32c557b2a0521923c411a45574cf04cfe0b37044"
+                "reference": "d970e377aee1f13018934ff27d19480ae2dcecdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/fullstack/zipball/32c557b2a0521923c411a45574cf04cfe0b37044",
-                "reference": "32c557b2a0521923c411a45574cf04cfe0b37044",
+                "url": "https://api.github.com/repos/apitte/fullstack/zipball/d970e377aee1f13018934ff27d19480ae2dcecdf",
+                "reference": "d970e377aee1f13018934ff27d19480ae2dcecdf",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "~0.1.0",
-                "apitte/debug": "~0.1.0",
-                "apitte/middlewares": "~0.1.0",
-                "apitte/negotiation": "~0.1.0",
-                "apitte/openapi": "~0.1.0",
+                "apitte/core": "^0.2.0",
+                "apitte/debug": "^0.2.0",
+                "apitte/middlewares": "^0.2.0",
+                "apitte/negotiation": "^0.2.0",
+                "apitte/openapi": "^0.2.0",
                 "php": ">= 5.6"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -166,36 +166,36 @@
                 "meta",
                 "rest"
             ],
-            "time": "2017-11-23T13:07:04+00:00"
+            "time": "2018-01-18T10:32:43+00:00"
         },
         {
             "name": "apitte/middlewares",
-            "version": "v0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "48fb733b18f8af49f26518042191c19c9a0d358e"
+                "reference": "6ee62ff6bee21073fd998a4ae4ed3fb592c55bb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/48fb733b18f8af49f26518042191c19c9a0d358e",
-                "reference": "48fb733b18f8af49f26518042191c19c9a0d358e",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/6ee62ff6bee21073fd998a4ae4ed3fb592c55bb7",
+                "reference": "6ee62ff6bee21073fd998a4ae4ed3fb592c55bb7",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "~0.1.0",
-                "contributte/middlewares": "~0.5.0",
+                "apitte/core": "^0.2.0",
+                "contributte/middlewares": "^0.5.0",
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "mockery/mockery": "~0.9.9",
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.4.0"
+                "mockery/mockery": "^0.9.9",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -221,34 +221,34 @@
                 "apitte",
                 "middlewares"
             ],
-            "time": "2017-11-23T12:55:13+00:00"
+            "time": "2018-01-18T10:22:23+00:00"
         },
         {
             "name": "apitte/negotiation",
-            "version": "v0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "97e530c8063a36da16ce72596f3aa518fc08d3a8"
+                "reference": "e4801012c728c6a2a8336e44034f2646d5841801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/97e530c8063a36da16ce72596f3aa518fc08d3a8",
-                "reference": "97e530c8063a36da16ce72596f3aa518fc08d3a8",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/e4801012c728c6a2a8336e44034f2646d5841801",
+                "reference": "e4801012c728c6a2a8336e44034f2646d5841801",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "~0.1.0",
+                "apitte/core": "^0.2.0",
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.4.0"
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -274,36 +274,36 @@
                 "negotiation",
                 "view-resolver"
             ],
-            "time": "2017-11-23T13:02:46+00:00"
+            "time": "2018-01-18T10:22:01+00:00"
         },
         {
             "name": "apitte/openapi",
-            "version": "v0.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "627c7ed8c8252ab44ae3483909b9a9cb01a0ef98"
+                "reference": "5d6cac9a528e88c7e9be573e92174c68820d53f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/627c7ed8c8252ab44ae3483909b9a9cb01a0ef98",
-                "reference": "627c7ed8c8252ab44ae3483909b9a9cb01a0ef98",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/5d6cac9a528e88c7e9be573e92174c68820d53f4",
+                "reference": "5d6cac9a528e88c7e9be573e92174c68820d53f4",
                 "shasum": ""
             },
             "require": {
-                "apitte/core": "~0.1.0",
+                "apitte/core": "^0.2.0",
                 "nette/di": "~2.4.10",
                 "php": ">= 5.6",
-                "tracy/tracy": "~2.4.9"
+                "tracy/tracy": "~2.4.10"
             },
             "require-dev": {
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.4.0"
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-develop": "0.2.x-dev"
                 }
             },
             "autoload": {
@@ -329,7 +329,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2017-11-23T13:05:17+00:00"
+            "time": "2018-01-18T10:21:50+00:00"
         },
         {
             "name": "contributte/di",
@@ -566,16 +566,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f"
+                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
-                "reference": "5beebb01b025c94e93686b7a0ed3edae81fe3e7f",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
+                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
                 "shasum": ""
             },
             "require": {
@@ -584,12 +584,12 @@
             },
             "require-dev": {
                 "doctrine/cache": "1.*",
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^6.4"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5.x-dev"
+                    "dev-master": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -630,7 +630,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-07-22T10:58:02+00:00"
+            "time": "2017-12-06T07:11:42+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1605,9 +1605,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">= 5.6"

@@ -25,7 +25,7 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/")
 	 * @Method("GET")
 	 * @Negotiations({
-	 * 		@Negotiation(suffix=".csv")
+	 * 		@Negotiation (suffix=".csv")
 	 * })
 	 */
 	public function index(ApiRequest $request, ApiResponse $response)
@@ -42,7 +42,8 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/user/{id}")
 	 * @Method("GET")
 	 * @RequestParameters({
-	 * 		@RequestParameter(name="id", type="int", description="My favourite user ID")
+	 * 		@RequestParameter(name="id", type="int", description="My favourite user ID"),
+	 * 		@RequestParameter(name="flag", type="int", description="Activated or deactivated", in="query")
 	 * })
 	 */
 	public function detail(ApiRequest $request)
@@ -72,18 +73,12 @@ final class UsersController extends BaseV1Controller
 	}
 
 	/**
-	 * @Path("/meta")
+	 * @Path("/email")
 	 * @Method("GET")
 	 */
-	public function meta(ApiRequest $request)
+	public function email()
 	{
-		return ['data' => [
-			'params' => $request->getQueryParams(),
-			'attributes' => $request->getAttributes(),
-			'cookies' => $request->getCookieParams(),
-			'server' => $request->getServerParams(),
-			'headers' => $request->getHeaders(),
-		]];
+		return 'foo@bar.cz';
 	}
 
 }
