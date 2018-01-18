@@ -43,6 +43,15 @@ final class UsersController extends BaseController
 	}
 
 	/**
+	 * @Path("/scalar")
+	 * @Method("GET")
+	 */
+	public function scalar()
+	{
+		return 'OK';
+	}
+
+	/**
 	 * @Path("/user/{id}")
 	 * @Method("GET")
 	 */
