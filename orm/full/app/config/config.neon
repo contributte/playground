@@ -16,8 +16,8 @@ extensions:
 
 dbal:
 	connection:
-		host: mariadb
-		driver: mysqli
-		dbname: ultra_database
+		host: 127.0.0.1
 		user: root
-		password: root
+		password:
+		dbname: nettrine
+#		driver: pdo_pgsql
