@@ -42,7 +42,7 @@ class Book
 	/**
 	 * @param Book constructor
 	 */
-	public function __construct($tags)
+	public function __construct()
 	{
 		$this->tags = new ArrayCollection();
 	}

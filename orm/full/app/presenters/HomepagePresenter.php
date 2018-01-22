@@ -8,8 +8,8 @@ use App\Model\Database\Entity\Tag;
 use App\Model\Database\Repository\BookRepository;
 use App\Model\Database\Repository\CategoryRepository;
 use App\Model\Database\Repository\TagRepository;
+use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
-use Nette\Forms\Form;
 use Nettrine\ORM\EntityManager;
 
 class HomepagePresenter extends Presenter
@@ -53,7 +53,26 @@ class HomepagePresenter extends Presenter
 
 		$form->addSelect('category', 'Category', $categories);
 		$form->addSubmit('send', 'OK');
+
+		$form->onSubmit[] = [$this, 'processBookForm'];
 		return $form;
+	}
+
+	public function processBookForm(Form $form)
+	{
+		$values = $form->getValues();
+
+		/** @var CategoryRepository $categoryRepository */
+		$categoryRepository = $this->em->getRepository(Category::class);
+		/** @var Category $category */
+		$category = $categoryRepository->find($values->category);
+
+		$book = new Book();
+		$book->setTitle($values->title);
+		$book->setCategory($category);
+		$this->em->persist($book);
+		$this->em->flush();
+		$this->redirect('this');
 	}
 
 	protected function createComponentCategoryForm()
@@ -68,14 +87,11 @@ class HomepagePresenter extends Presenter
 	public function processCategoryForm(Form $form)
 	{
 		$values = $form->getValues();
-		dump($values);
-		exit;
-
 		$category = new Category();
 		$category->setTitle($values->title);
 		$this->em->persist($category);
 		$this->em->flush();
-		$this->redirect('Homepage:');
+		$this->redirect('this');
 	}
 
 	protected function createComponentTagForm()
@@ -83,7 +99,18 @@ class HomepagePresenter extends Presenter
 		$form = new Form();
 		$form->addText('title', 'Title');
 		$form->addSubmit('send', 'OK');
+		$form->onSubmit[] = [$this, 'processTagForm'];
 		return $form;
+	}
+
+	public function processTagForm(Form $form)
+	{
+		$values = $form->getValues();
+		$category = new Tag();
+		$category->setTitle($values->title);
+		$this->em->persist($category);
+		$this->em->flush();
+		$this->redirect('this');
 	}
 
 	protected function createComponentTagAddForm()
@@ -96,7 +123,29 @@ class HomepagePresenter extends Presenter
 		$form->addSelect('tag', 'Tag', $tags);
 		$form->addSelect('book', 'Book', $books);
 		$form->addSubmit('send', 'OK');
+		$form->onSubmit[] = [$this, 'processTagAddForm'];
+
 		return $form;
+	}
+
+	public function processTagAddForm(Form $form)
+	{
+		$values = $form->getValues();
+
+		/** @var BookRepository $bookRepository */
+		$bookRepository = $this->em->getRepository(Book::class);
+		/** @var TagRepository $tagRepository */
+		$tagRepository = $this->em->getRepository(Tag::class);
+
+		/** @var Book $book */
+		$book = $bookRepository->find($values->book);
+		/** @var Tag $tag */
+		$tag = $tagRepository->find($values->tag);
+
+		$book->getTags()->add($tag);
+		$tag->getBooks()->add($book);
+
+		$this->em->flush();
 	}
 
 	private function findPairs($entity, $value, $key = 'id')
