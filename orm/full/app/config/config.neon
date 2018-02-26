@@ -9,10 +9,18 @@ services:
 	router: App\Router\RouterFactory::createRouter
 
 extensions:
+	# Console
 	console: Contributte\Console\DI\ConsoleExtension
+
+	# DBAL
 	dbal: Nettrine\DBAL\DI\DbalExtension
-	annotations: Nettrine\Annotations\DI\AnnotationsExtension
+	dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
+
+	# ORM
 	orm: Nettrine\ORM\DI\OrmExtension
+#	orm.cache: Nettrine\ORM\DI\OrmCacheExtension
+	orm.console: Nettrine\ORM\DI\OrmConsoleExtension
+	orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
 
 dbal:
 	connection:
@@ -21,3 +29,7 @@ dbal:
 		password:
 		dbname: nettrine
 #		driver: pdo_pgsql
+
+orm:
+	# Own em class
+	entityManagerClass: App\Model\Database\EntityManager

@@ -1,10 +1,11 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Repository;
 
-use Doctrine\ORM\EntityRepository;
-
-class BookRepository extends EntityRepository
+/**
+ * Custom BookRepository
+ */
+final class BookRepository extends EntityRepository
 {
 
 	public function getById($id)

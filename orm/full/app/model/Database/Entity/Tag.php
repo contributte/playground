@@ -1,24 +1,19 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Nettrine\ORM\Entity\Attributes\Id;
 
 /**
  * @ORM\Entity(repositoryClass="App\Model\Database\Repository\TagRepository")
  */
-class Tag
+class Tag extends Entity
 {
 
-	/**
-	 * @ORM\Id
-	 * @ORM\Column(type="integer")
-	 * @ORM\GeneratedValue
-	 * @var int
-	 */
-	private $id;
+	use Id;
 
 	/**
 	 * @ORM\Column(type="string")
@@ -38,14 +33,6 @@ class Tag
 	public function __construct()
 	{
 		$this->books = new ArrayCollection();
-	}
-
-	/**
-	 * @return int
-	 */
-	public function getId()
-	{
-		return $this->id;
 	}
 
 	/**

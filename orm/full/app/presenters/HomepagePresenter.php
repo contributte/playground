@@ -5,12 +5,9 @@ namespace App\Presenters;
 use App\Model\Database\Entity\Book;
 use App\Model\Database\Entity\Category;
 use App\Model\Database\Entity\Tag;
-use App\Model\Database\Repository\BookRepository;
-use App\Model\Database\Repository\CategoryRepository;
-use App\Model\Database\Repository\TagRepository;
+use App\Model\Database\EntityManager;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
-use Nettrine\ORM\EntityManager;
 
 class HomepagePresenter extends Presenter
 {
@@ -23,18 +20,9 @@ class HomepagePresenter extends Presenter
 	 */
 	public function renderDefault()
 	{
-		//		 Criteria
-		//		$criteria = Criteria::create()
-		//			->where(Criteria::expr()->eq('id', 1));
-		//
-		//		dump($tagRepository->matching($criteria)->first());
-
-		/** @var BookRepository $bookRepository */
-		$bookRepository = $this->em->getRepository(Book::class);
-		/** @var CategoryRepository $categoryRepository */
-		$categoryRepository = $this->em->getRepository(Category::class);
-		/** @var TagRepository $tagRepository */
-		$tagRepository = $this->em->getRepository(Tag::class);
+		$bookRepository = $this->em->getBookRepository();
+		$categoryRepository = $this->em->getCategoryRepository();
+		$tagRepository = $this->em->getTagRepository();
 
 		$this->template->books = $bookRepository->findAll();
 		$this->template->categories = $categoryRepository->findAll();
@@ -49,7 +37,8 @@ class HomepagePresenter extends Presenter
 		$form = new Form();
 		$form->addText('title', 'Title');
 
-		$categories = $this->findPairs(Category::class, 'title');
+		$categoryRepository = $this->em->getCategoryRepository();
+		$categories = $categoryRepository->findPairs('title');
 
 		$form->addSelect('category', 'Category', $categories);
 		$form->addSubmit('send', 'OK');
@@ -62,8 +51,7 @@ class HomepagePresenter extends Presenter
 	{
 		$values = $form->getValues();
 
-		/** @var CategoryRepository $categoryRepository */
-		$categoryRepository = $this->em->getRepository(Category::class);
+		$categoryRepository = $this->em->getCategoryRepository();
 		/** @var Category $category */
 		$category = $categoryRepository->find($values->category);
 
@@ -117,8 +105,11 @@ class HomepagePresenter extends Presenter
 	{
 		$form = new Form();
 
-		$tags = $this->findPairs(Tag::class, 'title');
-		$books = $this->findPairs(Book::class, 'title');
+		$tagRepository = $this->em->getTagRepository();
+		$bookRepository = $this->em->getBookRepository();
+
+		$tags = $tagRepository->findPairs('title');
+		$books = $bookRepository->findPairs('title');
 
 		$form->addSelect('tag', 'Tag', $tags);
 		$form->addSelect('book', 'Book', $books);
@@ -132,10 +123,8 @@ class HomepagePresenter extends Presenter
 	{
 		$values = $form->getValues();
 
-		/** @var BookRepository $bookRepository */
-		$bookRepository = $this->em->getRepository(Book::class);
-		/** @var TagRepository $tagRepository */
-		$tagRepository = $this->em->getRepository(Tag::class);
+		$bookRepository = $this->em->getBookRepository();
+		$tagRepository = $this->em->getTagRepository();
 
 		/** @var Book $book */
 		$book = $bookRepository->find($values->book);
@@ -146,21 +135,7 @@ class HomepagePresenter extends Presenter
 		$tag->getBooks()->add($book);
 
 		$this->em->flush();
+		$this->redirect('this');
 	}
 
-	private function findPairs($entity, $value, $key = 'id')
-	{
-		// Find pairs
-		$select = [];
-		$categories = $this->em->createQueryBuilder()
-			->select('e.' . $key, 'e.' . $value)
-			->from($entity, 'e')
-			->getQuery()
-			->getArrayResult();
-		foreach ($categories as $category) {
-			$select[$category[$key]] = $category[$value];
-		}
-
-		return $select;
-	}
 }
