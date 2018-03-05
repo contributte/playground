@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "18785798aec497006d6f88947cfa52bc",
+    "content-hash": "ca717fd7f2ffeadbb75c24a094e93514",
     "packages": [
         {
             "name": "contributte/console",
@@ -590,16 +590,16 @@
         },
         {
             "name": "doctrine/orm",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/doctrine2.git",
-                "reference": "374e7ace49d864dad8cddbc55346447c8a6a2083"
+                "reference": "87ee409783a4a322b5597ebaae558661404055a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/374e7ace49d864dad8cddbc55346447c8a6a2083",
-                "reference": "374e7ace49d864dad8cddbc55346447c8a6a2083",
+                "url": "https://api.github.com/repos/doctrine/doctrine2/zipball/87ee409783a4a322b5597ebaae558661404055a7",
+                "reference": "87ee409783a4a322b5597ebaae558661404055a7",
                 "shasum": ""
             },
             "require": {
@@ -668,7 +668,7 @@
                 "database",
                 "orm"
             ],
-            "time": "2017-12-20T00:38:15+00:00"
+            "time": "2018-02-27T07:30:56+00:00"
         },
         {
             "name": "latte/latte",
@@ -1816,12 +1816,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/dbal.git",
-                "reference": "8a92a2f3584aeb8df4b78e263ee951ca3ad933d8"
+                "reference": "730ecc8b2ccd2b680d7667ad60098730eba952cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/dbal/zipball/8a92a2f3584aeb8df4b78e263ee951ca3ad933d8",
-                "reference": "8a92a2f3584aeb8df4b78e263ee951ca3ad933d8",
+                "url": "https://api.github.com/repos/nettrine/dbal/zipball/730ecc8b2ccd2b680d7667ad60098730eba952cb",
+                "reference": "730ecc8b2ccd2b680d7667ad60098730eba952cb",
                 "shasum": ""
             },
             "require": {
@@ -1858,7 +1858,7 @@
                 "doctrine",
                 "nette"
             ],
-            "time": "2018-01-29T14:29:35+00:00"
+            "time": "2018-03-05T07:30:28+00:00"
         },
         {
             "name": "nettrine/orm",
@@ -1866,12 +1866,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nettrine/orm.git",
-                "reference": "c4f16e827d51a3681ae803f062ecee86863389f4"
+                "reference": "9ac70cc975be008e6ebc42b0ce1ff116d119c945"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nettrine/orm/zipball/c4f16e827d51a3681ae803f062ecee86863389f4",
-                "reference": "c4f16e827d51a3681ae803f062ecee86863389f4",
+                "url": "https://api.github.com/repos/nettrine/orm/zipball/9ac70cc975be008e6ebc42b0ce1ff116d119c945",
+                "reference": "9ac70cc975be008e6ebc42b0ce1ff116d119c945",
                 "shasum": ""
             },
             "require": {
@@ -1916,20 +1916,20 @@
                 "nette",
                 "orm"
             ],
-            "time": "2018-02-13T16:34:37+00:00"
+            "time": "2018-03-04T12:47:16+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v4.0.4",
+            "version": "v4.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "36d5b41e7d4e1ccf0370f6babe966c08ef0a1488"
+                "reference": "555c8dbe0ae9e561740451eabdbed2cc554b6a51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/36d5b41e7d4e1ccf0370f6babe966c08ef0a1488",
-                "reference": "36d5b41e7d4e1ccf0370f6babe966c08ef0a1488",
+                "url": "https://api.github.com/repos/symfony/console/zipball/555c8dbe0ae9e561740451eabdbed2cc554b6a51",
+                "reference": "555c8dbe0ae9e561740451eabdbed2cc554b6a51",
                 "shasum": ""
             },
             "require": {
@@ -1984,7 +1984,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-29T09:06:29+00:00"
+            "time": "2018-02-26T15:55:47+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -2047,16 +2047,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.4.11",
+            "version": "v2.4.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "bcb93a9d4347be8779c83b200b64ea6f52d6f9ed"
+                "reference": "4182ce7b92f67002509b7fa2fc34bd84deea0b24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/bcb93a9d4347be8779c83b200b64ea6f52d6f9ed",
-                "reference": "bcb93a9d4347be8779c83b200b64ea6f52d6f9ed",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/4182ce7b92f67002509b7fa2fc34bd84deea0b24",
+                "reference": "4182ce7b92f67002509b7fa2fc34bd84deea0b24",
                 "shasum": ""
             },
             "require": {
@@ -2108,20 +2108,20 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2018-02-01T18:11:38+00:00"
+            "time": "2018-02-28T00:49:47+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nettrine/orm": 20,
-        "contributte/console": 20
+        "contributte/console": 20,
+        "nettrine/orm": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=5.6.0"
+        "php": ">=7.1"
     },
     "platform-dev": []
 }

@@ -33,3 +33,10 @@ dbal:
 orm:
 	# Own em class
 	entityManagerClass: App\Model\Database\EntityManager
+
+orm.annotations:
+	paths:
+		- app/model/Database/Entity
+	ignore: [] # ignored annotations
+	cache: Doctrine\Common\Cache\FilesystemCache
+	cacheDir: '%tempDir%/cache/Doctrine.Annotations'
