@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ba9f8c1bb2a1520de6c0e3192935b4d2",
+    "content-hash": "0e2c6edc2b75e1792aa0b179dd15a872",
     "packages": [
         {
             "name": "apitte/core",
-            "version": "dev-develop",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "893cfe5e1386df4f3a979e4b06193d9fa72b3298"
+                "reference": "568bdc4a2a4d755c824ef824a15cc3949e0f5035"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/893cfe5e1386df4f3a979e4b06193d9fa72b3298",
-                "reference": "893cfe5e1386df4f3a979e4b06193d9fa72b3298",
+                "url": "https://api.github.com/repos/apitte/core/zipball/568bdc4a2a4d755c824ef824a15cc3949e0f5035",
+                "reference": "568bdc4a2a4d755c824ef824a15cc3949e0f5035",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -62,20 +62,20 @@
                 "nette",
                 "rest"
             ],
-            "time": "2018-01-18T10:22:53+00:00"
+            "time": "2018-02-05T14:35:54+00:00"
         },
         {
             "name": "apitte/debug",
-            "version": "dev-develop",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "4e144f6c9b52d796380d515d4b1eb02d46337fee"
+                "reference": "4dbeea25e83e412559bf892c1a8fae5544435afa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/4e144f6c9b52d796380d515d4b1eb02d46337fee",
-                "reference": "4e144f6c9b52d796380d515d4b1eb02d46337fee",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/4dbeea25e83e412559bf892c1a8fae5544435afa",
+                "reference": "4dbeea25e83e412559bf892c1a8fae5544435afa",
                 "shasum": ""
             },
             "require": {
@@ -105,7 +105,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -117,20 +117,20 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2018-01-18T10:22:34+00:00"
+            "time": "2018-02-05T14:40:55+00:00"
         },
         {
             "name": "apitte/fullstack",
-            "version": "dev-develop",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/fullstack.git",
-                "reference": "d970e377aee1f13018934ff27d19480ae2dcecdf"
+                "reference": "c3467b77a85b3469cd061780693395ab74b77922"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/fullstack/zipball/d970e377aee1f13018934ff27d19480ae2dcecdf",
-                "reference": "d970e377aee1f13018934ff27d19480ae2dcecdf",
+                "url": "https://api.github.com/repos/apitte/fullstack/zipball/c3467b77a85b3469cd061780693395ab74b77922",
+                "reference": "c3467b77a85b3469cd061780693395ab74b77922",
                 "shasum": ""
             },
             "require": {
@@ -153,7 +153,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -166,20 +166,20 @@
                 "meta",
                 "rest"
             ],
-            "time": "2018-01-18T10:32:43+00:00"
+            "time": "2018-02-05T15:06:46+00:00"
         },
         {
             "name": "apitte/middlewares",
-            "version": "dev-develop",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "6ee62ff6bee21073fd998a4ae4ed3fb592c55bb7"
+                "reference": "19de45f8abf153a1877e539fadbd4f4f58ff2b4e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/6ee62ff6bee21073fd998a4ae4ed3fb592c55bb7",
-                "reference": "6ee62ff6bee21073fd998a4ae4ed3fb592c55bb7",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/19de45f8abf153a1877e539fadbd4f4f58ff2b4e",
+                "reference": "19de45f8abf153a1877e539fadbd4f4f58ff2b4e",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +209,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -221,20 +221,20 @@
                 "apitte",
                 "middlewares"
             ],
-            "time": "2018-01-18T10:22:23+00:00"
+            "time": "2018-02-05T14:42:28+00:00"
         },
         {
             "name": "apitte/negotiation",
-            "version": "dev-develop",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "e4801012c728c6a2a8336e44034f2646d5841801"
+                "reference": "f292cd19d3d6121dedb0cc2dd735f5e1f633ee15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/e4801012c728c6a2a8336e44034f2646d5841801",
-                "reference": "e4801012c728c6a2a8336e44034f2646d5841801",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/f292cd19d3d6121dedb0cc2dd735f5e1f633ee15",
+                "reference": "f292cd19d3d6121dedb0cc2dd735f5e1f633ee15",
                 "shasum": ""
             },
             "require": {
@@ -262,7 +262,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -274,20 +274,20 @@
                 "negotiation",
                 "view-resolver"
             ],
-            "time": "2018-01-18T10:22:01+00:00"
+            "time": "2018-02-05T14:43:29+00:00"
         },
         {
             "name": "apitte/openapi",
-            "version": "dev-develop",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "5d6cac9a528e88c7e9be573e92174c68820d53f4"
+                "reference": "09d7d535af679ffc10c6727e21b443c7587355a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/5d6cac9a528e88c7e9be573e92174c68820d53f4",
-                "reference": "5d6cac9a528e88c7e9be573e92174c68820d53f4",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/09d7d535af679ffc10c6727e21b443c7587355a3",
+                "reference": "09d7d535af679ffc10c6727e21b443c7587355a3",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -329,7 +329,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2018-01-18T10:21:50+00:00"
+            "time": "2018-02-05T14:45:00+00:00"
         },
         {
             "name": "contributte/di",
@@ -503,16 +503,16 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "v0.3",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "778418955649ec383e2cba24b4dd86deb021a432"
+                "reference": "cd2a907cf4e5791edc148ec5d8fcdd9efd57d5c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/778418955649ec383e2cba24b4dd86deb021a432",
-                "reference": "778418955649ec383e2cba24b4dd86deb021a432",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/cd2a907cf4e5791edc148ec5d8fcdd9efd57d5c1",
+                "reference": "cd2a907cf4e5791edc148ec5d8fcdd9efd57d5c1",
                 "shasum": ""
             },
             "require": {
@@ -520,10 +520,10 @@
                 "php": ">= 5.6"
             },
             "require-dev": {
-                "nette/application": "^2.4.4",
-                "nette/di": "^2.4.9",
-                "nette/http": "^2.4.4",
-                "ninjify/nunjuck": "^0.1.4",
+                "nette/application": "~2.4.11",
+                "nette/di": "~2.4.11",
+                "nette/http": "~2.4.8",
+                "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.4.0"
             },
             "suggest": {
@@ -534,7 +534,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -562,7 +562,7 @@
                 "request",
                 "response"
             ],
-            "time": "2017-11-10T12:11:17+00:00"
+            "time": "2018-04-24T20:31:59+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -903,16 +903,16 @@
         },
         {
             "name": "nette/caching",
-            "version": "v2.5.6",
+            "version": "v2.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/caching.git",
-                "reference": "1231735b5135ca02bd381b70482c052d2a90bdc9"
+                "reference": "7fba7c7ab2585fafb7b31152f2595e1551120555"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/caching/zipball/1231735b5135ca02bd381b70482c052d2a90bdc9",
-                "reference": "1231735b5135ca02bd381b70482c052d2a90bdc9",
+                "url": "https://api.github.com/repos/nette/caching/zipball/7fba7c7ab2585fafb7b31152f2595e1551120555",
+                "reference": "7fba7c7ab2585fafb7b31152f2595e1551120555",
                 "shasum": ""
             },
             "require": {
@@ -968,20 +968,20 @@
                 "nette",
                 "sqlite"
             ],
-            "time": "2017-08-30T12:12:25+00:00"
+            "time": "2018-03-21T11:04:32+00:00"
         },
         {
             "name": "nette/di",
-            "version": "v2.4.10",
+            "version": "v2.4.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "a4b3be935b755f23aebea1ce33d7e3c832cdff98"
+                "reference": "a300c8b8e8549595ab90c04d8ee21b8b2a5a88f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/a4b3be935b755f23aebea1ce33d7e3c832cdff98",
-                "reference": "a4b3be935b755f23aebea1ce33d7e3c832cdff98",
+                "url": "https://api.github.com/repos/nette/di/zipball/a300c8b8e8549595ab90c04d8ee21b8b2a5a88f9",
+                "reference": "a300c8b8e8549595ab90c04d8ee21b8b2a5a88f9",
                 "shasum": ""
             },
             "require": {
@@ -1037,7 +1037,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2017-08-31T22:42:00+00:00"
+            "time": "2018-03-28T23:53:36+00:00"
         },
         {
             "name": "nette/finder",
@@ -1097,16 +1097,16 @@
         },
         {
             "name": "nette/http",
-            "version": "v2.4.7",
+            "version": "v2.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "234d02d2fb6d65b728ddd3816608b47e6a2f21ae"
+                "reference": "98974c30053747b5d16b0b7729c709a2fb594f23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/234d02d2fb6d65b728ddd3816608b47e6a2f21ae",
-                "reference": "234d02d2fb6d65b728ddd3816608b47e6a2f21ae",
+                "url": "https://api.github.com/repos/nette/http/zipball/98974c30053747b5d16b0b7729c709a2fb594f23",
+                "reference": "98974c30053747b5d16b0b7729c709a2fb594f23",
                 "shasum": ""
             },
             "require": {
@@ -1117,7 +1117,7 @@
                 "nette/nette": "<2.2"
             },
             "require-dev": {
-                "nette/di": "^2.4.6 || ~3.0.0",
+                "nette/di": "^2.4.8 || ~3.0.0",
                 "nette/tester": "^2.0",
                 "tracy/tracy": "^2.4"
             },
@@ -1165,7 +1165,7 @@
                 "session",
                 "url"
             ],
-            "time": "2017-08-24T21:04:00+00:00"
+            "time": "2018-03-14T18:55:13+00:00"
         },
         {
             "name": "nette/neon",
@@ -1223,16 +1223,16 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.0.1",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "eb2dbc9c3409e9db40568109ca4994d51373b60c"
+                "reference": "18a26e9c302ce98b7a573fae8c6032a6909339e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/eb2dbc9c3409e9db40568109ca4994d51373b60c",
-                "reference": "eb2dbc9c3409e9db40568109ca4994d51373b60c",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/18a26e9c302ce98b7a573fae8c6032a6909339e5",
+                "reference": "18a26e9c302ce98b7a573fae8c6032a6909339e5",
                 "shasum": ""
             },
             "require": {
@@ -1273,7 +1273,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.1 features.",
+            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.2 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "code",
@@ -1281,7 +1281,7 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2017-07-11T19:07:13+00:00"
+            "time": "2018-03-30T14:01:03+00:00"
         },
         {
             "name": "nette/reflection",
@@ -1349,16 +1349,16 @@
         },
         {
             "name": "nette/robot-loader",
-            "version": "v2.4.3",
+            "version": "v2.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "73149b9724ca24c1215b5d53860b77f113bcf063"
+                "reference": "1f7f8792ce4d94162959e6b766822d6051623bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/73149b9724ca24c1215b5d53860b77f113bcf063",
-                "reference": "73149b9724ca24c1215b5d53860b77f113bcf063",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/1f7f8792ce4d94162959e6b766822d6051623bca",
+                "reference": "1f7f8792ce4d94162959e6b766822d6051623bca",
                 "shasum": ""
             },
             "require": {
@@ -1402,22 +1402,29 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "Nette RobotLoader: comfortable autoloading",
+            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
-            "time": "2017-07-11T00:21:10+00:00"
+            "keywords": [
+                "autoload",
+                "class",
+                "interface",
+                "nette",
+                "trait"
+            ],
+            "time": "2017-08-14T20:23:02+00:00"
         },
         {
             "name": "nette/utils",
-            "version": "v2.4.8",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "f1584033b5af945b470533b466b81a789d532034"
+                "reference": "8a85ce76298c8a8941f912b8fa3ee93ca17d2ebc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/f1584033b5af945b470533b466b81a789d532034",
-                "reference": "f1584033b5af945b470533b466b81a789d532034",
+                "url": "https://api.github.com/repos/nette/utils/zipball/8a85ce76298c8a8941f912b8fa3ee93ca17d2ebc",
+                "reference": "8a85ce76298c8a8941f912b8fa3ee93ca17d2ebc",
                 "shasum": ""
             },
             "require": {
@@ -1441,12 +1448,15 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
                 "classmap": [
                     "src/"
+                ],
+                "files": [
+                    "src/loader.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1483,7 +1493,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2017-08-20T17:32:29+00:00"
+            "time": "2018-02-19T14:42:42+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1537,16 +1547,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.4.10",
+            "version": "v2.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "5b302790edd71924dfe4ec44f499ef61df3f53a2"
+                "reference": "ead5141731a21cfd0710b092351d923549d2b2ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/5b302790edd71924dfe4ec44f499ef61df3f53a2",
-                "reference": "5b302790edd71924dfe4ec44f499ef61df3f53a2",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/ead5141731a21cfd0710b092351d923549d2b2ad",
+                "reference": "ead5141731a21cfd0710b092351d923549d2b2ad",
                 "shasum": ""
             },
             "require": {
@@ -1577,9 +1587,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -1600,7 +1608,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2017-10-04T18:43:42+00:00"
+            "time": "2018-03-23T17:15:58+00:00"
         }
     ],
     "packages-dev": [],

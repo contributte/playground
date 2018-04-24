@@ -43,7 +43,7 @@ final class UsersController extends BaseV1Controller
 	public function create(ApiRequest $request)
 	{
 		return ['data' => [
-			'raw' => (string) $request->getBodyClone(),
+			'raw' => $request->getContentsCopy(),
 			'parsed' => $request->getParsedBody(),
 			'jsonbody' => $request->getJsonBody(),
 		]];
