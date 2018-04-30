@@ -7,6 +7,10 @@
 				<th>Title</th>
 				<th>Category</th>
 				<th>Tags</th>
+				<th>Read</th>
+				<th>Created</th>
+				<th>Updated</th>
+				<th></th>
 			</tr>
 			{foreach $books as $book}
 				<tr>
@@ -17,6 +21,15 @@
 						{foreach $book->getTags() as $tag}
 							<a href="#">{$tag->getTitle()}</a>
 						{/foreach}
+					</td>
+					<td>{$book->isAlreadyRead() ? 'Yes' : 'No'}</td>
+					<td>{$book->getCreatedAt()}</td>
+					<td>{$book->getUpdatedAt()}</td>
+					<td>
+                        {if !$book->isAlreadyRead()}
+						    <a n:href="Homepage:readBook $book->getId()">[read]</a>
+                        {/if}
+						<a n:href="Homepage:deleteBook $book->getId()">[delete]</a>
 					</td>
 				</tr>
 			{/foreach}

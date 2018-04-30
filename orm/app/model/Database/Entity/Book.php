@@ -1,14 +1,17 @@
-<?php declare(strict_types = 1);
+<?php declare(strict_types=1);
 
 namespace App\Model\Database\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Mapping as ORM;
+use LogicException;
 use Nettrine\ORM\Entity\Attributes\Id;
 
 /**
  * @ORM\Entity(repositoryClass="App\Model\Database\Repository\BookRepository")
+ * @ORM\HasLifecycleCallbacks
  */
 class Book extends Entity
 {
@@ -20,6 +23,24 @@ class Book extends Entity
 	 * @var string
 	 */
 	private $title;
+
+	/**
+	 * @ORM\Column(type="boolean")
+	 * @var bool
+	 */
+	private $alreadyRead = FALSE;
+
+	/**
+	 * @ORM\Column(type="string")
+	 * @var string
+	 */
+	private $createdAt;
+
+	/**
+	 * @ORM\Column(type="string", nullable=true)
+	 * @var string
+	 */
+	private $updatedAt;
 
 	/**
 	 * @var Category
@@ -59,6 +80,22 @@ class Book extends Entity
 	}
 
 	/**
+	 * @return bool
+	 */
+	public function isAlreadyRead()
+	{
+		return $this->alreadyRead;
+	}
+
+	/**
+	 * @param bool $read
+	 */
+	public function setAlreadyRead($read)
+	{
+		$this->alreadyRead = $read;
+	}
+
+	/**
 	 * @return Category
 	 */
 	public function getCategory()
@@ -80,6 +117,69 @@ class Book extends Entity
 	public function getTags()
 	{
 		return $this->tags;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getCreatedAt()
+	{
+		return $this->createdAt;
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getUpdatedAt()
+	{
+		return $this->updatedAt;
+	}
+
+	/**
+	 * @ORM\PrePersist
+	 *
+	 */
+	public function onPrePersist()
+	{
+		$this->createdAt = $this->getCurrentDate();
+
+		if ($this->id !== NULL) {
+			throw new LogicException("Entity id field should be null during prePersistEvent");
+		}
+	}
+
+	/**
+	 * @ORM\PostPersist()
+	 * @param LifecycleEventArgs $args
+	 */
+	public function onPostPersist(LifecycleEventArgs $args)
+	{
+		// $args->getEntity() and $this are pointers to the same objects
+		if ($args->getEntity()->getId() === NULL) {
+			throw new LogicException("Entity id field should be already filled during prePersistEvent");
+		}
+	}
+
+	/**
+	 * @ORM\PreUpdate()
+	 */
+	public function onPreUpdate()
+	{
+		$this->updatedAt = $this->getCurrentDate();
+	}
+
+	/**
+	 * @ORM\PreRemove()
+	 * @param LifecycleEventArgs $args
+	 */
+	public function onPreRemove(LifecycleEventArgs $args)
+	{
+		/*
+		 * Note - remove will call SQL delete command that removes the record from DB
+		 * 		- event will be fired when user clicks [delete] link
+		 * 		- we could possibly prevent deleting in this event by throwing exception etc.
+		 * 		- we can also use $args->getEntityManager()
+		 */
 	}
 
 }

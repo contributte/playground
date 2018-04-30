@@ -47,6 +47,34 @@ class HomepagePresenter extends Presenter
 		return $form;
 	}
 
+	public function actionReadBook($id)
+	{
+		$bookRepository = $this->em->getBookRepository();
+
+		$book = $bookRepository->getById($id);
+		if ($book) {
+			/** @var Book $book */
+			$book->setAlreadyRead(TRUE);
+			$this->em->flush($book);
+		}
+
+		$this->redirect('Homepage:');
+	}
+
+	public function actionDeleteBook($id)
+	{
+		$bookRepository = $this->em->getBookRepository();
+
+		$book = $bookRepository->getById($id);
+
+		if ($book) {
+			$this->em->remove($book);
+			$this->em->flush();
+		}
+
+		$this->redirect('Homepage:');
+	}
+
 	public function processBookForm(Form $form)
 	{
 		$values = $form->getValues();
