@@ -7,6 +7,9 @@ session:
 
 services:
 	router: App\Router\RouterFactory::createRouter
+	subscriber.library_limiter:
+		class: App\Model\Service\LibraryLimiter
+		tags: [nettrine.subscriber]
 
 extensions:
 	# Console
