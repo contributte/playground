@@ -14,7 +14,7 @@ the second one is Nette based projects.
 | Project | Packages | Description |
 |---------|----------|-------------|
 | [Micro](https://github.com/apitte/playground/tree/master/apitte/micro) | core | Micro application with direct dispatching. |
-| [Simple](https://github.com/apitte/playground/tree/master/apitte/simple) | core, debug | Simple middleware application. |
+| [Simple](https://github.com/apitte/playground/tree/master/apitte/simple) | core, middlewares, debug | Simple middleware application. |
 | [Fullstack](https://github.com/apitte/playground/tree/master/apitte/fullstack) | core, middlewares, negotiation, debug, openapi | Fullstack application with example of all plugins |
 
 ### Nette
