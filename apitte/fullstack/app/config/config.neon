@@ -3,12 +3,24 @@ extensions:
 	resource: Contributte\DI\Extension\ResourceExtension
 	api: Apitte\Core\DI\ApiExtension
 
+middlewares:
+	middlewares:
+		- Contributte\Middlewares\TracyMiddleware
+		- Contributte\Middlewares\AutoBasePathMiddleware
+		- App\Middlewares\ApiKeyAuthenticatorMiddleware
+		- Apitte\Middlewares\ApiMiddleware
+
 resource:
 	resources:
 		App\Controllers\:
 			paths: [%appDir%/controllers]
 			decorator:
 				inject: true
+		App\Middlewares\:
+			paths: [%appDir%/middlewares]
+			decorator:
+				inject: true
+
 api:
 	plugins:
 		Apitte\Core\DI\Plugin\CoreDecoratorPlugin:
