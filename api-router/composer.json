@@ -1,0 +1,38 @@
+{
+	"name": "ublaboo/api-router-project",
+	"type": "project",
+	"description": "Example starter project for ublaboo/api-router",
+	"keywords": ["rest", "api", "routes", "nette", "router", "restapi", "restrouter", "routing", "route", "starter", "project", "example"],
+	"homepage": "https://github.com/ublaboo/api-router-project",
+	"license": ["MIT"],
+	"support": {
+		"issues": "https://github.com/ublaboo/api-router-project/issues"
+	},
+	"authors": [
+		{
+			"name": "Pavel Janda",
+			"homepage": "http://paveljanda.com"
+		}
+	],
+	"require": {
+		"php": ">= 7.1",
+		"nette/application": "^2.4",
+		"nette/bootstrap": "^2.4.2",
+		"nette/caching": "^2.5",
+		"nette/di": "^2.4",
+		"nette/http": "^2.4",
+		"nette/security": "^2.4",
+		"nette/utils": "^2.4",
+		"tracy/tracy": "^2.4",
+		"ublaboo/api-router": "~2.0.0"
+	},
+	"require-dev": {
+		"nette/tester": "^1.6"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app"
+		}
+	},
+	"minimum-stability": "stable"
+}

@@ -1,0 +1,26 @@
+extensions:
+	apiRouter: Ublaboo\ApiRouter\DI\ApiRouterExtension
+
+
+parameters:
+
+
+application:
+	errorPresenter: Error
+	scanDirs: false
+	mapping:
+		*: App\Controllers\*Controller
+
+
+session:
+	expiration: 14 days
+
+
+services:
+	- App\Http\ApiResponseFormatter
+	- App\Routing\RouterFactory
+	router: @App\Routing\RouterFactory::create
+
+	# Api endpoints
+	#
+	- App\Controllers\LoginController
