@@ -1,0 +1,8 @@
+application:
+	scanDirs: false
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+services:
+	router: App\Router\RouterFactory::createRouter

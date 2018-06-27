@@ -1,0 +1,14 @@
+extensions:
+	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+
+	# register all console bridges
+	console.extra: Contributte\Console\Extra\DI\ConsoleBridgesExtension
+
+	# eventually register only bridges of your choice
+	#console.cache: Contributte\Console\Extra\DI\CacheConsoleExtension
+	#console.caching: Contributte\Console\Extra\DI\CachingConsoleExtension
+	#console.di: Contributte\Console\Extra\DI\DIConsoleExtension
+	#console.latte: Contributte\Console\Extra\DI\LatteConsoleExtension
+	#console.router: Contributte\Console\Extra\DI\RouterConsoleExtension
+	#console.security: Contributte\Console\Extra\DI\SecurityConsoleExtension
+	#console.utils: Contributte\Console\Extra\DI\UtilsConsoleExtension
