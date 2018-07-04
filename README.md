@@ -8,8 +8,9 @@
 
 | Project | Packages | Description |
 |---------|----------|-------------|
-| [API](https://github.com/contributte/playground/tree/master/api) | api, middlewares, psr7-http-message | Tiny middlewares API application with PSR-7. |
-| [API - content negotiation](https://github.com/contributte/playground/tree/master/api-negotiation) | api, middlewares, psr7-http-message with power of content negotiation | Medium middlewares API application with PSR-7 and Content Negotiation.|
+| [API / Apitte](https://github.com/apitte/playground/tree/master) | api, middlewares, psr7-http-message | Tiny middlewares API application with PSR-7. |
+| [ApiRouter](https://github.com/contributte/playground/tree/master/api-router) | api-router | Starter project for ApiRouter. |
+| [Console + Console Extra](https://github.com/contributte/playground/tree/master/console-extra) | console,console-extra | Example of Console Extra with all commands. |
 
 ## Maintainers
 
