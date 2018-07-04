@@ -1,23 +1,24 @@
 {
   "require": {
-    "php": ">=5.6.0",
-    "nette/application": "~2.4.9",
-    "nette/bootstrap": "~2.4.5",
-    "nette/caching": "~2.5.6",
-    "nette/di": "~2.4.10",
-    "nette/http": "~2.4.7",
-    "nette/robot-loader": "~2.4.3",
-    "latte/latte": "~2.4.6",
-    "tracy/tracy": "~2.4.10",
-    "apitte/core": "^0.2.0",
-    "apitte/debug": "^0.2.0",
-    "apitte/openapi": "^0.2.0",
-    "apitte/presenter": "^0.2.0",
-    "contributte/di": "^0.2.1"
+    "php": ">=7.1",
+    "contributte/application": "^0.3.0",
+    "contributte/bootstrap": "^0.3.0",
+    "contributte/cache": "^0.1.0",
+    "contributte/di": "^0.2.2",
+    "contributte/http": "^0.1.0",
+    "contributte/latte": "^0.3.0",
+    "contributte/tracy": "^0.2.0",
+
+    "nette/robot-loader": "~2.4.4",
+
+    "apitte/core": "^0.3.0",
+    "apitte/debug": "^0.3.0",
+    "apitte/openapi": "^0.3.0",
+    "apitte/presenter": "^0.3.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
-    "webserver": "php -S 0.0.0.0:8000 -t www index.php"
+    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
   }
 }

@@ -1,17 +1,19 @@
 {
   "require": {
-    "php": ">= 5.6",
-    "nette/bootstrap": "^2.4.5",
-    "nette/http": "^2.4.7",
-    "nette/robot-loader": "^2.4.3",
-    "tracy/tracy": "^2.4.10",
-    "apitte/core": "^0.2.0",
-    "apitte/middlewares": "^0.2.0",
-    "apitte/debug": "^0.2.0"
+    "php": ">= 7.1",
+    "contributte/bootstrap": "^0.3.0",
+    "contributte/http": "^0.1.0",
+    "contributte/tracy": "^0.2.0",
+
+    "apitte/core": "^0.3.0",
+    "apitte/middlewares": "^0.3.0",
+    "apitte/debug": "^0.3.0",
+
+    "nette/robot-loader": "^2.4.3"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "scripts": {
-    "webserver": "php -S 0.0.0.0:8000 -t www index.php"
+    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
   }
 }
