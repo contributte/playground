@@ -22,6 +22,7 @@ resource:
 				inject: true
 
 api:
+	debug: %debugMode%
 	plugins:
 		Apitte\Core\DI\Plugin\CoreDecoratorPlugin:
 		Apitte\Core\DI\Plugin\CoreMappingPlugin:

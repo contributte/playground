@@ -3,6 +3,7 @@ extensions:
 	api: Apitte\Core\DI\ApiExtension
 
 api:
+	debug: %debugMode%
 	plugins:
 		Apitte\Debug\DI\DebugPlugin:
 		Apitte\Middlewares\DI\MiddlewaresPlugin:
