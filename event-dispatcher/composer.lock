@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e18cdb9cb183117c10d73afa1c23848f",
+    "content-hash": "1621e47a41cc25c6996cc65342866be4",
     "packages": [
         {
             "name": "contributte/application",
@@ -122,52 +122,37 @@
         },
         {
             "name": "contributte/cache",
-            "version": "v0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/cache.git",
-                "reference": "335610b243dc80758dbb4c219dd33a4236d98ef2"
+                "reference": "aa3851c30dc78b8073078534cb873033caca1ef5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/cache/zipball/335610b243dc80758dbb4c219dd33a4236d98ef2",
-                "reference": "335610b243dc80758dbb4c219dd33a4236d98ef2",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/aa3851c30dc78b8073078534cb873033caca1ef5",
+                "reference": "aa3851c30dc78b8073078534cb873033caca1ef5",
                 "shasum": ""
             },
             "require": {
-                "nette/caching": "^2.5.2",
-                "php": ">= 5.6"
+                "nette/caching": "~2.5.8",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13"
             },
             "require-dev": {
-                "nette/di": "^2.4.5",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.3.3"
+                "nette/di": "~2.4.13",
+                "ninjify/nunjuck": "~0.2.0",
+                "ninjify/qa": "~0.8.0"
             },
             "suggest": {
                 "nette/di": "to use CacheFactoryExtension[CompilerExtension]"
             },
             "type": "library",
             "extra": {
-                "ninjify": {
-                    "qa": {
-                        "codesniffer": {
-                            "ruleset": "nette",
-                            "folders": [
-                                "src"
-                            ]
-                        },
-                        "codefixer": {
-                            "ruleset": "nette",
-                            "folders": [
-                                "src"
-                            ]
-                        },
-                        "linter": {
-                            "folders": [
-                                "src"
-                            ]
-                        }
-                    }
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -181,8 +166,8 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Sulc",
-                    "homepage": "https://jfx.cz"
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
                 }
             ],
             "description": "Extra contrib to nette/cache",
@@ -192,38 +177,50 @@
                 "nette",
                 "provider"
             ],
-            "time": "2017-01-06T20:40:14+00:00"
+            "time": "2018-07-07T09:44:38+00:00"
         },
         {
             "name": "contributte/di",
-            "version": "v0.2.2",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "c114b12f6ed9b868a77b1631fb97c6b5ecbad360"
+                "reference": "71321f48155d6fa86ebf4cc497f87ec995010dfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/c114b12f6ed9b868a77b1631fb97c6b5ecbad360",
-                "reference": "c114b12f6ed9b868a77b1631fb97c6b5ecbad360",
+                "url": "https://api.github.com/repos/contributte/di/zipball/71321f48155d6fa86ebf4cc497f87ec995010dfe",
+                "reference": "71321f48155d6fa86ebf4cc497f87ec995010dfe",
                 "shasum": ""
             },
             "require": {
-                "nette/di": "^2.4.10",
-                "nette/utils": "^2.4.8",
-                "php": ">= 5.6"
+                "nette/di": "~2.4.13",
+                "nette/utils": "~2.5.2",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/caching": "<2.5.8",
+                "nette/finder": "<2.4.0",
+                "nette/reflection": "<2.4.2",
+                "nette/robot-loader": "<2.4.4"
             },
             "require-dev": {
-                "nette/reflection": "^2.4.2",
-                "nette/robot-loader": "^2.4.3",
+                "nette/bootstrap": "~2.4.6",
+                "nette/reflection": "~2.4.2",
+                "nette/robot-loader": "~2.4.4|~3.0.4",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/reflection": "to use AutoloadExtension[CompilerExtension]",
                 "nette/robot-loader": "to use AutoloadExtension[CompilerExtension]"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.4.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Contributte\\DI\\": "src"
@@ -246,25 +243,25 @@
                 "inject",
                 "nette"
             ],
-            "time": "2017-11-21T16:32:18+00:00"
+            "time": "2018-07-19T09:38:18+00:00"
         },
         {
             "name": "contributte/event-dispatcher",
-            "version": "v0.3.1",
+            "version": "v0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/event-dispatcher.git",
-                "reference": "9ef10aeca9932e72f5ada1296f265cadb333f189"
+                "reference": "81c6f44281e45f8a31c9a49e108c9349e7c655ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/9ef10aeca9932e72f5ada1296f265cadb333f189",
-                "reference": "9ef10aeca9932e72f5ada1296f265cadb333f189",
+                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/81c6f44281e45f8a31c9a49e108c9349e7c655ae",
+                "reference": "81c6f44281e45f8a31c9a49e108c9349e7c655ae",
                 "shasum": ""
             },
             "require": {
                 "php": ">= 5.6",
-                "symfony/event-dispatcher": "^3.2.0"
+                "symfony/event-dispatcher": "^3.2.0 || ^4.0.0"
             },
             "require-dev": {
                 "nette/di": "^2.4.9",
@@ -299,7 +296,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2017-10-09T14:39:29+00:00"
+            "time": "2017-12-15T16:12:43+00:00"
         },
         {
             "name": "contributte/event-dispatcher-extra",
@@ -374,55 +371,39 @@
         },
         {
             "name": "contributte/http",
-            "version": "v0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/http.git",
-                "reference": "561128953c503e3472617878def0a2e2714de035"
+                "reference": "cd283fe4d32fc5bd3f3e7cd2506cd32cf321bb01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/http/zipball/561128953c503e3472617878def0a2e2714de035",
-                "reference": "561128953c503e3472617878def0a2e2714de035",
+                "url": "https://api.github.com/repos/contributte/http/zipball/cd283fe4d32fc5bd3f3e7cd2506cd32cf321bb01",
+                "reference": "cd283fe4d32fc5bd3f3e7cd2506cd32cf321bb01",
                 "shasum": ""
             },
             "require": {
-                "nette/http": "^2.4.3",
-                "php": ">= 5.6"
+                "nette/http": "~2.4.9",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/di": "^2.4.5",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.3.3"
+                "nette/di": "~2.4.13",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0",
+                "tracy/tracy": "~2.5.1"
             },
             "suggest": {
-                "nette/di": "to use CurlExtension or SapiRequestExtesion [CompilerExtension]"
+                "nette/di": "to use CompilerExtensions"
             },
             "type": "library",
             "extra": {
-                "ninjify": {
-                    "qa": {
-                        "codesniffer": {
-                            "ruleset": "nette",
-                            "folders": [
-                                "src",
-                                "tests"
-                            ]
-                        },
-                        "codefixer": {
-                            "ruleset": "nette",
-                            "folders": [
-                                "src",
-                                "tests"
-                            ]
-                        },
-                        "linter": {
-                            "folders": [
-                                "src",
-                                "tests"
-                            ]
-                        }
-                    }
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -437,17 +418,20 @@
             "authors": [
                 {
                     "name": "Milan Felix Sulc",
-                    "homepage": "https://jfx.cz"
+                    "homepage": "https://f3l1x.io"
                 }
             ],
             "description": "Extra contrib to nette/http",
             "homepage": "https://github.com/contributte/http",
             "keywords": [
+                "auth",
+                "curl",
                 "http",
                 "nette",
-                "request"
+                "request",
+                "response"
             ],
-            "time": "2017-01-06T20:34:09+00:00"
+            "time": "2018-07-08T19:12:58+00:00"
         },
         {
             "name": "contributte/latte",
@@ -505,17 +489,74 @@
             "time": "2018-06-21T10:51:40+00:00"
         },
         {
-            "name": "contributte/tracy",
+            "name": "contributte/security",
             "version": "v0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/contributte/tracy.git",
-                "reference": "58de9b352d916c7bcf6cca9513638ea87316e211"
+                "url": "https://github.com/contributte/security.git",
+                "reference": "1f799e701509b5bee51560800f8cf93a693578d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/58de9b352d916c7bcf6cca9513638ea87316e211",
-                "reference": "58de9b352d916c7bcf6cca9513638ea87316e211",
+                "url": "https://api.github.com/repos/contributte/security/zipball/1f799e701509b5bee51560800f8cf93a693578d9",
+                "reference": "1f799e701509b5bee51560800f8cf93a693578d9",
+                "shasum": ""
+            },
+            "require": {
+                "nette/security": "~2.4.3",
+                "php": ">= 7.1"
+            },
+            "require-dev": {
+                "nette/di": "^2.4.11",
+                "nette/http": "^2.4.8",
+                "nette/utils": "^2.5.1",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0",
+                "tracy/tracy": "^2.4.9"
+            },
+            "suggest": {
+                "nette/di": "to use SecurityExtension [CompilerExtension]"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Contributte\\Security\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milan Felix Sulc",
+                    "homepage": "https://f3l1x.io"
+                }
+            ],
+            "description": "Extra contrib to nette/security",
+            "homepage": "https://github.com/contributte/security",
+            "keywords": [
+                "Authentication",
+                "acl",
+                "authorization",
+                "nette",
+                "privilege",
+                "security"
+            ],
+            "time": "2018-05-01T07:39:39+00:00"
+        },
+        {
+            "name": "contributte/tracy",
+            "version": "v0.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/contributte/tracy.git",
+                "reference": "ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c",
+                "reference": "ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c",
                 "shasum": ""
             },
             "require": {
@@ -523,18 +564,22 @@
                 "tracy/tracy": "~2.4.15 || ~2.5.0"
             },
             "conflict": {
-                "nette/di": "<2.4.12",
+                "nette/application": "<2.4.12",
+                "nette/di": "<2.4.13",
+                "nette/http": "<2.4.9",
                 "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/di": "~2.4.12",
+                "nette/application": "~2.4.12",
+                "nette/di": "~2.4.13",
+                "nette/http": "~2.4.9",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -550,6 +595,10 @@
                 {
                     "name": "Milan Felix Šulc",
                     "homepage": "https://f3l1x.io"
+                },
+                {
+                    "name": "Marek Bartoš",
+                    "homepage": "https://marek-bartos.cz"
                 }
             ],
             "description": "Tuned Tracy Bars/Panels/BlueScreens for easy-developing",
@@ -557,11 +606,12 @@
             "keywords": [
                 "bluescreen",
                 "develop",
+                "navigation",
                 "nette",
                 "profile",
                 "tracy"
             ],
-            "time": "2018-06-20T14:55:41+00:00"
+            "time": "2018-07-28T20:13:59+00:00"
         },
         {
             "name": "contributte/utils",
@@ -1589,30 +1639,30 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.4.13",
+            "version": "v4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "fdd5abcebd1061ec647089c6c41a07ed60af09f8"
+                "reference": "00d64638e4f0703a00ab7fc2c8ae5f75f3b4020f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/fdd5abcebd1061ec647089c6c41a07ed60af09f8",
-                "reference": "fdd5abcebd1061ec647089c6c41a07ed60af09f8",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/00d64638e4f0703a00ab7fc2c8ae5f75f3b4020f",
+                "reference": "00d64638e4f0703a00ab7fc2c8ae5f75f3b4020f",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": "^7.1.3"
             },
             "conflict": {
-                "symfony/dependency-injection": "<3.3"
+                "symfony/dependency-injection": "<3.4"
             },
             "require-dev": {
                 "psr/log": "~1.0",
-                "symfony/config": "~2.8|~3.0|~4.0",
-                "symfony/dependency-injection": "~3.3|~4.0",
-                "symfony/expression-language": "~2.8|~3.0|~4.0",
-                "symfony/stopwatch": "~2.8|~3.0|~4.0"
+                "symfony/config": "~3.4|~4.0",
+                "symfony/dependency-injection": "~3.4|~4.0",
+                "symfony/expression-language": "~3.4|~4.0",
+                "symfony/stopwatch": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/dependency-injection": "",
@@ -1621,7 +1671,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1648,7 +1698,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2018-04-06T07:35:25+00:00"
+            "time": "2018-07-10T11:02:47+00:00"
         },
         {
             "name": "tracy/tracy",
