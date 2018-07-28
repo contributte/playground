@@ -1,0 +1,5 @@
+extensions:
+	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+
+services:
+	- App\Commands\ExampleCommand
