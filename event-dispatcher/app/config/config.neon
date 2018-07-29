@@ -1,0 +1,12 @@
+application:
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+services:
+	router: App\Router\RouterFactory::createRouter
+	- App\Events\ExampleSubscriber
+
+extensions:
+	events: Contributte\EventDispatcher\DI\EventDispatcherExtension
+	events.application: Contributte\Events\Extra\DI\EventApplicationBridgeExtension
+	events.security: Contributte\Events\Extra\DI\EventSecurityBridgeExtension
