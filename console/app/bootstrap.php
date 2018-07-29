@@ -6,7 +6,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new ExtraConfigurator();
 
-//$configurator->setDebugMode('23.75.345.200'); // enable for your remote IP
+$configurator->setDebugMode(true);
 $configurator->enableTracy(__DIR__ . '/../log');
 
 $configurator->setTimeZone('Europe/Prague');
@@ -18,6 +18,4 @@ if (PHP_SAPI === 'cli') {
 	$configurator->addConfig(__DIR__ . '/config/config.console.neon');
 }
 
-$container = $configurator->createContainer();
-
-return $container;
+return $configurator->createContainer();
