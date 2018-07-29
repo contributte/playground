@@ -14,6 +14,7 @@
 | [Datagrid](https://github.com/contributte/playground/tree/master/datagrid) | datagrid | Dockerized example od our datagrid. |
 | [Event Dispatcher](https://github.com/contributte/playground/tree/master/event-dispatcher) | event-dispatcher, event-dispatcher-extra | Example of dispatching and subscribing events. |
 | [Live Form Validation](https://github.com/contributte/playground/tree/master/live-form-validation) | live-form-validation | Example of live form validation. |
+| [Mailing](https://github.com/contributte/playground/tree/master/mailing) | mailing | Example of contributte/mailing usage. |
 | [ReCaptcha](https://github.com/contributte/playground/tree/master/reCAPTCHA) | recaptcha | Example of Google reCaptcha. |
 
 ## Maintainers
