@@ -13,6 +13,7 @@
 | [Console + Console Extra](https://github.com/contributte/playground/tree/master/console-extra) | console,console-extra | Example of Console Extra with all commands. |
 | [Datagrid](https://github.com/contributte/playground/tree/master/datagrid) | datagrid | Dockerized example od our datagrid. |
 | [Event Dispatcher](https://github.com/contributte/playground/tree/master/event-dispatcher) | event-dispatcher, event-dispatcher-extra | Example of dispatching and subscribing events. |
+| [ReCaptcha](https://github.com/contributte/playground/tree/master/reCAPTCHA) | recaptcha | Example of Google reCaptcha. |
 
 ## Maintainers
 
