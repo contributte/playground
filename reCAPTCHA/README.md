@@ -5,8 +5,8 @@ This is example of Google reCAPTCHA for Nette Framework.
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd reCAPTCHA
+git clone git@github.com:contributte/playground.git
+cd playground/reCAPTCHA
 composer install
 ```
 
@@ -15,4 +15,6 @@ And add them in `app/config/config.neon` in `recaptcha` section.
 
 ## See
 
-- `app/PresentersHomepagePresenter` for how is recaptcha form created.
+- `app/Presenters/HomepagePresenter` for how is recaptcha form created.
+- `app/Presenters/InvisiblePresenter` for how is invisible recaptcha form created.
+- `app/Presenters/HiddenElementPresenter` for how to recaptcha form toggle.
