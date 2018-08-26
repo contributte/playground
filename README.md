@@ -17,6 +17,7 @@
 | [Mailing](https://github.com/contributte/playground/tree/master/mailing) | mailing | Example of contributte/mailing usage. |
 | [Neonizer](https://github.com/contributte/playground/tree/master/neonizer) | neonizer | Example of contributte/neonizer usage. |
 | [ReCaptcha](https://github.com/contributte/playground/tree/master/reCAPTCHA) | recaptcha | Example of Google reCaptcha. |
+| [ThePay](https://github.com/contributte/playground/tree/master/thepay) | thepay, thepay-api | Example of contributte/thepay usage. |
 
 ## Maintainers
 
