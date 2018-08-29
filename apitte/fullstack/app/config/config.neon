@@ -7,7 +7,7 @@ middlewares:
 	middlewares:
 		- Contributte\Middlewares\TracyMiddleware
 		- Contributte\Middlewares\AutoBasePathMiddleware
-		- App\Middlewares\ApiKeyAuthenticatorMiddleware
+		- App\Middlewares\ApiKeyAuthenticationMiddleware
 		- Apitte\Middlewares\ApiMiddleware
 
 resource:
