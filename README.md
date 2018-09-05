@@ -43,7 +43,7 @@ the second one is Nette based projects.
         <a href="https://github.com/benijo">Josef Benjač</a>
       </td>
     </tr>
-  <tbody>
+  </tbody>
 </table>
 
 ---
