@@ -1,16 +1,16 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
 use Apitte\Core\Annotation\Controller\GroupId;
 use Apitte\Core\Annotation\Controller\GroupPath;
-use Apitte\Core\UI\Controller\AbstractController;
+use Apitte\Core\UI\Controller\IController;
 
 /**
  * @GroupPath("/api")
  * @GroupId("api")
  */
-abstract class BaseController extends AbstractController
+abstract class BaseController implements IController
 {
 
 }

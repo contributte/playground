@@ -1,8 +1,10 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers\Entity;
 
-final class FilterTasks extends BaseEntity
+use Apitte\Core\Mapping\Request\BasicEntity;
+
+final class FilterTasks extends BasicEntity
 {
 
 	/** @var int */
@@ -12,16 +14,17 @@ final class FilterTasks extends BaseEntity
 	public $userId;
 
 	/**
-	 * @param string $property
-	 * @param mixed $value
+	 * @param mixed  $value
 	 * @return mixed
 	 */
-	protected function normalize($property, $value)
+	protected function normalize(string $property, $value)
 	{
 		if ($property === 'taskId') {
-			return intval($value);
-		} else if ($property === 'userId') {
-			return intval($value);
+			return (int) $value;
+		}
+
+		if ($property === 'userId') {
+			return (int) $value;
 		}
 
 		return parent::normalize($property, $value);

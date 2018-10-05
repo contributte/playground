@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -20,7 +20,7 @@ final class HelloController extends BaseV1Controller
 	 * @Path("/")
 	 * @Method("GET")
 	 */
-	public function index(ApiRequest $request, ApiResponse $response)
+	public function index(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response->writeJsonBody(['hello' => ['world']]);
 	}
@@ -29,7 +29,7 @@ final class HelloController extends BaseV1Controller
 	 * @Path("/pure")
 	 * @Method("GET")
 	 */
-	public function pure()
+	public function pure(): array
 	{
 		return ['hello' => 'apitte'];
 	}
@@ -38,7 +38,7 @@ final class HelloController extends BaseV1Controller
 	 * @Path("/scalar")
 	 * @Method("GET")
 	 */
-	public function scalar()
+	public function scalar(): string
 	{
 		return 'OK';
 	}

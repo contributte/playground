@@ -4,37 +4,42 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1f83d99dc424b59c476d62f0cd41d6f",
+    "content-hash": "03e9a0c39e7c14aeaa656522d8c8e53f",
     "packages": [
         {
             "name": "apitte/core",
-            "version": "v0.3",
+            "version": "v0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "607dc553858cf97d7e803c91932ca5796e0fb3c3"
+                "reference": "f68b00efa627b43942309137d42fe2f67ed361c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/607dc553858cf97d7e803c91932ca5796e0fb3c3",
-                "reference": "607dc553858cf97d7e803c91932ca5796e0fb3c3",
+                "url": "https://api.github.com/repos/apitte/core/zipball/f68b00efa627b43942309137d42fe2f67ed361c3",
+                "reference": "f68b00efa627b43942309137d42fe2f67ed361c3",
                 "shasum": ""
             },
             "require": {
-                "contributte/phpdoc": "^0.1.0",
-                "contributte/psr7-http-message": "^0.3.0",
-                "php": ">= 5.6"
+                "contributte/phpdoc": "^0.2",
+                "contributte/psr7-http-message": "^0.5.0",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "< 2.4.13",
+                "nette/utils": "< 2.5.2"
             },
             "require-dev": {
-                "mockery/mockery": "^0.9.9",
-                "nette/di": "~2.4.12",
+                "mockery/mockery": "^1.1.0",
+                "nette/di": "~2.4.13",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "ninjify/qa": "^0.8.0",
+                "symfony/validator": "^4.1.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -48,7 +53,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 }
             ],
@@ -62,7 +67,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2018-07-04T08:40:21+00:00"
+            "time": "2018-10-04T11:17:49+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -120,33 +125,42 @@
         },
         {
             "name": "contributte/phpdoc",
-            "version": "v0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/phpdoc.git",
-                "reference": "506cef70e91612ead5df8eabf4fee3b4ac7a68cd"
+                "reference": "2305930993f3f880c518ffcaad2b7b49345eb411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/phpdoc/zipball/506cef70e91612ead5df8eabf4fee3b4ac7a68cd",
-                "reference": "506cef70e91612ead5df8eabf4fee3b4ac7a68cd",
+                "url": "https://api.github.com/repos/contributte/phpdoc/zipball/2305930993f3f880c518ffcaad2b7b49345eb411",
+                "reference": "2305930993f3f880c518ffcaad2b7b49345eb411",
                 "shasum": ""
             },
             "require": {
-                "doctrine/annotations": "^1.4.0",
-                "doctrine/cache": "^1.6.2",
-                "nette/reflection": "^2.3.2",
-                "php": ">= 5.6"
+                "doctrine/annotations": "^1.6.0",
+                "doctrine/cache": "^1.7.1",
+                "nette/reflection": "~2.4.2",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/di": "^2.4.9",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.4.0"
+                "nette/di": "~2.4.13",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/di": "to register Nette extensions [PhpDocExtension]"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Contributte\\PhpDoc\\": "src"
@@ -170,32 +184,39 @@
                 "phpdoc",
                 "reflection"
             ],
-            "time": "2017-08-11T11:49:35+00:00"
+            "time": "2018-07-26T16:34:46+00:00"
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "v0.3.1",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "cd2a907cf4e5791edc148ec5d8fcdd9efd57d5c1"
+                "reference": "ac8f62f1a729381ba07e5258a4c2e3fddcf69982"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/cd2a907cf4e5791edc148ec5d8fcdd9efd57d5c1",
-                "reference": "cd2a907cf4e5791edc148ec5d8fcdd9efd57d5c1",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/ac8f62f1a729381ba07e5258a4c2e3fddcf69982",
+                "reference": "ac8f62f1a729381ba07e5258a4c2e3fddcf69982",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/psr7": "~1.4.2",
-                "php": ">= 5.6"
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/application": "<2.4.12",
+                "nette/di": "<2.4.12",
+                "nette/http": "<2.4.9",
+                "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/application": "~2.4.11",
-                "nette/di": "~2.4.11",
-                "nette/http": "~2.4.8",
+                "nette/application": "~2.4.12",
+                "nette/di": "~2.4.12",
+                "nette/http": "~2.4.9",
+                "nette/utils": "~2.5.2",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/application": "to use $request->withApplicationRequest[Nette\\Application\\Request]",
@@ -205,7 +226,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -233,20 +254,20 @@
                 "request",
                 "response"
             ],
-            "time": "2018-04-24T20:31:59+00:00"
+            "time": "2018-06-25T21:41:52+00:00"
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.2",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "58de9b352d916c7bcf6cca9513638ea87316e211"
+                "reference": "ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/58de9b352d916c7bcf6cca9513638ea87316e211",
-                "reference": "58de9b352d916c7bcf6cca9513638ea87316e211",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c",
+                "reference": "ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c",
                 "shasum": ""
             },
             "require": {
@@ -254,18 +275,22 @@
                 "tracy/tracy": "~2.4.15 || ~2.5.0"
             },
             "conflict": {
-                "nette/di": "<2.4.12",
+                "nette/application": "<2.4.12",
+                "nette/di": "<2.4.13",
+                "nette/http": "<2.4.9",
                 "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/di": "~2.4.12",
+                "nette/application": "~2.4.12",
+                "nette/di": "~2.4.13",
+                "nette/http": "~2.4.9",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -279,8 +304,12 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
+                },
+                {
+                    "name": "Marek Bartoš",
+                    "homepage": "https://marek-bartos.cz"
                 }
             ],
             "description": "Tuned Tracy Bars/Panels/BlueScreens for easy-developing",
@@ -288,11 +317,12 @@
             "keywords": [
                 "bluescreen",
                 "develop",
+                "navigation",
                 "nette",
                 "profile",
                 "tracy"
             ],
-            "time": "2018-06-20T14:55:41+00:00"
+            "time": "2018-07-28T20:13:59+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -364,16 +394,16 @@
         },
         {
             "name": "doctrine/cache",
-            "version": "v1.7.1",
+            "version": "v1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a"
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/b3217d58609e9c8e661cd41357a54d926c4a2a1a",
-                "reference": "b3217d58609e9c8e661cd41357a54d926c4a2a1a",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/d768d58baee9a4862ca783840eca1b9add7a7f57",
+                "reference": "d768d58baee9a4862ca783840eca1b9add7a7f57",
                 "shasum": ""
             },
             "require": {
@@ -384,8 +414,9 @@
             },
             "require-dev": {
                 "alcaeus/mongo-php-adapter": "^1.1",
+                "doctrine/coding-standard": "^4.0",
                 "mongodb/mongodb": "^1.1",
-                "phpunit/phpunit": "^5.7",
+                "phpunit/phpunit": "^7.0",
                 "predis/predis": "~1.0"
             },
             "suggest": {
@@ -394,7 +425,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.8.x-dev"
                 }
             },
             "autoload": {
@@ -429,12 +460,12 @@
                 }
             ],
             "description": "Caching library offering an object-oriented API for many cache backends",
-            "homepage": "http://www.doctrine-project.org",
+            "homepage": "https://www.doctrine-project.org",
             "keywords": [
                 "cache",
                 "caching"
             ],
-            "time": "2017-08-25T07:02:50+00:00"
+            "time": "2018-08-21T18:01:43+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -702,16 +733,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v2.4.13",
+            "version": "v2.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "3f8f212b02d5c17feb97a7e0a39ab306f40c06ca"
+                "reference": "923da3e2c0aa53162ef455472c0ac7787b096c5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/3f8f212b02d5c17feb97a7e0a39ab306f40c06ca",
-                "reference": "3f8f212b02d5c17feb97a7e0a39ab306f40c06ca",
+                "url": "https://api.github.com/repos/nette/di/zipball/923da3e2c0aa53162ef455472c0ac7787b096c5a",
+                "reference": "923da3e2c0aa53162ef455472c0ac7787b096c5a",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +798,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2018-06-11T08:46:01+00:00"
+            "time": "2018-09-17T15:47:40+00:00"
         },
         {
             "name": "nette/finder",
@@ -894,16 +925,16 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.0.4",
+            "version": "v3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "b381ecacbf5a0b5f99cc0b303d5b0578d409f446"
+                "reference": "ea90209c2e8a7cd087b2742ca553c047a8df5eff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/b381ecacbf5a0b5f99cc0b303d5b0578d409f446",
-                "reference": "b381ecacbf5a0b5f99cc0b303d5b0578d409f446",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/ea90209c2e8a7cd087b2742ca553c047a8df5eff",
+                "reference": "ea90209c2e8a7cd087b2742ca553c047a8df5eff",
                 "shasum": ""
             },
             "require": {
@@ -952,7 +983,7 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2018-04-26T16:48:20+00:00"
+            "time": "2018-08-09T14:32:27+00:00"
         },
         {
             "name": "nette/reflection",
@@ -1020,16 +1051,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "183069866dc477fcfbac393ed486aaa6d93d19a5"
+                "reference": "17b9f76f2abd0c943adfb556e56f2165460b15ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/183069866dc477fcfbac393ed486aaa6d93d19a5",
-                "reference": "183069866dc477fcfbac393ed486aaa6d93d19a5",
+                "url": "https://api.github.com/repos/nette/utils/zipball/17b9f76f2abd0c943adfb556e56f2165460b15ce",
+                "reference": "17b9f76f2abd0c943adfb556e56f2165460b15ce",
                 "shasum": ""
             },
             "require": {
@@ -1098,7 +1129,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2018-05-02T17:16:08+00:00"
+            "time": "2018-09-18T10:22:16+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1152,16 +1183,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.5.1",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "bea9df15a1cdbf3ec50ef3a75f5ada1ab536d679"
+                "reference": "7f670b08a7f4ed0243373f9d003d139196273861"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/bea9df15a1cdbf3ec50ef3a75f5ada1ab536d679",
-                "reference": "bea9df15a1cdbf3ec50ef3a75f5ada1ab536d679",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/7f670b08a7f4ed0243373f9d003d139196273861",
+                "reference": "7f670b08a7f4ed0243373f9d003d139196273861",
                 "shasum": ""
             },
             "require": {
@@ -1171,7 +1202,8 @@
             },
             "require-dev": {
                 "nette/di": "~2.3",
-                "nette/tester": "~1.7"
+                "nette/tester": "~1.7",
+                "nette/utils": "~2.3"
             },
             "suggest": {
                 "https://nette.org/donate": "Please support Tracy via a donation"
@@ -1213,7 +1245,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2018-07-03T11:34:33+00:00"
+            "time": "2018-09-24T22:35:07+00:00"
         }
     ],
     "packages-dev": [],

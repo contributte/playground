@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -25,7 +25,7 @@ final class UserDetailController extends BaseV1Controller
 	 * 		@RequestParameter(name="flag", type="int", description="Activated or deactivated", in="query")
 	 * })
 	 */
-	public function detail(ApiRequest $request)
+	public function detail(ApiRequest $request): array
 	{
 		return ['user' => [
 			'id' => $request->getParameter('id'),

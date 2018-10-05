@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -21,7 +21,7 @@ final class TaskController extends BaseV1Controller
 	 * @Method("GET")
 	 * @RequestMapper(entity="App\Controllers\Entity\FilterTasks")
 	 */
-	public function filter(ApiRequest $request)
+	public function filter(ApiRequest $request): array
 	{
 		return [
 			'tasks' => [],

@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -20,7 +20,7 @@ final class HomeController extends BaseController
 	 * @Path("/")
 	 * @Method("GET")
 	 */
-	public function index(ApiRequest $request, ApiResponse $response)
+	public function index(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response->writeJsonBody(['data' => ['Welcome']]);
 	}

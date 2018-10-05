@@ -1,25 +1,25 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Middlewares;
 
-use Contributte\Psr7\Psr7Response;
-use Contributte\Psr7\Psr7ServerRequest;
-use Psr\Http\Message\RequestInterface;
+use Apitte\Core\Http\ApiRequest;
+use Apitte\Core\Http\ApiResponse;
+use Contributte\Middlewares\IMiddleware;
 use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use stdClass;
 
-final class ApiKeyAuthenticationMiddleware
+final class ApiKeyAuthenticationMiddleware implements IMiddleware
 {
+
 	/**
-	 * @param Psr7ServerRequest  $request
-	 * @param Psr7Response       $response
-	 * @param callable           $next
-	 *
-	 * @return ResponseInterface
+	 * @param ApiRequest  $request
+	 * @param ApiResponse $response
 	 */
-	public function __invoke(RequestInterface $request, ResponseInterface $response, callable $next): ResponseInterface
+	public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next): ResponseInterface
 	{
-		if (!$apiKey = $request->getQueryParam('apiKey', NULL)) {
-			return $this->notAuthenticated($response, 'Parameter apiKey not provided');
+		if (!$apiKey = $request->getQueryParam('apiKey', null)) {
+			return $this->notAuthenticated($response, 'Query parameter apiKey not provided');
 		}
 
 		if (!$user = $this->getUser($apiKey)) {
@@ -29,10 +29,10 @@ final class ApiKeyAuthenticationMiddleware
 		return $next($request->withAttribute('user', $user), $response);
 	}
 
-	private function getUser(string $apiKey): \stdClass
+	private function getUser(string $apiKey): ?stdClass
 	{
 		if ($apiKey !== 'taeghah4eewief1DoQuaiChi') {
-			return NULL;
+			return null;
 		}
 
 		return (object) [
@@ -52,4 +52,5 @@ final class ApiKeyAuthenticationMiddleware
 		return $response->withStatus(401)
 			->withHeader('Content-Type', 'application/json');
 	}
+
 }

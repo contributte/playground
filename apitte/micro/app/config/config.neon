@@ -3,3 +3,7 @@ extensions:
 
 services:
 	- App\Controllers\HelloController
+
+api:
+    plugins:
+        Apitte\Core\DI\Plugin\CoreDecoratorPlugin:

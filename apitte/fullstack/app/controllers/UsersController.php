@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -26,7 +26,7 @@ final class UsersController extends BaseV1Controller
 	 * 		@Negotiation (suffix=".csv")
 	 * })
 	 */
-	public function index(ApiRequest $request, ApiResponse $response)
+	public function index(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response
 			->withAddedHeader('xyz', 123)
@@ -40,7 +40,7 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/create")
 	 * @Method("POST")
 	 */
-	public function create(ApiRequest $request)
+	public function create(ApiRequest $request): array
 	{
 		return ['data' => [
 			'raw' => $request->getContentsCopy(),
@@ -53,7 +53,7 @@ final class UsersController extends BaseV1Controller
 	 * @Path("/email")
 	 * @Method("GET")
 	 */
-	public function email()
+	public function email(): string
 	{
 		return 'foo@bar.cz';
 	}

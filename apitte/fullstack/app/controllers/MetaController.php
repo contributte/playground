@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -27,9 +27,6 @@ final class MetaController extends BaseV1Controller
 	/** @var SchemaInspector */
 	private $inspector;
 
-	/**
-	 * @param Schema $schema
-	 */
 	public function __construct(Schema $schema)
 	{
 		$this->schema = $schema;
@@ -40,7 +37,7 @@ final class MetaController extends BaseV1Controller
 	 * @Path("/schema")
 	 * @Method("GET")
 	 */
-	public function index(ApiRequest $request, ApiResponse $response)
+	public function index(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response->withEntity(ArrayEntity::from(['schema' => $this->inspector->getEndpointByGroup('v1')]));
 	}
@@ -49,7 +46,7 @@ final class MetaController extends BaseV1Controller
 	 * @Path("/foo")
 	 * @Method("GET")
 	 */
-	public function foo(ApiRequest $request, ApiResponse $response)
+	public function foo(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response->withEntity(ArrayEntity::from(['schema' => $this->inspector->getEndpointsByTag('foo')]));
 	}

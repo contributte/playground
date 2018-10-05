@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -22,7 +22,7 @@ final class ErrorController extends BaseV1Controller
 	 * @Path("/client")
 	 * @Method("GET")
 	 */
-	public function client()
+	public function client(): void
 	{
 		throw ClientErrorException::create()
 			->withCode(403)
@@ -33,7 +33,7 @@ final class ErrorController extends BaseV1Controller
 	 * @Path("/server")
 	 * @Method("GET")
 	 */
-	public function server()
+	public function server(): void
 	{
 		throw ServerErrorException::create()
 			->withCode(505)
@@ -44,7 +44,7 @@ final class ErrorController extends BaseV1Controller
 	 * @Path("/message")
 	 * @Method("GET")
 	 */
-	public function message()
+	public function message(): void
 	{
 		throw MessageException::create()
 			->withCode(405)
@@ -55,9 +55,9 @@ final class ErrorController extends BaseV1Controller
 	 * @Path("/custom")
 	 * @Method("GET")
 	 */
-	public function custom()
+	public function custom(): void
 	{
-		throw new RuntimeException('Runtime error', 0, NULL);
+		throw new RuntimeException('Runtime error', 0, null);
 	}
 
 }

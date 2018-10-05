@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 // Hack for PHP Built-in Development server!!!
 if (php_sapi_name() === 'cli-server') {

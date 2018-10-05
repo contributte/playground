@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -20,7 +20,7 @@ final class UsersController extends BaseController
 	 * @Path("/")
 	 * @Method("GET")
 	 */
-	public function index(ApiRequest $request, ApiResponse $response)
+	public function index(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response
 			->withAddedHeader('xyz', 123)
@@ -34,7 +34,7 @@ final class UsersController extends BaseController
 	 * @Path("/pure")
 	 * @Method("GET")
 	 */
-	public function pure()
+	public function pure(): array
 	{
 		return ['users' => [
 			['id' => 3, 'nick' => 'Chuck Norris'],
@@ -46,7 +46,7 @@ final class UsersController extends BaseController
 	 * @Path("/scalar")
 	 * @Method("GET")
 	 */
-	public function scalar()
+	public function scalar(): string
 	{
 		return 'OK';
 	}
@@ -55,7 +55,7 @@ final class UsersController extends BaseController
 	 * @Path("/user/{id}")
 	 * @Method("GET")
 	 */
-	public function detail(ApiRequest $request, ApiResponse $response)
+	public function detail(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response
 			->writeJsonBody(['user' => [
@@ -72,7 +72,7 @@ final class UsersController extends BaseController
 	 * @Path("/create")
 	 * @Method("POST")
 	 */
-	public function create(ApiRequest $request, ApiResponse $response)
+	public function create(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response
 			->writeJsonBody(['data' => [
@@ -85,7 +85,7 @@ final class UsersController extends BaseController
 	 * @Path("/meta")
 	 * @Method("GET")
 	 */
-	public function meta(ApiRequest $request, ApiResponse $response)
+	public function meta(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response
 			->writeJsonBody(['data' => [

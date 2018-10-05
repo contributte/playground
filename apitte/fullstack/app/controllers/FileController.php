@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -21,7 +21,7 @@ final class FileController extends BaseV1Controller
 	 * @Path("/")
 	 * @Method("GET")
 	 */
-	public function index(ApiRequest $request, ApiResponse $response)
+	public function index(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		$response->getBody()->write('This is pure body content');
 
@@ -32,7 +32,7 @@ final class FileController extends BaseV1Controller
 	 * @Path("/download")
 	 * @Method("GET")
 	 */
-	public function download(ApiRequest $request, ApiResponse $response)
+	public function download(ApiRequest $request, ApiResponse $response): ApiResponse
 	{
 		return $response
 			->withHeader('Content-Type', 'application/octet-stream')

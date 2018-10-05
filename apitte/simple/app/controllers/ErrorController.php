@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 
 namespace App\Controllers;
 
@@ -19,7 +19,7 @@ final class ErrorController extends BaseController
 	 * @Path("/")
 	 * @Method("GET")
 	 */
-	public function custom()
+	public function custom(): void
 	{
 		throw new RuntimeException('Unexpected exception', 0, NULL);
 	}
