@@ -11,7 +11,7 @@
 | [API / Apitte](https://github.com/apitte/playground/tree/master) | api, middlewares, psr7-http-message | Tiny middlewares API application with PSR-7. |
 | [ApiRouter](https://github.com/contributte/playground/tree/master/api-router) | api-router | Starter project for ApiRouter. |
 | [Console + Console Extra](https://github.com/contributte/playground/tree/master/console) | console,console-extra | Example of writing own commands and how to install Console Extra with all commands. |
-| [Datagrid](https://github.com/contributte/playground/tree/master/datagrid) | datagrid | Dockerized example od our datagrid. |
+| [Datagrid](https://github.com/contributte/playground/tree/master/datagrid) | datagrid | Dockerized example of our datagrid. |
 | [Event Dispatcher](https://github.com/contributte/playground/tree/master/event-dispatcher) | event-dispatcher, event-dispatcher-extra | Example of dispatching and subscribing events. |
 | [Live Form Validation](https://github.com/contributte/playground/tree/master/live-form-validation) | live-form-validation | Example of live form validation. |
 | [Mailing](https://github.com/contributte/playground/tree/master/mailing) | mailing | Example of contributte/mailing usage. |
