@@ -1,19 +1,18 @@
 {
-  "require": {
-    "php": ">= 7.1",
-    "contributte/bootstrap": "^0.3.1",
-    "contributte/tracy": "^0.3.1",
-
-    "apitte/core": "^0.4.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "App\\Controllers\\": "app/controllers"
+    "require": {
+        "php": ">= 7.1",
+        "contributte/bootstrap": "^0.3.1",
+        "contributte/tracy": "^0.4.0",
+        "apitte/core": "^0.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "webserver": "php -S 127.0.0.1:8000 -t www www/index.php"
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "scripts": {
-    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
-  }
 }

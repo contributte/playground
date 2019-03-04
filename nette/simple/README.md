@@ -1,6 +1,6 @@
 # Presenter
 
-This application demonstrates usage of these Apitte plugins compatible with presenters:
+This application demonstrates usage of these Apitte plugins compatible with [nette/routing](https://github.com/nette/routing):
 
 - [`apitte/core`](https://github.com/apitte/core)
 - [`apitte/presenter`](https://github.com/apitte/presenter)
@@ -8,15 +8,15 @@ This application demonstrates usage of these Apitte plugins compatible with pres
 - [`apitte/debug`](https://github.com/apitte/debug)
 - [`apitte/openapi`](https://github.com/apitte/openapi)
 
-## Install
+## Setup
 
-```sh
+```bash
 composer install
 ```
 
 ## Usage
 
-```sh
+```bash
 composer webserver
 ```
 

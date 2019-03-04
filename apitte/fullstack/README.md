@@ -8,15 +8,15 @@ This fullstack application demonstrates usage of these Apitte plugins:
 - [`apitte/mapping`](https://github.com/apitte/mapping)
 - [`apitte/debug`](https://github.com/apitte/debug)
 
-## Install
+## Setup
 
-```sh
+```bash
 composer install
 ```
 
 ## Usage
 
-```sh
+```bash
 composer webserver
 ```
 

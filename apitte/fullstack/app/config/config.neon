@@ -13,15 +13,16 @@ middlewares:
 resource:
 	resources:
 		App\Controllers\:
-			paths: [%appDir%/controllers]
+			paths: [%appDir%/Controllers]
 			decorator:
 				inject: true
 		App\Middlewares\:
-			paths: [%appDir%/middlewares]
+			paths: [%appDir%/Middlewares]
 			decorator:
 				inject: true
 
 api:
+	catchException: true # set to false to see exceptions in debug mode
 	debug: %debugMode%
 	plugins:
 		Apitte\Core\DI\Plugin\CoreDecoratorPlugin:
@@ -30,5 +31,4 @@ api:
 		Apitte\Middlewares\DI\MiddlewaresPlugin:
 		Apitte\Negotiation\DI\NegotiationPlugin:
 			unification: on
-			catchException: on
 		Apitte\OpenApi\DI\OpenApiPlugin:

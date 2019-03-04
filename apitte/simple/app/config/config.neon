@@ -3,6 +3,7 @@ extensions:
 	api: Apitte\Core\DI\ApiExtension
 
 api:
+	catchException: true # set to false to see exceptions in debug mode
 	debug: %debugMode%
 	plugins:
 		Apitte\Debug\DI\DebugPlugin:

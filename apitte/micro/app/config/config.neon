@@ -5,5 +5,7 @@ services:
 	- App\Controllers\HelloController
 
 api:
+    catchException: true # set to false to see exceptions in debug mode
+    debug: %debugMode%
     plugins:
         Apitte\Core\DI\Plugin\CoreDecoratorPlugin:

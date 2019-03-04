@@ -1,24 +1,24 @@
 {
-  "require": {
-    "php": ">=7.1",
-    "contributte/application": "^0.3.2",
-    "contributte/bootstrap": "^0.3.1",
-    "contributte/cache": "^0.3.0",
-    "contributte/di": "^0.3.0",
-    "contributte/http": "^0.2",
-    "contributte/latte": "^0.3.0",
-    "contributte/tracy": "^0.3.1",
+    "require": {
+        "php": ">=7.1",
+        "contributte/application": "^0.3.2",
+        "contributte/bootstrap": "^0.3.1",
+        "contributte/cache": "^0.3.0",
+        "contributte/di": "^0.3.0",
+        "contributte/http": "^0.2",
+        "contributte/latte": "^0.4.0",
+        "contributte/tracy": "^0.4.0",
 
-    "nette/robot-loader": "~3.1.0",
+        "nette/robot-loader": "~3.1.0",
 
-    "apitte/core": "^0.4.0",
-    "apitte/debug": "^0.4.0",
-    "apitte/openapi": "^0.4.0",
-    "apitte/presenter": "^0.4.0"
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true,
-  "scripts": {
-    "webserver": "php -S 0.0.0.0:8000 -t www www/index.php"
-  }
+        "apitte/core": "^0.5.0",
+        "apitte/debug": "^0.5.0",
+        "apitte/openapi": "^0.5.0",
+        "apitte/presenter": "^0.5.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "webserver": "php -S 127.0.0.1:8000 -t www www/index.php"
+    }
 }

@@ -15,6 +15,8 @@ resource:
 				inject: true
 
 api:
+	catchException: true # set to false to see exceptions in debug mode
+	debug: %debugMode%
 	plugins:
 		Apitte\Debug\DI\DebugPlugin:
 		Apitte\OpenApi\DI\OpenApiPlugin:
@@ -24,3 +26,4 @@ session:
 
 services:
 	router: App\RouterFactory::createRouter
+	- Apitte\Presenter\ApiPresenter
