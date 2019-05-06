@@ -7,22 +7,25 @@
 	],
 	"require": {
 		"php": ">= 7.1",
-		"nette/application": "^2.4",
-		"nette/bootstrap": "^2.4.2",
-		"nette/caching": "^2.5",
-		"nette/database": "^2.4",
-		"nette/di": "^2.4",
-		"nette/finder": "^2.4",
-		"nette/forms": "^2.4",
-		"nette/http": "^2.4",
-		"nette/mail": "^2.4",
-		"nette/robot-loader": "^2.4 || ^3.0",
-		"nette/security": "^2.4",
-		"nette/utils": "^2.4",
-		"latte/latte": "^2.4",
-		"tracy/tracy": "^2.4",
-		"ublaboo/datagrid": "v5.x",
-		"dibi/dibi": "^3.1"
+		"nette/application": "^3.0",
+		"nette/bootstrap": "^3.0",
+		"nette/caching": "^3.0",
+		"nette/database": "^3.0",
+		"nette/di": "^3.0",
+		"nette/finder": "^3.0",
+		"nette/forms": "^3.0",
+		"nette/http": "^3.0",
+		"nette/mail": "^3.0",
+		"nette/security": "^3.0",
+		"nette/utils": "^3.0",
+		"latte/latte": "^3.0",
+		"tracy/tracy": "^3.0",
+		"ublaboo/datagrid" : "^6.0",
+		"dibi/dibi": "^3.0.0 || ^4.0.0"
+	},
+	"require-dev": {
+		"ninjify/coding-standard": "^0.8",
+		"gamee/php-code-checker-rules": "^1.0"
 	},
 	"autoload": {
 		"psr-4": {
@@ -30,5 +33,12 @@
 				"app/"
 			]
 		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"scripts": {
+		"phpstan": "vendor/phpstan/phpstan/bin/phpstan analyse -c vendor/gamee/php-code-checker-rules/phpstan.neon app --level 7",
+		"phpcs": "vendor/bin/phpcs --standard=vendor/gamee/php-code-checker-rules/ruleset.xml --extensions=php,phpt --tab-width=4 --ignore=temp -sp app",
+		"phpcsfix": "vendor/bin/phpcbf --standard=vendor/gamee/php-code-checker-rules/ruleset.xml --extensions=php,phpt --tab-width=4 --ignore=temp -sp app"
 	}
 }
