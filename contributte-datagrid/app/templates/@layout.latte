@@ -6,26 +6,45 @@
 
 	<title>{ifset title}{include title|stripHtml} | {/ifset}DataGrid Sandbox</title>
 
-	<link rel="stylesheet" type="text/css" href="{$basePath}/styles.css">
-
 	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/bootstrap/dist/css/bootstrap.css">
 
 	<!-- Use this css for that pretty checkboxes (https://github.com/paveljanda/happy) -->
 	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/happy/dist/happy.css">
 	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css">
-	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/ublaboo-datagrid/assets/dist/datagrid.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/ublaboo-datagrid/assets/datagrid.css">
 
 	<!-- Use this css for ajax spinners -->
-	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/ublaboo-datagrid/assets/dist/datagrid-spinners.css">
+	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/ublaboo-datagrid/assets/datagrid-spinners.css">
 
 	<!-- Include this css when using FilterMultiSelect (silviomoreto.github.io/bootstrap-select) -->
 	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/bootstrap-select/dist/css/bootstrap-select.css">
+
+	<link rel="stylesheet" type="text/css" href="{$basePath}/styles.css">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 
 <body>
-	{include content}
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				{var $sections = ['Basic', 'Columns', 'Filters']}
+
+				{foreach $sections as $section}
+					<a n:class="$control->getName() === $section ? 'active', 'nav-item nav-link'" href="{link $section . ':'}">{$section}</a>
+				{/foreach}
+			</div>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="example">
+			{include content}
+		</div>
+	</div>
 
 	{block scripts}
+		<script src="{$basePath}/bower_components/popper.js/dist/umd/popper.min.js"></script>
 		<script src="{$basePath}/bower_components/jquery/dist/jquery.js"></script>
 		<script src="{$basePath}/bower_components/nette-forms/src/assets/netteForms.js"></script>
 		<script src="{$basePath}/bower_components/nette.ajax.js/nette.ajax.js"></script>
@@ -34,13 +53,12 @@
 		<script src="{$basePath}/bower_components/happy/dist/happy.js"></script>
 		<script src="{$basePath}/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
 		<script src="{$basePath}/bower_components/jquery-ui-sortable/jquery-ui-sortable.js"></script>
-		<script src="{$basePath}/bower_components/ublaboo-datagrid/assets/dist/datagrid.js"></script>
 
 		<!-- It is recommended to include this JS file with just a few bits. It refreshes URL on non ajax request -->
-		<script src="{$basePath}/bower_components/ublaboo-datagrid/assets/dist/datagrid-instant-url-refresh.js"></script>
+		<script src="{$basePath}/bower_components/ublaboo-datagrid/assets/datagrid-instant-url-refresh.js"></script>
 
 		<!-- Use this little extension for ajax spinners -->
-		<script src="{$basePath}/bower_components/ublaboo-datagrid/assets/dist/datagrid-spinners.js"></script>
+		<script src="{$basePath}/bower_components/ublaboo-datagrid/assets/datagrid-spinners.js"></script>
 
 		<!-- Include bootstrap.js for proper behaviour of ColumnStatus -->
 		<script src="{$basePath}/bower_components/bootstrap/dist/js/bootstrap.js"></script>

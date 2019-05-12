@@ -14,5 +14,8 @@ dibi:
 	host: 127.0.0.1
 	username: root
 	password: ''
-	port: 60002
+	port: 20002
 	database: datagrid
+
+session:
+	 savePath: "%tempDir%/sessions"

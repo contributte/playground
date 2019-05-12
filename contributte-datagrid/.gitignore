@@ -1,3 +1,2 @@
-vendor
-_data
-www/bower_components
+/_data
+/vendor

@@ -1,8 +1,12 @@
 {
-	"repositories": [
+	"name": "contributte/datagrid-sandbox",
+	"description": "Sandbox for contributte/datagrid",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
 		{
-			"url": "https://github.com/ublaboo/datagrid.git",
-			"type": "git"
+			"name": "Pavel Janda",
+			"homepage": "https://paveljanda.com"
 		}
 	],
 	"require": {

@@ -9,7 +9,7 @@ use Dibi\Row;
 use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\DataGrid;
 
-class HomepagePresenter extends Presenter
+final class BasicPresenter extends Presenter
 {
 
 	/**
@@ -25,11 +25,17 @@ class HomepagePresenter extends Presenter
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
+		$grid->setItemsPerPageList([20, 50, 100], true);
+
 		$grid->addColumnText('id', '#');
+
 		$grid->addColumnText('email', 'E-mail');
+
 		$grid->addColumnText('name', 'Name');
+
 		$grid->addColumnDateTime('birth_date', 'Birthday')
 			->setFormat('j. n. Y');
+
 		$grid->addColumnNumber('age', 'Age')
 			->setRenderer(function(Row $row): int {
 				return $row['birth_date']->diff(new \DateTime)->y;

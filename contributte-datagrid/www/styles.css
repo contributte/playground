@@ -4,3 +4,24 @@ html, body {
 	width: 100%;
 	height: 100%;
 }
+
+body {
+	background-color: #f8f9fa;
+	text-align: center;
+}
+
+.example {
+	background: #fff;
+	text-align: left;
+	border-radius: 2px;
+	display: inline-block;
+	height: auto;
+	width: 100%;
+	margin: 1.4rem auto;
+	position: relative;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+	font-size: 0.9rem;
+	font-weight: 200;
+}
