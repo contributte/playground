@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace App\Presenters;
 
 use Dibi\Connection;
+use Dibi\Fluent;
 use Dibi\Row;
 use Nette\Application\UI\Presenter;
+use Nette\Utils\ArrayHash;
 use Ublaboo\DataGrid\Column\ColumnLink;
 use Ublaboo\DataGrid\Column\ColumnStatus;
 use Ublaboo\DataGrid\DataGrid;
@@ -36,9 +38,6 @@ final class FiltersPresenter extends Presenter
 		$grid->addColumnText('name', 'Name')
 			->setFilterText();
 
-		$grid->addColumnLink('email', 'E-mail', 'this')
-			->setFilterText();
-
 		$grid->addColumnStatus('status', 'Status')
 			->setFilterSelect([
 				'' => 'All',
@@ -52,9 +51,24 @@ final class FiltersPresenter extends Presenter
 			->setSortable()
 			->setFilterDate();
 
+		$grid->addColumnDateTime('birth_date_2', 'Birthday 2', 'birth_date')
+			->setFormat('j. n. Y')
+			->setSortable()
+			->setFilterDateRange();
+
 		$grid->addColumnNumber('age', 'Age')
 			->setRenderer(function(Row $row): int {
 				return $row['birth_date']->diff(new \DateTime)->y;
+			})
+			->setFilterRange()
+			->setCondition(function(Fluent $fluent, ArrayHash $values): void {
+				if ((bool) $values['from']) {
+					$fluent->where('(YEAR(CURDATE()) - YEAR(birth_date)) >= ?', $values['from']);
+				}
+
+				if ((bool) $values['to']) {
+					$fluent->where('(YEAR(CURDATE()) - YEAR(birth_date)) <= ?', $values['to']);
+				}
 			});
 
 		return $grid;
