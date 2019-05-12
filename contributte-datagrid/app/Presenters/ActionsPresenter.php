@@ -29,9 +29,6 @@ final class ActionsPresenter extends Presenter
 
 		$grid->setSortable();
 
-		/**
-		 * Columns
-		 */
 		$grid->addColumnNumber('id', 'Id')
 			->setAlign('left')
 			->setSortable();
@@ -39,9 +36,6 @@ final class ActionsPresenter extends Presenter
 		$grid->addColumnText('name', 'Name')
 			->setSortable();
 
-		/**
-		 * MultiAction
-		 */
 		$multiAction = $grid->addMultiAction('multi_blah', 'MultiAction')
 			->addAction('blah', 'Blahblah', 'blah!')
 			->addAction('blah2', 'Blahblah2', 'blah!', ['name']);
@@ -50,9 +44,6 @@ final class ActionsPresenter extends Presenter
 			->getAction('blah2')
 			->setIcon('check');
 
-		/**
-		 * Actions
-		 */
 		$grid->addAction('blah', 'Blahblah', 'blah!')
 			->setClass('btn btn-xs btn-primary ajax');
 
@@ -67,8 +58,8 @@ final class ActionsPresenter extends Presenter
 			->setTitle('Hello, sun')
 			->setClass('btn btn-xs btn-default btn-secondary ajax');
 
-		$actionCallback->onClick[] = function($item_id) {
-			$this->flashMessage('Custom callback triggered, id: ' . $item_id);
+		$actionCallback->onClick[] = function($itemId) {
+			$this->flashMessage('Custom callback triggered, id: ' . $itemId);
 			$this->redrawControl('flashes');
 		};
 
@@ -80,9 +71,6 @@ final class ActionsPresenter extends Presenter
 				new StringConfirmation('Do you really want to delete example %s?', 'name')
 			);
 
-		/**
-		 * ToolbarButtons
-		 */
 		$grid->addToolbarButton('this', 'Toolbar')->addAttributes(['foo' => 'bar']);
 		$grid->addToolbarButton('this#2', 'Button', ['foo' => 'bar']);
 

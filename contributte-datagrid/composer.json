@@ -41,7 +41,7 @@
 	"prefer-stable": true,
 	"minimum-stability": "dev",
 	"scripts": {
-		"phpstan": "vendor/phpstan/phpstan/bin/phpstan analyse -c vendor/gamee/php-code-checker-rules/phpstan.neon app --level 7",
+		"phpstan": "vendor/phpstan/phpstan/bin/phpstan analyse -c phpstan.neon app --level 7",
 		"phpcs": "vendor/bin/phpcs --standard=vendor/gamee/php-code-checker-rules/ruleset.xml --extensions=php,phpt --tab-width=4 --ignore=temp -sp app",
 		"phpcsfix": "vendor/bin/phpcbf --standard=vendor/gamee/php-code-checker-rules/ruleset.xml --extensions=php,phpt --tab-width=4 --ignore=temp -sp app"
 	}

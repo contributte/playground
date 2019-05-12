@@ -37,10 +37,17 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				{var $sections = ['Basic', 'Columns', 'Filters', 'Actions']}
+				{var $sections = [
+					'Basic',
+					'Columns',
+					'Filters',
+					'Actions',
+					'Group Actions'
+				]}
 
 				{foreach $sections as $section}
-					<a n:class="$control->getName() === $section ? 'active', 'nav-item nav-link'" href="{link $section . ':'}">{$section}</a>
+					{var $link = str_replace(' ', '', $section)}
+					<a n:class="$control->getName() === $link ? 'active', 'nav-item nav-link'" href="{link $link . ':'}">{$section}</a>
 				{/foreach}
 			</div>
 		</div>
