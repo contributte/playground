@@ -9,8 +9,6 @@ use Dibi\Fluent;
 use Dibi\Row;
 use Nette\Application\UI\Presenter;
 use Nette\Utils\ArrayHash;
-use Ublaboo\DataGrid\Column\ColumnLink;
-use Ublaboo\DataGrid\Column\ColumnStatus;
 use Ublaboo\DataGrid\DataGrid;
 
 final class FiltersPresenter extends Presenter

@@ -20,8 +20,54 @@ body {
 	margin: 1.4rem auto;
 	position: relative;
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	/*box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
 	font-size: 0.9rem;
 	font-weight: 200;
+}
+
+.flash {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 56px;
+	line-height: 56px;
+	box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	box-sizing: border-box;
+	transform: translateY(-56px)
+}
+
+.flash.slide {
+	animation-name: flashes;
+	animation-duration: 4s;
+	animation-delay: 0;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+}
+
+@keyframes flashes {
+	0%,
+	100% {
+		transform: translateY(-56px)
+	}
+
+	15%,
+	85% {
+		transform: translateY(0)
+	}
+}
+
+@-webkit-keyframes flashes {
+	0%,
+	100% {
+		transform: translateY(-56px)
+	}
+
+	15%,
+	85% {
+		transform: translateY(0)
+	}
 }

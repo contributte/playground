@@ -117,6 +117,8 @@ final class ColumnsPresenter extends Presenter
 			}
 
 			$grid->redrawItem($id);
+			$this->flashMessage('aaaa');
+			$this->redrawControl('flashes');
 		} else {
 			$this->redirect('this');
 		}

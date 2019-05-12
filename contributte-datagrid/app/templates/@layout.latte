@@ -20,16 +20,24 @@
 	<!-- Include this css when using FilterMultiSelect (silviomoreto.github.io/bootstrap-select) -->
 	<link rel="stylesheet" type="text/css" href="{$basePath}/bower_components/bootstrap-select/dist/css/bootstrap-select.css">
 
-	<link rel="stylesheet" type="text/css" href="{$basePath}/styles.css">
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="{$basePath}/styles.css">
 </head>
 
 <body>
+	{snippet flashes}
+		<div class="flash slide alert alert-{$flash->type}" n:foreach="$flashes as $flash">
+			<div class="container">
+				{$flash->message}
+			</div>
+		</div>
+	{/snippet}
+
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-				{var $sections = ['Basic', 'Columns', 'Filters']}
+				{var $sections = ['Basic', 'Columns', 'Filters', 'Actions']}
 
 				{foreach $sections as $section}
 					<a n:class="$control->getName() === $section ? 'active', 'nav-item nav-link'" href="{link $section . ':'}">{$section}</a>
@@ -68,6 +76,8 @@
 
 		<!-- Include bootstrap-select.js when using FilterMultiSelect (silviomoreto.github.io/bootstrap-select) -->
 		<script src="{$basePath}/bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+
+		<script src="{$basePath}/scripts.js"></script>
 	{/block}
 </body>
 </html>
