@@ -8,7 +8,7 @@ use Dibi\Connection;
 use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\DataGrid;
 
-final class GroupActionsPresenter extends Presenter
+class GroupActionsPresenter extends Presenter
 {
 
 	/**

@@ -9,7 +9,7 @@ use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\Column\Action\Confirmation\StringConfirmation;
 use Ublaboo\DataGrid\DataGrid;
 
-final class ActionsPresenter extends Presenter
+class ActionsPresenter extends Presenter
 {
 
 	/**
