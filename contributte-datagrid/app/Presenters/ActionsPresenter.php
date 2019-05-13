@@ -98,4 +98,3 @@ class ActionsPresenter extends Presenter
 		$this->redrawControl('flashes');
 	}
 }
- 

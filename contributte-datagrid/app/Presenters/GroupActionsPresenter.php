@@ -136,4 +136,3 @@ class GroupActionsPresenter extends Presenter
 		}
 	}
 }
- 
