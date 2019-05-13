@@ -8,27 +8,29 @@
     "packages": [
         {
             "name": "apitte/core",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "1092fc88f33900681ac9e033187161e50786bac7"
+                "reference": "763867fbea226557ba4ba9753c9679b69c30ebf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/1092fc88f33900681ac9e033187161e50786bac7",
-                "reference": "1092fc88f33900681ac9e033187161e50786bac7",
+                "url": "https://api.github.com/repos/apitte/core/zipball/763867fbea226557ba4ba9753c9679b69c30ebf1",
+                "reference": "763867fbea226557ba4ba9753c9679b69c30ebf1",
                 "shasum": ""
             },
             "require": {
                 "contributte/phpdoc": "^0.2",
                 "contributte/psr7-http-message": "^0.5.1",
                 "ext-json": "*",
-                "php": ">= 7.1"
+                "php": ">=7.1"
             },
             "conflict": {
-                "nette/di": "< 2.4.13",
-                "nette/utils": "< 2.5.2"
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.2",
+                "psr/log": "<1.1.0",
+                "symfony/validator": "<4.1.1"
             },
             "require-dev": {
                 "mockery/mockery": "^1.1.0",
@@ -64,7 +66,7 @@
                 },
                 {
                     "name": "Marek Bartoš",
-                    "homepage": "https://marek-bartos.cz"
+                    "homepage": "https://bartos.dev"
                 }
             ],
             "description": "Core API library in Apitte stack",
@@ -77,26 +79,30 @@
                 "nette",
                 "rest"
             ],
-            "time": "2019-03-04T00:46:23+00:00"
+            "time": "2019-04-16T06:01:54+00:00"
         },
         {
             "name": "apitte/debug",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/debug.git",
-                "reference": "e1750bd73b3746a1100ee975be1a88249f645107"
+                "reference": "56fcd1bbffb4423b72e13791f90100672afff1f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/e1750bd73b3746a1100ee975be1a88249f645107",
-                "reference": "e1750bd73b3746a1100ee975be1a88249f645107",
+                "url": "https://api.github.com/repos/apitte/debug/zipball/56fcd1bbffb4423b72e13791f90100672afff1f1",
+                "reference": "56fcd1bbffb4423b72e13791f90100672afff1f1",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.5.0",
                 "php": ">= 7.1",
                 "tracy/tracy": "~2.4.14 || ~2.5.0 || ~2.6.0"
+            },
+            "conflict": {
+                "apitte/negotiation": "<0.5.0",
+                "nette/di": "<2.4.12"
             },
             "require-dev": {
                 "apitte/negotiation": "^0.5.0",
@@ -137,11 +143,11 @@
                 "debugging",
                 "tracy"
             ],
-            "time": "2019-03-04T00:49:57+00:00"
+            "time": "2019-03-31T00:04:48+00:00"
         },
         {
             "name": "apitte/fullstack",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/fullstack.git",
@@ -190,22 +196,25 @@
         },
         {
             "name": "apitte/middlewares",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/middlewares.git",
-                "reference": "03671ec904a0024e807436101130bb9ecbc4fe76"
+                "reference": "06b75ab906795f5f872c7aa85414c0703d6b14e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/03671ec904a0024e807436101130bb9ecbc4fe76",
-                "reference": "03671ec904a0024e807436101130bb9ecbc4fe76",
+                "url": "https://api.github.com/repos/apitte/middlewares/zipball/06b75ab906795f5f872c7aa85414c0703d6b14e2",
+                "reference": "06b75ab906795f5f872c7aa85414c0703d6b14e2",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.5.0",
                 "contributte/middlewares": "^0.6.0|^0.7.0|^0.8.0",
                 "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.15"
             },
             "require-dev": {
                 "mockery/mockery": "^0.9.9",
@@ -246,25 +255,28 @@
                 "apitte",
                 "middlewares"
             ],
-            "time": "2019-03-04T00:53:12+00:00"
+            "time": "2019-04-01T13:51:16+00:00"
         },
         {
             "name": "apitte/negotiation",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/negotiation.git",
-                "reference": "120f76e0a6089b117dd6f4c0b0469e5993d85519"
+                "reference": "f423bf26cf8ed33d3152e234facaec1d29177e32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/120f76e0a6089b117dd6f4c0b0469e5993d85519",
-                "reference": "120f76e0a6089b117dd6f4c0b0469e5993d85519",
+                "url": "https://api.github.com/repos/apitte/negotiation/zipball/f423bf26cf8ed33d3152e234facaec1d29177e32",
+                "reference": "f423bf26cf8ed33d3152e234facaec1d29177e32",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.5.0",
                 "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13"
             },
             "require-dev": {
                 "nette/di": "~2.4.13",
@@ -304,33 +316,34 @@
                 "negotiation",
                 "view-resolver"
             ],
-            "time": "2019-03-04T13:05:39+00:00"
+            "time": "2019-05-09T13:45:17+00:00"
         },
         {
             "name": "apitte/openapi",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/openapi.git",
-                "reference": "c7e2a7d926b109b149da76f0d7b7328b6bd7fba7"
+                "reference": "476d91c5d86ea6387ff739eb16779e0801354873"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/c7e2a7d926b109b149da76f0d7b7328b6bd7fba7",
-                "reference": "c7e2a7d926b109b149da76f0d7b7328b6bd7fba7",
+                "url": "https://api.github.com/repos/apitte/openapi/zipball/476d91c5d86ea6387ff739eb16779e0801354873",
+                "reference": "476d91c5d86ea6387ff739eb16779e0801354873",
                 "shasum": ""
             },
             "require": {
                 "apitte/core": "^0.5.0",
-                "nette/di": "~2.4.12",
                 "nette/utils": "~2.5.3",
                 "php": ">= 7.1",
                 "tracy/tracy": "~2.4.14 || ~2.5.0 || ~2.6.0"
             },
             "conflict": {
-                "nette/utils": "<2.5.2"
+                "nette/di": "<2.4.12",
+                "symfony/yaml": "<4.2.0"
             },
             "require-dev": {
+                "nette/di": "~2.4.12",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.8.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
@@ -375,7 +388,7 @@
                 "openapi",
                 "rest"
             ],
-            "time": "2019-03-04T01:01:43+00:00"
+            "time": "2019-03-31T00:15:02+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -840,16 +853,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
                 "shasum": ""
             },
             "require": {
@@ -904,7 +917,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-12-06T07:11:42+00:00"
+            "time": "2019-03-25T19:12:02+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -1169,7 +1182,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🅱 Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
+            "description": "? Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "bootstrapping",
@@ -1303,7 +1316,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "💎 Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
+            "description": "? Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "compiled",
@@ -1368,7 +1381,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+            "description": "? Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -1435,7 +1448,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🌐 Nette Http: abstraction for HTTP request, response and session. Provides careful data sanitization and utility for URL and cookies manipulation.",
+            "description": "? Nette Http: abstraction for HTTP request, response and session. Provides careful data sanitization and utility for URL and cookies manipulation.",
             "homepage": "https://nette.org",
             "keywords": [
                 "cookies",
@@ -1500,7 +1513,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -1513,24 +1526,21 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.2.1",
+            "version": "v3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "9de4e093a130f7a1bd175198799ebc0efbac6924"
+                "reference": "acff8b136fad84b860a626d133e791f95781f9f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/9de4e093a130f7a1bd175198799ebc0efbac6924",
-                "reference": "9de4e093a130f7a1bd175198799ebc0efbac6924",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/acff8b136fad84b860a626d133e791f95781f9f5",
+                "reference": "acff8b136fad84b860a626d133e791f95781f9f5",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^2.4.2 || ~3.0.0",
                 "php": ">=7.1"
-            },
-            "conflict": {
-                "nette/nette": "<2.2"
             },
             "require-dev": {
                 "nette/tester": "^2.0",
@@ -1571,7 +1581,7 @@
                 "php",
                 "scaffolding"
             ],
-            "time": "2018-11-27T19:00:14+00:00"
+            "time": "2019-03-15T03:41:13+00:00"
         },
         {
             "name": "nette/reflection",
@@ -1691,7 +1701,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍀 Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
+            "description": "? Nette RobotLoader: high performance and comfortable autoloader that will search and autoload classes within your application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "autoload",
@@ -1764,7 +1774,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🛠 Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "? Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -1876,16 +1886,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.6.1",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "e179856e5dcc3ced99df1596cd299246fb1c3ac2"
+                "reference": "9a6513089a836744e70af0910ad45f50e603dcf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/e179856e5dcc3ced99df1596cd299246fb1c3ac2",
-                "reference": "e179856e5dcc3ced99df1596cd299246fb1c3ac2",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/9a6513089a836744e70af0910ad45f50e603dcf5",
+                "reference": "9a6513089a836744e70af0910ad45f50e603dcf5",
                 "shasum": ""
             },
             "require": {
@@ -1895,7 +1905,7 @@
             },
             "require-dev": {
                 "nette/di": "^2.4 || ~3.0.0",
-                "nette/tester": "^2.1",
+                "nette/tester": "^2.2",
                 "nette/utils": "^2.4 || ^3.0",
                 "psr/log": "^1.0"
             },
@@ -1939,7 +1949,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2019-03-01T02:12:13+00:00"
+            "time": "2019-04-03T20:29:00+00:00"
         }
     ],
     "packages-dev": [],

@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
@@ -13,7 +12,6 @@ use Apitte\Core\Http\ApiResponse;
 use Apitte\Core\UI\Controller\IController;
 
 /**
- * @Controller
  * @ControllerPath("/")
  */
 final class HelloController implements IController
