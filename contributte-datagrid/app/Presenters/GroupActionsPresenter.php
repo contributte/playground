@@ -33,7 +33,7 @@ class GroupActionsPresenter extends Presenter
 		$grid->addColumnText('name', 'Name')
 			->setSortable();
 
-		$grid->addColumnText('email', 'Email')
+		$grid->addColumnText('email', 'E-mail')
 			->setSortable();
 
 		$grid->addColumnDateTime('status', 'Status');

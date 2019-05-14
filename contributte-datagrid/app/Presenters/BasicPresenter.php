@@ -27,7 +27,7 @@ final class BasicPresenter extends Presenter
 
 		$grid->setItemsPerPageList([20, 50, 100], true);
 
-		$grid->addColumnText('id', '#')
+		$grid->addColumnText('id', 'Id')
 			->setSortable();
 
 		$grid->addColumnText('email', 'E-mail')

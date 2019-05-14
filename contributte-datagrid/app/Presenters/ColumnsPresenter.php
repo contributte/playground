@@ -31,7 +31,7 @@ final class ColumnsPresenter extends Presenter
 
 		$grid->setItemsPerPageList([20, 50, 100], true);
 
-		$grid->addColumnText('id', '#')
+		$grid->addColumnText('id', 'Id')
 			->setReplacement([
 				1 => 'One',
 				2 => 'Two',

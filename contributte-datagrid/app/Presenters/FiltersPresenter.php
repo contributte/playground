@@ -29,7 +29,7 @@ final class FiltersPresenter extends Presenter
 
 		$grid->setItemsPerPageList([20, 50, 100], true);
 
-		$grid->addColumnText('id', '#')
+		$grid->addColumnText('id', 'Id')
 			->setFilterText()
 			->setExactSearch();
 
