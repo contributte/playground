@@ -27,11 +27,15 @@ final class BasicPresenter extends Presenter
 
 		$grid->setItemsPerPageList([20, 50, 100], true);
 
-		$grid->addColumnText('id', '#');
+		$grid->addColumnText('id', '#')
+			->setSortable();
 
-		$grid->addColumnText('email', 'E-mail');
+		$grid->addColumnText('email', 'E-mail')
+			->setSortable()
+			->setFilterText();
 
-		$grid->addColumnText('name', 'Name');
+		$grid->addColumnText('name', 'Name')
+			->setFilterText();
 
 		$grid->addColumnDateTime('birth_date', 'Birthday')
 			->setFormat('j. n. Y');

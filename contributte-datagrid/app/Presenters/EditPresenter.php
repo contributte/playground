@@ -26,7 +26,7 @@ final class EditPresenter extends Presenter
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
-		$grid->setItemsPerPageList([20, 50, 1]);
+		$grid->setItemsPerPageList([20, 50, 100]);
 
 		$grid->addColumnNumber('id', 'Id')
 			->setSortable()
@@ -56,21 +56,12 @@ final class EditPresenter extends Presenter
 				return (string) $link;
 			})->addCellAttributes(['class' => 'text-center']);
 
-		$grid->addColumnStatus('status', 'Status')
-			->addOption(1, 'Online')
-				->setClass('btn-success')
-				->endOption()
-			->addOption(2, 'Standby')
-				->setClass('btn-primary')
-				->endOption()
-			->addOption(0, 'Offline')
-				->setClass('btn-danger')
-				->endOption()
-			->onChange[] = [$this, 'changeExampleStatus'];
+		$grid->addColumnStatus('status', 'Status');
 
 		$grid->addInlineEdit()
 			->onControlAdd[] = function($container) {
-				$container->addText('name', '');
+				$container->addText('name', '')
+					->setRequired('aaa');
 				$container->addText('birth_date', '');
 				$container->addText('link', '');
 				$container->addSelect('status', '', [

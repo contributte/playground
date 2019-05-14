@@ -25,7 +25,7 @@ final class ExportPresenter extends Presenter
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
-		$grid->setItemsPerPageList([20, 50, 1]);
+		$grid->setItemsPerPageList([20, 50, 100]);
 
 		$grid->addColumnNumber('id', 'Id')
 			->setAlign('left')
