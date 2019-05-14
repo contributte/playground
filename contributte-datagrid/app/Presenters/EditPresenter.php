@@ -8,6 +8,7 @@ use Dibi\Connection;
 use Dibi\Row;
 use Nette\Application\UI\Presenter;
 use Nette\Forms\Container;
+use Nette\Utils\Html;
 use Ublaboo\DataGrid\DataGrid;
 
 final class EditPresenter extends Presenter
@@ -58,8 +59,9 @@ final class EditPresenter extends Presenter
 
 		$grid->addColumnStatus('status', 'Status');
 
-		$grid->addInlineEdit()
-			->onControlAdd[] = function($container) {
+		$inlineEdit = $grid->addInlineEdit();
+		
+		$inlineEdit->onControlAdd[] = function($container) {
 				$container->addText('name', '')
 					->setRequired('aaa');
 				$container->addText('birth_date', '');
@@ -71,7 +73,7 @@ final class EditPresenter extends Presenter
 				]);
 			};
 
-		$grid->getInlineEdit()->onSetDefaults[] = function(Container $container, Row $row) {
+		$inlineEdit->onSetDefaults[] = function(Container $container, Row $row) {
 			$container->setDefaults([
 				'id' => $row['id'],
 				'name' => $row['name'],
@@ -81,12 +83,12 @@ final class EditPresenter extends Presenter
 			]);
 		};
 
-		$grid->getInlineEdit()->onSubmit[] = function($id, $values) {
+		$inlineEdit->onSubmit[] = function($id, $values) {
 			$this->flashMessage('Record was updated! (not really)', 'success');
 			$this->redrawControl('flashes');
 		};
 
-		$grid->getInlineEdit()->setShowNonEditingColumns();
+		$inlineEdit->setShowNonEditingColumns();
 
 		return $grid;
 	}

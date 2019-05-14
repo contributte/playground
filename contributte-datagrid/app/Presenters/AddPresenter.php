@@ -5,9 +5,7 @@ declare(strict_types=1);
 namespace App\Presenters;
 
 use Dibi\Connection;
-use Dibi\Row;
 use Nette\Application\UI\Presenter;
-use Nette\Forms\Container;
 use Ublaboo\DataGrid\DataGrid;
 
 final class AddPresenter extends Presenter
@@ -37,8 +35,9 @@ final class AddPresenter extends Presenter
 
 		$grid->addColumnStatus('status', 'Status');
 
-		$grid->addInlineAdd()
-			->setPositionTop()
+		$inlineAdd = $grid->addInlineAdd();
+
+		$inlineAdd->setPositionTop()
 			->onControlAdd[] = function($container) {
 				$container->addText('name', '')
 					->setRequired('aaa');
@@ -51,7 +50,7 @@ final class AddPresenter extends Presenter
 				]);
 			};
 
-		$grid->getInlineAdd()->onSubmit[] = function($values) {
+		$inlineAdd->onSubmit[] = function($values) {
 			$this->flashMessage('Record was added! (not really)', 'success');
 			$this->redrawControl('flashes');
 		};
