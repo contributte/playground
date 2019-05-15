@@ -7,7 +7,6 @@ namespace App\Presenters;
 use Dibi\Connection;
 use Dibi\Fluent;
 use Dibi\Row;
-use Nette\Application\UI\Presenter;
 use Nette\Utils\ArrayHash;
 use Ublaboo\DataGrid\DataGrid;
 

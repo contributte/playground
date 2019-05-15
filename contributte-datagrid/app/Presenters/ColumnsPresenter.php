@@ -6,7 +6,6 @@ namespace App\Presenters;
 
 use Dibi\Connection;
 use Dibi\Row;
-use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\Column\ColumnLink;
 use Ublaboo\DataGrid\Column\ColumnStatus;
 use Ublaboo\DataGrid\DataGrid;

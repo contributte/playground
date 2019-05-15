@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace App\Presenters;
 
 use Dibi\Connection;
-use Dibi\Fluent;
-use Dibi\Row;
 use Nette\Application\UI\Presenter;
-use Nette\Utils\ArrayHash;
 use Ublaboo\DataGrid\DataGrid;
 
 abstract class AbstractPresenter extends Presenter
@@ -51,4 +48,7 @@ abstract class AbstractPresenter extends Presenter
 			$this->redirect('this');
 		}
 	}
+
+
+	abstract public function createComponentGrid(): DataGrid;
 }
