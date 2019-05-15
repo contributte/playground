@@ -4,8 +4,7 @@ application:
 		*: App\*Module\Presenters\*Presenter
 
 services:
-	- App\Router\RouterFactory
-	router: @App\Router\RouterFactory::create
+	router: App\Router\RouterFactory::create
 
 extensions:
 	dibi: Dibi\Bridges\Nette\DibiExtension22
