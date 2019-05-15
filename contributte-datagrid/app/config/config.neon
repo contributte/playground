@@ -4,15 +4,17 @@ application:
 		*: App\*Module\Presenters\*Presenter
 
 services:
-	- App\Router\RouterFactory
-	router: @App\Router\RouterFactory::create
+	router: App\Router\RouterFactory::create
 
 extensions:
 	dibi: Dibi\Bridges\Nette\DibiExtension22
 
 dibi:
-	host: ::getenv(MYSQL_HOST)
-	username: ::getenv(MYSQL_USER)
-	password: ::getenv(MYSQL_PASS)
-	port: ::getenv(MYSQL_PORT)
-	database: ::getenv(MYSQL_DB_NAME)
+	host: 127.0.0.1
+	username: root
+	password: ''
+	port: 20002
+	database: datagrid
+
+session:
+	 savePath: "%tempDir%/sessions"
