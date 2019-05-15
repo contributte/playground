@@ -17,4 +17,4 @@ dibi:
 	database: datagrid
 
 session:
-	 savePath: "%tempDir%/sessions"
+	savePath: "%tempDir%/sessions"
