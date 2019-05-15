@@ -1,0 +1,5 @@
+{
+  "require": {
+    "contributte/nextras-orm-generator": "^0.2"
+  }
+}
