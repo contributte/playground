@@ -71,3 +71,25 @@ body {
 		transform: translateY(0)
 	}
 }
+
+.item-detail-content {
+	padding: 1em 0;
+}
+
+.row-item-detail td {
+	text-align: center;
+	background-color: #fff;
+}
+
+.row-item-detail p {
+	text-align: left;
+}
+
+.row-item-detail td .item-detail-content {
+	position: relative
+}
+
+.row-item-detail td .item-detail-content small {
+	position: absolute;
+	right: 1em;
+}
