@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Negotiation;
@@ -13,7 +12,6 @@ use Apitte\Core\Http\ApiResponse;
 use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
- * @Controller
  * @ControllerPath("/users")
  */
 final class UsersController extends BaseV1Controller

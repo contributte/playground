@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
@@ -11,7 +10,6 @@ use Apitte\Core\Annotation\Controller\RequestParameters;
 use Apitte\Core\Http\ApiRequest;
 
 /**
- * @Controller
  * @ControllerPath("/users")
  */
 final class UserDetailController extends BaseV1Controller

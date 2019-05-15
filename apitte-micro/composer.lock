@@ -8,27 +8,29 @@
     "packages": [
         {
             "name": "apitte/core",
-            "version": "dev-master",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "1092fc88f33900681ac9e033187161e50786bac7"
+                "reference": "763867fbea226557ba4ba9753c9679b69c30ebf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/1092fc88f33900681ac9e033187161e50786bac7",
-                "reference": "1092fc88f33900681ac9e033187161e50786bac7",
+                "url": "https://api.github.com/repos/apitte/core/zipball/763867fbea226557ba4ba9753c9679b69c30ebf1",
+                "reference": "763867fbea226557ba4ba9753c9679b69c30ebf1",
                 "shasum": ""
             },
             "require": {
                 "contributte/phpdoc": "^0.2",
                 "contributte/psr7-http-message": "^0.5.1",
                 "ext-json": "*",
-                "php": ">= 7.1"
+                "php": ">=7.1"
             },
             "conflict": {
-                "nette/di": "< 2.4.13",
-                "nette/utils": "< 2.5.2"
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.2",
+                "psr/log": "<1.1.0",
+                "symfony/validator": "<4.1.1"
             },
             "require-dev": {
                 "mockery/mockery": "^1.1.0",
@@ -64,7 +66,7 @@
                 },
                 {
                     "name": "Marek Bartoš",
-                    "homepage": "https://marek-bartos.cz"
+                    "homepage": "https://bartos.dev"
                 }
             ],
             "description": "Core API library in Apitte stack",
@@ -77,7 +79,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2019-03-04T00:46:23+00:00"
+            "time": "2019-04-16T06:01:54+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -341,16 +343,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "v1.6.0",
+            "version": "v1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5"
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
-                "reference": "c7f2050c68a9ab0bdb0f98567ec08d80ea7d24d5",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/53120e0eb10355388d6ccbe462f1fea34ddadb24",
+                "reference": "53120e0eb10355388d6ccbe462f1fea34ddadb24",
                 "shasum": ""
             },
             "require": {
@@ -405,7 +407,7 @@
                 "docblock",
                 "parser"
             ],
-            "time": "2017-12-06T07:11:42+00:00"
+            "time": "2019-03-25T19:12:02+00:00"
         },
         {
             "name": "doctrine/cache",
@@ -670,7 +672,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🅱 Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
+            "description": "? Nette Bootstrap: the simple way to configure and bootstrap your Nette application.",
             "homepage": "https://nette.org",
             "keywords": [
                 "bootstrapping",
@@ -804,7 +806,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "💎 Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
+            "description": "? Nette Dependency Injection Container: Flexible, compiled and full-featured DIC with perfectly usable autowiring and support for all new PHP 7.1 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "compiled",
@@ -869,7 +871,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
+            "description": "? Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -929,7 +931,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🍸 Nette NEON: encodes and decodes NEON file format.",
+            "description": "? Nette NEON: encodes and decodes NEON file format.",
             "homepage": "http://ne-on.org",
             "keywords": [
                 "export",
@@ -992,7 +994,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🐘 Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.3 features.",
+            "description": "? Nette PHP Generator: generates neat PHP code for you. Supports new PHP 7.3 features.",
             "homepage": "https://nette.org",
             "keywords": [
                 "code",
@@ -1128,7 +1130,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "🛠 Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "description": "? Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
             "homepage": "https://nette.org",
             "keywords": [
                 "array",
@@ -1240,16 +1242,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.6.1",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "e179856e5dcc3ced99df1596cd299246fb1c3ac2"
+                "reference": "9a6513089a836744e70af0910ad45f50e603dcf5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/e179856e5dcc3ced99df1596cd299246fb1c3ac2",
-                "reference": "e179856e5dcc3ced99df1596cd299246fb1c3ac2",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/9a6513089a836744e70af0910ad45f50e603dcf5",
+                "reference": "9a6513089a836744e70af0910ad45f50e603dcf5",
                 "shasum": ""
             },
             "require": {
@@ -1259,7 +1261,7 @@
             },
             "require-dev": {
                 "nette/di": "^2.4 || ~3.0.0",
-                "nette/tester": "^2.1",
+                "nette/tester": "^2.2",
                 "nette/utils": "^2.4 || ^3.0",
                 "psr/log": "^1.0"
             },
@@ -1303,7 +1305,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2019-03-01T02:12:13+00:00"
+            "time": "2019-04-03T20:29:00+00:00"
         }
     ],
     "packages-dev": [],

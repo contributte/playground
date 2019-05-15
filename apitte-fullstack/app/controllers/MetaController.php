@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use Apitte\Core\Annotation\Controller\Controller;
 use Apitte\Core\Annotation\Controller\ControllerPath;
 use Apitte\Core\Annotation\Controller\Method;
 use Apitte\Core\Annotation\Controller\Path;
@@ -14,7 +13,6 @@ use Apitte\Core\Schema\SchemaInspector;
 use Apitte\Negotiation\Http\ArrayEntity;
 
 /**
- * @Controller
  * @ControllerPath("/meta")
  * @Tag(name="foo")
  */
