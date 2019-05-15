@@ -11,7 +11,7 @@ use Nette\Application\UI\Presenter;
 use Nette\Utils\ArrayHash;
 use Ublaboo\DataGrid\DataGrid;
 
-final class FiltersPresenter extends Presenter
+final class FiltersPresenter extends AbstractPresenter
 {
 
 	/**
@@ -70,35 +70,5 @@ final class FiltersPresenter extends Presenter
 			});
 
 		return $grid;
-	}
-
-
-	/**
-	 * @param mixed $id
-	 */
-	public function changeStatus($id, string $newStatus): void
-	{
-		$id = (int) $id;
-
-		if (in_array($newStatus, ['active', 'inactive', 'deleted'], true)) {
-			$data = ['status' => $newStatus];
-
-			$this->dibiConnection->update('users', $data)
-				->where('id = ?', $id)
-				->execute();
-		}
-
-		if ($this->isAjax()) {
-			$grid = $this['grid'];
-
-
-			if (!$grid instanceof DataGrid) {
-				throw new \UnexpectedValueException;
-			}
-
-			$grid->redrawItem($id);
-		} else {
-			$this->redirect('this');
-		}
 	}
 }

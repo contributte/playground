@@ -11,7 +11,7 @@ use Ublaboo\DataGrid\Column\ColumnLink;
 use Ublaboo\DataGrid\Column\ColumnStatus;
 use Ublaboo\DataGrid\DataGrid;
 
-final class ColumnsPresenter extends Presenter
+final class ColumnsPresenter extends AbstractPresenter
 {
 
 	/**
@@ -90,37 +90,5 @@ final class ColumnsPresenter extends Presenter
 		});
 
 		return $grid;
-	}
-
-
-	/**
-	 * @param mixed $id
-	 */
-	public function changeStatus($id, string $newStatus): void
-	{
-		$id = (int) $id;
-
-		if (in_array($newStatus, ['active', 'inactive', 'deleted'], true)) {
-			$data = ['status' => $newStatus];
-
-			$this->dibiConnection->update('users', $data)
-				->where('id = ?', $id)
-				->execute();
-		}
-
-		if ($this->isAjax()) {
-			$grid = $this['grid'];
-
-
-			if (!$grid instanceof DataGrid) {
-				throw new \UnexpectedValueException;
-			}
-
-			$grid->redrawItem($id);
-			$this->flashMessage('aaaa');
-			$this->redrawControl('flashes');
-		} else {
-			$this->redirect('this');
-		}
 	}
 }
