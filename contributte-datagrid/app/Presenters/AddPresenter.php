@@ -4,12 +4,15 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
+use App\UI\TEmptyLayoutView;
 use Dibi\Connection;
 use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\DataGrid;
 
 final class AddPresenter extends Presenter
 {
+
+	use TEmptyLayoutView;
 
 	/**
 	 * @var Connection

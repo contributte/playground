@@ -13,11 +13,15 @@ composer install
 ### database with dummy data 🗂
 
 ```bash
-docker-compose -f docker-compose-dev.yml up -d
+docker-compose -f docker-compose.yml up -d
 ```
 
 - Create database "datagrid"
 - Import dummy data from data/dummy.sql
+
+```bash
+docker exec -it contributte-datagrid-mysql /usr/share/datagrid/db-init.sh
+```
 
 ### Download assets using bower 🌐
 
