@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
+use App\UI\TEmptyLayoutView;
 use Dibi\Connection;
 use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\Column\Action\Confirmation\StringConfirmation;
@@ -11,6 +12,8 @@ use Ublaboo\DataGrid\DataGrid;
 
 class ActionsPresenter extends Presenter
 {
+
+	use TEmptyLayoutView;
 
 	/**
 	 * @var Connection

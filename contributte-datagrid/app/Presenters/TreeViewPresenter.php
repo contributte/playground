@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
+use App\UI\TEmptyLayoutView;
 use Dibi\Connection;
 use Dibi\Fluent;
 use Ublaboo\DataGrid\Column\Action\Confirmation\StringConfirmation;
@@ -11,6 +12,8 @@ use Ublaboo\DataGrid\DataGrid;
 
 final class TreeViewPresenter extends AbstractPresenter
 {
+
+	use TEmptyLayoutView;
 
 	/**
 	 * @var Connection

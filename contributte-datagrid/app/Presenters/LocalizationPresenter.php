@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Presenters;
 
+use App\UI\TEmptyLayoutView;
 use Dibi\Connection;
 use Dibi\Row;
 use Nette\Application\UI\Presenter;
@@ -12,6 +13,8 @@ use Ublaboo\DataGrid\Localization\SimpleTranslator;
 
 final class LocalizationPresenter extends Presenter
 {
+
+	use TEmptyLayoutView;
 
 	/**
 	 * @var Connection
