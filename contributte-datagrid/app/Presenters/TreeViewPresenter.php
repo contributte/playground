@@ -6,7 +6,6 @@ namespace App\Presenters;
 
 use Dibi\Connection;
 use Dibi\Fluent;
-use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\Column\Action\Confirmation\StringConfirmation;
 use Ublaboo\DataGrid\DataGrid;
 
@@ -77,6 +76,9 @@ final class TreeViewPresenter extends AbstractPresenter
 	}
 
 
+	/**
+	 * @param mixed $parentCategoryId
+	 */
 	public function getChildren($parentCategoryId): Fluent
 	{
 		$join = $this->dibiConnection->select('COUNT(id) AS count, parent_category_id')
@@ -93,6 +95,12 @@ final class TreeViewPresenter extends AbstractPresenter
 
 
 
+	/**
+	 * @param mixed $itemId
+	 * @param mixed $prevId
+	 * @param mixed $nextId
+	 * @param mixed $parentId
+	 */
 	public function handleSort($itemId, $prevId, $nextId, $parentId): void
 	{
 		$this->flashMessage(
