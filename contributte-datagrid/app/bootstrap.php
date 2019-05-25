@@ -8,9 +8,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 $configurator = new Configurator;
 
-$environment = getenv('DATAGRID_ENVIRONMENT');
-
-$configurator->setDebugMode($environment === 'local');
+$configurator->setDebugMode(!file_exists(__DIR__ . '/.production'));
 $configurator->enableTracy(__DIR__ . '/../log');
 
 $configurator->setTimeZone('Europe/Prague');

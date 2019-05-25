@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase /contributte/datagrid-sandbox/
+    RewriteBase /contributte/datagrid/
 
     ## Redirect from non-www na www.example.com
     #RewriteCond %{HTTP_HOST} ^([^\.]+\.[^\.]+)$ [NC]
