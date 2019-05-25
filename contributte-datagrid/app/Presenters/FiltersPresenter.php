@@ -16,7 +16,6 @@ final class FiltersPresenter extends AbstractPresenter
 
 	use TEmptyLayoutView;
 
-
 	/**
 	 * @var Connection
 	 * @inject

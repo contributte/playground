@@ -2,10 +2,11 @@
 
 namespace App\UI;
 
-use App\Presenters\AbstractPresenter;
-
+use Nette\Application\Request;
+use Nette\Application\UI\Presenter;
+use Nette\UnexpectedValueException;
 /**
- * @mixin AbstractPresenter
+ * @mixin Presenter
  */
 trait TEmptyLayoutView
 {
@@ -16,12 +17,24 @@ trait TEmptyLayoutView
 	 */
 	public $inFrame;
 
-	public function renderDefault()
+	public function renderDefault(): void
 	{
-		if ($this->getRequest()->getParameter('inFrame') == true)
+		/**
+		 * @var Request
+		 */
+		$request = $this->getRequest();
+
+		if ($request instanceof Request)
 		{
-			$this->setLayout(__DIR__ . '/../templates/@layout.inFrame.latte');
+			if ($request->getParameter('inFrame') == true)
+			{
+				$this->setLayout(__DIR__ . '/../templates/@layout.inFrame.latte');
+			}
+		} else {
+			throw new UnexpectedValueException('Presenter->getRequest() does not return instance of Nette\Application\Request');
 		}
+
+		
 	}
 
 }
