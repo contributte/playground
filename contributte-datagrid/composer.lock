@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a58079431a6f0a3f83cdc027b769b672",
+    "content-hash": "e1cd1a80a628f5de50a7dcae84513dd2",
     "packages": [
         {
             "name": "contributte/application",
@@ -1598,11 +1598,17 @@
         },
         {
             "name": "ublaboo/datagrid",
-            "version": "v6.x-dev",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ublaboo/datagrid.git",
-                "reference": "9b6845215ba8a923eae1c153d827c18233c00b5e"
+                "url": "https://github.com/contributte/datagrid.git",
+                "reference": "0c01efa27125c05030f468201f9cd7dc361b2689"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/contributte/datagrid/zipball/0c01efa27125c05030f468201f9cd7dc361b2689",
+                "reference": "0c01efa27125c05030f468201f9cd7dc361b2689",
+                "shasum": ""
             },
             "require": {
                 "contributte/application": "^0.4",
@@ -1621,7 +1627,7 @@
                 "nette/database": "~3.0",
                 "nette/tester": "^2.2",
                 "nextras/orm": "~3.1",
-                "ninjify/coding-standard": "^0.8",
+                "ninjify/coding-standard": "^0.9",
                 "phpstan/phpstan": "^0.11",
                 "phpstan/phpstan-strict-rules": "^0.11",
                 "tharos/leanmapper": "~3.4",
@@ -1630,8 +1636,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-v5.x": "5.8.x-dev",
-                    "dev-v6.x": "6.0.x-dev"
+                    "dev-master": "6.1.x-dev"
                 }
             },
             "autoload": {
@@ -1639,28 +1644,7 @@
                     "Ublaboo\\DataGrid\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Ublaboo\\DataGrid\\Tests\\": "tests"
-                }
-            },
-            "scripts": {
-                "tests": [
-                    "php vendor/nette/tester/src/tester.php tests/Api/UnitTests -C",
-                    "php vendor/nette/tester/src/tester.php tests/Api/IntegrationTests -C",
-                    "php vendor/nette/tester/src/tester.php tests/Api/DatabaseTests -j 1 -C",
-                    "php vendor/nette/tester/src/tester.php tests/Api/AcceptanceTests -j 1 -C"
-                ],
-                "phpstan": [
-                    "vendor/phpstan/phpstan/bin/phpstan analyse -c phpstan.neon src --level 7"
-                ],
-                "phpcs": [
-                    "vendor/bin/phpcs --standard=vendor/ninjify/coding-standard/ruleset-gamee.xml --extensions=php,phpt --tab-width=4 --ignore=temp -sp src tests"
-                ],
-                "phpcsfix": [
-                    "vendor/bin/phpcbf --standard=vendor/ninjify/coding-standard/ruleset-gamee.xml --extensions=php,phpt --tab-width=4 --ignore=temp -sp src tests"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1676,7 +1660,7 @@
                 "grid",
                 "nette"
             ],
-            "time": "2019-04-24T12:35:07+00:00"
+            "time": "2019-05-27T11:43:54+00:00"
         }
     ],
     "packages-dev": [
@@ -1809,16 +1793,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.2.1",
+            "version": "v4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "5221f49a608808c1e4d436df32884cbc1b821ac0"
+                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/5221f49a608808c1e4d436df32884cbc1b821ac0",
-                "reference": "5221f49a608808c1e4d436df32884cbc1b821ac0",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
+                "reference": "1bd73cc04c3843ad8d6b0bfc0956026a151fc420",
                 "shasum": ""
             },
             "require": {
@@ -1856,7 +1840,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2019-02-16T20:54:15+00:00"
+            "time": "2019-05-25T20:07:01+00:00"
         },
         {
             "name": "ninjify/coding-standard",
@@ -2002,16 +1986,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.11.5",
+            "version": "0.11.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "24ce5a566a798b81343138ed5d41d6877554cf9a"
+                "reference": "32d87d746c70785f78d239855782d27cde0eb6ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/24ce5a566a798b81343138ed5d41d6877554cf9a",
-                "reference": "24ce5a566a798b81343138ed5d41d6877554cf9a",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/32d87d746c70785f78d239855782d27cde0eb6ee",
+                "reference": "32d87d746c70785f78d239855782d27cde0eb6ee",
                 "shasum": ""
             },
             "require": {
@@ -2020,6 +2004,7 @@
                 "nette/bootstrap": "^2.4 || ^3.0",
                 "nette/di": "^2.4.7 || ^3.0",
                 "nette/robot-loader": "^3.0.1",
+                "nette/schema": "^1.0",
                 "nette/utils": "^2.4.5 || ^3.0",
                 "nikic/php-parser": "^4.0.2",
                 "php": "~7.1",
@@ -2071,26 +2056,26 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2019-03-25T16:40:09+00:00"
+            "time": "2019-05-19T17:36:42+00:00"
         },
         {
             "name": "phpstan/phpstan-dibi",
-            "version": "0.11",
+            "version": "0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-dibi.git",
-                "reference": "87a359e136d703f7bf350503bbd1e09b968dd9ed"
+                "reference": "1b2fd2904eafd23d8010d48ad063d1d20d471351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-dibi/zipball/87a359e136d703f7bf350503bbd1e09b968dd9ed",
-                "reference": "87a359e136d703f7bf350503bbd1e09b968dd9ed",
+                "url": "https://api.github.com/repos/phpstan/phpstan-dibi/zipball/1b2fd2904eafd23d8010d48ad063d1d20d471351",
+                "reference": "1b2fd2904eafd23d8010d48ad063d1d20d471351",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.0",
                 "php": "~7.1",
-                "phpstan/phpstan": "^0.11"
+                "phpstan/phpstan": "^0.11.4"
             },
             "conflict": {
                 "dibi/dibi": "<3.0"
@@ -2107,10 +2092,15 @@
                 "satooshi/php-coveralls": "^1.0",
                 "slevomat/coding-standard": "^4.5.2"
             },
-            "type": "library",
+            "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.11-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "extension.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -2123,26 +2113,26 @@
                 "MIT"
             ],
             "description": "Dibi class reflection extension for PHPStan",
-            "time": "2018-11-02T11:23:23+00:00"
+            "time": "2019-05-12T16:52:01+00:00"
         },
         {
             "name": "phpstan/phpstan-strict-rules",
-            "version": "0.11",
+            "version": "0.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-strict-rules.git",
-                "reference": "747a742b26a35ef4e4ebef5ec4490ad74eebcbc0"
+                "reference": "a203a7afdda073d4ea405a6d9007a5b32de3be61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/747a742b26a35ef4e4ebef5ec4490ad74eebcbc0",
-                "reference": "747a742b26a35ef4e4ebef5ec4490ad74eebcbc0",
+                "url": "https://api.github.com/repos/phpstan/phpstan-strict-rules/zipball/a203a7afdda073d4ea405a6d9007a5b32de3be61",
+                "reference": "a203a7afdda073d4ea405a6d9007a5b32de3be61",
                 "shasum": ""
             },
             "require": {
                 "nikic/php-parser": "^4.0",
                 "php": "~7.1",
-                "phpstan/phpstan": "^0.11"
+                "phpstan/phpstan": "^0.11.4"
             },
             "require-dev": {
                 "consistence/coding-standard": "^3.0.1",
@@ -2153,10 +2143,15 @@
                 "phpunit/phpunit": "^7.0",
                 "slevomat/coding-standard": "^4.5.2"
             },
-            "type": "library",
+            "type": "phpstan-extension",
             "extra": {
                 "branch-alias": {
                     "dev-master": "0.11-dev"
+                },
+                "phpstan": {
+                    "includes": [
+                        "rules.neon"
+                    ]
                 }
             },
             "autoload": {
@@ -2169,7 +2164,7 @@
                 "MIT"
             ],
             "description": "Extra strict and opinionated rules for PHPStan",
-            "time": "2019-01-14T09:56:55+00:00"
+            "time": "2019-05-12T16:59:47+00:00"
         },
         {
             "name": "psr/log",
@@ -2383,16 +2378,16 @@
         },
         {
             "name": "symfony/contracts",
-            "version": "v1.0.2",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/contracts.git",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf"
+                "reference": "d3636025e8253c6144358ec0a62773cae588395b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/contracts/zipball/1aa7ab2429c3d594dd70689604b5cf7421254cdf",
-                "reference": "1aa7ab2429c3d594dd70689604b5cf7421254cdf",
+                "url": "https://api.github.com/repos/symfony/contracts/zipball/d3636025e8253c6144358ec0a62773cae588395b",
+                "reference": "d3636025e8253c6144358ec0a62773cae588395b",
                 "shasum": ""
             },
             "require": {
@@ -2400,19 +2395,22 @@
             },
             "require-dev": {
                 "psr/cache": "^1.0",
-                "psr/container": "^1.0"
+                "psr/container": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10"
             },
             "suggest": {
                 "psr/cache": "When using the Cache contracts",
                 "psr/container": "When using the Service contracts",
                 "symfony/cache-contracts-implementation": "",
+                "symfony/event-dispatcher-implementation": "",
+                "symfony/http-client-contracts-implementation": "",
                 "symfony/service-contracts-implementation": "",
                 "symfony/translation-contracts-implementation": ""
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -2447,7 +2445,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2018-12-05T08:06:11+00:00"
+            "time": "2019-04-27T14:29:50+00:00"
         },
         {
             "name": "symfony/finder",
