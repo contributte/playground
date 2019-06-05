@@ -4,6 +4,13 @@ This project is here for super-simple demonstration how to create a project with
 
 ## How to run project:
 
+### Download project
+
+```bash
+git clone git@github.com:planette/playground.git
+cd playground/contributte-datagrid
+```
+
 ### composer dependencies 🤪
 
 ```bash
