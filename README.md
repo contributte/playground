@@ -26,7 +26,7 @@ git clone git@github.com:planette/playground.git
 |---------|----------|-------------|
 | [ApiRouter](https://github.com/contributte/playground/tree/master/contributte-api-router) | api-router | Starter project for ApiRouter. |
 | [Console + Console Extra](https://github.com/contributte/playground/tree/master/contributte-console) | console, console-extra | Example of writing own commands and how to install Console Extra with all commands. |
-| [Datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | datagrid | Dockerized example of our datagrid. |
+| [Datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | datagrid | Dockerized example of our datagrid. [DEMO](https://examples.planette.io/contributte/datagrid/) |
 | [Event Dispatcher](https://github.com/contributte/playground/tree/master/contributte-event-dispatcher) | event-dispatcher, event-dispatcher-extra | Example of dispatching and subscribing events. |
 | [Live Form Validation](https://github.com/contributte/playground/tree/master/contributte-live-form-validation) | live-form-validation | Example of live form validation. |
 | [Mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | mailing | Example of contributte/mailing usage. |
