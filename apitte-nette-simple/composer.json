@@ -1,20 +1,20 @@
 {
     "require": {
-        "php": ">=7.1",
-        "contributte/application": "^0.3.2",
-        "contributte/bootstrap": "^0.3.1",
-        "contributte/cache": "^0.3.0",
-        "contributte/di": "^0.3.0",
-        "contributte/http": "^0.2",
+        "php": ">= 7.2",
+        "contributte/application": "^0.4.0",
+        "contributte/bootstrap": "^0.4.0",
+        "contributte/cache": "^0.5.0",
+        "contributte/di": "^0.4.0",
+        "contributte/http": "^0.3.0",
         "contributte/latte": "^0.4.0",
         "contributte/tracy": "^0.4.0",
 
-        "nette/robot-loader": "~3.1.0",
+        "nette/robot-loader": "~3.2.0",
 
-        "apitte/core": "^0.5.0",
-        "apitte/debug": "^0.5.0",
-        "apitte/openapi": "^0.5.0",
-        "apitte/presenter": "^0.5.0"
+        "apitte/core": "^0.6.0",
+        "apitte/debug": "^0.6.0",
+        "apitte/openapi": "^0.6.0",
+        "apitte/presenter": "^0.6.0"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

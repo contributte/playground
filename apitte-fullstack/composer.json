@@ -1,13 +1,13 @@
 {
     "require": {
-        "php": ">= 7.1",
-        "contributte/bootstrap": "^0.3.1",
-        "contributte/http": "^0.2.0",
+        "php": ">= 7.2.0",
+        "contributte/bootstrap": "^0.4.0",
+        "contributte/http": "^0.3.0",
         "contributte/tracy": "^0.4.0",
-        "contributte/di": "^0.3.0",
-        "apitte/fullstack": "^0.5.0",
+        "contributte/di": "^0.4.0",
+        "apitte/fullstack": "^0.6.0",
 
-        "nette/robot-loader": "~3.1.0"
+        "nette/robot-loader": "~3.2.0"
     },
     "autoload": {
         "psr-4": {
