@@ -12,7 +12,7 @@ This repository consist of examples for [Nette Framework](https://nette.org).
 
 ## How to start
 
-Just clone this repository and take a loot at prepared examples.
+Just clone this repository and take a look at prepared examples.
 
 ```
 git clone git@github.com:planette/playground.git
