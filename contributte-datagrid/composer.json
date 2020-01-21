@@ -22,7 +22,7 @@
 		"nette/mail": "^3.0",
 		"nette/security": "^3.0",
 		"nette/utils": "^3.0",
-		"latte/latte": "^3.0",
+		"latte/latte": "^2.6",
 		"tracy/tracy": "^3.0",
 		"ublaboo/datagrid" : "^6.0",
 		"dibi/dibi": "^3.0.0 || ^4.0.0"
