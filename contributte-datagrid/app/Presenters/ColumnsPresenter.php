@@ -7,6 +7,10 @@ namespace App\Presenters;
 use App\UI\TEmptyLayoutView;
 use Dibi\Connection;
 use Dibi\Row;
+use Ublaboo\DataGrid\AggregationFunction\FunctionSum;
+use Ublaboo\DataGrid\AggregationFunction\IAggregationFunction;
+use Ublaboo\DataGrid\AggregationFunction\ICommonAggregation;
+use Ublaboo\DataGrid\AggregationFunction\IMultipleAggregationFunction;
 use Ublaboo\DataGrid\Column\ColumnLink;
 use Ublaboo\DataGrid\Column\ColumnStatus;
 use Ublaboo\DataGrid\DataGrid;
@@ -72,10 +76,10 @@ final class ColumnsPresenter extends AbstractPresenter
 
 		$grid->setColumnsHideable();
 
-		$grid->setColumnsSummary(['id'])
+		/*$grid->setColumnsSummary(['id'])
 			->setRenderer(function(int $summary, string $column): string {
 				return 'Summary renderer: ' . $summary . ' $';
-			});
+			});*/
 
 		$grid->addColumnCallback('status', function(ColumnStatus $column, Row $row) {
 			if ($row['id'] === 3) {
@@ -90,6 +94,54 @@ final class ColumnsPresenter extends AbstractPresenter
 				});
 			}
 		});
+
+		// $grid->addAggregationFunction('status', new FunctionSum('id'));
+
+		$grid->setMultipleAggregationFunction(
+			new class implements IMultipleAggregationFunction
+			{
+
+				/**
+				 * @var int
+				 */
+				private $idsSum = 0;
+
+				/**
+				 * @var float
+				 */
+				private $avgAge = 0.0;
+
+
+				public function getFilterDataType(): string
+				{
+					return IAggregationFunction::DATA_TYPE_PAGINATED;
+				}
+
+
+				public function processDataSource($dataSource): void
+				{
+					$this->idsSum = (int) $dataSource->getConnection()
+						->select('SUM([id])')
+						->from($dataSource, '_')
+						->fetchSingle();
+
+					$this->avgAge = round((float) $dataSource->getConnection()
+						->select('AVG(YEAR([birth_date]))')
+						->from($dataSource, '_')
+						->fetchSingle());
+				}
+
+
+				public function renderResult(string $key)
+				{
+					if ($key === 'id') {
+						return 'Ids sum: ' . $this->idsSum;
+					} elseif ($key === 'age') {
+						return 'Avg Age: ' . (int) (date('Y') - $this->avgAge);
+					}
+				}
+			}
+		);
 
 		return $grid;
 	}
