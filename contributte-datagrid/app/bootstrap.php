@@ -2,22 +2,29 @@
 
 declare(strict_types=1);
 
+namespace App;
+
 use Nette\Configurator;
 
-require __DIR__ . '/../vendor/autoload.php';
+final class Bootstrap
+{
 
-$configurator = new Configurator;
+	public static function boot(): Configurator
+	{
+		$configurator = new Configurator;
 
-$configurator->setDebugMode(!file_exists(__DIR__ . '/.production'));
-$configurator->enableTracy(__DIR__ . '/../log');
+		$configurator->setDebugMode(!file_exists(__DIR__ . '/.production'));
+		$configurator->enableTracy(__DIR__ . '/../log');
 
-$configurator->setTimeZone('Europe/Prague');
-$configurator->setTempDirectory(__DIR__ . '/../temp');
+		$configurator->setTimeZone('Europe/Prague');
+		$configurator->setTempDirectory(__DIR__ . '/../temp');
 
-$configurator->addConfig(__DIR__ . '/config/config.neon');
+		$configurator->addConfig(__DIR__ . '/config/common.neon');
 
-if (file_exists(__DIR__ . '/config/config.local.neon')) {
-	$configurator->addConfig(__DIR__ . '/config/config.local.neon');
+		if (file_exists(__DIR__ . '/config/local.neon')) {
+			$configurator->addConfig(__DIR__ . '/config/local.neon');
+		}
+
+		return $configurator;
+	}
 }
-
-return $configurator->createContainer();

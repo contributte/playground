@@ -1,0 +1,16 @@
+{
+	"dependencies": {
+		"bootstrap-datepicker": "^1.9",
+		"bootstrap-select": "^1.13",
+		"happy-inputs": "^2.0",
+		"jquery-ui-sortable": "^1.0",
+		"nette-forms": "^3.0",
+		"nette.ajax.js": "^2.3",
+		"popper.js": "^1.14.7",
+		"ublaboo-datagrid": "^6.2.13"
+	},
+	"devDependencies": {
+		"bootstrap": "^4.4.1",
+		"jquery": "^3.4.1"
+	}
+}
