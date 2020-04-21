@@ -93,3 +93,16 @@ body {
 	position: absolute;
 	right: 1em;
 }
+
+.example-code {
+	text-align: left;
+	margin: 0 0 1em;
+}
+
+.example-code h5 {
+	margin: 0 0 1em;
+}
+
+.language-php {
+	font-size: 0.9em !important;
+}

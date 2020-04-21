@@ -71,7 +71,7 @@ final class FiltersPresenter extends AbstractPresenter
 				}
 			});
 
-		$grid->setOuterFilterRendering();
+		// $grid->setOuterFilterRendering();
 
 		return $grid;
 	}
