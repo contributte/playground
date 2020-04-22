@@ -30,15 +30,6 @@ docker-compose -f docker-compose.yml up -d
 docker exec -it contributte-datagrid-mysql /usr/share/datagrid/db-init.sh
 ```
 
-### Download assets using bower 🌐
-
-```bash
-cd www
-bower install ublaboo-datagrid
-bower install bootstrap-select # multi-select filters
-bower install popper.js --save # columns status
-```
-
 ### Run PHP server ⚡️
 
 ```bash
