@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Forms-bootstrap Sandbox</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<style>
+	.inline-buttons .form-group {
+		display:inline-block;
+	}
+</style>
+</head>
+
+<body>
+{snippet flashes}
+	<div class="flash slide alert alert-{$flash->type}" n:foreach="$flashes as $flash">
+		<div class="container">
+			{$flash->message}
+		</div>
+	</div>
+{/snippet}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+				<a class="nav-item nav-link" n:href="default mode => 0">Vertical rendering</a>
+				<a class="nav-item nav-link" n:href="default mode => 1">Side by side rendering</a>
+				<a class="nav-item nav-link" n:href="default mode => 2">Inline rendering</a>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<div class="card" style="margin-top:20px;">
+		<div class="card-header">
+			Form example
+		</div>
+		<div class="card-body">
+			{include content}
+		</div>
+	</div>
+</div>
+
+{block scripts}
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.js"></script>
+{/block}
+</body>
+</html>
