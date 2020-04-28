@@ -9,10 +9,20 @@ var finishFlash = function() {
 	}
 };
 
-$.nette.ext('flashes', {
-  complete: function() {
-  	finishFlash();
-  }
-});
+if (typeof naja !== "undefined") {
+	function FlashesExtension(naja) {
+	    naja.addEventListener('complete', finishFlash);
+
+	    return this;
+	}
+
+	naja.registerExtension(FlashesExtension);
+} else {
+	$.nette.ext('flashes', {
+	  complete: function() {
+	  	finishFlash();
+	  }
+	});
+}
 
 finishFlash();
