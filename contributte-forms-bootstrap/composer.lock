@@ -4,34 +4,39 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04d3173c226beecf683037ca67ae9c11",
+    "content-hash": "7970f0f274ea76b76970b35ef7586380",
     "packages": [
         {
             "name": "contributte/forms-bootstrap",
-            "version": "0.1",
+            "version": "v0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "f829d7cdd41fe6586860d9b31c307121c69cf73d"
+                "reference": "696160808fb118a508d80f59f709807637f8d72b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/f829d7cdd41fe6586860d9b31c307121c69cf73d",
-                "reference": "f829d7cdd41fe6586860d9b31c307121c69cf73d",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/696160808fb118a508d80f59f709807637f8d72b",
+                "reference": "696160808fb118a508d80f59f709807637f8d72b",
                 "shasum": ""
             },
             "require": {
                 "nette/application": "^3.0",
-                "nette/forms": "^3.0",
+                "nette/forms": "^3.0.4",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/qa": "^v0.10"
+                "ninjify/qa": "^v0.10",
+                "phpstan/phpstan": "^0.12.6",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "phpunit/phpunit": "^8.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1.x-dev"
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -57,7 +62,7 @@
                 "library",
                 "nette"
             ],
-            "time": "2020-01-08T23:39:06+00:00"
+            "time": "2020-06-03T20:28:34+00:00"
         },
         {
             "name": "latte/latte",
@@ -1285,9 +1290,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=7.1"
