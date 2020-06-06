@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cbd851a83ad15c36839ea343924cf02",
+    "content-hash": "9962b477d4272ed2c50ad8908ed5d941",
     "packages": [
         {
             "name": "contributte/application",
@@ -366,16 +366,16 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.2.2",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "69a30a862c38b5c6574b4357672faf7777846082"
+                "reference": "7ac48b2dff163d79c139f1ce3af26bdac1af9c92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/69a30a862c38b5c6574b4357672faf7777846082",
-                "reference": "69a30a862c38b5c6574b4357672faf7777846082",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/7ac48b2dff163d79c139f1ce3af26bdac1af9c92",
+                "reference": "7ac48b2dff163d79c139f1ce3af26bdac1af9c92",
                 "shasum": ""
             },
             "require": {
@@ -389,6 +389,11 @@
                 "ninjify/qa": "^0.8.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Contributte\\Neonizer\\": "src/"
@@ -413,7 +418,7 @@
                 "nette",
                 "parameters"
             ],
-            "time": "2018-07-27T08:22:54+00:00"
+            "time": "2019-05-28T17:15:17+00:00"
         },
         {
             "name": "contributte/security",
