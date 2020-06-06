@@ -1,0 +1,110 @@
+version: 2
+updates:
+- package-ecosystem: php
+  directory: "/apitte-fullstack"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/apitte-micro"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/apitte-nette-simple"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/apitte-simple"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-anabelle"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-api-router"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-console"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-datagrid"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-event-dispatcher"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-form-bootstrap"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-live-form-validation"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-mailing"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-neonizer"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-reCAPTCHA"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/contributte-thepay"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/nettrine-migrations"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+- package-ecosystem: php
+  directory: "/nettrine-orm"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
+  - package-ecosystem: php
+directory: "/nettrine-orm-generator"
+  schedule:
+    interval: daily
+    time: '11:00'
+  open-pull-requests-limit: 10
