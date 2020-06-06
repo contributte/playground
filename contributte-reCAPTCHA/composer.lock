@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5782157b2265b65af9882e0ba4089c7e",
+    "content-hash": "eaf88b6402e42b6162a9de971ca6cdf9",
     "packages": [
         {
             "name": "contributte/application",
@@ -122,16 +122,16 @@
         },
         {
             "name": "contributte/cache",
-            "version": "v0.2",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/cache.git",
-                "reference": "aa3851c30dc78b8073078534cb873033caca1ef5"
+                "reference": "c076c89e0881f37c3d5493add3627568920cfd85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/cache/zipball/aa3851c30dc78b8073078534cb873033caca1ef5",
-                "reference": "aa3851c30dc78b8073078534cb873033caca1ef5",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/c076c89e0881f37c3d5493add3627568920cfd85",
+                "reference": "c076c89e0881f37c3d5493add3627568920cfd85",
                 "shasum": ""
             },
             "require": {
@@ -139,12 +139,13 @@
                 "php": ">= 7.1"
             },
             "conflict": {
-                "nette/di": "<2.4.13"
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.0"
             },
             "require-dev": {
                 "nette/di": "~2.4.13",
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.8.0"
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/di": "to use CacheFactoryExtension[CompilerExtension]"
@@ -177,7 +178,7 @@
                 "nette",
                 "provider"
             ],
-            "time": "2018-07-07T09:44:38+00:00"
+            "time": "2018-08-16T07:58:50+00:00"
         },
         {
             "name": "contributte/di",
@@ -917,16 +918,16 @@
         },
         {
             "name": "nette/caching",
-            "version": "v2.5.8",
+            "version": "v2.5.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/caching.git",
-                "reference": "7fba7c7ab2585fafb7b31152f2595e1551120555"
+                "reference": "d93ef446836a5a0ff7ef78d5ffebb7fe043f9953"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/caching/zipball/7fba7c7ab2585fafb7b31152f2595e1551120555",
-                "reference": "7fba7c7ab2585fafb7b31152f2595e1551120555",
+                "url": "https://api.github.com/repos/nette/caching/zipball/d93ef446836a5a0ff7ef78d5ffebb7fe043f9953",
+                "reference": "d93ef446836a5a0ff7ef78d5ffebb7fe043f9953",
                 "shasum": ""
             },
             "require": {
@@ -982,7 +983,7 @@
                 "nette",
                 "sqlite"
             ],
-            "time": "2018-03-21T11:04:32+00:00"
+            "time": "2019-11-19T18:38:13+00:00"
         },
         {
             "name": "nette/component-model",
@@ -1116,33 +1117,34 @@
         },
         {
             "name": "nette/finder",
-            "version": "v2.4.2",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "ee951a656cb8ac622e5dd33474a01fd2470505a0"
+                "reference": "4ad2c298eb8c687dd0e74ae84206a4186eeaed50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/ee951a656cb8ac622e5dd33474a01fd2470505a0",
-                "reference": "ee951a656cb8ac622e5dd33474a01fd2470505a0",
+                "url": "https://api.github.com/repos/nette/finder/zipball/4ad2c298eb8c687dd0e74ae84206a4186eeaed50",
+                "reference": "4ad2c298eb8c687dd0e74ae84206a4186eeaed50",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "~2.4",
-                "php": ">=5.6.0"
+                "nette/utils": "^2.4 || ^3.0",
+                "php": ">=7.1"
             },
             "conflict": {
                 "nette/nette": "<2.2"
             },
             "require-dev": {
-                "nette/tester": "~2.0",
+                "nette/tester": "^2.0",
+                "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.5-dev"
                 }
             },
             "autoload": {
@@ -1166,7 +1168,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette Finder: find files and directories with an intuitive API.",
+            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -1174,7 +1176,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2018-06-28T11:49:23+00:00"
+            "time": "2020-01-03T20:35:40+00:00"
         },
         {
             "name": "nette/forms",
