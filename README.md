@@ -15,6 +15,15 @@
 
 ---
 
+Minimal PHP version is 7.2. You are more then welcomed to create your example? Just [fork](https://github.com/planette/playground/fork) this repository and [send a PR](https://github.com/planette/playground/pulls).
+
+
+If you want to test some example just clone this repository and take a look at prepared examples.
+
+```
+git clone git@github.com:planette/playground.git
+```
+
 | Project | Packages | Description |
 |---------|----------|-------------|
 | [apitte-fullstack](https://github.com/planette/playground/tree/master/apitte-fullstack) | core, middlewares, negotiation, debug, openapi | Fullstack application with example of all plugins. |
@@ -34,13 +43,6 @@ application integration. |
 | [nettrine-migrations](https://github.com/planette/playground/tree/master/nettrine-migrations) | migrations | Example of doctrine/migrations. |
 | [nettrine-orm](https://github.com/planette/playground/tree/master/nettrine-orm) | dbal, orm | Example of doctrine/dbal and doctrine/orm. |
 | [nextras-orm-generator](https://github.com/planette/playground/tree/master/nextras-orm-generator) | nextras | Example of nextras entity generation |
-
-
-If you want to test some example just clone this repository and take a look at prepared examples.
-
-```
-git clone git@github.com:planette/playground.git
-```
 
 ---
 
