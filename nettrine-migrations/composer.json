@@ -19,7 +19,7 @@
 		"nettrine/migrations": "^0.2.0",
 		"nettrine/orm": "dev-master",
 		"nettrine/annotations": "^0.1",
-		"contributte/console": "^0.2"
+		"contributte/console": "^0.4"
 	},
 	"minimum-stability": "dev",
 	"prefer-stable": true
