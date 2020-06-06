@@ -6,7 +6,7 @@
 		"php": ">=7.1",
 		"nette/application": "^2.4.4",
 		"nette/bootstrap": "^2.4.3",
-		"nette/caching": "^2.5",
+		"nette/caching": "^3.0",
 		"nette/di": "^2.4",
 		"nette/finder": "^2.4",
 		"nette/forms": "^2.4",
