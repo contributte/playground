@@ -1,109 +1,109 @@
 version: 2
 updates:
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/apitte-fullstack"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/apitte-micro"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/apitte-nette-simple"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/apitte-simple"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-anabelle"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-api-router"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-console"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-datagrid"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-event-dispatcher"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-form-bootstrap"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-live-form-validation"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-mailing"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-neonizer"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-reCAPTCHA"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/contributte-thepay"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/nettrine-migrations"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-- package-ecosystem: php
+- package-ecosystem: composer
   directory: "/nettrine-orm"
   schedule:
     interval: daily
     time: '11:00'
   open-pull-requests-limit: 10
-  - package-ecosystem: php
-directory: "/nettrine-orm-generator"
+- package-ecosystem: composer
+  directory: "/nettrine-orm-generator"
   schedule:
     interval: daily
     time: '11:00'
