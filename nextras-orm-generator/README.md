@@ -1,4 +1,4 @@
-# Mailing
+# Nextras ORM generator
 
 This is example of contributte/nextras-orm-generator
 
