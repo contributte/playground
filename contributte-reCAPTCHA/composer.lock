@@ -554,21 +554,21 @@
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c"
+                "reference": "fdb1104dce65827b6ff9696e96d6397fedfb5237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c",
-                "reference": "ee19bf4506ecb26c7ecbc84c33ee776f328c4b3c",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/fdb1104dce65827b6ff9696e96d6397fedfb5237",
+                "reference": "fdb1104dce65827b6ff9696e96d6397fedfb5237",
                 "shasum": ""
             },
             "require": {
                 "php": ">= 7.1",
-                "tracy/tracy": "~2.4.15 || ~2.5.0"
+                "tracy/tracy": "~2.6.0"
             },
             "conflict": {
                 "nette/application": "<2.4.12",
@@ -580,8 +580,13 @@
                 "nette/application": "~2.4.12",
                 "nette/di": "~2.4.13",
                 "nette/http": "~2.4.9",
+                "nette/utils": "~2.5.3",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0"
+                "ninjify/qa": "^0.8.0",
+                "phpstan/phpstan-deprecation-rules": "^0.11",
+                "phpstan/phpstan-nette": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpstan/phpstan-strict-rules": "^0.11"
             },
             "type": "library",
             "extra": {
@@ -618,7 +623,7 @@
                 "profile",
                 "tracy"
             ],
-            "time": "2018-07-28T20:13:59+00:00"
+            "time": "2019-02-25T12:50:46+00:00"
         },
         {
             "name": "contributte/utils",
@@ -1653,26 +1658,28 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.5.1",
+            "version": "v2.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "bea9df15a1cdbf3ec50ef3a75f5ada1ab536d679"
+                "reference": "d3bb9f43692df5e3b83ab8004d3e6208034ac0ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/bea9df15a1cdbf3ec50ef3a75f5ada1ab536d679",
-                "reference": "bea9df15a1cdbf3ec50ef3a75f5ada1ab536d679",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/d3bb9f43692df5e3b83ab8004d3e6208034ac0ca",
+                "reference": "d3bb9f43692df5e3b83ab8004d3e6208034ac0ca",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-session": "*",
-                "php": ">=5.4.4"
+                "php": ">=7.1"
             },
             "require-dev": {
-                "nette/di": "~2.3",
-                "nette/tester": "~1.7"
+                "nette/di": "^2.4 || ~3.0.0",
+                "nette/tester": "^2.2",
+                "nette/utils": "^2.4 || ^3.0",
+                "psr/log": "^1.0"
             },
             "suggest": {
                 "https://nette.org/donate": "Please support Tracy via a donation"
@@ -1680,7 +1687,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1688,7 +1695,7 @@
                     "src"
                 ],
                 "files": [
-                    "src/shortcuts.php"
+                    "src/Tracy/shortcuts.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1705,7 +1712,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
+            "description": "😎 Tracy: the addictive tool to ease debugging PHP code for cool developers. Friendly design, logging, profiler, advanced features like debugging AJAX calls or CLI support. You will love it.",
             "homepage": "https://tracy.nette.org",
             "keywords": [
                 "Xdebug",
@@ -1714,7 +1721,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2018-07-03T11:34:33+00:00"
+            "time": "2020-05-17T09:37:45+00:00"
         }
     ],
     "packages-dev": [],
