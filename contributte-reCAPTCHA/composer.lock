@@ -247,28 +247,30 @@
         },
         {
             "name": "contributte/forms",
-            "version": "v0.3",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms.git",
-                "reference": "eddbed87f4cd95164b0f82b183483d37d73610e7"
+                "reference": "f9ff997f9d10503fff2126ba728210642c0ceed2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms/zipball/eddbed87f4cd95164b0f82b183483d37d73610e7",
-                "reference": "eddbed87f4cd95164b0f82b183483d37d73610e7",
+                "url": "https://api.github.com/repos/contributte/forms/zipball/f9ff997f9d10503fff2126ba728210642c0ceed2",
+                "reference": "f9ff997f9d10503fff2126ba728210642c0ceed2",
                 "shasum": ""
             },
             "require": {
-                "nette/forms": "~2.4.3",
+                "nette/forms": "~2.4.8",
                 "php": ">= 7.1"
             },
             "conflict": {
-                "nette/application": "<2.4.12"
+                "nette/application": "<2.4.12",
+                "nette/http": "<2.4.9",
+                "nette/utils": "<2.5.0"
             },
             "require-dev": {
-                "nette/application": "~2.4.12",
-                "nette/di": "~2.4.11",
+                "nette/application": "~2.4.13",
+                "nette/di": "~2.4.13",
                 "nette/utils": "~2.5.2",
                 "ninjify/nunjuck": "^0.2",
                 "ninjify/qa": "^0.8.0"
@@ -293,7 +295,7 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Šulc",
+                    "name": "Milan Felix Sulc",
                     "homepage": "https://f3l1x.io"
                 },
                 {
@@ -312,7 +314,7 @@
                 "rules",
                 "validation"
             ],
-            "time": "2018-06-25T15:31:29+00:00"
+            "time": "2018-08-21T20:48:40+00:00"
         },
         {
             "name": "contributte/http",
