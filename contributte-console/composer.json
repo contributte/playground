@@ -11,7 +11,7 @@
     "contributte/latte": "^0.3.0",
     "contributte/tracy": "^0.3.1",
     "contributte/console": "^0.5.0",
-    "contributte/console-extra": "^0.3.0"
+    "contributte/console-extra": "^0.4"
   },
   "autoload": {
     "psr-4": {
