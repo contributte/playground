@@ -8,7 +8,7 @@
 		"contributte/mail": "^0.2.0",
     "contributte/mailing": "^0.2.0",
 		"contributte/security": "^0.2",
-		"contributte/utils": "^0.2",
+		"contributte/utils": "^0.3",
 		"contributte/latte": "^0.3",
 		"contributte/tracy": "^0.3",
 		"nette/robot-loader": "^3.0"
