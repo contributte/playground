@@ -247,28 +247,30 @@
         },
         {
             "name": "contributte/forms",
-            "version": "v0.3",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms.git",
-                "reference": "eddbed87f4cd95164b0f82b183483d37d73610e7"
+                "reference": "f9ff997f9d10503fff2126ba728210642c0ceed2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms/zipball/eddbed87f4cd95164b0f82b183483d37d73610e7",
-                "reference": "eddbed87f4cd95164b0f82b183483d37d73610e7",
+                "url": "https://api.github.com/repos/contributte/forms/zipball/f9ff997f9d10503fff2126ba728210642c0ceed2",
+                "reference": "f9ff997f9d10503fff2126ba728210642c0ceed2",
                 "shasum": ""
             },
             "require": {
-                "nette/forms": "~2.4.3",
+                "nette/forms": "~2.4.8",
                 "php": ">= 7.1"
             },
             "conflict": {
-                "nette/application": "<2.4.12"
+                "nette/application": "<2.4.12",
+                "nette/http": "<2.4.9",
+                "nette/utils": "<2.5.0"
             },
             "require-dev": {
-                "nette/application": "~2.4.12",
-                "nette/di": "~2.4.11",
+                "nette/application": "~2.4.13",
+                "nette/di": "~2.4.13",
                 "nette/utils": "~2.5.2",
                 "ninjify/nunjuck": "^0.2",
                 "ninjify/qa": "^0.8.0"
@@ -312,7 +314,7 @@
                 "rules",
                 "validation"
             ],
-            "time": "2018-06-25T15:31:29+00:00"
+            "time": "2018-08-21T20:48:40+00:00"
         },
         {
             "name": "contributte/http",
@@ -1120,16 +1122,16 @@
         },
         {
             "name": "nette/forms",
-            "version": "v2.4.8",
+            "version": "v2.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "57dbcea96334e3d6034d8a44bd609a51a4f941d7"
+                "reference": "c38d0bc1d627c983075bf64560f8528c8e265d87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/57dbcea96334e3d6034d8a44bd609a51a4f941d7",
-                "reference": "57dbcea96334e3d6034d8a44bd609a51a4f941d7",
+                "url": "https://api.github.com/repos/nette/forms/zipball/c38d0bc1d627c983075bf64560f8528c8e265d87",
+                "reference": "c38d0bc1d627c983075bf64560f8528c8e265d87",
                 "shasum": ""
             },
             "require": {
@@ -1184,7 +1186,7 @@
                 "nette",
                 "validation"
             ],
-            "time": "2018-06-28T11:15:32+00:00"
+            "time": "2019-11-19T15:39:27+00:00"
         },
         {
             "name": "nette/http",
