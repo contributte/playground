@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d0d0ae1ffd93b42758447b1bbc1161f",
+    "content-hash": "d146d4ac79abe777d404e4435146c001",
     "packages": [
         {
             "name": "contributte/application",
@@ -307,16 +307,16 @@
         },
         {
             "name": "contributte/mail",
-            "version": "v0.2.0",
+            "version": "v0.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/mail.git",
-                "reference": "b323136781ed54eaf890e26dd5d2f58d24e5f72b"
+                "reference": "9a2656ce323b768cb6355c84fe8d03eaa61ac468"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/mail/zipball/b323136781ed54eaf890e26dd5d2f58d24e5f72b",
-                "reference": "b323136781ed54eaf890e26dd5d2f58d24e5f72b",
+                "url": "https://api.github.com/repos/contributte/mail/zipball/9a2656ce323b768cb6355c84fe8d03eaa61ac468",
+                "reference": "9a2656ce323b768cb6355c84fe8d03eaa61ac468",
                 "shasum": ""
             },
             "require": {
@@ -364,7 +364,7 @@
                 "mail",
                 "nette"
             ],
-            "time": "2018-07-18T19:35:19+00:00"
+            "time": "2018-11-08T20:12:18+00:00"
         },
         {
             "name": "contributte/mailing",
@@ -1101,7 +1101,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette Finder: find files and directories with an intuitive API.",
+            "description": "🔍 Nette Finder: find files and directories with an intuitive API.",
             "homepage": "https://nette.org",
             "keywords": [
                 "filesystem",
@@ -1185,16 +1185,16 @@
         },
         {
             "name": "nette/mail",
-            "version": "v2.4.5",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/mail.git",
-                "reference": "13312eb627d913f2630018a07a9e40cb7003dc76"
+                "reference": "431f1774034cc14ee6a795b6514fe6343f75a68e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/mail/zipball/13312eb627d913f2630018a07a9e40cb7003dc76",
-                "reference": "13312eb627d913f2630018a07a9e40cb7003dc76",
+                "url": "https://api.github.com/repos/nette/mail/zipball/431f1774034cc14ee6a795b6514fe6343f75a68e",
+                "reference": "431f1774034cc14ee6a795b6514fe6343f75a68e",
                 "shasum": ""
             },
             "require": {
@@ -1249,7 +1249,7 @@
                 "nette",
                 "smtp"
             ],
-            "time": "2018-03-18T16:30:02+00:00"
+            "time": "2018-11-21T22:35:13+00:00"
         },
         {
             "name": "nette/neon",
