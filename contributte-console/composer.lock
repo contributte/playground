@@ -321,16 +321,16 @@
         },
         {
             "name": "contributte/di",
-            "version": "v0.3.0",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "71321f48155d6fa86ebf4cc497f87ec995010dfe"
+                "reference": "de531e26ba4b70d570b59a28cfd81cc17de6800a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/71321f48155d6fa86ebf4cc497f87ec995010dfe",
-                "reference": "71321f48155d6fa86ebf4cc497f87ec995010dfe",
+                "url": "https://api.github.com/repos/contributte/di/zipball/de531e26ba4b70d570b59a28cfd81cc17de6800a",
+                "reference": "de531e26ba4b70d570b59a28cfd81cc17de6800a",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
             "require-dev": {
                 "nette/bootstrap": "~2.4.6",
                 "nette/reflection": "~2.4.2",
-                "nette/robot-loader": "~2.4.4|~3.0.4",
+                "nette/robot-loader": "~2.4.4|~3.0.4|~3.1.0",
                 "ninjify/nunjuck": "^0.2.0",
                 "ninjify/qa": "^0.8.0"
             },
@@ -383,7 +383,7 @@
                 "inject",
                 "nette"
             ],
-            "time": "2018-07-19T09:38:18+00:00"
+            "time": "2019-04-02T06:36:43+00:00"
         },
         {
             "name": "contributte/http",
