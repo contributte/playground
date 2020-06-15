@@ -31,7 +31,7 @@ git clone git@github.com:planette/playground.git
 | [apitte-simple](https://github.com/planette/playground/tree/master/apitte-simple) | Simple middleware application. |
 | [apitte-nette-simple](https://github.com/planette/playground/tree/master/apitte-nette-simple) | Simple Nette |
 | [contributte-api-router](https://github.com/contributte/playground/tree/master/contributte-api-router) | Starter project for ApiRouter. |
-| [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | Example of writing own commands and how to install Console Extra with all commands. |
+| [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | Example of writing own commands and how to install console-extra with all commands. |
 | [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
 | [contributte-event-dispatcher](https://github.com/contributte/playground/tree/master/contributte-event-dispatcher) | Example of dispatching and subscribing events. |
 | [contributte-forms-bootstrap](https://github.com/contributte/playground/tree/master/contributte-forms-bootstrap) | Example of contributte/forms-bootstrap usage. |
