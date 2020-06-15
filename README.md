@@ -24,24 +24,25 @@ If you want to test some example just clone this repository and take a look at p
 git clone git@github.com:planette/playground.git
 ```
 
-| Project | Packages | Description |
-|---------|----------|-------------|
-| [apitte-fullstack](https://github.com/planette/playground/tree/master/apitte-fullstack) | core, middlewares, negotiation, debug, openapi | Fullstack application with example of all plugins. |
-| [apitte-micro](https://github.com/planette/playground/tree/master/apitte-micro) | core | Micro application with direct dispatching. |
-| [apitte-simple](https://github.com/planette/playground/tree/master/apitte-simple) | core, middlewares, debug | Simple middleware application. |
-| [apitte-nette-simple](https://github.com/planette/playground/tree/master/apitte-nette-simple) | core, presenter, debug, openapi | Simple Nette | [contributte-api-router](https://github.com/contributte/playground/tree/master/contributte-api-router) | api-router | Starter project for ApiRouter. |
-| [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | console, console-extra | Example of writing own commands and how to install Console Extra with all commands. |
-| [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | datagrid | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
-| [contributte-event-dispatcher](https://github.com/contributte/playground/tree/master/contributte-event-dispatcher) | event-dispatcher, event-dispatcher-extra | Example of dispatching and subscribing events. |
-| [contributte-forms-bootstrap](https://github.com/contributte/playground/tree/master/contributte-forms-bootstrap) | forms-bootstrap | Example of contributte/forms-bootstrap usage. |
-| [contributte-live-form-validation](https://github.com/contributte/playground/tree/master/contributte-live-form-validation) | live-form-validation | Example of live form validation. |
-| [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | mailing | Example of contributte/mailing usage. |
-| [contributte-neonizer](https://github.com/contributte/playground/tree/master/contributte-neonizer) | neonizer | Example of contributte/neonizer usage. |
-| [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | recaptcha | Example of Google reCaptcha. |
-| [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | thepay, thepay-api | Example of contributte/thepay usage. |
-| [nettrine-migrations](https://github.com/planette/playground/tree/master/nettrine-migrations) | migrations | Example of doctrine/migrations. |
-| [nettrine-orm](https://github.com/planette/playground/tree/master/nettrine-orm) | dbal, orm | Example of doctrine/dbal and doctrine/orm. |
-| [nextras-orm-generator](https://github.com/planette/playground/tree/master/nextras-orm-generator) | nextras | Example of nextras entity generation |
+| Project | Description |
+|-|-|
+| [apitte-fullstack](https://github.com/planette/playground/tree/master/apitte-fullstack) | Fullstack application with example of all plugins. |
+| [apitte-micro](https://github.com/planette/playground/tree/master/apitte-micro) | Micro application with direct dispatching. |
+| [apitte-simple](https://github.com/planette/playground/tree/master/apitte-simple) | Simple middleware application. |
+| [apitte-nette-simple](https://github.com/planette/playground/tree/master/apitte-nette-simple) | Simple Nette |
+| [contributte-api-router](https://github.com/contributte/playground/tree/master/contributte-api-router) | Starter project for ApiRouter. |
+| [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | Example of writing own commands and how to install Console Extra with all commands. |
+| [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
+| [contributte-event-dispatcher](https://github.com/contributte/playground/tree/master/contributte-event-dispatcher) | Example of dispatching and subscribing events. |
+| [contributte-forms-bootstrap](https://github.com/contributte/playground/tree/master/contributte-forms-bootstrap) | Example of contributte/forms-bootstrap usage. |
+| [contributte-live-form-validation](https://github.com/contributte/playground/tree/master/contributte-live-form-validation) | Example of live form validation. |
+| [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | Example of contributte/mailing usage. |
+| [contributte-neonizer](https://github.com/contributte/playground/tree/master/contributte-neonizer) | Example of contributte/neonizer usage. |
+| [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
+| [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
+| [nettrine-migrations](https://github.com/planette/playground/tree/master/nettrine-migrations) | Example of doctrine/migrations. |
+| [nettrine-orm](https://github.com/planette/playground/tree/master/nettrine-orm) | Example of doctrine/dbal and doctrine/orm. |
+| [nextras-orm-generator](https://github.com/planette/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
 ---
 
