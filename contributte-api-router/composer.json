@@ -3,7 +3,7 @@
     "php": ">= 7.1",
     "contributte/application": "^0.3.0",
     "contributte/bootstrap": "^0.3.0",
-    "contributte/cache": "^0.1.0",
+    "contributte/cache": "^0.3",
     "contributte/di": "^0.2.2",
     "contributte/http": "^0.1.0",
     "contributte/security": "^0.2.0",
