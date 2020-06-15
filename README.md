@@ -31,7 +31,7 @@ git clone git@github.com:planette/playground.git
 | [apitte-simple](https://github.com/planette/playground/tree/master/apitte-simple) | core, middlewares, debug | Simple middleware application. |
 | [apitte-nette-simple](https://github.com/planette/playground/tree/master/apitte-nette-simple) | core, presenter, debug, openapi | Simple Nette | [contributte-api-router](https://github.com/contributte/playground/tree/master/contributte-api-router) | api-router | Starter project for ApiRouter. |
 | [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | console, console-extra | Example of writing own commands and how to install Console Extra with all commands. |
-| [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | datagrid | Dockerized example of our datagrid. [DEMO](https://examples.planette.io/contributte/datagrid/) |
+| [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | datagrid | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
 | [contributte-event-dispatcher](https://github.com/contributte/playground/tree/master/contributte-event-dispatcher) | event-dispatcher, event-dispatcher-extra | Example of dispatching and subscribing events. |
 | [contributte-forms-bootstrap](https://github.com/contributte/playground/tree/master/contributte-forms-bootstrap) | forms-bootstrap | Example of contributte/forms-bootstrap usage. |
 | [contributte-live-form-validation](https://github.com/contributte/playground/tree/master/contributte-live-form-validation) | live-form-validation | Example of live form validation. |
