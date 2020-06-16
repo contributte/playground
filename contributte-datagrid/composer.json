@@ -28,7 +28,7 @@
 		"dibi/dibi": "^3.0.0 || ^4.0.0"
 	},
 	"require-dev": {
-		"ninjify/coding-standard": "^0.8",
+		"ninjify/coding-standard": "^0.10",
 		"gamee/php-code-checker-rules": "^1.0"
 	},
 	"autoload": {
