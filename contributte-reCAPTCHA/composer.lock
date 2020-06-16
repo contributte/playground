@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "contributte/application",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/application.git",
-                "reference": "3426d72f698cad0fc17613748b0cf1a56ba1e6a3"
+                "reference": "5f377bd8e843c505239e2567fb61099bdb359019"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/application/zipball/3426d72f698cad0fc17613748b0cf1a56ba1e6a3",
-                "reference": "3426d72f698cad0fc17613748b0cf1a56ba1e6a3",
+                "url": "https://api.github.com/repos/contributte/application/zipball/5f377bd8e843c505239e2567fb61099bdb359019",
+                "reference": "5f377bd8e843c505239e2567fb61099bdb359019",
                 "shasum": ""
             },
             "require": {
@@ -64,7 +64,7 @@
                 "nette",
                 "presenter"
             ],
-            "time": "2018-07-28T09:23:54+00:00"
+            "time": "2018-09-11T11:18:34+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -760,23 +760,23 @@
         },
         {
             "name": "nette/application",
-            "version": "v2.4.12",
+            "version": "v2.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/application.git",
-                "reference": "fe1915f880d8e5d16217bad467950733fd5cbad3"
+                "reference": "3a3870908fe318c83b2c0ef7fca1f2244d365932"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/application/zipball/fe1915f880d8e5d16217bad467950733fd5cbad3",
-                "reference": "fe1915f880d8e5d16217bad467950733fd5cbad3",
+                "url": "https://api.github.com/repos/nette/application/zipball/3a3870908fe318c83b2c0ef7fca1f2244d365932",
+                "reference": "3a3870908fe318c83b2c0ef7fca1f2244d365932",
                 "shasum": ""
             },
             "require": {
                 "nette/component-model": "^2.3",
                 "nette/http": "^2.2",
                 "nette/reflection": "^2.2",
-                "nette/utils": "^2.4 || ~3.0.0",
+                "nette/utils": "^2.4",
                 "php": ">=5.6.0"
             },
             "conflict": {
@@ -787,8 +787,8 @@
             },
             "require-dev": {
                 "latte/latte": "^2.4.3",
-                "mockery/mockery": "^0.9.5",
-                "nette/di": "^2.4 || ~3.0.0",
+                "mockery/mockery": "^1.0",
+                "nette/di": "^2.4",
                 "nette/forms": "^2.4",
                 "nette/robot-loader": "^2.4.2 || ^3.0",
                 "nette/security": "^2.4",
@@ -808,9 +808,6 @@
             "autoload": {
                 "classmap": [
                     "src/"
-                ],
-                "files": [
-                    "src/compatibility.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -829,7 +826,7 @@
                     "homepage": "https://nette.org/contributors"
                 }
             ],
-            "description": "? Nette Application: a full-stack component-based MVC kernel for PHP that helps you write powerful and modern web applications. Write less, have cleaner code and your work will bring you joy.",
+            "description": "🏆 Nette Application: a full-stack component-based MVC kernel for PHP that helps you write powerful and modern web applications. Write less, have cleaner code and your work will bring you joy.",
             "homepage": "https://nette.org",
             "keywords": [
                 "Forms",
@@ -843,7 +840,7 @@
                 "routing",
                 "seo"
             ],
-            "time": "2018-05-16T09:28:51+00:00"
+            "time": "2020-06-09T13:57:39+00:00"
         },
         {
             "name": "nette/bootstrap",
