@@ -8,7 +8,7 @@
     "contributte/http": "^0.1.0",
     "contributte/security": "^0.2.0",
     "contributte/utils": "^0.2.0",
-    "contributte/tracy": "^0.2.0",
+    "contributte/tracy": "^0.3.2",
     "ublaboo/api-router": "~2.0.0"
   },
   "require-dev": {
