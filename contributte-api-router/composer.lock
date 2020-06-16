@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "36f01566e4748194e61101ca6f0ada27",
+    "content-hash": "165a1b8a09cb8d8a4f6fa0513c2f522a",
     "packages": [
         {
             "name": "contributte/application",
@@ -236,55 +236,39 @@
         },
         {
             "name": "contributte/http",
-            "version": "v0.1",
+            "version": "v0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/http.git",
-                "reference": "561128953c503e3472617878def0a2e2714de035"
+                "reference": "cd283fe4d32fc5bd3f3e7cd2506cd32cf321bb01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/http/zipball/561128953c503e3472617878def0a2e2714de035",
-                "reference": "561128953c503e3472617878def0a2e2714de035",
+                "url": "https://api.github.com/repos/contributte/http/zipball/cd283fe4d32fc5bd3f3e7cd2506cd32cf321bb01",
+                "reference": "cd283fe4d32fc5bd3f3e7cd2506cd32cf321bb01",
                 "shasum": ""
             },
             "require": {
-                "nette/http": "^2.4.3",
-                "php": ">= 5.6"
+                "nette/http": "~2.4.9",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/di": "^2.4.5",
-                "ninjify/nunjuck": "^0.1.4",
-                "ninjify/qa": "^0.3.3"
+                "nette/di": "~2.4.13",
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0",
+                "tracy/tracy": "~2.5.1"
             },
             "suggest": {
-                "nette/di": "to use CurlExtension or SapiRequestExtesion [CompilerExtension]"
+                "nette/di": "to use CompilerExtensions"
             },
             "type": "library",
             "extra": {
-                "ninjify": {
-                    "qa": {
-                        "codesniffer": {
-                            "ruleset": "nette",
-                            "folders": [
-                                "src",
-                                "tests"
-                            ]
-                        },
-                        "codefixer": {
-                            "ruleset": "nette",
-                            "folders": [
-                                "src",
-                                "tests"
-                            ]
-                        },
-                        "linter": {
-                            "folders": [
-                                "src",
-                                "tests"
-                            ]
-                        }
-                    }
+                "branch-alias": {
+                    "dev-master": "0.3.x-dev"
                 }
             },
             "autoload": {
@@ -298,18 +282,21 @@
             ],
             "authors": [
                 {
-                    "name": "Milan Felix Sulc",
-                    "homepage": "https://jfx.cz"
+                    "name": "Milan Felix Šulc",
+                    "homepage": "https://f3l1x.io"
                 }
             ],
             "description": "Extra contrib to nette/http",
             "homepage": "https://github.com/contributte/http",
             "keywords": [
+                "auth",
+                "curl",
                 "http",
                 "nette",
-                "request"
+                "request",
+                "response"
             ],
-            "time": "2017-01-06T20:34:09+00:00"
+            "time": "2018-07-08T19:12:58+00:00"
         },
         {
             "name": "contributte/security",
