@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9962b477d4272ed2c50ad8908ed5d941",
+    "content-hash": "e492bd1bf23c21590e543c2329a7ba4f",
     "packages": [
         {
             "name": "contributte/application",
@@ -122,16 +122,16 @@
         },
         {
             "name": "contributte/cache",
-            "version": "v0.2",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/cache.git",
-                "reference": "aa3851c30dc78b8073078534cb873033caca1ef5"
+                "reference": "c076c89e0881f37c3d5493add3627568920cfd85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/cache/zipball/aa3851c30dc78b8073078534cb873033caca1ef5",
-                "reference": "aa3851c30dc78b8073078534cb873033caca1ef5",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/c076c89e0881f37c3d5493add3627568920cfd85",
+                "reference": "c076c89e0881f37c3d5493add3627568920cfd85",
                 "shasum": ""
             },
             "require": {
@@ -139,12 +139,13 @@
                 "php": ">= 7.1"
             },
             "conflict": {
-                "nette/di": "<2.4.13"
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.0"
             },
             "require-dev": {
                 "nette/di": "~2.4.13",
-                "ninjify/nunjuck": "~0.2.0",
-                "ninjify/qa": "~0.8.0"
+                "ninjify/nunjuck": "^0.2.0",
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/di": "to use CacheFactoryExtension[CompilerExtension]"
@@ -177,7 +178,7 @@
                 "nette",
                 "provider"
             ],
-            "time": "2018-07-07T09:44:38+00:00"
+            "time": "2018-08-16T07:58:50+00:00"
         },
         {
             "name": "contributte/di",
