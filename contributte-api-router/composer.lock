@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "165a1b8a09cb8d8a4f6fa0513c2f522a",
+    "content-hash": "67d73de090a2606833c16f0e841fe0fe",
     "packages": [
         {
             "name": "contributte/application",
@@ -430,26 +430,29 @@
         },
         {
             "name": "contributte/utils",
-            "version": "v0.2",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/utils.git",
-                "reference": "10c8d70583b2cb15530e5b795a8dc67d90fc911b"
+                "reference": "a6ca8495eaf06f5ed431a3126db14b83b46892f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/utils/zipball/10c8d70583b2cb15530e5b795a8dc67d90fc911b",
-                "reference": "10c8d70583b2cb15530e5b795a8dc67d90fc911b",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/a6ca8495eaf06f5ed431a3126db14b83b46892f6",
+                "reference": "a6ca8495eaf06f5ed431a3126db14b83b46892f6",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "~2.5.1",
-                "php": ">= 5.6"
+                "nette/utils": "~2.5.2",
+                "php": ">= 7.1"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13"
             },
             "require-dev": {
-                "nette/di": "~2.4.11",
+                "nette/di": "~2.4.13",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/di": "to use DateTimeExtension[CompilerExtension]"
@@ -457,7 +460,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -484,7 +487,7 @@
                 "strings",
                 "utils"
             ],
-            "time": "2018-04-11T20:40:02+00:00"
+            "time": "2018-08-27T18:59:32+00:00"
         },
         {
             "name": "doctrine/annotations",
