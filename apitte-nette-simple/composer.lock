@@ -590,20 +590,20 @@
         },
         {
             "name": "contributte/latte",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/latte.git",
-                "reference": "0538b5e893ce9f38409f08fbc89b918bc20ca810"
+                "reference": "45b929dde1f759246014d86e0efb07cb8a482b49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/latte/zipball/0538b5e893ce9f38409f08fbc89b918bc20ca810",
-                "reference": "0538b5e893ce9f38409f08fbc89b918bc20ca810",
+                "url": "https://api.github.com/repos/contributte/latte/zipball/45b929dde1f759246014d86e0efb07cb8a482b49",
+                "reference": "45b929dde1f759246014d86e0efb07cb8a482b49",
                 "shasum": ""
             },
             "require": {
-                "latte/latte": "~2.5.1",
+                "latte/latte": "~2.5.1|~2.6.0",
                 "php": "^7.2"
             },
             "conflict": {
@@ -612,8 +612,8 @@
             "require-dev": {
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
+                "ninjify/nunjuck": "^0.3.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
                 "phpstan/phpstan-nette": "^0.11",
@@ -651,7 +651,7 @@
                 "latte",
                 "nette"
             ],
-            "time": "2019-06-16T14:01:16+00:00"
+            "time": "2020-01-05T00:27:30+00:00"
         },
         {
             "name": "contributte/phpdoc",
@@ -1136,16 +1136,16 @@
         },
         {
             "name": "latte/latte",
-            "version": "v2.5.3",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6"
+                "reference": "bb3e57a815cb48ed282671ec206caae531aa2985"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6",
-                "reference": "7ee09e0d1af1f1e3c7cc85fb5e742ab078f1b7a6",
+                "url": "https://api.github.com/repos/nette/latte/zipball/bb3e57a815cb48ed282671ec206caae531aa2985",
+                "reference": "bb3e57a815cb48ed282671ec206caae531aa2985",
                 "shasum": ""
             },
             "require": {
@@ -1159,17 +1159,19 @@
             "require-dev": {
                 "nette/tester": "~2.0",
                 "nette/utils": "^3.0",
+                "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.3"
             },
             "suggest": {
                 "ext-fileinfo": "to use filter |datastream",
+                "ext-iconv": "to use filters |reverse, |substring",
                 "ext-mbstring": "to use filters like lower, upper, capitalize, ...",
                 "nette/utils": "to use filter |webalize"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1180,8 +1182,8 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
+                "GPL-2.0-only",
+                "GPL-3.0-only"
             ],
             "authors": [
                 {
@@ -1205,7 +1207,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2019-09-24T10:42:57+00:00"
+            "time": "2020-03-04T09:44:23+00:00"
         },
         {
             "name": "nette/application",
