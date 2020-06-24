@@ -971,16 +971,16 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.0.3",
+            "version": "v3.0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "1df063526343299ea7fccdf90de6575db3559ff5"
+                "reference": "90a34a9e32911bb537f9e9b31676675944b25e52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/1df063526343299ea7fccdf90de6575db3559ff5",
-                "reference": "1df063526343299ea7fccdf90de6575db3559ff5",
+                "url": "https://api.github.com/repos/nette/http/zipball/90a34a9e32911bb537f9e9b31676675944b25e52",
+                "reference": "90a34a9e32911bb537f9e9b31676675944b25e52",
                 "shasum": ""
             },
             "require": {
@@ -1039,7 +1039,7 @@
                 "session",
                 "url"
             ],
-            "time": "2019-10-31T15:07:40+00:00"
+            "time": "2020-06-03T09:26:03+00:00"
         },
         {
             "name": "nette/neon",
@@ -1225,6 +1225,7 @@
                 "nette",
                 "reflection"
             ],
+            "abandoned": true,
             "time": "2017-07-11T19:28:57+00:00"
         },
         {

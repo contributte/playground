@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "92b6f792458a31f32c0601617e39f23a",
+    "content-hash": "a74c35609fcc8c2f56b16d6a2c74c2c4",
     "packages": [
         {
             "name": "contributte/application",
@@ -2412,16 +2412,16 @@
         },
         {
             "name": "ninjify/coding-standard",
-            "version": "v0.8",
+            "version": "v0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ninjify/coding-standard.git",
-                "reference": "ce589279676d2e1215f03e13aa728b0ec62cdefb"
+                "reference": "48fcb0d35b1bdd254ae7a77c6c4f6f407ff6f15a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ninjify/coding-standard/zipball/ce589279676d2e1215f03e13aa728b0ec62cdefb",
-                "reference": "ce589279676d2e1215f03e13aa728b0ec62cdefb",
+                "url": "https://api.github.com/repos/ninjify/coding-standard/zipball/48fcb0d35b1bdd254ae7a77c6c4f6f407ff6f15a",
+                "reference": "48fcb0d35b1bdd254ae7a77c6c4f6f407ff6f15a",
                 "shasum": ""
             },
             "require": {
@@ -2432,7 +2432,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.8.x-dev"
+                    "dev-master": "0.10.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2453,11 +2453,7 @@
                 "ninjify",
                 "php"
             ],
-            "support": {
-                "issues": "https://github.com/ninjify/coding-standard/issues",
-                "source": "https://github.com/ninjify/coding-standard/tree/master"
-            },
-            "time": "2019-02-24T16:05:27+00:00"
+            "time": "2020-02-13T19:37:02+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
