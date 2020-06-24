@@ -60,6 +60,8 @@ class GroupActionsPresenter extends Presenter
 
 		$grid->addGroupAction('Delete')->onSelect[] = [$this, 'groupDelete'];
 
+		$grid->addGroupButtonAction('Say hello')->onClick[] = [$this, 'sayHello'];
+
 		return $grid;
 	}
 
@@ -69,7 +71,7 @@ class GroupActionsPresenter extends Presenter
 		$this->flashMessage(
 			sprintf(
 				'Status of items with id: [%s] was changed to: [%s]',
-				implode($ids, ','),
+				implode(',', $ids),
 				$newStatus
 			),
 			'success'
@@ -95,7 +97,7 @@ class GroupActionsPresenter extends Presenter
 	public function groupAddNote(array $ids, string $value): void
 	{
 		$this->flashMessage(
-			sprintf('Note [%s] was added to items with ID: [%s]', $value, implode($ids, ',')),
+			sprintf('Note [%s] was added to items with ID: [%s]', $value, implode(',', $ids)),
 			'success'
 		);
 
@@ -111,7 +113,7 @@ class GroupActionsPresenter extends Presenter
 	public function groupSend(array $ids, string $key): void
 	{
 		$this->flashMessage(
-			sprintf('These items: [%s] sent to: [%s]', implode($ids, ','), $key),
+			sprintf('These items: [%s] sent to: [%s]', implode(',', $ids), $key),
 			'success'
 		);
 
@@ -127,7 +129,23 @@ class GroupActionsPresenter extends Presenter
 	public function groupDelete(array $ids): void
 	{
 		$this->flashMessage(
-			sprintf('These items: [%s] are being deleted', implode($ids, ',')),
+			sprintf('These items: [%s] are being deleted', implode(',', $ids)),
+			'info'
+		);
+
+		if ($this->isAjax()) {
+			$this->redrawControl('flashes');
+			$this['grid']->redrawControl();
+		} else {
+			$this->redirect('this');
+		}
+	}
+
+
+	public function sayHello(array $ids): void
+	{
+		$this->flashMessage(
+			sprintf('Hello said to: [%s]', implode(',', $ids)),
 			'info'
 		);
 
