@@ -6,10 +6,9 @@ namespace App\Presenters;
 
 use App\UI\TEmptyLayoutView;
 use Dibi\Connection;
+use Dibi\Fluent;
 use Dibi\Row;
-use Ublaboo\DataGrid\AggregationFunction\FunctionSum;
 use Ublaboo\DataGrid\AggregationFunction\IAggregationFunction;
-use Ublaboo\DataGrid\AggregationFunction\ICommonAggregation;
 use Ublaboo\DataGrid\AggregationFunction\IMultipleAggregationFunction;
 use Ublaboo\DataGrid\Column\ColumnLink;
 use Ublaboo\DataGrid\Column\ColumnStatus;
@@ -120,6 +119,10 @@ final class ColumnsPresenter extends AbstractPresenter
 
 				public function processDataSource($dataSource): void
 				{
+					if (!$dataSource instanceof Fluent) {
+						throw new \UnexpectedValueException;
+					}
+
 					$this->idsSum = (int) $dataSource->getConnection()
 						->select('SUM([id])')
 						->from($dataSource, '_')
@@ -136,7 +139,9 @@ final class ColumnsPresenter extends AbstractPresenter
 				{
 					if ($key === 'id') {
 						return 'Ids sum: ' . $this->idsSum;
-					} elseif ($key === 'age') {
+					}
+
+					if ($key === 'age') {
 						return 'Avg Age: ' . (int) (date('Y') - $this->avgAge);
 					}
 				}

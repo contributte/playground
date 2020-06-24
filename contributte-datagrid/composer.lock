@@ -2102,16 +2102,16 @@
         },
         {
             "name": "ublaboo/datagrid",
-            "version": "v6.2.24",
+            "version": "v6.2.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/datagrid.git",
-                "reference": "9d728a6827ac9fc179a7632ff8f49bb99688be6f"
+                "reference": "54f1c47e091455cd758d87bc062f43e85900d3eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/datagrid/zipball/9d728a6827ac9fc179a7632ff8f49bb99688be6f",
-                "reference": "9d728a6827ac9fc179a7632ff8f49bb99688be6f",
+                "url": "https://api.github.com/repos/contributte/datagrid/zipball/54f1c47e091455cd758d87bc062f43e85900d3eb",
+                "reference": "54f1c47e091455cd758d87bc062f43e85900d3eb",
                 "shasum": ""
             },
             "require": {
@@ -2168,7 +2168,7 @@
                 "grid",
                 "nette"
             ],
-            "time": "2020-06-24T08:03:15+00:00"
+            "time": "2020-06-24T15:12:33+00:00"
         }
     ],
     "packages-dev": [
