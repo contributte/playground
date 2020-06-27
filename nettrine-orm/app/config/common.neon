@@ -1,0 +1,51 @@
+application:
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+session:
+	expiration: 14 days
+
+services:
+	router: App\Router\RouterFactory::createRouter
+	subscriber.library_limiter:
+		class: App\Model\Service\LibraryLimiter
+		tags: [nettrine.subscriber]
+
+extensions:
+	# Console
+	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+
+	nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
+
+	nettrine.cache: Nettrine\Cache\DI\CacheExtension
+
+	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
+	nettrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
+
+	nettrine.orm: Nettrine\ORM\DI\OrmExtension
+	nettrine.orm.cache: Nettrine\ORM\DI\OrmCacheExtension
+	nettrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension(%consoleMode%)
+	nettrine.orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
+
+nettrine.dbal:
+	connection:
+#		host: %dbHost%
+#		user: %dbUser%
+#		password: %dbPassword%
+#		dbname: %dbName%
+#		driver: pdo_mysql
+		driver: 'pdo_sqlite'
+		url: sqlite:///%appDir%/../data/database.sqlite
+		charset:  UTF8
+	debug:
+		panel: %debugMode%
+		sourcePaths: [%appDir%]
+
+nettrine.orm:
+	# Own em class
+	entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
+
+nettrine.orm.annotations:
+	mapping: [
+		App\Model\Database\Entity: '%appDir%/model/Database/Entity'
+	]

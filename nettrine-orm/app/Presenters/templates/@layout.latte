@@ -1,0 +1,27 @@
+{**
+ * @param string   $basePath web base path
+ * @param array    $flashes  flash messages
+ *}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>{ifset title}{include title|stripHtml} | {/ifset}Nette Sandbox</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{$basePath}/css/style.css">
+    {block head}{/block}
+</head>
+
+<body>
+<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+
+{include content}
+
+{block scripts}
+    <script src="{$basePath}/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="{$basePath}/node_modules/nette-forms/src/assets/netteForms.min.js"></script>
+{/block}
+</body>
+</html>
