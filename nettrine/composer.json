@@ -1,0 +1,33 @@
+{
+	"require": {
+		"php": ">=7.1",
+
+    "ext-pdo_sqlite": "*",
+
+    "nette/application": "~3.0.0",
+    "nette/bootstrap": "~3.0.0",
+    "nette/caching": "~3.0.0",
+    "nette/di": "~3.0.0",
+    "nette/finder": "^2.5",
+    "nette/forms": "~3.0.0",
+    "nette/http": "~3.0.0",
+    "nette/mail": "^3.0",
+    "nette/robot-loader": "^2.4 || ^3.0",
+    "nette/safe-stream": "^2.4",
+    "nette/security": "~3.0.0",
+    "nette/tokenizer": "^3.0",
+    "nette/utils": "^3.0",
+    "latte/latte": "~2.7.0",
+    "tracy/tracy": "~2.7.0",
+
+    "contributte/console": "~0.8.0",
+    "nettrine/orm": "~0.7.0",
+		"nettrine/migrations": "^0.6.2",
+		"nettrine/fixtures": "^0.5.2"
+  },
+  "autoload": {
+    "classmap": ["app/Bootstrap.php"]
+  },
+	"minimum-stability": "stable",
+	"prefer-stable": true
+}
