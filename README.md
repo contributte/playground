@@ -71,20 +71,29 @@ git clone git@github.com:planette/playground.git
         </br>
         <a href="https://github.com/mabar">Marek Bartoš</a>
       </td>
-			<td align="center">
-				<a href="https://github.com/paveljanda">
-						<img width="150" height="150" src="https://avatars0.githubusercontent.com/u/1488874?s=400&v=4">
-				</a>
-				</br>
-				<a href="https://github.com/paveljanda">Pavel Janda</a>
-			</td>
-			<td align="center">
-				<a href="https://github.com/dakorpar">
-						<img width="150" height="150" src="https://avatars0.githubusercontent.com/u/9303856?v=4&s=400">
-				</a>
-				</br>
-				<a href="https://github.com/dakorpar">Dalibor Korpar</a>
-			</td>
+      <td align="center">
+        <a href="https://github.com/paveljanda">
+          <img width="150" height="150" src="https://avatars0.githubusercontent.com/u/1488874?s=400&v=4">
+        </a>
+        </br>
+          <a href="https://github.com/paveljanda">Pavel Janda</a>
+        </td>
+        <td align="center">
+          <a href="https://github.com/dakorpar">
+            <img width="150" height="150" src="https://avatars0.githubusercontent.com/u/9303856?v=4&s=400">
+          </a>
+          </br>
+          <a href="https://github.com/dakorpar">Dalibor Korpar</a>
+        </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/petrparolek">
+          <img width="150" height="150" src="https://avatars0.githubusercontent.com/u/6066243?v=4&s=400">
+        </a>
+        </br>
+        <a href="https://github.com/petrparolek">Petr Parolek</a>
+      </td>
     </tr>
   </tbody>
 </table>
