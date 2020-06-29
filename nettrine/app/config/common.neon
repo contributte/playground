@@ -12,7 +12,6 @@ services:
 		tags: [nettrine.subscriber]
 
 extensions:
-	# Console
 	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
 
 	nettrine.annotations: Nettrine\Annotations\DI\AnnotationsExtension
@@ -52,6 +51,5 @@ nettrine.orm:
 	entityManagerDecoratorClass: App\Model\Database\EntityManagerDecorator
 
 nettrine.orm.annotations:
-	mapping: [
+	mapping:
 		App\Model\Database\Entity: '%appDir%/Model/Database/Entity'
-	]
