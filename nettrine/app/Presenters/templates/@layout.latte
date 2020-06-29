@@ -7,11 +7,10 @@
 <head>
     <meta charset="utf-8">
 
-    <title>{ifset title}{include title|stripHtml} | {/ifset}Nette Sandbox</title>
+    <title>{ifset title}{include title|stripHtml} | {/ifset}Nettrine Demo</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{$basePath}/css/style.css">
-    {block head}{/block}
 </head>
 
 <body>
@@ -19,9 +18,7 @@
 
 {include content}
 
-{block scripts}
-    <script src="{$basePath}/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="{$basePath}/node_modules/nette-forms/src/assets/netteForms.min.js"></script>
-{/block}
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 </body>
 </html>
