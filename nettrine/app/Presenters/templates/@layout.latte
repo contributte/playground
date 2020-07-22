@@ -14,10 +14,13 @@
 </head>
 
 <body>
-<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+    <div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
-{include content}
-
+    <ul id="menu">
+        <li><a n:href="Homepage:">Basic usage</a></li>
+        <li><a n:href="DoctrineExtensions:">Doctrine extensions</a></li>
+    </ul>
+    {include content}
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="https://nette.github.io/resources/js/netteForms.min.js"></script>
 </body>

@@ -1,16 +1,17 @@
 <?php declare(strict_types=1);
 
-namespace App\Model\Database\Entity;
+namespace App\Model\Database\Basic\Entity;
 
+use App\Model\Database\Entity\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Nettrine\ORM\Entity\Attributes\Id;
 
 /**
- * @ORM\Entity(repositoryClass="App\Model\Database\Repository\CategoryRepository")
+ * @ORM\Entity(repositoryClass="App\Model\Database\Basic\Repository\TagRepository")
  */
-class Category extends Entity
+class Tag extends Entity
 {
 
 	use Id;
@@ -23,12 +24,12 @@ class Category extends Entity
 
 	/**
 	 * @var Book[]|Collection
-	 * @ORM\OneToMany(targetEntity="Book", mappedBy="category")
+	 * @ORM\ManyToMany(targetEntity="Book", inversedBy="tags")
 	 */
 	private $books;
 
 	/**
-	 * Category constructor
+	 * Tag constructor
 	 */
 	public function __construct()
 	{
@@ -58,6 +59,5 @@ class Category extends Entity
 	{
 		return $this->books;
 	}
-
 
 }

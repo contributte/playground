@@ -1,0 +1,8 @@
+nettrine.dbal:
+	connection:
+		driver: 'mysqli'
+		host: localhost
+		dbname: planette-nettrine
+		user: root
+		password:
+		charset:  UTF8

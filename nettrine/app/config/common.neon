@@ -21,6 +21,8 @@ extensions:
 	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
 	nettrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
 
+	nettrine.extensions.atlantic18: Nettrine\Extensions\Atlantic18\DI\Atlantic18BehaviorExtension
+
 	nettrine.fixtures: Nettrine\Fixtures\DI\FixturesExtension
 
 	nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
@@ -32,12 +34,32 @@ extensions:
 
 nettrine.dbal:
 	connection:
-		driver: 'pdo_sqlite'
-		url: sqlite:///%appDir%/../data/database.sqlite
+		driver: mysqli
+		host: database
+		dbname: nettrine
+		user: root
+		password: root
 		charset:  UTF8
 	debug:
 		panel: %debugMode%
 		sourcePaths: [%appDir%]
+
+nettrine.extensions.atlantic18:
+	loggable: true
+	sluggable: false
+	softDeleteable: false
+	treeable: false
+	blameable: false
+	timestampable: false
+	translatable:
+		translatable: en_GB
+		default: en_GB
+		translationFallback: true
+		persistDefaultTranslation: true
+		skipOnLoad: false
+	uploadable: false
+	sortable: false
+	ipTraceable: false
 
 nettrine.fixtures:
   	paths:
@@ -52,4 +74,8 @@ nettrine.orm:
 
 nettrine.orm.annotations:
 	mapping:
-		App\Model\Database\Entity: '%appDir%/Model/Database/Entity'
+		App\Model\Database\Basic\Entity: %appDir%/Model/Database/Basic/Entity
+		App\Model\Database\Translatable\Entity: %appDir%/Model/Database/Translatable/Entity
+		# doctrine extensions entities
+		Gedmo\Translatable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity
+		Gedmo\Loggable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity

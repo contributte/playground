@@ -2,16 +2,22 @@
 
 This is example of nettrine/orm
 
-## Installation
+## Installation with Docker:
 
-```
+```shell script
 git clone git@github.com:contributte/playground.git
 cd playground/nettrine
-composer install
-php bin/console migrations:migrate
-php bin/console doctrine:fixtures:load
+docker-compose up -d
 ```
+### See:
 
-## See
+Visit http://localhost:8080/ through browser.
 
-Visit HomepagePresenter through browser.
+
+## Included extensions and more informations at:
+- https://github.com/nettrine/dbal
+- https://github.com/nettrine/extensions-atlantic18
+- https://github.com/nettrine/fixtures
+- https://github.com/nettrine/migrations
+- https://github.com/nettrine/orm
+- https://github.com/Atlantic18/DoctrineExtensions

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-use App\Model\Database\Entity\Book;
-use App\Model\Database\Entity\Category;
-use App\Model\Database\Entity\Tag;
+use App\Model\Database\Basic\Entity\Book;
+use App\Model\Database\Basic\Entity\Category;
+use App\Model\Database\Basic\Entity\Tag;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
