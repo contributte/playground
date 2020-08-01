@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace App\Model\Database\Translatable\Entity;
+namespace App\Model\Database\Advanced\Entity;
 
 use Gedmo\Mapping\Annotation as Gedmo;
 use Doctrine\ORM\Mapping as ORM;
@@ -8,14 +8,15 @@ use Gedmo\Translatable\Translatable;
 
 /**
  * @ORM\Table(name="articles")
- * @ORM\Entity(repositoryClass="App\Model\Database\Translatable\Repository\ArticleRepository")
+ * @ORM\Entity(repositoryClass="App\Model\Database\Advanced\Repository\ArticleRepository")
  * @Gedmo\Loggable
  */
 class Article implements Translatable
 {
 	/**
 	 * @ORM\Id
-	 * @ORM\GeneratedValue @ORM\Column(type="integer")
+	 * @ORM\GeneratedValue
+	 * @ORM\Column(type="integer")
 	 */
 	private $id;
 

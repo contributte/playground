@@ -15,13 +15,14 @@
     "nette/security": "~3.0.0",
     "nette/tokenizer": "^3.0",
     "nette/utils": "^3.0",
-    "latte/latte": "~2.7.0",
+    "latte/latte": "~2.8.0",
     "tracy/tracy": "~2.7.0",
     "contributte/console": "~0.8.0",
     "nettrine/orm": "~0.7.0",
     "nettrine/migrations": "^0.6.2",
     "nettrine/fixtures": "^0.5.2",
-    "nettrine/extensions-atlantic18": "dev-master"
+    "nettrine/extensions-atlantic18": "dev-master",
+    "contributte/translation": "^0.7.0"
   },
   "autoload": {
     "classmap": [

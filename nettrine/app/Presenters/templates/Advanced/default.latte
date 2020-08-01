@@ -1,0 +1,47 @@
+{block content}
+<div class="content">
+    <ul id="menu">
+        {if $presenter->getParameter('locale') == 'en_GB'}
+            <li><a n:href="Advanced: locale => 'cs_CZ'">CZ</a></li>
+        {else}
+            <li><a n:href="Advanced: locale => 'en_GB'">EN</a></li>
+        {/if}
+    </ul>
+    <h2>{_messages.articles.articles}</h2>
+    <table>
+        <tr>
+            <th>{_messages.articles.id}</th>
+            <th>{_messages.articles.title}</th>
+            <th>{_messages.articles.text}</th>
+        </tr>
+        {foreach $articles as $article}
+            <tr>
+                <td>{$article->getId()}</td>
+                <td>{$article->getTitle()}</td>
+                <td>{$article->getContent()}</td>
+            </tr>
+        {/foreach}
+    </table>
+    <br>
+    {control addArticleForm}
+
+    <h2>{_messages.history.articles}</h2>
+    <table>
+        <tr>
+            <th>{_messages.history.dateTime}</th>
+            <th>{_messages.history.action}</th>
+            <th>{_messages.articles.id}</th>
+            <th>{_messages.articles.title}</th>
+        </tr>
+        {foreach $articlesHistory as $entry}
+            {var $action = $entry['history']->getAction()}
+            {var $action = 'messages.history.' . $action}
+            <tr>
+                <td>{$entry['history']->getLoggedAt()|date:'d.m.Y H:i:s'}</td>
+                <td>{_$action}</td>
+                <td>{$entry['article']->getId()}</td>
+                <td>{$entry['history']->getData()['title']}</td>
+            </tr>
+        {/foreach}
+    </table>
+</div>

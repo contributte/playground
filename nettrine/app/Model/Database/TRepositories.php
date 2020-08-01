@@ -8,8 +8,8 @@ use App\Model\Database\Basic\Entity\Tag;
 use App\Model\Database\Basic\Repository\BookRepository;
 use App\Model\Database\Basic\Repository\CategoryRepository;
 use App\Model\Database\Basic\Repository\TagRepository;
-use App\Model\Database\Translatable\Entity\Article;
-use App\Model\Database\Translatable\Repository\ArticleRepository;
+use App\Model\Database\Advanced\Entity\Article;
+use App\Model\Database\Advanced\Repository\ArticleRepository;
 
 /**
  * Shortcuts for type hinting

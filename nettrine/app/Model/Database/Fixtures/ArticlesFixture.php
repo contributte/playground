@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-use App\Model\Database\Translatable\Entity\Article;
+use App\Model\Database\Advanced\Entity\Article;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 
 class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 {

@@ -27,9 +27,9 @@
                     <td>{$book->getUpdatedAt()}</td>
                     <td>
                         {if !$book->isAlreadyRead()}
-                            <a n:href="Homepage:readBook $book->getId()">[read]</a>
+                            <a n:href="Basic:readBook $book->getId()">[read]</a>
                         {/if}
-                        <a n:href="Homepage:deleteBook $book->getId()">[delete]</a>
+                        <a n:href="Basic:deleteBook $book->getId()">[delete]</a>
                     </td>
                 </tr>
             {/foreach}

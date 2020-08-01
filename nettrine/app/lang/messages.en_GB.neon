@@ -1,0 +1,24 @@
+articles:
+    articles: Articles
+    id: Article ID
+    title: Title
+    text: Text
+
+    czTitle: Article title in Czech
+    enTitle: Article title in English
+    czContent: Article content in Czech
+    enContent: Article content in English
+
+    submit: Save
+
+    czTitle_required: Article title in Czech is required
+    enTitle_required: Article title in English is required
+    czContent_required: Article content in Czech is required
+    enContent_required: Article content in English is required
+
+history:
+    articles: History of changes in articles
+    dateTime: Date and time
+    action: Action
+    create: created
+    update: updated

@@ -2,14 +2,14 @@
 
 namespace App\Presenters;
 
-use App\Model\Database\Entity\Book;
-use App\Model\Database\Entity\Category;
-use App\Model\Database\Entity\Tag;
+use App\Model\Database\Basic\Entity\Book;
+use App\Model\Database\Basic\Entity\Category;
+use App\Model\Database\Basic\Entity\Tag;
 use App\Model\Database\EntityManagerDecorator;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
 
-class HomepagePresenter extends Presenter
+class BasicPresenter extends Presenter
 {
 
 	/** @var EntityManagerDecorator @inject */

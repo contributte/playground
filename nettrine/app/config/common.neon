@@ -32,6 +32,8 @@ extensions:
 	nettrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension(%consoleMode%)
 	nettrine.orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
 
+	translation: Contributte\Translation\DI\TranslationExtension
+
 nettrine.dbal:
 	connection:
 		driver: mysqli
@@ -75,7 +77,17 @@ nettrine.orm:
 nettrine.orm.annotations:
 	mapping:
 		App\Model\Database\Basic\Entity: %appDir%/Model/Database/Basic/Entity
-		App\Model\Database\Translatable\Entity: %appDir%/Model/Database/Translatable/Entity
+		App\Model\Database\Advanced\Entity: %appDir%/Model/Database/Advanced/Entity
 		# doctrine extensions entities
 		Gedmo\Translatable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity
 		Gedmo\Loggable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity
+
+translation:
+    locales:
+        whitelist: [en_GB, cs_CZ]
+        default: en_GB
+        fallback: [en_GB]
+    dirs:
+        - %appDir%/lang
+    localeResolvers:
+        - Contributte\Translation\LocalesResolvers\Parameter

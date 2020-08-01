@@ -1,0 +1,24 @@
+articles:
+    articles: Články
+    id: ID článku
+    title: Nadpis
+    text: Text
+
+    czTitle: Nadpis článku v češtině
+    enTitle: Nadpis článku v angličtině
+    czContent: Obsah článku v češtině
+    enContent: Obsah článku v angličtině
+
+    submit: Uložit
+
+    czTitle_required: Nadpis článku v češtině je povinný údaj
+    enTitle_required: Nadpis článku v angličtině je povinný údaj
+    czContent_required: Obsah článku v češtině je povinný údaj
+    enContent_required: Obsah článku v angličtině je povinný údaj
+
+history:
+    articles: Historie změn článků
+    dateTime: Datum a 4as
+    action: Akce
+    create: vytvořeno
+    update: upraveno
