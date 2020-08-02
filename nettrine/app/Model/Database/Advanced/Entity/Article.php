@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Translatable\Translatable;
 
 /**
- * @ORM\Table(name="articles")
+ * @ORM\Table
  * @ORM\Entity(repositoryClass="App\Model\Database\Advanced\Repository\ArticleRepository")
  * @Gedmo\Loggable
  * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false, hardDelete=true)

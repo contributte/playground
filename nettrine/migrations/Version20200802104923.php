@@ -22,7 +22,7 @@ final class Version20200802104923 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE articles ADD created DATETIME NOT NULL AFTER content, ADD updated DATETIME NOT NULL AFTER content, ADD content_changed DATETIME DEFAULT NULL AFTER content');
+        $this->addSql('ALTER TABLE article ADD created DATETIME NOT NULL AFTER content, ADD updated DATETIME NOT NULL AFTER content, ADD content_changed DATETIME DEFAULT NULL AFTER content');
     }
 
     public function down(Schema $schema) : void
@@ -30,6 +30,6 @@ final class Version20200802104923 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE articles DROP created, DROP updated, DROP content_changed');
+        $this->addSql('ALTER TABLE article DROP created, DROP updated, DROP content_changed');
     }
 }

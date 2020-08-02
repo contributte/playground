@@ -22,8 +22,8 @@ final class Version20200802112405 extends AbstractMigration
         // this up() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('ALTER TABLE articles ADD slug VARCHAR(128) NOT NULL AFTER title');
-        $this->addSql('CREATE UNIQUE INDEX UNIQ_BFDD3168989D9B62 ON articles (slug)');
+        $this->addSql('ALTER TABLE article ADD slug VARCHAR(128) NOT NULL AFTER title');
+        $this->addSql('CREATE UNIQUE INDEX UNIQ_23A0E66989D9B62 ON article (slug)');
     }
 
     public function down(Schema $schema) : void
@@ -31,7 +31,7 @@ final class Version20200802112405 extends AbstractMigration
         // this down() migration is auto-generated, please modify it to your needs
         $this->abortIf($this->connection->getDatabasePlatform()->getName() !== 'mysql', 'Migration can only be executed safely on \'mysql\'.');
 
-        $this->addSql('DROP INDEX UNIQ_BFDD3168989D9B62 ON articles');
-        $this->addSql('ALTER TABLE articles DROP slug');
+        $this->addSql('DROP INDEX UNIQ_23A0E66989D9B62 ON articles');
+        $this->addSql('ALTER TABLE article DROP slug');
     }
 }
