@@ -2,14 +2,15 @@ articles:
     articles: Articles
     id: Article ID
     title: Title
+    slug: Slug
     text: Text
+    createdAt: Date and time of creating
+    changedAt: Date and time of modifying
 
     czTitle: Article title in Czech
     enTitle: Article title in English
     czContent: Article content in Czech
     enContent: Article content in English
-    createdAt: Date and time of creating
-    changedAt: Date and time of modifying
 
     submit: Save
 

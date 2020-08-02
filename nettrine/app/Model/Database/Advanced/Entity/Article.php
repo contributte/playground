@@ -29,6 +29,12 @@ class Article implements Translatable
 	private $title;
 
 	/**
+	 * @Gedmo\Slug(fields={"title"})
+	 * @ORM\Column(length=128, unique=true)
+	 */
+	private $slug;
+
+	/**
 	 * @Gedmo\Translatable
 	 * @Gedmo\Versioned
 	 * @ORM\Column(name="content", type="text")
@@ -79,6 +85,11 @@ class Article implements Translatable
 	public function getTitle()
 	{
 		return $this->title;
+	}
+
+	public function getSlug()
+	{
+		return $this->slug;
 	}
 
 	public function getContent()

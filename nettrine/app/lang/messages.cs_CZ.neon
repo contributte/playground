@@ -2,14 +2,15 @@ articles:
     articles: Články
     id: ID článku
     title: Nadpis
+    slug: SEO název
     text: Text
+    createdAt: Datum a čas vytvoření
+    changedAt: Datum a čas úpravy
 
     czTitle: Nadpis článku v češtině
     enTitle: Nadpis článku v angličtině
     czContent: Obsah článku v češtině
     enContent: Obsah článku v angličtině
-    createdAt: Datum a čas vytvoření
-    changedAt: Datum a čas úpravy
 
     submit: Uložit
 

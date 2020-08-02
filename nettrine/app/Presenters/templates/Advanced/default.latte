@@ -12,6 +12,7 @@
         <tr>
             <th>{_messages.articles.id}</th>
             <th>{_messages.articles.title}</th>
+            <th>{_messages.articles.slug}</th>
             <th>{_messages.articles.text}</th>
             <th>{_messages.articles.createdAt}</th>
             <th>{_messages.articles.changedAt}</th>
@@ -21,6 +22,7 @@
             <tr>
                 <td>{$article->getId()}</td>
                 <td>{$article->getTitle()}</td>
+                <td>{$article->getSlug()}</td>
                 <td>{$article->getContent()}</td>
                 <td>{$article->getCreated()|date:'j. n. Y H:i:s'}</td>
                 <td n:if="$article->getUpdated()">{$article->getUpdated()|date:'j. n. Y H:i:s'}</td>

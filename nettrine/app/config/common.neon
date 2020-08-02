@@ -48,7 +48,7 @@ nettrine.dbal:
 
 nettrine.extensions.atlantic18:
 	loggable: true
-	sluggable: false
+	sluggable: true
 	softDeleteable: true
 	treeable: false
 	blameable: false

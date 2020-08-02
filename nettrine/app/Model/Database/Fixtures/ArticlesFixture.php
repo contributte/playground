@@ -14,20 +14,20 @@ class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 	public function load(ObjectManager $manager): void
 	{
 		$article = new Article();
-		$article->setTitle('Title in English');
-		$article->setContent("Content in English");
-		$article->setTranslatableLocale('en_GB');
-
-		$manager->persist($article);
-		$manager->flush();;
 
 		$article->setTitle('Nadpis v češtině');
 		$article->setContent("Text v češtině");
 		$article->setTranslatableLocale('cs_CZ');
 
 		$manager->persist($article);
-
 		$manager->flush();
+
+		$article->setTitle('Title in English');
+		$article->setContent("Content in English");
+		$article->setTranslatableLocale('en_GB');
+
+		$manager->persist($article);
+		$manager->flush();;
 	}
 
 	/**
