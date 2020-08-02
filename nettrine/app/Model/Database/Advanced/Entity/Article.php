@@ -22,6 +22,12 @@ class Article implements Translatable
 	private $id;
 
 	/**
+	 * @ORM\ManyToOne(targetEntity="ArticleCategory", inversedBy="articles")
+	 * @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="CASCADE")
+	 */
+	private $category;
+
+	/**
 	 * @Gedmo\Translatable
 	 * @Gedmo\Versioned
 	 * @ORM\Column(name="title", type="string", length=128)
@@ -82,6 +88,11 @@ class Article implements Translatable
 		return $this->id;
 	}
 
+	public function getCategory()
+	{
+		return $this->category;
+	}
+
 	public function getTitle()
 	{
 		return $this->title;
@@ -120,6 +131,11 @@ class Article implements Translatable
 	public function getDeletedAt()
 	{
 		return $this->deletedAt;
+	}
+
+	public function setCategory($category)
+	{
+		$this->category = $category;
 	}
 
 	public function setTitle($title)

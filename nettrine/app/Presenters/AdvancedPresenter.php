@@ -2,9 +2,12 @@
 
 namespace App\Presenters;
 
-use App\Model\Database\EntityManagerDecorator;
 use App\Model\Database\Advanced\Entity\Article;
+use App\Model\Database\Advanced\Entity\ArticleCategory;
 use App\Model\Database\Advanced\Repository\ArticleRepository;
+use App\Model\Database\Advanced\Repository\CategoryRepository;
+use App\Model\Database\EntityManagerDecorator;
+use Exception;
 use Gedmo\Loggable\Entity\LogEntry;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
@@ -19,6 +22,9 @@ class AdvancedPresenter extends Presenter
 	/** @var ArticleRepository */
 	public $articleRepository;
 
+	/** @var CategoryRepository */
+	public $categoryRepository;
+
 	/** @var ITranslator @inject */
 	public $translator;
 
@@ -30,6 +36,7 @@ class AdvancedPresenter extends Presenter
 		parent::__construct();
 		$this->em = $em;
 		$this->articleRepository = $em->getRepository(Article::class);
+		$this->categoryRepository = $em->getRepository(ArticleCategory::class);
 	}
 
 	public function renderDefault($locale): void
@@ -37,6 +44,8 @@ class AdvancedPresenter extends Presenter
 		if (!$locale) {
 			$this->redirect('Advanced:', ['locale' => 'en_GB']);
 		}
+
+		$this->template->categories = $this->categoryRepository->findAllOrderedCategories();
 
 		$articles = [];
 
@@ -66,6 +75,47 @@ class AdvancedPresenter extends Presenter
 
 		//reset for another uses
 		$this->em->clear();
+	}
+
+	protected function createComponentAddArticleCategoryForm(): Form
+	{
+		$form = new Form();
+
+		$form->addText('title', 'messages.article_categories.title')
+			->setRequired('messages.article_categories.title_required');
+
+		$categories = $this->categoryRepository->findPairs();
+		$form->addSelect('parent', 'messages.article_categories.parent_category', $categories)
+			->setTranslator(null);
+
+		$form->addSubmit('send', 'messages.articles.submit');
+
+		$form->setTranslator($this->translator);
+
+		$form->onSuccess[] = [$this, 'processAddArticleCategoryForm'];
+
+		return $form;
+	}
+
+	public function processAddArticleCategoryForm(Form $form): void
+	{
+		$values = $form->getValues();
+
+		$this->em->beginTransaction();
+
+		$category = new ArticleCategory();
+		$category->setTitle($values->title);
+
+		/** @var ArticleCategory $parent */
+		$parent = $this->categoryRepository->find($values->parent);
+		$category->setParent($parent);
+
+		$this->em->persist($category);
+		$this->em->flush();
+
+		$this->em->commit();
+
+		$this->redirect('Advanced:');
 	}
 
 	protected function createComponentAddArticleForm(): Form
@@ -113,7 +163,7 @@ class AdvancedPresenter extends Presenter
 		$this->redirect('this');
 	}
 
-	public function actionDelete($id)
+	public function actionDeleteArticle($id)
 	{
 		$article = $this->articleRepository->find($id);
 
@@ -121,6 +171,25 @@ class AdvancedPresenter extends Presenter
 		$this->em->flush();
 
 		$this->flashMessage($this->translator->translate('messages.articles.success_delete'));
+		$this->redirect('Advanced:');
+	}
+
+	public function actionDeleteCategory($id)
+	{
+		try {
+			$this->em->beginTransaction();
+			$category = $this->categoryRepository->find($id);
+
+			$this->em->remove($category);
+			$this->em->flush();
+
+			$this->em->commit();
+
+			$this->flashMessage($this->translator->translate('messages.categories.success_delete'));
+		} catch (Exception $e) {
+			$this->flashMessage($e->getMessage());
+		}
+
 		$this->redirect('Advanced:');
 	}
 }

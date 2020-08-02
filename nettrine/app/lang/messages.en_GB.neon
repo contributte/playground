@@ -1,4 +1,5 @@
 articles:
+    categories: Article Category
     articles: Articles
     id: Article ID
     title: Title
@@ -21,6 +22,18 @@ articles:
 
     delete: Delete article
     success_delete: Article was successfully deleted
+
+article_categories:
+    title: Title of article category
+    title_required: Title of article category is required
+    parent_category: Parent category
+
+categories:
+    id: ID
+    title: Category title
+
+    delete: Delete category
+    success_delete: Category was successfully deleted
 
 history:
     articles: History of changes in articles

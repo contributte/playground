@@ -1,4 +1,5 @@
 articles:
+    categories: Kategorie článků
     articles: Články
     id: ID článku
     title: Nadpis
@@ -21,6 +22,18 @@ articles:
 
     delete: Smazat článek
     success_delete: Článek byl úspěšně smazán
+
+article_categories:
+    title: Název kategorie článků
+    title_required: Název kategorie je povinný
+    parent_category: Nadřazená kategorie
+
+categories:
+    id: ID
+    title: Název kategorie
+
+    delete: Smazat kategorii
+    success_delete: Kategorie byla úspěšně smazána
 
 history:
     articles: Historie změn článků

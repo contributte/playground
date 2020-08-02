@@ -85,6 +85,9 @@ h2 a {
 table td, table th {
 	border: 1px solid #DDD;
 	padding: 5px;
+}
+
+.text-center {
 	text-align: center;
 }
 

@@ -13,7 +13,7 @@
                 <th></th>
             </tr>
             {foreach $books as $book}
-                <tr>
+                <tr class="text-center">
                     <td>{$book->getId()}</td>
                     <td>{$book->getTitle()}</td>
                     <td>{$book->getCategory()->getTitle()}</td>
@@ -48,7 +48,7 @@
                 <th>Books</th>
             </tr>
             {foreach $categories as $category}
-                <tr>
+                <tr class="text-center">
                     <td>{$category->getId()}</td>
                     <td>{$category->getTitle()}</td>
                     <td>
@@ -73,7 +73,7 @@
                 <th>Books</th>
             </tr>
             {foreach $tags as $tag}
-                <tr>
+                <tr class="text-center">
                     <td>{$tag->getId()}</td>
                     <td>{$tag->getTitle()}</td>
                     <td>
