@@ -177,9 +177,9 @@ class Book extends Entity
 	{
 		/*
 		 * Note - remove will call SQL delete command that removes the record from DB
-		 * 		- event will be fired when user clicks [delete] link
-		 * 		- we could possibly prevent deleting in this event by throwing exception etc.
-		 * 		- we can also use $args->getEntityManager()
+		 *      - event will be fired when user clicks [delete] link
+		 *      - we could possibly prevent deleting in this event by throwing exception etc.
+		 *      - we can also use $args->getEntityManager()
 		 */
 	}
 

@@ -51,7 +51,6 @@ nettrine.extensions.atlantic18:
 	sluggable: true
 	softDeleteable: true
 	treeable: true
-	blameable: false
 	timestampable: true
 	translatable:
 		translatable: en_GB
@@ -59,13 +58,10 @@ nettrine.extensions.atlantic18:
 		translationFallback: true
 		persistDefaultTranslation: true
 		skipOnLoad: false
-	uploadable: false
-	sortable: false
-	ipTraceable: false
 
 nettrine.fixtures:
-  	paths:
-  		- %appDir%/Model/Database/Fixtures
+	paths:
+		- %appDir%/Model/Database/Fixtures
 
 nettrine.migrations:
 	directory: %appDir%/../migrations
@@ -84,11 +80,11 @@ nettrine.orm.annotations:
 		Gedmo\Tree: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity
 
 translation:
-    locales:
-        whitelist: [en_GB, cs_CZ]
-        default: en_GB
-        fallback: [en_GB]
-    dirs:
-        - %appDir%/lang
-    localeResolvers:
-        - Contributte\Translation\LocalesResolvers\Parameter
+	locales:
+		whitelist: [en_GB, cs_CZ]
+		default: en_GB
+		fallback: [en_GB]
+	dirs:
+		- %appDir%/lang
+	localeResolvers:
+		- Contributte\Translation\LocalesResolvers\Parameter
