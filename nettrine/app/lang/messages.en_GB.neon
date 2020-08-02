@@ -16,9 +16,13 @@ articles:
     czContent_required: Article content in Czech is required
     enContent_required: Article content in English is required
 
+    delete: Delete article
+    success_delete: Article was successfully deleted
+
 history:
     articles: History of changes in articles
     dateTime: Date and time
     action: Action
     create: created
     update: updated
+    remove: removed

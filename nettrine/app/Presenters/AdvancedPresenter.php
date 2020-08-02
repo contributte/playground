@@ -22,6 +22,9 @@ class AdvancedPresenter extends Presenter
 	/** @var ITranslator @inject */
 	public $translator;
 
+	/** @persistent */
+	public $locale;
+
 	public function __construct(EntityManagerDecorator $em)
 	{
 		parent::__construct();
@@ -32,7 +35,7 @@ class AdvancedPresenter extends Presenter
 	public function renderDefault($locale): void
 	{
 		if (!$locale) {
-			$this->redirect('this:', ['locale' => 'en_GB']);
+			$this->redirect('Advanced:', ['locale' => 'en_GB']);
 		}
 
 		$articles = [];
@@ -56,6 +59,8 @@ class AdvancedPresenter extends Presenter
 				$articlesHistory[$log->getId()]['history'] = $log;
 			}
 		}
+
+		ksort($articlesHistory);
 
 		$this->template->articlesHistory = $articlesHistory;
 
@@ -108,4 +113,14 @@ class AdvancedPresenter extends Presenter
 		$this->redirect('this');
 	}
 
+	public function actionDelete($id)
+	{
+		$article = $this->articleRepository->find($id);
+
+		$this->em->remove($article);
+		$this->em->flush();
+
+		$this->flashMessage($this->translator->translate('messages.articles.success_delete'));
+		$this->redirect('Advanced:');
+	}
 }

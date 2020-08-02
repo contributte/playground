@@ -10,6 +10,7 @@ use Gedmo\Translatable\Translatable;
  * @ORM\Table(name="articles")
  * @ORM\Entity(repositoryClass="App\Model\Database\Advanced\Repository\ArticleRepository")
  * @Gedmo\Loggable
+ * @Gedmo\SoftDeleteable(fieldName="deletedAt", timeAware=false, hardDelete=true)
  */
 class Article implements Translatable
 {
@@ -41,6 +42,11 @@ class Article implements Translatable
 	 */
 	private $locale;
 
+	/**
+	 * @ORM\Column(name="deletedAt", type="datetime", nullable=true)
+	 */
+	private $deletedAt;
+
 	public function getId()
 	{
 		return $this->id;
@@ -69,5 +75,15 @@ class Article implements Translatable
 	public function setTranslatableLocale($locale)
 	{
 		$this->locale = $locale;
+	}
+
+	public function getDeletedAt()
+	{
+		return $this->deletedAt;
+	}
+
+	public function setDeletedAt($deletedAt)
+	{
+		$this->deletedAt = $deletedAt;
 	}
 }

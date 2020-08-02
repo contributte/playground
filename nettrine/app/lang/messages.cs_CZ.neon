@@ -16,9 +16,13 @@ articles:
     czContent_required: Obsah článku v češtině je povinný údaj
     enContent_required: Obsah článku v angličtině je povinný údaj
 
+    delete: Smazat článek
+    success_delete: Článek byl úspěšně smazán
+
 history:
     articles: Historie změn článků
     dateTime: Datum a 4as
     action: Akce
     create: vytvořeno
     update: upraveno
+    remove: smazáno

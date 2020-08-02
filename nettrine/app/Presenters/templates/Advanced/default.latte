@@ -13,12 +13,14 @@
             <th>{_messages.articles.id}</th>
             <th>{_messages.articles.title}</th>
             <th>{_messages.articles.text}</th>
+            <th></th>
         </tr>
         {foreach $articles as $article}
             <tr>
                 <td>{$article->getId()}</td>
                 <td>{$article->getTitle()}</td>
                 <td>{$article->getContent()}</td>
+                <td><a n:href="delete $article->getId()">{_messages.articles.delete}</a></td>
             </tr>
         {/foreach}
     </table>
@@ -40,7 +42,7 @@
                 <td>{$entry['history']->getLoggedAt()|date:'d.m.Y H:i:s'}</td>
                 <td>{_$action}</td>
                 <td>{$entry['article']->getId()}</td>
-                <td>{$entry['history']->getData()['title']}</td>
+                <td n:if="$entry['history']->getData()">{$entry['history']->getData()['title']}</td>
             </tr>
         {/foreach}
     </table>
