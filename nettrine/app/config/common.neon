@@ -52,7 +52,7 @@ nettrine.extensions.atlantic18:
 	softDeleteable: true
 	treeable: false
 	blameable: false
-	timestampable: false
+	timestampable: true
 	translatable:
 		translatable: en_GB
 		default: en_GB

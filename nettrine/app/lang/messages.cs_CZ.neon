@@ -8,6 +8,8 @@ articles:
     enTitle: Nadpis článku v angličtině
     czContent: Obsah článku v češtině
     enContent: Obsah článku v angličtině
+    createdAt: Datum a čas vytvoření
+    changedAt: Datum a čas úpravy
 
     submit: Uložit
 

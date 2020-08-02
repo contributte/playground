@@ -8,6 +8,8 @@ articles:
     enTitle: Article title in English
     czContent: Article content in Czech
     enContent: Article content in English
+    createdAt: Date and time of creating
+    changedAt: Date and time of modifying
 
     submit: Save
 

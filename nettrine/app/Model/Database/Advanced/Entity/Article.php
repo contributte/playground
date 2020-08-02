@@ -43,6 +43,30 @@ class Article implements Translatable
 	private $locale;
 
 	/**
+	 * @var \DateTime $created
+	 *
+	 * @Gedmo\Timestampable(on="create")
+	 * @ORM\Column(type="datetime")
+	 */
+	private $created;
+
+	/**
+	 * @var \DateTime $updated
+	 *
+	 * @Gedmo\Timestampable(on="update")
+	 * @ORM\Column(type="datetime")
+	 */
+	private $updated;
+
+	/**
+	 * @var \DateTime $contentChanged
+	 *
+	 * @ORM\Column(name="content_changed", type="datetime", nullable=true)
+	 * @Gedmo\Timestampable(on="change", field={"title", "content"})
+	 */
+	private $contentChanged;
+
+	/**
 	 * @ORM\Column(name="deletedAt", type="datetime", nullable=true)
 	 */
 	private $deletedAt;
@@ -52,19 +76,9 @@ class Article implements Translatable
 		return $this->id;
 	}
 
-	public function setTitle($title)
-	{
-		$this->title = $title;
-	}
-
 	public function getTitle()
 	{
 		return $this->title;
-	}
-
-	public function setContent($content)
-	{
-		$this->content = $content;
 	}
 
 	public function getContent()
@@ -77,9 +91,34 @@ class Article implements Translatable
 		$this->locale = $locale;
 	}
 
+	public function getCreated()
+	{
+		return $this->created;
+	}
+
+	public function getUpdated()
+	{
+		return $this->updated;
+	}
+
+	public function getContentChanged()
+	{
+		return $this->contentChanged;
+	}
+
 	public function getDeletedAt()
 	{
 		return $this->deletedAt;
+	}
+
+	public function setTitle($title)
+	{
+		$this->title = $title;
+	}
+
+	public function setContent($content)
+	{
+		$this->content = $content;
 	}
 
 	public function setDeletedAt($deletedAt)
