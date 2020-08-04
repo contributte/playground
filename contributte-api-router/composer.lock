@@ -1656,16 +1656,16 @@
     "packages-dev": [
         {
             "name": "nette/tester",
-            "version": "v2.3.2",
+            "version": "v2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tester.git",
-                "reference": "793aa4bb87872319902a569ed84a64844fdc1549"
+                "reference": "1fbe4860b4cfabe99f03ee3632db6352f0564d22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/793aa4bb87872319902a569ed84a64844fdc1549",
-                "reference": "793aa4bb87872319902a569ed84a64844fdc1549",
+                "url": "https://api.github.com/repos/nette/tester/zipball/1fbe4860b4cfabe99f03ee3632db6352f0564d22",
+                "reference": "1fbe4860b4cfabe99f03ee3632db6352f0564d22",
                 "shasum": ""
             },
             "require": {
@@ -1719,7 +1719,7 @@
                 "testing",
                 "unit"
             ],
-            "time": "2020-03-06T15:55:57+00:00"
+            "time": "2020-07-20T10:27:01+00:00"
         }
     ],
     "aliases": [],
@@ -1730,5 +1730,6 @@
     "platform": {
         "php": ">= 7.1"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
