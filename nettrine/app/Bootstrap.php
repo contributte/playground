@@ -11,7 +11,7 @@ class Bootstrap
 	{
 		$configurator = new Configurator;
 
-		$configurator->setDebugMode(true);
+		$configurator->setDebugMode(TRUE);
 		$configurator->enableTracy(__DIR__ . '/../log');
 
 		$configurator->setTimeZone('Europe/Prague');
@@ -24,8 +24,11 @@ class Bootstrap
 		$configurator
 			->addConfig(__DIR__ . '/config/common.neon');
 
-		$configurator
-			->addConfig(__DIR__ . '/config/local.neon');
+		$localNeonFile = __DIR__ . '/config/local.neon';
+		if (file_exists($localNeonFile)) {
+			$configurator
+				->addConfig($localNeonFile);
+		}
 
 		return $configurator;
 	}
