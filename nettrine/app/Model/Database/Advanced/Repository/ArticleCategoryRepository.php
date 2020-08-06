@@ -4,7 +4,7 @@ namespace App\Model\Database\Advanced\Repository;
 
 use Gedmo\Tree\Entity\Repository\NestedTreeRepository;
 
-final class CategoryRepository extends NestedTreeRepository
+final class ArticleCategoryRepository extends NestedTreeRepository
 {
 
 	public function findAllOrderedCategories()

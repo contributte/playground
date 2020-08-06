@@ -51,7 +51,7 @@ class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 		$article->setTranslatableLocale('en_GB');
 
 		$manager->persist($article);
-		$manager->flush();;
+		$manager->flush();
 	}
 
 	/**

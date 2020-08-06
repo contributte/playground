@@ -5,7 +5,7 @@ use App\Model\Database\Basic\Entity\Category;
 use App\Model\Database\Basic\Entity\Tag;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 
 class BooksFixture implements FixtureInterface, OrderedFixtureInterface
 {

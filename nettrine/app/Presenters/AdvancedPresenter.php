@@ -4,8 +4,6 @@ namespace App\Presenters;
 
 use App\Model\Database\Advanced\Entity\Article;
 use App\Model\Database\Advanced\Entity\ArticleCategory;
-use App\Model\Database\Advanced\Repository\ArticleRepository;
-use App\Model\Database\Advanced\Repository\CategoryRepository;
 use App\Model\Database\EntityManagerDecorator;
 use Exception;
 use Gedmo\Loggable\Entity\LogEntry;
@@ -16,14 +14,8 @@ use Nette\Localization\ITranslator;
 class AdvancedPresenter extends Presenter
 {
 
-	/** @var EntityManagerDecorator */
+	/** @var EntityManagerDecorator @inject */
 	public $em;
-
-	/** @var ArticleRepository */
-	public $articleRepository;
-
-	/** @var CategoryRepository */
-	public $categoryRepository;
 
 	/** @var ITranslator @inject */
 	public $translator;
@@ -31,25 +23,21 @@ class AdvancedPresenter extends Presenter
 	/** @persistent */
 	public $locale;
 
-	public function __construct(EntityManagerDecorator $em)
-	{
-		parent::__construct();
-		$this->em = $em;
-		$this->articleRepository = $em->getRepository(Article::class);
-		$this->categoryRepository = $em->getRepository(ArticleCategory::class);
-	}
-
 	public function renderDefault($locale): void
 	{
 		if (!$locale) {
 			$this->redirect('Advanced:', ['locale' => 'en_GB']);
 		}
 
-		$this->template->categories = $this->categoryRepository->findAllOrderedCategories();
+		$articleCategoryRepository = $this->em->getArticleCategoryRepository();
+		$articleRepository = $this->em->getArticleRepository();
+
+		$this->template->categories = $articleCategoryRepository->findAllOrderedCategories();
 
 		$articles = [];
 
-		foreach ($this->articleRepository->findAll() as $article) {
+		foreach ($articleRepository->findAll() as $article) {
+			/** @var Article $article */
 			$article->setTranslatableLocale($locale);
 			$this->em->refresh($article);
 
@@ -60,10 +48,12 @@ class AdvancedPresenter extends Presenter
 
 		$articlesHistory = [];
 		foreach ($articles as $article) {
+			/** @var Article $article */
 			$repo = $this->em->getRepository(LogEntry::class); // we use default log entry class
 			$logs = $repo->getLogEntries($article);
 
 			foreach ($logs as $log) {
+				/** @var LogEntry $log */
 				$articlesHistory[$log->getId()]['article'] = $article;
 				$articlesHistory[$log->getId()]['history'] = $log;
 			}
@@ -72,9 +62,6 @@ class AdvancedPresenter extends Presenter
 		ksort($articlesHistory);
 
 		$this->template->articlesHistory = $articlesHistory;
-
-		//reset for another uses
-		$this->em->clear();
 	}
 
 	protected function createComponentAddArticleCategoryForm(): Form
@@ -84,7 +71,8 @@ class AdvancedPresenter extends Presenter
 		$form->addText('title', 'messages.article_categories.title')
 			->setRequired('messages.article_categories.title_required');
 
-		$categories = $this->categoryRepository->findPairs();
+		$articleCategoryRepository = $this->em->getArticleCategoryRepository();
+		$categories = $articleCategoryRepository->findPairs();
 		$form->addSelect('parent', 'messages.article_categories.parent_category', $categories)
 			->setTranslator(null);
 
@@ -106,8 +94,10 @@ class AdvancedPresenter extends Presenter
 		$category = new ArticleCategory();
 		$category->setTitle($values->title);
 
+		$articleCategoryRepository = $this->em->getArticleCategoryRepository();
+
 		/** @var ArticleCategory $parent */
-		$parent = $this->categoryRepository->find($values->parent);
+		$parent = $articleCategoryRepository->find($values->parent);
 		$category->setParent($parent);
 
 		$this->em->persist($category);
@@ -165,7 +155,8 @@ class AdvancedPresenter extends Presenter
 
 	public function actionDeleteArticle($id)
 	{
-		$article = $this->articleRepository->find($id);
+		$articleRepository = $this->em->getArticleRepository();
+		$article = $articleRepository->find($id);
 
 		$this->em->remove($article);
 		$this->em->flush();
@@ -178,7 +169,8 @@ class AdvancedPresenter extends Presenter
 	{
 		try {
 			$this->em->beginTransaction();
-			$category = $this->categoryRepository->find($id);
+			$articleCategoryRepository = $this->em->getArticleCategoryRepository();
+			$category = $articleCategoryRepository->find($id);
 
 			$this->em->remove($category);
 			$this->em->flush();
