@@ -5,6 +5,7 @@ namespace App\Presenters;
 use App\Model\Database\Advanced\Entity\Article;
 use App\Model\Database\Advanced\Entity\ArticleCategory;
 use App\Model\Database\EntityManagerDecorator;
+use Doctrine\Common\Collections\Criteria;
 use Exception;
 use Gedmo\Loggable\Entity\LogEntry;
 use Nette\Application\UI\Form;
@@ -23,7 +24,7 @@ class AdvancedPresenter extends Presenter
 	/** @persistent */
 	public $locale;
 
-	public function renderDefault($locale): void
+	public function renderDefault(?string $locale): void
 	{
 		if (!$locale) {
 			$this->redirect('Advanced:', ['locale' => 'en_GB']);
@@ -36,7 +37,10 @@ class AdvancedPresenter extends Presenter
 
 		$articles = [];
 
-		foreach ($articleRepository->findAll() as $article) {
+		$criteria = new Criteria();
+		$criteria->where(Criteria::expr()->isNull('deletedAt'));
+
+		foreach ($articleRepository->matching($criteria) as $article) {
 			/** @var Article $article */
 			$article->setTranslatableLocale($locale);
 			$this->em->refresh($article);
@@ -74,7 +78,7 @@ class AdvancedPresenter extends Presenter
 		$articleCategoryRepository = $this->em->getArticleCategoryRepository();
 		$categories = $articleCategoryRepository->findPairs();
 		$form->addSelect('parent', 'messages.article_categories.parent_category', $categories)
-			->setTranslator(null);
+			->setTranslator(NULL);
 
 		$form->addSubmit('send', 'messages.articles.submit');
 
@@ -105,7 +109,7 @@ class AdvancedPresenter extends Presenter
 
 		$this->em->commit();
 
-		$this->redirect('Advanced:');
+		$this->redirect('this');
 	}
 
 	protected function createComponentAddArticleForm(): Form
@@ -153,7 +157,7 @@ class AdvancedPresenter extends Presenter
 		$this->redirect('this');
 	}
 
-	public function actionDeleteArticle($id)
+	public function actionDeleteArticle(int $id): void
 	{
 		$articleRepository = $this->em->getArticleRepository();
 		$article = $articleRepository->find($id);
@@ -165,7 +169,7 @@ class AdvancedPresenter extends Presenter
 		$this->redirect('Advanced:');
 	}
 
-	public function actionDeleteCategory($id)
+	public function actionDeleteCategory(int $id): void
 	{
 		try {
 			$this->em->beginTransaction();

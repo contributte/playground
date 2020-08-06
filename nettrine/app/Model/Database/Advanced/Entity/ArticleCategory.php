@@ -3,6 +3,7 @@
 namespace App\Model\Database\Advanced\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
 
@@ -18,102 +19,102 @@ class ArticleCategory
 	 * @ORM\Id
 	 * @ORM\GeneratedValue
 	 */
-	private $id;
+	private int $id;
 
 	/**
 	 * @ORM\Column(name="title", type="string", length=64)
 	 */
-	private $title;
+	private string $title;
 
 	/**
 	 * @Gedmo\TreeLeft
 	 * @ORM\Column(name="lft", type="integer")
 	 */
-	private $lft;
+	private int $lft;
 
 	/**
 	 * @Gedmo\TreeLevel
 	 * @ORM\Column(name="lvl", type="integer")
 	 */
-	private $lvl;
+	private int $lvl;
 
 	/**
 	 * @Gedmo\TreeRight
 	 * @ORM\Column(name="rgt", type="integer")
 	 */
-	private $rgt;
+	private int $rgt;
 
 	/**
 	 * @Gedmo\TreeRoot
 	 * @ORM\ManyToOne(targetEntity="ArticleCategory")
 	 * @ORM\JoinColumn(name="tree_root", referencedColumnName="id", onDelete="CASCADE")
 	 */
-	private $root;
+	private ?self $root = NULL;
 
 	/**
 	 * @Gedmo\TreeParent
 	 * @ORM\ManyToOne(targetEntity="ArticleCategory", inversedBy="children")
 	 * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", onDelete="CASCADE")
 	 */
-	private $parent;
+	private ?self $parent = NULL;
 
 	/**
 	 * @ORM\OneToMany(targetEntity="ArticleCategory", mappedBy="parent")
 	 * @ORM\OrderBy({"lft" = "ASC"})
 	 */
-	private $children;
+	private Collection $children;
 
 	/**
 	 * @ORM\OneToMany(targetEntity="Article", mappedBy="category")
 	 */
-	private $articles;
+	private Collection $articles;
 
 	public function __construct()
 	{
 		$this->articles = new ArrayCollection();
 	}
 
-	public function getId()
+	public function getId(): int
 	{
 		return $this->id;
 	}
 
-	public function getTitle()
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
 
-	public function getLvl()
+	public function getLvl(): int
 	{
 		return $this->lvl;
 	}
 
-	public function getRoot()
+	public function getRoot(): self
 	{
 		return $this->root;
 	}
 
-	public function getParent()
+	public function getParent(): self
 	{
 		return $this->parent;
 	}
 
-	public function getArticles()
+	public function getArticles(): ArrayCollection
 	{
 		return $this->articles;
 	}
 
-	public function setTitle($title)
+	public function setTitle(string $title): void
 	{
 		$this->title = $title;
 	}
 
-	public function setParent(?ArticleCategory $parent = null)
+	public function setParent(?ArticleCategory $parent = NULL): void
 	{
 		$this->parent = $parent;
 	}
 
-	public function setArticles($articles)
+	public function setArticles(Collection $articles): void
 	{
 		$this->articles = $articles;
 	}

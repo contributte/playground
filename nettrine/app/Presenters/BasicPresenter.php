@@ -41,21 +41,21 @@ class BasicPresenter extends Presenter
 		return $form;
 	}
 
-	public function actionReadBook($id): void
+	public function actionReadBook(int $id): void
 	{
 		$bookRepository = $this->em->getBookRepository();
 
 		$book = $bookRepository->getById($id);
 		if ($book) {
 			/** @var Book $book */
-			$book->setAlreadyRead(true);
+			$book->setAlreadyRead(TRUE);
 			$this->em->flush($book);
 		}
 
-		$this->redirect('Homepage:');
+		$this->redirect('Basic:');
 	}
 
-	public function actionDeleteBook($id): void
+	public function actionDeleteBook(int $id): void
 	{
 		$bookRepository = $this->em->getBookRepository();
 
@@ -66,7 +66,7 @@ class BasicPresenter extends Presenter
 			$this->em->flush();
 		}
 
-		$this->redirect('Homepage:');
+		$this->redirect('Basic:');
 	}
 
 	public function processBookForm(Form $form): void

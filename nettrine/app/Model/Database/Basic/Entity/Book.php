@@ -3,6 +3,7 @@
 namespace App\Model\Database\Basic\Entity;
 
 use App\Model\Database\Entity\Entity;
+use DateTime;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Event\LifecycleEventArgs;
@@ -21,40 +22,35 @@ class Book extends Entity
 
 	/**
 	 * @ORM\Column(type="string")
-	 * @var string
 	 */
-	private $title;
+	private string $title;
 
 	/**
 	 * @ORM\Column(type="boolean")
-	 * @var bool
 	 */
-	private $alreadyRead = false;
+	private bool $alreadyRead = FALSE;
 
 	/**
 	 * @ORM\Column(type="string")
-	 * @var string
 	 */
-	private $createdAt;
+	private syting $createdAt;
 
 	/**
 	 * @ORM\Column(type="string", nullable=true)
-	 * @var string
 	 */
-	private $updatedAt;
+	private string $updatedAt;
 
 	/**
-	 * @var Category
 	 * @ORM\ManyToOne(targetEntity="Category", inversedBy="books")
 	 * @ORM\JoinColumn(nullable=FALSE)
 	 */
-	private $category;
+	private Category $category;
 
 	/**
 	 * @var Tag[]|Collection
 	 * @ORM\ManyToMany(targetEntity="Tag", mappedBy="books")
 	 */
-	private $tags;
+	private Collection $tags;
 
 	/**
 	 * @param Book constructor
@@ -64,50 +60,32 @@ class Book extends Entity
 		$this->tags = new ArrayCollection();
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getTitle()
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
 
-	/**
-	 * @param string $title
-	 */
-	public function setTitle($title)
+	public function setTitle($title): string
 	{
 		$this->title = $title;
 	}
 
-	/**
-	 * @return bool
-	 */
-	public function isAlreadyRead()
+	public function isAlreadyRead(): bool
 	{
 		return $this->alreadyRead;
 	}
 
-	/**
-	 * @param bool $read
-	 */
-	public function setAlreadyRead($read)
+	public function setAlreadyRead(bool $read): void
 	{
 		$this->alreadyRead = $read;
 	}
 
-	/**
-	 * @return Category
-	 */
-	public function getCategory()
+	public function getCategory(): Category
 	{
 		return $this->category;
 	}
 
-	/**
-	 * @param Category $category
-	 */
-	public function setCategory(Category $category)
+	public function setCategory(Category $category): void
 	{
 		$this->category = $category;
 	}
@@ -115,48 +93,40 @@ class Book extends Entity
 	/**
 	 * @return Tag[]|Collection
 	 */
-	public function getTags()
+	public function getTags(): Collection
 	{
 		return $this->tags;
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getCreatedAt()
+	public function getCreatedAt(): DateTime
 	{
 		return $this->createdAt;
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getUpdatedAt()
+	public function getUpdatedAt(): DateTime
 	{
 		return $this->updatedAt;
 	}
 
 	/**
 	 * @ORM\PrePersist
-	 *
 	 */
 	public function onPrePersist()
 	{
 		$this->createdAt = $this->getCurrentDate();
 
-		if ($this->id !== null) {
+		if ($this->id !== NULL) {
 			throw new LogicException("Entity id field should be null during prePersistEvent");
 		}
 	}
 
 	/**
 	 * @ORM\PostPersist()
-	 * @param LifecycleEventArgs $args
 	 */
 	public function onPostPersist(LifecycleEventArgs $args)
 	{
 		// $args->getEntity() and $this are pointers to the same objects
-		if ($args->getEntity()->getId() === null) {
+		if ($args->getEntity()->getId() === NULL) {
 			throw new LogicException("Entity id field should be already filled during prePersistEvent");
 		}
 	}

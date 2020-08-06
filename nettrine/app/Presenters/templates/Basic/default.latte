@@ -23,8 +23,8 @@
                         {/foreach}
                     </td>
                     <td>{$book->isAlreadyRead() ? 'Yes' : 'No'}</td>
-                    <td>{$book->getCreatedAt()}</td>
-                    <td>{$book->getUpdatedAt()}</td>
+                    <td>{$book->getCreatedAt()|date:'j.n.Y H:i:s'}</td>
+                    <td>{$book->getUpdatedAt()|date:'j.n.Y H:i:s'}</td>
                     <td>
                         {if !$book->isAlreadyRead()}
                             <a n:href="Basic:readBook $book->getId()">[read]</a>

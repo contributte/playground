@@ -2,8 +2,9 @@
 
 namespace App\Model\Database\Advanced\Entity;
 
-use Gedmo\Mapping\Annotation as Gedmo;
+use DateTime;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 use Gedmo\Translatable\Translatable;
 
 /**
@@ -19,40 +20,40 @@ class Article implements Translatable
 	 * @ORM\GeneratedValue
 	 * @ORM\Column(type="integer")
 	 */
-	private $id;
+	private int $id;
 
 	/**
 	 * @ORM\ManyToOne(targetEntity="ArticleCategory", inversedBy="articles")
 	 * @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="CASCADE")
 	 */
-	private $category;
+	private ArticleCategory $category;
 
 	/**
 	 * @Gedmo\Translatable
 	 * @Gedmo\Versioned
 	 * @ORM\Column(name="title", type="string", length=128)
 	 */
-	private $title;
+	private string $title;
 
 	/**
 	 * @Gedmo\Slug(fields={"title"})
 	 * @ORM\Column(length=128, unique=true)
 	 */
-	private $slug;
+	private string $slug;
 
 	/**
 	 * @Gedmo\Translatable
 	 * @Gedmo\Versioned
 	 * @ORM\Column(name="content", type="text")
 	 */
-	private $content;
+	private string $content;
 
 	/**
 	 * @Gedmo\Locale
 	 * Used locale to override Translation listener`s locale
 	 * this is not a mapped field of entity metadata, just a simple property
 	 */
-	private $locale;
+	private ?string $locale = NULL;
 
 	/**
 	 * @var \DateTime $created
@@ -60,95 +61,91 @@ class Article implements Translatable
 	 * @Gedmo\Timestampable(on="create")
 	 * @ORM\Column(type="datetime")
 	 */
-	private $created;
+	private DateTime $created;
 
 	/**
-	 * @var \DateTime $updated
-	 *
 	 * @Gedmo\Timestampable(on="update")
 	 * @ORM\Column(type="datetime")
 	 */
-	private $updated;
+	private DateTime $updated;
 
 	/**
-	 * @var \DateTime $contentChanged
-	 *
 	 * @ORM\Column(name="content_changed", type="datetime", nullable=true)
 	 * @Gedmo\Timestampable(on="change", field={"title", "content"})
 	 */
-	private $contentChanged;
+	private DateTime $contentChanged;
 
 	/**
 	 * @ORM\Column(name="deletedAt", type="datetime", nullable=true)
 	 */
-	private $deletedAt;
+	private DateTime $deletedAt;
 
-	public function getId()
+	public function getId(): int
 	{
 		return $this->id;
 	}
 
-	public function getCategory()
+	public function getCategory(): ArticleCategory
 	{
 		return $this->category;
 	}
 
-	public function getTitle()
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
 
-	public function getSlug()
+	public function getSlug(): string
 	{
 		return $this->slug;
 	}
 
-	public function getContent()
+	public function getContent(): string
 	{
 		return $this->content;
 	}
 
-	public function setTranslatableLocale($locale)
-	{
-		$this->locale = $locale;
-	}
-
-	public function getCreated()
+	public function getCreated(): DateTime
 	{
 		return $this->created;
 	}
 
-	public function getUpdated()
+	public function getUpdated(): DateTime
 	{
 		return $this->updated;
 	}
 
-	public function getContentChanged()
+	public function getContentChanged(): DateTime
 	{
 		return $this->contentChanged;
 	}
 
-	public function getDeletedAt()
+	public function getDeletedAt(): DateTime
 	{
 		return $this->deletedAt;
 	}
 
-	public function setCategory($category)
+	public function setCategory(ArticleCategory $category): void
 	{
 		$this->category = $category;
 	}
 
-	public function setTitle($title)
+	public function setTitle(string $title): void
 	{
 		$this->title = $title;
 	}
 
-	public function setContent($content)
+	public function setContent(string $content): void
 	{
 		$this->content = $content;
 	}
 
-	public function setDeletedAt($deletedAt)
+	public function setTranslatableLocale(string $locale): void
+	{
+		$this->locale = $locale;
+	}
+
+	public function setDeletedAt(DateTime $deletedAt): void
 	{
 		$this->deletedAt = $deletedAt;
 	}

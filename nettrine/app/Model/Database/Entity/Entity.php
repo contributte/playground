@@ -10,9 +10,6 @@ use DateTime;
 abstract class Entity
 {
 
-	/**
-	 * @return string
-	 */
 	protected function getCurrentDate(): string
 	{
 		return (new DateTime())->format(DATE_W3C);
