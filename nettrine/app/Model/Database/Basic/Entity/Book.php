@@ -33,12 +33,12 @@ class Book extends Entity
 	/**
 	 * @ORM\Column(type="string")
 	 */
-	private syting $createdAt;
+	private string $createdAt;
 
 	/**
 	 * @ORM\Column(type="string", nullable=true)
 	 */
-	private string $updatedAt;
+	private ?string $updatedAt = null;
 
 	/**
 	 * @ORM\ManyToOne(targetEntity="Category", inversedBy="books")
@@ -98,12 +98,12 @@ class Book extends Entity
 		return $this->tags;
 	}
 
-	public function getCreatedAt(): DateTime
+	public function getCreatedAt(): string
 	{
 		return $this->createdAt;
 	}
 
-	public function getUpdatedAt(): DateTime
+	public function getUpdatedAt(): ?DateTime
 	{
 		return $this->updatedAt;
 	}
