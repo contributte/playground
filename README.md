@@ -40,7 +40,7 @@ git clone git@github.com:planette/playground.git
 | [contributte-neonizer](https://github.com/contributte/playground/tree/master/contributte-neonizer) | Example of contributte/neonizer usage. |
 | [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
-| [nettrine](https://github.com/planette/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. |
+| [nettrine](https://github.com/planette/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations, doctrine/data-fixtures, gedmo/doctrine-extensions. |
 | [nextras-orm-generator](https://github.com/planette/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
 ---
