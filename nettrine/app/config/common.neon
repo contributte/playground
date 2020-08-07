@@ -88,3 +88,4 @@ translation:
 		- %appDir%/lang
 	localeResolvers:
 		- Contributte\Translation\LocalesResolvers\Parameter
+		- Contributte\Translation\LocalesResolvers\Router

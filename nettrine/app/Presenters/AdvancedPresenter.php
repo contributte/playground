@@ -15,21 +15,17 @@ use Nette\Localization\ITranslator;
 class AdvancedPresenter extends Presenter
 {
 
-	/** @var EntityManagerDecorator @inject */
-	public $em;
+	/** @inject */
+	public EntityManagerDecorator $em;
 
-	/** @var ITranslator @inject */
-	public $translator;
+	/** @inject */
+	public ITranslator $translator;
 
 	/** @persistent */
-	public $locale;
+	public string $locale = '';
 
 	public function renderDefault(?string $locale): void
 	{
-		if (!$locale) {
-			$this->redirect('Advanced:', ['locale' => 'en_GB']);
-		}
-
 		$articleCategoryRepository = $this->em->getArticleCategoryRepository();
 		$articleRepository = $this->em->getArticleRepository();
 

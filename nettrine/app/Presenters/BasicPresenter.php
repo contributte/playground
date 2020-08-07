@@ -12,8 +12,8 @@ use Nette\Application\UI\Presenter;
 class BasicPresenter extends Presenter
 {
 
-	/** @var EntityManagerDecorator @inject */
-	public $em;
+	/** @inject */
+	public EntityManagerDecorator $em;
 
 	public function renderDefault(): void
 	{

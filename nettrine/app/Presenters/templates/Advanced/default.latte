@@ -1,10 +1,10 @@
 {block content}
 <div class="content">
     <ul id="menu">
-        {if $presenter->getParameter('locale') == 'en_GB'}
-            <li><a n:href="Advanced: locale => 'cs_CZ'">CZ</a></li>
+        {if $presenter->getParameter('locale') == 'en'}
+            <li><a n:href="Advanced: locale => 'cs'">CZ</a></li>
         {else}
-            <li><a n:href="Advanced: locale => 'en_GB'">EN</a></li>
+            <li><a n:href="Advanced: locale => 'en'">EN</a></li>
         {/if}
     </ul>
     <h2>{_messages.articles.categories}</h2>
