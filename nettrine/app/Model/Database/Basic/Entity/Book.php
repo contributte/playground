@@ -38,7 +38,7 @@ class Book extends Entity
 	/**
 	 * @ORM\Column(type="string", nullable=true)
 	 */
-	private ?string $updatedAt = null;
+	private ?string $updatedAt = NULL;
 
 	/**
 	 * @ORM\ManyToOne(targetEntity="Category", inversedBy="books")
@@ -65,7 +65,7 @@ class Book extends Entity
 		return $this->title;
 	}
 
-	public function setTitle($title): string
+	public function setTitle(string $title): void
 	{
 		$this->title = $title;
 	}
@@ -111,7 +111,7 @@ class Book extends Entity
 	/**
 	 * @ORM\PrePersist
 	 */
-	public function onPrePersist()
+	public function onPrePersist(): void
 	{
 		$this->createdAt = $this->getCurrentDate();
 
@@ -123,7 +123,7 @@ class Book extends Entity
 	/**
 	 * @ORM\PostPersist()
 	 */
-	public function onPostPersist(LifecycleEventArgs $args)
+	public function onPostPersist(LifecycleEventArgs $args): void
 	{
 		// $args->getEntity() and $this are pointers to the same objects
 		if ($args->getEntity()->getId() === NULL) {
@@ -134,16 +134,15 @@ class Book extends Entity
 	/**
 	 * @ORM\PreUpdate()
 	 */
-	public function onPreUpdate()
+	public function onPreUpdate(): void
 	{
 		$this->updatedAt = $this->getCurrentDate();
 	}
 
 	/**
 	 * @ORM\PreRemove()
-	 * @param LifecycleEventArgs $args
 	 */
-	public function onPreRemove(LifecycleEventArgs $args)
+	public function onPreRemove(LifecycleEventArgs $args): void
 	{
 		/*
 		 * Note - remove will call SQL delete command that removes the record from DB
