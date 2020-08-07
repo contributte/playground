@@ -2,18 +2,18 @@
 
 namespace App\Presenters;
 
-use App\Model\Database\Entity\Book;
-use App\Model\Database\Entity\Category;
-use App\Model\Database\Entity\Tag;
+use App\Model\Database\Basic\Entity\Book;
+use App\Model\Database\Basic\Entity\Category;
+use App\Model\Database\Basic\Entity\Tag;
 use App\Model\Database\EntityManagerDecorator;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
 
-class HomepagePresenter extends Presenter
+class BasicPresenter extends Presenter
 {
 
-	/** @var EntityManagerDecorator @inject */
-	public $em;
+	/** @inject */
+	public EntityManagerDecorator $em;
 
 	public function renderDefault(): void
 	{
@@ -48,11 +48,11 @@ class HomepagePresenter extends Presenter
 		$book = $bookRepository->find($id);
 		if ($book) {
 			/** @var Book $book */
-			$book->setAlreadyRead(true);
+			$book->setAlreadyRead(TRUE);
 			$this->em->flush($book);
 		}
 
-		$this->redirect('Homepage:');
+		$this->redirect('Basic:');
 	}
 
 	public function actionDeleteBook(int $id): void
@@ -66,7 +66,7 @@ class HomepagePresenter extends Presenter
 			$this->em->flush();
 		}
 
-		$this->redirect('Homepage:');
+		$this->redirect('Basic:');
 	}
 
 	public function processBookForm(Form $form): void
