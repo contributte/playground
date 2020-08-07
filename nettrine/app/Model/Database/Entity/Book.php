@@ -20,93 +20,67 @@ class Book extends Entity
 
 	/**
 	 * @ORM\Column(type="string")
-	 * @var string
 	 */
-	private $title;
+	private string $title;
 
 	/**
 	 * @ORM\Column(type="boolean")
-	 * @var bool
 	 */
-	private $alreadyRead = false;
+	private bool $alreadyRead = FALSE;
 
 	/**
 	 * @ORM\Column(type="string")
-	 * @var string
 	 */
-	private $createdAt;
+	private string $createdAt;
 
 	/**
 	 * @ORM\Column(type="string", nullable=true)
-	 * @var string
 	 */
-	private $updatedAt;
+	private ?string $updatedAt = NULL;
 
 	/**
-	 * @var Category
-	 * @ORM\ManyToOne(targetEntity="Category", inversedBy="category")
+	 * @ORM\ManyToOne(targetEntity="Category", inversedBy="books")
 	 * @ORM\JoinColumn(nullable=FALSE)
 	 */
-	private $category;
+	private Category $category;
 
 	/**
 	 * @var Tag[]|Collection
 	 * @ORM\ManyToMany(targetEntity="Tag", mappedBy="books")
 	 */
-	private $tags;
+	private Collection $tags;
 
-	/**
-	 * @param Book constructor
-	 */
 	public function __construct()
 	{
 		$this->tags = new ArrayCollection();
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getTitle()
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
 
-	/**
-	 * @param string $title
-	 */
-	public function setTitle($title)
+	public function setTitle(string $title): void
 	{
 		$this->title = $title;
 	}
 
-	/**
-	 * @return bool
-	 */
-	public function isAlreadyRead()
+	public function isAlreadyRead(): bool
 	{
 		return $this->alreadyRead;
 	}
 
-	/**
-	 * @param bool $read
-	 */
-	public function setAlreadyRead($read)
+	public function setAlreadyRead(bool $read): void
 	{
 		$this->alreadyRead = $read;
 	}
 
-	/**
-	 * @return Category
-	 */
-	public function getCategory()
+	public function getCategory(): Category
 	{
 		return $this->category;
 	}
 
-	/**
-	 * @param Category $category
-	 */
-	public function setCategory(Category $category)
+	public function setCategory(Category $category): void
 	{
 		$this->category = $category;
 	}
@@ -114,71 +88,51 @@ class Book extends Entity
 	/**
 	 * @return Tag[]|Collection
 	 */
-	public function getTags()
+	public function getTags(): Collection
 	{
 		return $this->tags;
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getCreatedAt()
+	public function getCreatedAt(): string
 	{
 		return $this->createdAt;
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getUpdatedAt()
+	public function getUpdatedAt(): ?string
 	{
 		return $this->updatedAt;
 	}
 
 	/**
 	 * @ORM\PrePersist
-	 *
 	 */
-	public function onPrePersist()
+	public function onPrePersist(): void
 	{
 		$this->createdAt = $this->getCurrentDate();
 
-		if ($this->id !== null) {
+		if ($this->id !== NULL) {
 			throw new LogicException("Entity id field should be null during prePersistEvent");
-		}
-	}
-
-	/**
-	 * @ORM\PostPersist()
-	 * @param LifecycleEventArgs $args
-	 */
-	public function onPostPersist(LifecycleEventArgs $args)
-	{
-		// $args->getEntity() and $this are pointers to the same objects
-		if ($args->getEntity()->getId() === null) {
-			throw new LogicException("Entity id field should be already filled during prePersistEvent");
 		}
 	}
 
 	/**
 	 * @ORM\PreUpdate()
 	 */
-	public function onPreUpdate()
+	public function onPreUpdate(): void
 	{
 		$this->updatedAt = $this->getCurrentDate();
 	}
 
 	/**
 	 * @ORM\PreRemove()
-	 * @param LifecycleEventArgs $args
 	 */
-	public function onPreRemove(LifecycleEventArgs $args)
+	public function onPreRemove(LifecycleEventArgs $args): void
 	{
 		/*
 		 * Note - remove will call SQL delete command that removes the record from DB
-		 * 		- event will be fired when user clicks [delete] link
-		 * 		- we could possibly prevent deleting in this event by throwing exception etc.
-		 * 		- we can also use $args->getEntityManager()
+		 *      - event will be fired when user clicks [delete] link
+		 *      - we could possibly prevent deleting in this event by throwing exception etc.
+		 *      - we can also use $args->getEntityManager()
 		 */
 	}
 

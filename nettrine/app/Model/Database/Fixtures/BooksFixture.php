@@ -5,7 +5,7 @@ use App\Model\Database\Entity\Category;
 use App\Model\Database\Entity\Tag;
 use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\Persistence\ObjectManager;
 
 class BooksFixture implements FixtureInterface, OrderedFixtureInterface
 {
@@ -27,17 +27,17 @@ class BooksFixture implements FixtureInterface, OrderedFixtureInterface
 		$bookA = new Book();
 		$bookA->setTitle('Book title A');
 		$bookA->setCategory($categoryA);
-		$bookA->setAlreadyRead(false);
+		$bookA->setAlreadyRead(FALSE);
 
 		$bookB = new Book();
 		$bookB->setTitle('Book title B');
 		$bookB->setCategory($categoryA);
-		$bookB->setAlreadyRead(true);
+		$bookB->setAlreadyRead(TRUE);
 
 		$bookC = new Book();
 		$bookC->setTitle('Book title C');
 		$bookC->setCategory($categoryB);
-		$bookC->setAlreadyRead(false);
+		$bookC->setAlreadyRead(FALSE);
 
 		$manager->persist($bookA);
 		$manager->persist($bookB);

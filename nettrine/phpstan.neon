@@ -1,0 +1,9 @@
+parameters:
+	level: max
+	paths:
+		- app
+
+	checkGenericClassInNonGenericObjectType: false
+
+	doctrine:
+		objectManagerLoader: tests/object-manager.php

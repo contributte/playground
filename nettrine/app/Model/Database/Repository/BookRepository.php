@@ -1,4 +1,4 @@
-<?php declare(strict_types = 1);
+<?php declare(strict_types=1);
 
 namespace App\Model\Database\Repository;
 
@@ -7,12 +7,5 @@ namespace App\Model\Database\Repository;
  */
 final class BookRepository extends EntityRepository
 {
-
-	public function getById($id)
-	{
-		return $this->findOneBy([
-			'id' => $id,
-		]);
-	}
 
 }
