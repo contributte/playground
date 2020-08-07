@@ -45,7 +45,7 @@ class BasicPresenter extends Presenter
 	{
 		$bookRepository = $this->em->getBookRepository();
 
-		$book = $bookRepository->getById($id);
+		$book = $bookRepository->find($id);
 		if ($book) {
 			/** @var Book $book */
 			$book->setAlreadyRead(TRUE);
@@ -59,7 +59,7 @@ class BasicPresenter extends Presenter
 	{
 		$bookRepository = $this->em->getBookRepository();
 
-		$book = $bookRepository->getById($id);
+		$book = $bookRepository->find($id);
 
 		if ($book) {
 			$this->em->remove($book);

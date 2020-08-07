@@ -75,8 +75,7 @@ class AdvancedPresenter extends Presenter
 		$form->addText('title', 'messages.article_categories.title')
 			->setRequired('messages.article_categories.title_required');
 
-		$articleCategoryRepository = $this->em->getArticleCategoryRepository();
-		$categories = $articleCategoryRepository->findPairs();
+		$categories = $this->em->getArticleCategoryRepository()->findPairs();
 		$form->addSelect('parent', 'messages.article_categories.parent_category', $categories)
 			->setTranslator(NULL);
 
@@ -183,6 +182,7 @@ class AdvancedPresenter extends Presenter
 
 			$this->flashMessage($this->translator->translate('messages.categories.success_delete'));
 		} catch (Exception $e) {
+			$this->em->rollback();
 			$this->flashMessage($e->getMessage());
 		}
 

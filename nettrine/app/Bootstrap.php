@@ -24,11 +24,8 @@ class Bootstrap
 		$configurator
 			->addConfig(__DIR__ . '/config/common.neon');
 
-		$localNeonFile = __DIR__ . '/config/local.neon';
-		if (file_exists($localNeonFile)) {
-			$configurator
-				->addConfig($localNeonFile);
-		}
+		$configurator
+			->addConfig(__DIR__ . '/config/local.neon');
 
 		return $configurator;
 	}
