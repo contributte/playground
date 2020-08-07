@@ -21,6 +21,8 @@ extensions:
 	nettrine.dbal: Nettrine\DBAL\DI\DbalExtension
 	nettrine.dbal.console: Nettrine\DBAL\DI\DbalConsoleExtension
 
+	nettrine.extensions.atlantic18: Nettrine\Extensions\Atlantic18\DI\Atlantic18BehaviorExtension
+
 	nettrine.fixtures: Nettrine\Fixtures\DI\FixturesExtension
 
 	nettrine.migrations: Nettrine\Migrations\DI\MigrationsExtension
@@ -29,6 +31,8 @@ extensions:
 	nettrine.orm.cache: Nettrine\ORM\DI\OrmCacheExtension
 	nettrine.orm.console: Nettrine\ORM\DI\OrmConsoleExtension(%consoleMode%)
 	nettrine.orm.annotations: Nettrine\ORM\DI\OrmAnnotationsExtension
+
+	translation: Contributte\Translation\DI\TranslationExtension
 
 nettrine.dbal:
 	connection:
@@ -41,6 +45,19 @@ nettrine.dbal:
 	debug:
 		panel: %debugMode%
 		sourcePaths: [%appDir%]
+
+nettrine.extensions.atlantic18:
+	loggable: true
+	sluggable: true
+	softDeleteable: true
+	treeable: true
+	timestampable: true
+	translatable:
+		translatable: en_GB
+		default: en_GB
+		translationFallback: true
+		persistDefaultTranslation: true
+		skipOnLoad: false
 
 nettrine.fixtures:
 	paths:
@@ -55,4 +72,20 @@ nettrine.orm:
 
 nettrine.orm.annotations:
 	mapping:
-		App\Model\Database\Entity: %appDir%/Model/Database/Entity
+		App\Model\Database\Basic\Entity: %appDir%/Model/Database/Basic/Entity
+		App\Model\Database\Advanced\Entity: %appDir%/Model/Database/Advanced/Entity
+		# doctrine extensions entities
+		Gedmo\Loggable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity
+		Gedmo\Translatable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity
+		Gedmo\Tree: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity
+
+translation:
+	locales:
+		whitelist: [en_GB, cs_CZ]
+		default: en_GB
+		fallback: [en_GB]
+	dirs:
+		- %appDir%/lang
+	localeResolvers:
+		- Contributte\Translation\LocalesResolvers\Parameter
+		- Contributte\Translation\LocalesResolvers\Router

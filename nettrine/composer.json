@@ -19,8 +19,10 @@
     "tracy/tracy": "~2.7.0",
     "contributte/console": "~0.8.0",
     "nettrine/orm": "~0.7.0",
-    "nettrine/migrations": "^0.6.2",
-    "nettrine/fixtures": "^0.5.2"
+    "nettrine/migrations": "~0.6.0",
+    "nettrine/fixtures": "~0.5.0",
+    "nettrine/extensions-atlantic18": "~0.5.0",
+    "contributte/translation": "~0.7.0"
   },
   "autoload": {
     "classmap": [

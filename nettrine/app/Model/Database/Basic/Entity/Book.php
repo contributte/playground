@@ -1,7 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace App\Model\Database\Entity;
+namespace App\Model\Database\Basic\Entity;
 
+use App\Model\Database\Entity\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Event\LifecycleEventArgs;
@@ -10,7 +11,7 @@ use LogicException;
 use Nettrine\ORM\Entity\Attributes\Id;
 
 /**
- * @ORM\Entity(repositoryClass="App\Model\Database\Repository\BookRepository")
+ * @ORM\Entity(repositoryClass="App\Model\Database\Basic\Repository\BookRepository")
  * @ORM\HasLifecycleCallbacks
  */
 class Book extends Entity

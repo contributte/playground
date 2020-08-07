@@ -32,6 +32,10 @@ a:hover, a:active, a:focus {
 	color: white;
 }
 
+ul#menu li {
+	display:inline;
+}
+
 #banner {
 	border-radius: 12px 12px 0 0;
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAB5CAMAAADPursXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGBQTFRFD1CRDkqFDTlmDkF1D06NDT1tDTNZDk2KEFWaDTZgDkiCDTtpDT5wDkZ/DTBVEFacEFOWD1KUDTRcDTFWDkV9DkR7DkN4DkByDTVeDC9TDThjDTxrDkeADkuIDTRbDC9SbsUaggAAAEdJREFUeNqkwYURgAAQA7DH3d3335LSKyxAYpf9vWCpnYbf01qcOdFVXc14w4BznNTjkQfsscAdU3b4wIh9fDVYc4zV8xZgAAYaCMI6vPgLAAAAAElFTkSuQmCC);
@@ -81,6 +85,9 @@ h2 a {
 table td, table th {
 	border: 1px solid #DDD;
 	padding: 5px;
+}
+
+.text-center {
 	text-align: center;
 }
 
