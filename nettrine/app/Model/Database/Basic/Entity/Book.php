@@ -52,9 +52,6 @@ class Book extends Entity
 	 */
 	private Collection $tags;
 
-	/**
-	 * @param Book constructor
-	 */
 	public function __construct()
 	{
 		$this->tags = new ArrayCollection();
@@ -103,32 +100,9 @@ class Book extends Entity
 		return $this->createdAt;
 	}
 
-	public function getUpdatedAt(): ?DateTime
+	public function getUpdatedAt(): ?string
 	{
 		return $this->updatedAt;
-	}
-
-	/**
-	 * @ORM\PrePersist
-	 */
-	public function onPrePersist(): void
-	{
-		$this->createdAt = $this->getCurrentDate();
-
-		if ($this->id !== NULL) {
-			throw new LogicException("Entity id field should be null during prePersistEvent");
-		}
-	}
-
-	/**
-	 * @ORM\PostPersist()
-	 */
-	public function onPostPersist(LifecycleEventArgs $args): void
-	{
-		// $args->getEntity() and $this are pointers to the same objects
-		if ($args->getEntity()->getId() === NULL) {
-			throw new LogicException("Entity id field should be already filled during prePersistEvent");
-		}
 	}
 
 	/**

@@ -2,12 +2,14 @@
 
 namespace App\Model\Database\Advanced\Repository;
 
+use App\Model\Database\Advanced\Entity\ArticleCategory;
 use Gedmo\Tree\Entity\Repository\NestedTreeRepository;
 
 final class ArticleCategoryRepository extends NestedTreeRepository
 {
 
-	public function findAllOrderedCategories()
+	/** @return array<ArticleCategory> */
+	public function findAllOrderedCategories(): array
 	{
 		$qb = $this->createQueryBuilder('c');
 		$qb->where('c.lvl != 0')
@@ -29,7 +31,7 @@ final class ArticleCategoryRepository extends NestedTreeRepository
 			->getArrayResult();
 
 		foreach ($categories as $category) {
-			$select[$category['id']] = str_repeat('-',$category['lvl']) . ' ' . $category['title'];
+			$select[$category['id']] = str_repeat('-', $category['lvl']) . ' ' . $category['title'];
 		}
 		return $select;
 	}

@@ -61,11 +61,13 @@ class ArticleCategory
 	/**
 	 * @ORM\OneToMany(targetEntity="ArticleCategory", mappedBy="parent")
 	 * @ORM\OrderBy({"lft" = "ASC"})
+	 * @var Collection&iterable<ArticleCategory>
 	 */
 	private Collection $children;
 
 	/**
 	 * @ORM\OneToMany(targetEntity="Article", mappedBy="category")
+	 * @var Collection&iterable<Article>
 	 */
 	private Collection $articles;
 
@@ -99,7 +101,8 @@ class ArticleCategory
 		return $this->parent;
 	}
 
-	public function getArticles(): ArrayCollection
+	/** @return Collection&iterable<Article> */
+	public function getArticles(): Collection
 	{
 		return $this->articles;
 	}

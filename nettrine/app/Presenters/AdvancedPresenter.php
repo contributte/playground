@@ -8,6 +8,7 @@ use App\Model\Database\EntityManagerDecorator;
 use Doctrine\Common\Collections\Criteria;
 use Exception;
 use Gedmo\Loggable\Entity\LogEntry;
+use Gedmo\Loggable\Entity\Repository\LogEntryRepository;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
 use Nette\Localization\ITranslator;
@@ -48,7 +49,7 @@ class AdvancedPresenter extends Presenter
 
 		$articlesHistory = [];
 		foreach ($articles as $article) {
-			/** @var Article $article */
+			/** @var LogEntryRepository $repo */
 			$repo = $this->em->getRepository(LogEntry::class); // we use default log entry class
 			$logs = $repo->getLogEntries($article);
 

@@ -26,7 +26,7 @@ class Article implements Translatable
 	 * @ORM\ManyToOne(targetEntity="ArticleCategory", inversedBy="articles")
 	 * @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="CASCADE")
 	 */
-	private ArticleCategory $category;
+	private ?ArticleCategory $category;
 
 	/**
 	 * @Gedmo\Translatable
@@ -73,12 +73,12 @@ class Article implements Translatable
 	 * @ORM\Column(name="content_changed", type="datetime", nullable=true)
 	 * @Gedmo\Timestampable(on="change", field={"title", "content"})
 	 */
-	private DateTime $contentChanged;
+	private ?DateTime $contentChanged;
 
 	/**
 	 * @ORM\Column(name="deletedAt", type="datetime", nullable=true)
 	 */
-	private DateTime $deletedAt;
+	private ?DateTime $deletedAt;
 
 	public function getId(): int
 	{
