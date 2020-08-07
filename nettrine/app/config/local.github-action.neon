@@ -1,0 +1,8 @@
+nettrine.dbal:
+	connection:
+		driver: 'mysqli'
+		host: 127.0.0.1
+		dbname: nettrine
+		user: root
+		password: password
+		charset:  UTF8

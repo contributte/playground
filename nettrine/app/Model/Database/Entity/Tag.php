@@ -17,15 +17,14 @@ class Tag extends Entity
 
 	/**
 	 * @ORM\Column(type="string")
-	 * @var string
 	 */
-	private $title;
+	private string $title;
 
 	/**
 	 * @var Book[]|Collection
 	 * @ORM\ManyToMany(targetEntity="Book", inversedBy="tags")
 	 */
-	private $books;
+	private Collection $books;
 
 	/**
 	 * Tag constructor
@@ -35,18 +34,12 @@ class Tag extends Entity
 		$this->books = new ArrayCollection();
 	}
 
-	/**
-	 * @return string
-	 */
-	public function getTitle()
+	public function getTitle(): string
 	{
 		return $this->title;
 	}
 
-	/**
-	 * @param string $title
-	 */
-	public function setTitle($title)
+	public function setTitle(string $title): void
 	{
 		$this->title = $title;
 	}
@@ -54,7 +47,7 @@ class Tag extends Entity
 	/**
 	 * @return Book[]|Collection
 	 */
-	public function getBooks()
+	public function getBooks(): Collection
 	{
 		return $this->books;
 	}

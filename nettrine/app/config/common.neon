@@ -32,16 +32,19 @@ extensions:
 
 nettrine.dbal:
 	connection:
-		driver: 'pdo_sqlite'
-		url: sqlite:///%appDir%/../data/database.sqlite
+		driver: mysqli
+		host: database
+		dbname: nettrine
+		user: root
+		password: root
 		charset:  UTF8
 	debug:
 		panel: %debugMode%
 		sourcePaths: [%appDir%]
 
 nettrine.fixtures:
-  	paths:
-  		- %appDir%/Model/Database/Fixtures
+	paths:
+		- %appDir%/Model/Database/Fixtures
 
 nettrine.migrations:
 	directory: %appDir%/../migrations
@@ -52,4 +55,4 @@ nettrine.orm:
 
 nettrine.orm.annotations:
 	mapping:
-		App\Model\Database\Entity: '%appDir%/Model/Database/Entity'
+		App\Model\Database\Entity: %appDir%/Model/Database/Entity

@@ -41,11 +41,11 @@ class HomepagePresenter extends Presenter
 		return $form;
 	}
 
-	public function actionReadBook($id): void
+	public function actionReadBook(int $id): void
 	{
 		$bookRepository = $this->em->getBookRepository();
 
-		$book = $bookRepository->getById($id);
+		$book = $bookRepository->find($id);
 		if ($book) {
 			/** @var Book $book */
 			$book->setAlreadyRead(true);
@@ -55,11 +55,11 @@ class HomepagePresenter extends Presenter
 		$this->redirect('Homepage:');
 	}
 
-	public function actionDeleteBook($id): void
+	public function actionDeleteBook(int $id): void
 	{
 		$bookRepository = $this->em->getBookRepository();
 
-		$book = $bookRepository->getById($id);
+		$book = $bookRepository->find($id);
 
 		if ($book) {
 			$this->em->remove($book);

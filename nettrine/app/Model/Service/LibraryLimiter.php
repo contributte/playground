@@ -24,21 +24,18 @@ final class LibraryLimiter implements EventSubscriber
 	/**
 	 * Returns an array of events this subscriber wants to listen to.
 	 *
-	 * @return array
+	 * @return array<string>
 	 */
 	public function getSubscribedEvents(): array
 	{
 		return [Events::postConnect];
 	}
 
-	/**
-	 * @param ConnectionEventArgs $args
-	 */
 	public function postConnect(ConnectionEventArgs $args): void
 	{
 		$schemaManager = $args->getConnection()->getSchemaManager();
 
-		if ($schemaManager->tablesExist(array('book')) == true) {
+		if ($schemaManager->tablesExist(array('book')) == TRUE) {
 			$all = $args->getConnection()->fetchAll("SELECT id FROM book");
 
 			if (count($all) > self::LIBRARY_MAX_SIZE) {
