@@ -32,10 +32,14 @@ jobs:
           extensions: json, mbstring, xml, tokenizer
           coverage: none
 
-      - run: mkdir -p nettrine/tests/tmp
-      - run: cat $(php -r 'echo php_ini_loaded_file() . " " . str_replace("\n", " ", str_replace(",", "", php_ini_scanned_files()));') > nettrine/tests/tmp/php.ino
       - run: cd nettrine && composer install --no-interaction --prefer-source
-      - run: cp nettrine/app/config/local.github-action.neon nettrine/app/config/local.neon
+      - run: cd nettrine && touch app/config/local.neon
+      - run: 'cd nettrine && composer set-config -- $(pwd)/app/config/local.neon \
+        --dbDriver=mysql \
+        --dbHost=127.0.0.1 \
+        --dbUser=root \
+        --dbPassword=password \
+        --dbName=nettrine'
       - run: php nettrine/bin/console migrations:migrate -n
       - run: php nettrine/bin/console doctrine:fixtures:load -n
       - run: php nettrine/bin/console orm:validate

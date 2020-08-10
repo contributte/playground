@@ -6,4 +6,4 @@ parameters:
 	checkGenericClassInNonGenericObjectType: false
 
 	doctrine:
-		objectManagerLoader: tests/object-manager.php
+		objectManagerLoader: build/object-manager.php
