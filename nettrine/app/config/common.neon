@@ -37,10 +37,10 @@ extensions:
 nettrine.dbal:
 	connection:
 		driver: mysqli
-		host: database
-		dbname: nettrine
-		user: root
-		password: root
+		host: %dbHost%
+		dbname: %dbName%
+		user: %dbUser%
+		password: %dbPassword%
 		charset:  UTF8
 	debug:
 		panel: %debugMode%
