@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7970f0f274ea76b76970b35ef7586380",
+    "content-hash": "b4eb44b97ad6e0cdb10a3794b3fd8d18",
     "packages": [
         {
             "name": "contributte/forms-bootstrap",
-            "version": "v0.2.2",
+            "version": "v0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "696160808fb118a508d80f59f709807637f8d72b"
+                "reference": "99c9f8c4adab40f7e075298b4a1f1cdfbb2d20b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/696160808fb118a508d80f59f709807637f8d72b",
-                "reference": "696160808fb118a508d80f59f709807637f8d72b",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/99c9f8c4adab40f7e075298b4a1f1cdfbb2d20b4",
+                "reference": "99c9f8c4adab40f7e075298b4a1f1cdfbb2d20b4",
                 "shasum": ""
             },
             "require": {
@@ -62,7 +62,7 @@
                 "library",
                 "nette"
             ],
-            "time": "2020-06-03T20:28:34+00:00"
+            "time": "2020-09-24T08:26:24+00:00"
         },
         {
             "name": "latte/latte",
