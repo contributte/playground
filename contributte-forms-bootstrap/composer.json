@@ -13,7 +13,7 @@
 		"nette/utils": "^3.0",
 		"latte/latte": "^2.5",
 		"tracy/tracy": "^2.6",
-		"contributte/forms-bootstrap": "^0.2"
+		"contributte/forms-bootstrap": "^0.3"
 	},
 	"autoload": {
 		"psr-4": {
