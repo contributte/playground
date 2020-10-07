@@ -9,7 +9,7 @@
     "contributte/security": "^0.2.0",
     "contributte/utils": "^0.3.1",
     "contributte/tracy": "^0.3.2",
-    "ublaboo/api-router": "~2.0.0"
+    "ublaboo/api-router": "~2.1.1"
   },
   "require-dev": {
     "nette/tester": "^2.0.0"
