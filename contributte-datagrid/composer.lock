@@ -70,16 +70,16 @@
         },
         {
             "name": "dibi/dibi",
-            "version": "v4.1.3",
+            "version": "v4.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dg/dibi.git",
-                "reference": "ed2a82741993706c15dbd4f5b8dd7eb5b75f7aa2"
+                "reference": "34bc742245a1589b27d35ee81da103b75655a3a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dg/dibi/zipball/ed2a82741993706c15dbd4f5b8dd7eb5b75f7aa2",
-                "reference": "ed2a82741993706c15dbd4f5b8dd7eb5b75f7aa2",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/34bc742245a1589b27d35ee81da103b75655a3a4",
+                "reference": "34bc742245a1589b27d35ee81da103b75655a3a4",
                 "shasum": ""
             },
             "require": {
@@ -89,6 +89,7 @@
                 "dg/dibi": "*"
             },
             "require-dev": {
+                "nette/di": "^3.0",
                 "nette/tester": "~2.0",
                 "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "~2.2"
@@ -131,7 +132,7 @@
                 "sqlite",
                 "sqlsrv"
             ],
-            "time": "2020-03-26T03:10:39+00:00"
+            "time": "2020-10-08T14:49:47+00:00"
         },
         {
             "name": "latte/latte",
