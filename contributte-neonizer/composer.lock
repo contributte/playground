@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5e9189070d00eea806e4236e6ca20c00",
+    "content-hash": "9861fcb6d7737404c2bc9316831f3439",
     "packages": [
         {
             "name": "contributte/application",
@@ -367,32 +367,37 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.3.0",
+            "version": "v0.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "7ac48b2dff163d79c139f1ce3af26bdac1af9c92"
+                "reference": "43ea4484f231c701e6e82ef4e103228da583a29d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/7ac48b2dff163d79c139f1ce3af26bdac1af9c92",
-                "reference": "7ac48b2dff163d79c139f1ce3af26bdac1af9c92",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/43ea4484f231c701e6e82ef4e103228da583a29d",
+                "reference": "43ea4484f231c701e6e82ef4e103228da583a29d",
                 "shasum": ""
             },
             "require": {
-                "nette/neon": "~2.4.2 || ~3.0.0",
-                "php": ">=7.1"
+                "nette/neon": "~3.0.0|~3.1.0",
+                "php": "^7.2"
             },
             "require-dev": {
                 "composer/composer": "^1.6.3",
                 "mockery/mockery": "~1.0.0",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0"
+                "ninjify/qa": "^0.8.0",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^0.11",
+                "phpstan/phpstan-nette": "^0.11",
+                "phpstan/phpstan-shim": "^0.11",
+                "phpstan/phpstan-strict-rules": "^0.11"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -419,7 +424,7 @@
                 "nette",
                 "parameters"
             ],
-            "time": "2019-05-28T17:15:17+00:00"
+            "time": "2020-01-03T15:43:10+00:00"
         },
         {
             "name": "contributte/security",
