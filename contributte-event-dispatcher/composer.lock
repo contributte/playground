@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d46e67c3adb5793389b46aad62bfb1b9",
+    "content-hash": "af0db60b30cf0ece0313b982b4464812",
     "packages": [
         {
             "name": "contributte/application",
@@ -248,31 +248,40 @@
         },
         {
             "name": "contributte/event-dispatcher",
-            "version": "v0.4",
+            "version": "v0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/event-dispatcher.git",
-                "reference": "81c6f44281e45f8a31c9a49e108c9349e7c655ae"
+                "reference": "c73737297c9848fb9ab198c48f1719ce829e7501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/81c6f44281e45f8a31c9a49e108c9349e7c655ae",
-                "reference": "81c6f44281e45f8a31c9a49e108c9349e7c655ae",
+                "url": "https://api.github.com/repos/contributte/event-dispatcher/zipball/c73737297c9848fb9ab198c48f1719ce829e7501",
+                "reference": "c73737297c9848fb9ab198c48f1719ce829e7501",
                 "shasum": ""
             },
             "require": {
-                "php": ">= 5.6",
-                "symfony/event-dispatcher": "^3.2.0 || ^4.0.0"
+                "php": ">= 7.1",
+                "symfony/event-dispatcher": "^4.0.0"
+            },
+            "conflict": {
+                "nette/di": "<2.4.13",
+                "nette/utils": "<2.5.2"
             },
             "require-dev": {
-                "nette/di": "^2.4.9",
+                "nette/di": "^2.4.13",
                 "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.4.0"
+                "ninjify/qa": "^0.8.0"
             },
             "suggest": {
                 "nette/di": "to use EventDispatcherExtension[CompilerExtension]"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.6.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "Contributte\\EventDispatcher\\": "src"
@@ -297,7 +306,7 @@
                 "nette",
                 "symfony"
             ],
-            "time": "2017-12-15T16:12:43+00:00"
+            "time": "2018-08-16T07:56:14+00:00"
         },
         {
             "name": "contributte/event-dispatcher-extra",
