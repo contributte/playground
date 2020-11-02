@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "contributte/forms-bootstrap",
-            "version": "v0.3",
+            "version": "v0.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "99c9f8c4adab40f7e075298b4a1f1cdfbb2d20b4"
+                "reference": "439d33aade5720b70f271646bed535baaea93907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/99c9f8c4adab40f7e075298b4a1f1cdfbb2d20b4",
-                "reference": "99c9f8c4adab40f7e075298b4a1f1cdfbb2d20b4",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/439d33aade5720b70f271646bed535baaea93907",
+                "reference": "439d33aade5720b70f271646bed535baaea93907",
                 "shasum": ""
             },
             "require": {
@@ -36,7 +36,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.3.x-dev"
+                    "dev-master": "0.4.x-dev"
                 }
             },
             "autoload": {
@@ -62,7 +62,7 @@
                 "library",
                 "nette"
             ],
-            "time": "2020-09-24T08:26:24+00:00"
+            "time": "2020-10-30T11:38:27+00:00"
         },
         {
             "name": "latte/latte",
