@@ -499,16 +499,16 @@
         },
         {
             "name": "nette/database",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/database.git",
-                "reference": "daccbd526f74311549e5c81d3181fc74f87c6733"
+                "reference": "cd75f89558d92f6ab9a5833bc18b895ec0a00ad8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/database/zipball/daccbd526f74311549e5c81d3181fc74f87c6733",
-                "reference": "daccbd526f74311549e5c81d3181fc74f87c6733",
+                "url": "https://api.github.com/repos/nette/database/zipball/cd75f89558d92f6ab9a5833bc18b895ec0a00ad8",
+                "reference": "cd75f89558d92f6ab9a5833bc18b895ec0a00ad8",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +568,7 @@
                 "queries",
                 "sqlite"
             ],
-            "time": "2020-02-04T12:48:51+00:00"
+            "time": "2020-10-30T13:01:25+00:00"
         },
         {
             "name": "nette/di",
@@ -647,12 +647,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "79ffd6254470a39c8dca5c166cbe7be8d45efb79"
+                "reference": "3cd8c8765c33ca42bcdc1e474e23eece4bfcfd56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/79ffd6254470a39c8dca5c166cbe7be8d45efb79",
-                "reference": "79ffd6254470a39c8dca5c166cbe7be8d45efb79",
+                "url": "https://api.github.com/repos/nette/finder/zipball/3cd8c8765c33ca42bcdc1e474e23eece4bfcfd56",
+                "reference": "3cd8c8765c33ca42bcdc1e474e23eece4bfcfd56",
                 "shasum": ""
             },
             "require": {
@@ -699,7 +699,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2020-10-15T20:35:53+00:00"
+            "time": "2020-11-02T15:27:55+00:00"
         },
         {
             "name": "nette/forms",
