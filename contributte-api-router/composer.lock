@@ -1715,16 +1715,16 @@
     "packages-dev": [
         {
             "name": "nette/tester",
-            "version": "v2.3.3",
+            "version": "v2.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tester.git",
-                "reference": "1fbe4860b4cfabe99f03ee3632db6352f0564d22"
+                "reference": "81b37035240d5c41b71ff4016ad9f8d532fb54be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tester/zipball/1fbe4860b4cfabe99f03ee3632db6352f0564d22",
-                "reference": "1fbe4860b4cfabe99f03ee3632db6352f0564d22",
+                "url": "https://api.github.com/repos/nette/tester/zipball/81b37035240d5c41b71ff4016ad9f8d532fb54be",
+                "reference": "81b37035240d5c41b71ff4016ad9f8d532fb54be",
                 "shasum": ""
             },
             "require": {
@@ -1778,7 +1778,7 @@
                 "testing",
                 "unit"
             ],
-            "time": "2020-07-20T10:27:01+00:00"
+            "time": "2020-11-02T17:30:29+00:00"
         }
     ],
     "aliases": [],
