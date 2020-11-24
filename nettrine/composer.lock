@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a952fa12b36f98f4231548c7e9cc89f6",
+    "content-hash": "6f7e88a48ac51c52dccb6eef8bd0fc04",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1561,6 +1561,7 @@
                 "reflection",
                 "static"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2020-03-27T11:06:43+00:00"
         },
         {
@@ -1826,22 +1827,22 @@
         },
         {
             "name": "latte/latte",
-            "version": "v2.8.2",
+            "version": "v2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "a3fbffc89f85b2745bc058278c882f745b6ad89b"
+                "reference": "21861cfee4ba19f853a34bcaab15d6ec332d8fa0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/a3fbffc89f85b2745bc058278c882f745b6ad89b",
-                "reference": "a3fbffc89f85b2745bc058278c882f745b6ad89b",
+                "url": "https://api.github.com/repos/nette/latte/zipball/21861cfee4ba19f853a34bcaab15d6ec332d8fa0",
+                "reference": "21861cfee4ba19f853a34bcaab15d6ec332d8fa0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "php": ">=7.1"
+                "php": ">=7.1 <8.1"
             },
             "conflict": {
                 "nette/application": "<2.4.1"
@@ -1863,7 +1864,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8-dev"
+                    "dev-master": "2.9-dev"
                 }
             },
             "autoload": {
@@ -1899,7 +1900,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2020-09-29T13:32:37+00:00"
+            "time": "2020-11-15T23:01:29+00:00"
         },
         {
             "name": "nette/application",
