@@ -3,7 +3,7 @@
         "php": ">= 7.2",
         "contributte/bootstrap": "^0.4.0",
         "contributte/tracy": "^0.4.0",
-        "apitte/core": "^0.6.0",
+        "apitte/core": "^0.7.0",
         "nette/http": "^3.0.0"
     },
     "autoload": {
