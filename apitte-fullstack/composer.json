@@ -5,7 +5,7 @@
         "contributte/http": "^0.3.0",
         "contributte/tracy": "^0.4.0",
         "contributte/di": "^0.4.0",
-        "apitte/fullstack": "^0.6.0",
+        "apitte/fullstack": "^0.7.0",
 
         "nette/robot-loader": "~3.3.0"
     },
