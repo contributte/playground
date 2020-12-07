@@ -650,12 +650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "87b7dbaa75dd32f9ddd3dbead2e3c2e7451b9988"
+                "reference": "5620253a7c9bc8d9bf5664c1eecf37e7fa72e283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/87b7dbaa75dd32f9ddd3dbead2e3c2e7451b9988",
-                "reference": "87b7dbaa75dd32f9ddd3dbead2e3c2e7451b9988",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/5620253a7c9bc8d9bf5664c1eecf37e7fa72e283",
+                "reference": "5620253a7c9bc8d9bf5664c1eecf37e7fa72e283",
                 "shasum": ""
             },
             "require": {
@@ -715,25 +715,25 @@
                 "request",
                 "response"
             ],
-            "time": "2020-11-30T16:22:44+00:00"
+            "time": "2020-12-03T21:26:07+00:00"
         },
         {
             "name": "contributte/tracy",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/tracy.git",
-                "reference": "5276a428243d7778b6f74f5d9b731af333401310"
+                "reference": "791113ffb6c75e7603e7edc121c193e57282f447"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/tracy/zipball/5276a428243d7778b6f74f5d9b731af333401310",
-                "reference": "5276a428243d7778b6f74f5d9b731af333401310",
+                "url": "https://api.github.com/repos/contributte/tracy/zipball/791113ffb6c75e7603e7edc121c193e57282f447",
+                "reference": "791113ffb6c75e7603e7edc121c193e57282f447",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2",
-                "tracy/tracy": "~2.6.0"
+                "tracy/tracy": "~2.7.0"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
@@ -742,8 +742,8 @@
                 "nette/application": "~3.0.0",
                 "nette/di": "~3.0.0",
                 "nette/http": "~3.0.1",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
+                "ninjify/nunjuck": "^0.3.0",
+                "ninjify/qa": "^0.10.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan-deprecation-rules": "^0.11",
                 "phpstan/phpstan-nette": "^0.11",
@@ -785,7 +785,7 @@
                 "profile",
                 "tracy"
             ],
-            "time": "2019-06-16T14:04:06+00:00"
+            "time": "2019-10-08T14:13:20+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -1707,16 +1707,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.6.8",
+            "version": "v2.7.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "d3bb9f43692df5e3b83ab8004d3e6208034ac0ca"
+                "reference": "7e7e73d52c7e9ff0fd29dbd5b1cfdc03f3947942"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/d3bb9f43692df5e3b83ab8004d3e6208034ac0ca",
-                "reference": "d3bb9f43692df5e3b83ab8004d3e6208034ac0ca",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/7e7e73d52c7e9ff0fd29dbd5b1cfdc03f3947942",
+                "reference": "7e7e73d52c7e9ff0fd29dbd5b1cfdc03f3947942",
                 "shasum": ""
             },
             "require": {
@@ -1724,10 +1724,16 @@
                 "ext-session": "*",
                 "php": ">=7.1"
             },
+            "conflict": {
+                "nette/di": "<3.0"
+            },
             "require-dev": {
-                "nette/di": "^2.4 || ~3.0.0",
+                "latte/latte": "^2.5",
+                "nette/di": "^3.0",
+                "nette/mail": "^3.0",
                 "nette/tester": "^2.2",
-                "nette/utils": "^2.4 || ^3.0",
+                "nette/utils": "^3.0",
+                "phpstan/phpstan": "^0.12",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -1736,7 +1742,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -1770,7 +1776,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2020-05-17T09:37:45+00:00"
+            "time": "2020-11-02T17:06:27+00:00"
         }
     ],
     "packages-dev": [],
