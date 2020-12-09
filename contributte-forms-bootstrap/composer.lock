@@ -8,25 +8,25 @@
     "packages": [
         {
             "name": "contributte/forms-bootstrap",
-            "version": "v0.3.1",
+            "version": "v0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "439d33aade5720b70f271646bed535baaea93907"
+                "reference": "ddb0f282d282b8dca48d4ff5df6170d87c17a7ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/439d33aade5720b70f271646bed535baaea93907",
-                "reference": "439d33aade5720b70f271646bed535baaea93907",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/ddb0f282d282b8dca48d4ff5df6170d87c17a7ff",
+                "reference": "ddb0f282d282b8dca48d4ff5df6170d87c17a7ff",
                 "shasum": ""
             },
             "require": {
                 "nette/application": "^3.0",
-                "nette/forms": "^3.0.4",
+                "nette/forms": "3.0.7",
                 "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/qa": "^v0.10",
+                "ninjify/qa": "^v0.12",
                 "phpstan/phpstan": "^0.12.6",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-nette": "^0.12",
@@ -62,7 +62,7 @@
                 "library",
                 "nette"
             ],
-            "time": "2020-10-30T11:38:27+00:00"
+            "time": "2020-12-07T18:35:37+00:00"
         },
         {
             "name": "latte/latte",
