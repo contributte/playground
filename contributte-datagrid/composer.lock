@@ -648,12 +648,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "3a5434f4b0006c35f7c12940140dcacd61cce1a0"
+                "reference": "fb90bbc02eadff7b3d2ec81f3a9ec6e451352c28"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/3a5434f4b0006c35f7c12940140dcacd61cce1a0",
-                "reference": "3a5434f4b0006c35f7c12940140dcacd61cce1a0",
+                "url": "https://api.github.com/repos/nette/finder/zipball/fb90bbc02eadff7b3d2ec81f3a9ec6e451352c28",
+                "reference": "fb90bbc02eadff7b3d2ec81f3a9ec6e451352c28",
                 "shasum": ""
             },
             "require": {
@@ -700,7 +700,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2020-11-04T12:04:09+00:00"
+            "time": "2020-12-08T20:33:07+00:00"
         },
         {
             "name": "nette/forms",
@@ -2143,16 +2143,16 @@
         },
         {
             "name": "ublaboo/datagrid",
-            "version": "v6.5.0",
+            "version": "v6.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/datagrid.git",
-                "reference": "e16a0aa067a6134f8345447d6378fee7afe19f9f"
+                "reference": "28f30abc45372d934b5d8acd7d9b9088e2363d85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/datagrid/zipball/e16a0aa067a6134f8345447d6378fee7afe19f9f",
-                "reference": "e16a0aa067a6134f8345447d6378fee7afe19f9f",
+                "url": "https://api.github.com/repos/contributte/datagrid/zipball/28f30abc45372d934b5d8acd7d9b9088e2363d85",
+                "reference": "28f30abc45372d934b5d8acd7d9b9088e2363d85",
                 "shasum": ""
             },
             "require": {
@@ -2210,7 +2210,7 @@
                 "grid",
                 "nette"
             ],
-            "time": "2020-12-02T19:08:04+00:00"
+            "time": "2020-12-10T21:10:29+00:00"
         }
     ],
     "packages-dev": [
