@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f523d8c2fcbe2be088b0af7450b8a4eb",
+    "content-hash": "337fdaafefc8c67bdd86d24dfbd6039f",
     "packages": [
         {
             "name": "apitte/core",
@@ -86,36 +86,35 @@
         },
         {
             "name": "contributte/bootstrap",
-            "version": "v0.4.1",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/bootstrap.git",
-                "reference": "ede13bdff51bbfd71380010e435a2fdc97df6d48"
+                "reference": "55c2358ef001b922896f9a8faaa0282e67a64d09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/ede13bdff51bbfd71380010e435a2fdc97df6d48",
-                "reference": "ede13bdff51bbfd71380010e435a2fdc97df6d48",
+                "url": "https://api.github.com/repos/contributte/bootstrap/zipball/55c2358ef001b922896f9a8faaa0282e67a64d09",
+                "reference": "55c2358ef001b922896f9a8faaa0282e67a64d09",
                 "shasum": ""
             },
             "require": {
-                "nette/bootstrap": "~3.0.0",
-                "nette/utils": "~3.0.1|~3.1.0",
-                "php": "^7.2"
+                "nette/bootstrap": "^3.0.2",
+                "nette/utils": "^3.1.5",
+                "php": ">=7.2"
             },
             "require-dev": {
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5-dev"
+                    "dev-master": "0.6-dev"
                 }
             },
             "autoload": {
@@ -141,7 +140,7 @@
                 "docker",
                 "nette"
             ],
-            "time": "2020-01-05T18:30:11+00:00"
+            "time": "2020-12-13T19:07:20+00:00"
         },
         {
             "name": "contributte/psr7-http-message",
@@ -149,12 +148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "87b7dbaa75dd32f9ddd3dbead2e3c2e7451b9988"
+                "reference": "5620253a7c9bc8d9bf5664c1eecf37e7fa72e283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/87b7dbaa75dd32f9ddd3dbead2e3c2e7451b9988",
-                "reference": "87b7dbaa75dd32f9ddd3dbead2e3c2e7451b9988",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/5620253a7c9bc8d9bf5664c1eecf37e7fa72e283",
+                "reference": "5620253a7c9bc8d9bf5664c1eecf37e7fa72e283",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +213,7 @@
                 "request",
                 "response"
             ],
-            "time": "2020-11-30T16:22:44+00:00"
+            "time": "2020-12-03T21:26:07+00:00"
         },
         {
             "name": "contributte/tracy",
@@ -1038,16 +1037,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.1.4",
+            "version": "v3.1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "19b3057d44cf5306c64f3c51a7fb77fa834fda1c"
+                "reference": "74071061ebc0fe6263700258506ae780d779939a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/19b3057d44cf5306c64f3c51a7fb77fa834fda1c",
-                "reference": "19b3057d44cf5306c64f3c51a7fb77fa834fda1c",
+                "url": "https://api.github.com/repos/nette/utils/zipball/74071061ebc0fe6263700258506ae780d779939a",
+                "reference": "74071061ebc0fe6263700258506ae780d779939a",
                 "shasum": ""
             },
             "require": {
@@ -1112,7 +1111,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2020-11-25T20:53:17+00:00"
+            "time": "2020-12-03T16:10:13+00:00"
         },
         {
             "name": "psr/http-message",
