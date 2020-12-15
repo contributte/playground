@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "abf83250ef445997f30d28ea77a6bf1f",
+    "content-hash": "28f0833fda33d0d8f46df2c565b4aa00",
     "packages": [
         {
             "name": "apitte/core",
@@ -390,35 +390,34 @@
         },
         {
             "name": "contributte/cache",
-            "version": "v0.5.0",
+            "version": "v0.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/cache.git",
-                "reference": "c54d4c4448f16b6cfbfa34607990904c19b5759e"
+                "reference": "21b975609e58b074cd281dc2344b6d93ca5951bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/cache/zipball/c54d4c4448f16b6cfbfa34607990904c19b5759e",
-                "reference": "c54d4c4448f16b6cfbfa34607990904c19b5759e",
+                "url": "https://api.github.com/repos/contributte/cache/zipball/21b975609e58b074cd281dc2344b6d93ca5951bb",
+                "reference": "21b975609e58b074cd281dc2344b6d93ca5951bb",
                 "shasum": ""
             },
             "require": {
-                "nette/caching": "~3.0.0",
-                "php": "^7.2"
+                "nette/caching": "^3.0.0",
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
-                "tracy/tracy": "~2.6.0"
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
+                "tracy/tracy": "^2.6.0"
             },
             "suggest": {
                 "nette/di": "to use CacheFactoryExtension and DebugStorageExtension"
@@ -426,7 +425,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -451,7 +450,7 @@
                 "nette",
                 "provider"
             ],
-            "time": "2019-07-15T07:52:35+00:00"
+            "time": "2020-12-14T17:38:03+00:00"
         },
         {
             "name": "contributte/di",
@@ -1412,27 +1411,28 @@
         },
         {
             "name": "nette/caching",
-            "version": "v3.0.1",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/caching.git",
-                "reference": "b9ecbf920f240bd1ab14900d9a77876924ad7fb4"
+                "reference": "7cab46d8d436e26a874715e6fff13b74d29dbf8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/caching/zipball/b9ecbf920f240bd1ab14900d9a77876924ad7fb4",
-                "reference": "b9ecbf920f240bd1ab14900d9a77876924ad7fb4",
+                "url": "https://api.github.com/repos/nette/caching/zipball/7cab46d8d436e26a874715e6fff13b74d29dbf8c",
+                "reference": "7cab46d8d436e26a874715e6fff13b74d29dbf8c",
                 "shasum": ""
             },
             "require": {
                 "nette/finder": "^2.4 || ^3.0",
                 "nette/utils": "^2.4 || ^3.0",
-                "php": ">=7.1"
+                "php": ">=7.1 <8.1"
             },
             "require-dev": {
-                "latte/latte": "^2.4",
+                "latte/latte": "^2.9",
                 "nette/di": "^v3.0",
                 "nette/tester": "^2.0",
+                "phpstan/phpstan": "^0.12",
                 "tracy/tracy": "^2.4"
             },
             "suggest": {
@@ -1452,8 +1452,8 @@
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause",
-                "GPL-2.0",
-                "GPL-3.0"
+                "GPL-2.0-only",
+                "GPL-3.0-only"
             ],
             "authors": [
                 {
@@ -1474,7 +1474,7 @@
                 "nette",
                 "sqlite"
             ],
-            "time": "2019-11-19T18:41:40+00:00"
+            "time": "2020-11-16T01:37:04+00:00"
         },
         {
             "name": "nette/component-model",
