@@ -2,7 +2,7 @@
     "require": {
         "php": ">= 7.2",
         "contributte/bootstrap": "^0.5.0",
-        "contributte/http": "^0.3.0",
+        "contributte/http": "^0.4.0",
         "contributte/tracy": "^0.4.0",
         "apitte/core": "^0.6.0",
         "apitte/middlewares": "^0.6.0",
