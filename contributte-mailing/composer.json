@@ -7,7 +7,7 @@
 		"contributte/http": "^0.2.0",
 		"contributte/mail": "^0.3.0",
     "contributte/mailing": "^0.2.0",
-		"contributte/security": "^0.3",
+		"contributte/security": "^0.4",
 		"contributte/utils": "^0.3",
 		"contributte/latte": "^0.3",
 		"contributte/tracy": "^0.3",
