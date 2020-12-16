@@ -6,7 +6,7 @@
     "contributte/cache": "^0.3",
     "contributte/di": "^0.3.0",
     "contributte/http": "^0.2.0",
-    "contributte/security": "^0.3.0",
+    "contributte/security": "^0.4.0",
     "contributte/utils": "^0.3.1",
     "contributte/latte": "^0.3.0",
     "contributte/tracy": "^0.3.1",
