@@ -16,7 +16,7 @@
     "nette/tokenizer": "^3.0",
     "nette/utils": "^3.0",
     "latte/latte": "~2.9.1",
-    "tracy/tracy": "~2.7.0",
+    "tracy/tracy": "~2.8.0",
     "contributte/console": "~0.8.0",
     "nettrine/orm": "~0.7.0",
     "nettrine/migrations": "~0.6.0",
