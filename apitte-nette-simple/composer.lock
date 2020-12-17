@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3d9025b8a8a4010621e7253491e21d1a",
+    "content-hash": "b7b1d386e1544acaeea4d5b61c131ccc",
     "packages": [
         {
             "name": "apitte/core",
@@ -521,34 +521,33 @@
         },
         {
             "name": "contributte/http",
-            "version": "v0.3.0",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/http.git",
-                "reference": "7ebc43afe521b9a877686046ec5c2a8450057571"
+                "reference": "b2d5b4144fbc23076f7e53df996afeb1a47639d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/http/zipball/7ebc43afe521b9a877686046ec5c2a8450057571",
-                "reference": "7ebc43afe521b9a877686046ec5c2a8450057571",
+                "url": "https://api.github.com/repos/contributte/http/zipball/b2d5b4144fbc23076f7e53df996afeb1a47639d5",
+                "reference": "b2d5b4144fbc23076f7e53df996afeb1a47639d5",
                 "shasum": ""
             },
             "require": {
                 "nette/http": "~3.0.1",
-                "php": "^7.2"
+                "php": ">=7.2"
             },
             "conflict": {
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
                 "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12",
                 "tracy/tracy": "~2.5.1"
             },
             "suggest": {
@@ -557,7 +556,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -585,7 +584,7 @@
                 "request",
                 "response"
             ],
-            "time": "2019-06-16T14:00:48+00:00"
+            "time": "2020-12-15T15:52:06+00:00"
         },
         {
             "name": "contributte/latte",
