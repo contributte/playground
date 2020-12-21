@@ -8,23 +8,23 @@
     "packages": [
         {
             "name": "apitte/core",
-            "version": "v0.7.0",
+            "version": "v0.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/apitte/core.git",
-                "reference": "05c10a4dee7f26b46462723c890c21aa71247a1c"
+                "reference": "ad6005ee601f19267deb6620a3ca614e724a8f98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/05c10a4dee7f26b46462723c890c21aa71247a1c",
-                "reference": "05c10a4dee7f26b46462723c890c21aa71247a1c",
+                "url": "https://api.github.com/repos/apitte/core/zipball/ad6005ee601f19267deb6620a3ca614e724a8f98",
+                "reference": "ad6005ee601f19267deb6620a3ca614e724a8f98",
                 "shasum": ""
             },
             "require": {
                 "contributte/psr7-http-message": "~0.7.0",
                 "doctrine/annotations": "^1.8.0",
                 "ext-json": "*",
-                "nette/utils": "~3.0.0|~3.1.0",
+                "nette/utils": "^3.0.3",
                 "php": ">=7.2"
             },
             "conflict": {
@@ -35,11 +35,10 @@
             },
             "require-dev": {
                 "mockery/mockery": "^1.1.0",
-                "nette/di": "~3.0.0",
-                "nettrine/annotations": "^0.6.0",
-                "ninjify/nunjuck": "^0.3",
-                "ninjify/qa": "^0.11",
-                "phpstan/extension-installer": "^1.0",
+                "nette/di": "^3.0.0",
+                "nettrine/annotations": "^0.7.0",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-nette": "^0.12",
@@ -82,7 +81,7 @@
                 "nette",
                 "rest"
             ],
-            "time": "2020-12-01T11:41:15+00:00"
+            "time": "2020-12-20T15:05:50+00:00"
         },
         {
             "name": "contributte/bootstrap",
@@ -144,7 +143,7 @@
         },
         {
             "name": "contributte/psr7-http-message",
-            "version": "dev-master",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
@@ -1036,20 +1035,23 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.1.x-dev",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "74071061ebc0fe6263700258506ae780d779939a"
+                "reference": "d0427c1811462dbb6c503143eabe5478b26685f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/74071061ebc0fe6263700258506ae780d779939a",
-                "reference": "74071061ebc0fe6263700258506ae780d779939a",
+                "url": "https://api.github.com/repos/nette/utils/zipball/d0427c1811462dbb6c503143eabe5478b26685f7",
+                "reference": "d0427c1811462dbb6c503143eabe5478b26685f7",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.2 <8.1"
+            },
+            "conflict": {
+                "nette/di": "<3.0.6"
             },
             "require-dev": {
                 "nette/tester": "~2.0",
@@ -1068,7 +1070,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -1110,7 +1112,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2020-12-03T16:10:13+00:00"
+            "time": "2020-11-25T23:47:50+00:00"
         },
         {
             "name": "psr/http-message",
