@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a58f730a88c3140385fa3821b9d5961b",
+    "content-hash": "db1b59722c07037775736d447ca7db68",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -249,37 +249,36 @@
         },
         {
             "name": "contributte/neonizer",
-            "version": "v0.4.2",
+            "version": "v0.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/neonizer.git",
-                "reference": "43ea4484f231c701e6e82ef4e103228da583a29d"
+                "reference": "98e99ea3c42d3d8608fdd35ef2e59d38760a5bfc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/neonizer/zipball/43ea4484f231c701e6e82ef4e103228da583a29d",
-                "reference": "43ea4484f231c701e6e82ef4e103228da583a29d",
+                "url": "https://api.github.com/repos/contributte/neonizer/zipball/98e99ea3c42d3d8608fdd35ef2e59d38760a5bfc",
+                "reference": "98e99ea3c42d3d8608fdd35ef2e59d38760a5bfc",
                 "shasum": ""
             },
             "require": {
-                "nette/neon": "~3.0.0|~3.1.0",
-                "php": "^7.2"
+                "nette/neon": "^3.0.0",
+                "php": ">=7.2"
             },
             "require-dev": {
                 "composer/composer": "^1.6.3",
-                "mockery/mockery": "~1.0.0",
-                "ninjify/nunjuck": "^0.2.0",
-                "ninjify/qa": "^0.8.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "mockery/mockery": "^1.3.0",
+                "ninjify/nunjuck": "^0.4",
+                "ninjify/qa": "^0.12",
+                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan-deprecation-rules": "^0.12",
+                "phpstan/phpstan-nette": "^0.12",
+                "phpstan/phpstan-strict-rules": "^0.12"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.4.x-dev"
+                    "dev-master": "0.5.x-dev"
                 }
             },
             "autoload": {
@@ -306,7 +305,7 @@
                 "nette",
                 "parameters"
             ],
-            "time": "2020-01-03T15:43:10+00:00"
+            "time": "2020-12-20T15:17:11+00:00"
         },
         {
             "name": "contributte/translation",
@@ -2543,16 +2542,16 @@
         },
         {
             "name": "nette/neon",
-            "version": "v3.1.2",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/neon.git",
-                "reference": "3c3dcbc6bf6c80dc97b1fc4ba9a22ae67930fc0e"
+                "reference": "a5b3a60833d2ef55283a82d0c30b45d136b29e75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/neon/zipball/3c3dcbc6bf6c80dc97b1fc4ba9a22ae67930fc0e",
-                "reference": "3c3dcbc6bf6c80dc97b1fc4ba9a22ae67930fc0e",
+                "url": "https://api.github.com/repos/nette/neon/zipball/a5b3a60833d2ef55283a82d0c30b45d136b29e75",
+                "reference": "a5b3a60833d2ef55283a82d0c30b45d136b29e75",
                 "shasum": ""
             },
             "require": {
@@ -2568,7 +2567,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1-dev"
+                    "dev-master": "3.2-dev"
                 }
             },
             "autoload": {
@@ -2601,7 +2600,7 @@
                 "nette",
                 "yaml"
             ],
-            "time": "2020-03-04T11:47:04+00:00"
+            "time": "2020-07-31T12:28:05+00:00"
         },
         {
             "name": "nette/php-generator",

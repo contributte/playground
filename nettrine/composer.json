@@ -23,7 +23,7 @@
     "nettrine/fixtures": "~0.5.0",
     "nettrine/extensions-atlantic18": "~0.5.0",
     "contributte/translation": "~0.8.2",
-    "contributte/neonizer": "~0.4.0"
+    "contributte/neonizer": "~0.5.0"
   },
   "autoload": {
     "classmap": [
