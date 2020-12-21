@@ -500,23 +500,23 @@
         },
         {
             "name": "nette/database",
-            "version": "v3.0.7",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/database.git",
-                "reference": "cd75f89558d92f6ab9a5833bc18b895ec0a00ad8"
+                "reference": "94caf0bf9b24d63f0ca7d0201ee47a9bcfcfa7d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/database/zipball/cd75f89558d92f6ab9a5833bc18b895ec0a00ad8",
-                "reference": "cd75f89558d92f6ab9a5833bc18b895ec0a00ad8",
+                "url": "https://api.github.com/repos/nette/database/zipball/94caf0bf9b24d63f0ca7d0201ee47a9bcfcfa7d2",
+                "reference": "94caf0bf9b24d63f0ca7d0201ee47a9bcfcfa7d2",
                 "shasum": ""
             },
             "require": {
                 "ext-pdo": "*",
                 "nette/caching": "^3.0",
                 "nette/utils": "^3.1",
-                "php": ">=7.1"
+                "php": ">=7.2 <8.1"
             },
             "conflict": {
                 "nette/di": "<3.0-stable"
@@ -531,7 +531,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -569,7 +569,7 @@
                 "queries",
                 "sqlite"
             ],
-            "time": "2020-10-30T13:01:25+00:00"
+            "time": "2020-12-21T01:23:36+00:00"
         },
         {
             "name": "nette/di",
