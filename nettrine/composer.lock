@@ -2275,16 +2275,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "e639ccfbc0230e022ca08bf59c6b07df7caf2007"
+                "reference": "33b188dd8fce8de15795a19ac89bb34227dfb37a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/e639ccfbc0230e022ca08bf59c6b07df7caf2007",
-                "reference": "e639ccfbc0230e022ca08bf59c6b07df7caf2007",
+                "url": "https://api.github.com/repos/nette/di/zipball/33b188dd8fce8de15795a19ac89bb34227dfb37a",
+                "reference": "33b188dd8fce8de15795a19ac89bb34227dfb37a",
                 "shasum": ""
             },
             "require": {
@@ -2292,7 +2292,7 @@
                 "nette/neon": "^3.0",
                 "nette/php-generator": "^3.3.3",
                 "nette/robot-loader": "^3.2",
-                "nette/schema": "^1.0",
+                "nette/schema": "^1.1",
                 "nette/utils": "^3.1.4",
                 "php": ">=7.1 <8.1"
             },
@@ -2342,7 +2342,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2020-11-25T22:42:55+00:00"
+            "time": "2020-12-30T22:27:52+00:00"
         },
         {
             "name": "nette/finder",
