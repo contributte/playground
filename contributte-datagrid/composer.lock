@@ -573,16 +573,16 @@
         },
         {
             "name": "nette/di",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "e639ccfbc0230e022ca08bf59c6b07df7caf2007"
+                "reference": "33b188dd8fce8de15795a19ac89bb34227dfb37a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/e639ccfbc0230e022ca08bf59c6b07df7caf2007",
-                "reference": "e639ccfbc0230e022ca08bf59c6b07df7caf2007",
+                "url": "https://api.github.com/repos/nette/di/zipball/33b188dd8fce8de15795a19ac89bb34227dfb37a",
+                "reference": "33b188dd8fce8de15795a19ac89bb34227dfb37a",
                 "shasum": ""
             },
             "require": {
@@ -590,7 +590,7 @@
                 "nette/neon": "^3.0",
                 "nette/php-generator": "^3.3.3",
                 "nette/robot-loader": "^3.2",
-                "nette/schema": "^1.0",
+                "nette/schema": "^1.1",
                 "nette/utils": "^3.1.4",
                 "php": ">=7.1 <8.1"
             },
@@ -640,7 +640,7 @@
                 "nette",
                 "static"
             ],
-            "time": "2020-11-25T22:42:55+00:00"
+            "time": "2020-12-30T22:27:52+00:00"
         },
         {
             "name": "nette/finder",
@@ -1165,16 +1165,16 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.0.3",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "34baf9eca75eccdad3d04306c5d6bec0f6b252ad"
+                "reference": "3b6b9702a2a54170c81d157b65570fac871caba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/34baf9eca75eccdad3d04306c5d6bec0f6b252ad",
-                "reference": "34baf9eca75eccdad3d04306c5d6bec0f6b252ad",
+                "url": "https://api.github.com/repos/nette/schema/zipball/3b6b9702a2a54170c81d157b65570fac871caba0",
+                "reference": "3b6b9702a2a54170c81d157b65570fac871caba0",
                 "shasum": ""
             },
             "require": {
@@ -1189,7 +1189,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -1219,7 +1219,7 @@
                 "config",
                 "nette"
             ],
-            "time": "2020-11-25T21:54:59+00:00"
+            "time": "2020-12-20T22:18:49+00:00"
         },
         {
             "name": "nette/security",
