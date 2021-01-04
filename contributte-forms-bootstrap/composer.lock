@@ -1089,12 +1089,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/security.git",
-                "reference": "a2d351fc41bb6397d31a4b3baf88e5e84588dae2"
+                "reference": "799cc653f2fa00d11e00cc282b31e8c790b45fc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/security/zipball/a2d351fc41bb6397d31a4b3baf88e5e84588dae2",
-                "reference": "a2d351fc41bb6397d31a4b3baf88e5e84588dae2",
+                "url": "https://api.github.com/repos/nette/security/zipball/799cc653f2fa00d11e00cc282b31e8c790b45fc9",
+                "reference": "799cc653f2fa00d11e00cc282b31e8c790b45fc9",
                 "shasum": ""
             },
             "require": {
@@ -1147,7 +1147,7 @@
                 "authorization",
                 "nette"
             ],
-            "time": "2020-12-31T03:15:35+00:00"
+            "time": "2021-01-03T15:06:27+00:00"
         },
         {
             "name": "nette/utils",
@@ -1232,16 +1232,16 @@
         },
         {
             "name": "tracy/tracy",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/tracy.git",
-                "reference": "24af254df194635b4a80980ad885da7e8f0b90f0"
+                "reference": "37c238d08db44f2cd6f21f7d97e5cea11d631fae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/tracy/zipball/24af254df194635b4a80980ad885da7e8f0b90f0",
-                "reference": "24af254df194635b4a80980ad885da7e8f0b90f0",
+                "url": "https://api.github.com/repos/nette/tracy/zipball/37c238d08db44f2cd6f21f7d97e5cea11d631fae",
+                "reference": "37c238d08db44f2cd6f21f7d97e5cea11d631fae",
                 "shasum": ""
             },
             "require": {
@@ -1298,7 +1298,7 @@
                 "nette",
                 "profiler"
             ],
-            "time": "2020-12-16T23:28:40+00:00"
+            "time": "2021-01-01T22:21:23+00:00"
         }
     ],
     "packages-dev": [],
