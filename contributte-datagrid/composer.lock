@@ -1225,16 +1225,16 @@
         },
         {
             "name": "nette/security",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/security.git",
-                "reference": "a2d351fc41bb6397d31a4b3baf88e5e84588dae2"
+                "reference": "f1cf0a120f7e3ba5f0014496b8a0a1d2d44d2ec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/security/zipball/a2d351fc41bb6397d31a4b3baf88e5e84588dae2",
-                "reference": "a2d351fc41bb6397d31a4b3baf88e5e84588dae2",
+                "url": "https://api.github.com/repos/nette/security/zipball/f1cf0a120f7e3ba5f0014496b8a0a1d2d44d2ec8",
+                "reference": "f1cf0a120f7e3ba5f0014496b8a0a1d2d44d2ec8",
                 "shasum": ""
             },
             "require": {
@@ -1287,7 +1287,7 @@
                 "authorization",
                 "nette"
             ],
-            "time": "2020-12-31T03:15:35+00:00"
+            "time": "2021-01-03T23:12:15+00:00"
         },
         {
             "name": "nette/utils",
