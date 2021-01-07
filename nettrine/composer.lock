@@ -2987,16 +2987,16 @@
         },
         {
             "name": "nette/security",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/security.git",
-                "reference": "f1cf0a120f7e3ba5f0014496b8a0a1d2d44d2ec8"
+                "reference": "bce278f5e981ad8f421de0c04e5424c5d23731ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/security/zipball/f1cf0a120f7e3ba5f0014496b8a0a1d2d44d2ec8",
-                "reference": "f1cf0a120f7e3ba5f0014496b8a0a1d2d44d2ec8",
+                "url": "https://api.github.com/repos/nette/security/zipball/bce278f5e981ad8f421de0c04e5424c5d23731ac",
+                "reference": "bce278f5e981ad8f421de0c04e5424c5d23731ac",
                 "shasum": ""
             },
             "require": {
@@ -3008,7 +3008,7 @@
                 "nette/schema": "<1.1"
             },
             "require-dev": {
-                "nette/di": "^3.0.0",
+                "nette/di": "^3.0.1",
                 "nette/http": "^3.0.0",
                 "nette/tester": "^2.0",
                 "phpstan/phpstan-nette": "^0.12",
@@ -3049,7 +3049,7 @@
                 "authorization",
                 "nette"
             ],
-            "time": "2021-01-03T23:12:15+00:00"
+            "time": "2021-01-05T04:57:27+00:00"
         },
         {
             "name": "nette/tokenizer",
