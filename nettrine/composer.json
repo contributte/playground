@@ -43,6 +43,25 @@
   "scripts": {
     "set-config": [
       "Contributte\\Neonizer\\NeonizerExtension::set"
+    ],
+    "post-install-cmd": [
+      "Contributte\\Neonizer\\NeonizerExtension::process"
+    ],
+    "post-update-cmd": [
+      "Contributte\\Neonizer\\NeonizerExtension::process"
     ]
+  },
+  "extra": {
+    "neonizer": {
+      "files": [
+        {
+          "dist-file": "app/config/local.neon.dist"
+        },
+        {
+          "dist-file": "app/config/local.neon.dist",
+          "file": "app/config/local.neon"
+        }
+      ]
+    }
   }
 }
