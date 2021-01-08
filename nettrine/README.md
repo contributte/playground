@@ -11,7 +11,7 @@ cd playground/nettrine`
 composer install
 ```
 
-Fill DB host, DB name, DB user, DB password and rnn commands:
+Fill DB host, DB name, DB user, DB password and run commands:
 
 ```
 php bin/console migrations:migrate
