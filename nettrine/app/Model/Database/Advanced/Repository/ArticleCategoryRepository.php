@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Advanced\Repository;
 
@@ -33,6 +33,8 @@ final class ArticleCategoryRepository extends NestedTreeRepository
 		foreach ($categories as $category) {
 			$select[$category['id']] = str_repeat('-', $category['lvl']) . ' ' . $category['title'];
 		}
+
 		return $select;
 	}
+
 }

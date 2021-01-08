@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -6,12 +6,12 @@ use App\Model\Database\Advanced\Entity\Article;
 use App\Model\Database\Advanced\Entity\ArticleCategory;
 use App\Model\Database\EntityManagerDecorator;
 use Doctrine\Common\Collections\Criteria;
-use Exception;
 use Gedmo\Loggable\Entity\LogEntry;
 use Gedmo\Loggable\Entity\Repository\LogEntryRepository;
 use Nette\Application\UI\Form;
 use Nette\Application\UI\Presenter;
 use Nette\Localization\ITranslator;
+use Throwable;
 
 class AdvancedPresenter extends Presenter
 {
@@ -74,7 +74,7 @@ class AdvancedPresenter extends Presenter
 
 		$categories = $this->em->getArticleCategoryRepository()->findPairs();
 		$form->addSelect('parent', 'messages.article_categories.parent_category', $categories)
-			->setTranslator(NULL);
+			->setTranslator(null);
 
 		$form->addSubmit('send', 'messages.articles.submit');
 
@@ -178,11 +178,12 @@ class AdvancedPresenter extends Presenter
 			$this->em->commit();
 
 			$this->flashMessage($this->translator->translate('messages.categories.success_delete'));
-		} catch (Exception $e) {
+		} catch (Throwable $e) {
 			$this->em->rollback();
 			$this->flashMessage($e->getMessage());
 		}
 
 		$this->redirect('Advanced:');
 	}
+
 }

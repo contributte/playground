@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Basic\Entity;
 
@@ -19,25 +19,17 @@ class Book extends Entity
 
 	use Id;
 
-	/**
-	 * @ORM\Column(type="string")
-	 */
+	/** @ORM\Column(type="string") */
 	private string $title;
 
-	/**
-	 * @ORM\Column(type="boolean")
-	 */
-	private bool $alreadyRead = FALSE;
+	/** @ORM\Column(type="boolean") */
+	private bool $alreadyRead = false;
 
-	/**
-	 * @ORM\Column(type="string")
-	 */
+	/** @ORM\Column(type="string") */
 	private string $createdAt;
 
-	/**
-	 * @ORM\Column(type="string", nullable=true)
-	 */
-	private ?string $updatedAt = NULL;
+	/** @ORM\Column(type="string", nullable=true) */
+	private ?string $updatedAt = null;
 
 	/**
 	 * @ORM\ManyToOne(targetEntity="Category", inversedBy="books")
@@ -111,8 +103,8 @@ class Book extends Entity
 	{
 		$this->createdAt = $this->getCurrentDate();
 
-		if ($this->id !== NULL) {
-			throw new LogicException("Entity id field should be null during prePersistEvent");
+		if ($this->id !== null) {
+			throw new LogicException('Entity id field should be null during prePersistEvent');
 		}
 	}
 

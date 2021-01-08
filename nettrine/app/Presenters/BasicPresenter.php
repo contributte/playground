@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -45,10 +45,10 @@ class BasicPresenter extends Presenter
 	{
 		$bookRepository = $this->em->getBookRepository();
 
+		/** @var Book|null $book */
 		$book = $bookRepository->find($id);
-		if ($book) {
-			/** @var Book $book */
-			$book->setAlreadyRead(TRUE);
+		if ($book instanceof Book) {
+			$book->setAlreadyRead(true);
 			$this->em->flush($book);
 		}
 

@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Service;
 
@@ -10,8 +10,6 @@ use LengthException;
 /**
  * Naive implementation of library limiter that checks the size of book library
  * and throws exception if the limit is exceeded
- *
- * @package App\Model\Service
  */
 final class LibraryLimiter implements EventSubscriber
 {
@@ -35,8 +33,8 @@ final class LibraryLimiter implements EventSubscriber
 	{
 		$schemaManager = $args->getConnection()->getSchemaManager();
 
-		if ($schemaManager->tablesExist(array('book')) == TRUE) {
-			$all = $args->getConnection()->fetchAll("SELECT id FROM book");
+		if ($schemaManager->tablesExist(['book']) === true) {
+			$all = $args->getConnection()->fetchAll('SELECT id FROM book');
 
 			if (count($all) > self::LIBRARY_MAX_SIZE) {
 				throw new LengthException('Oops. Too many books were placed in such a small library and it collapsed.');
