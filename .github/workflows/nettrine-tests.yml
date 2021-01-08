@@ -32,7 +32,7 @@ jobs:
           extensions: json, mbstring, xml, tokenizer
           coverage: none
 
-      - run: cd nettrine && composer install --no-interaction --prefer-source
+      - run: cd nettrine && make
       - run: cd nettrine && touch app/config/local.neon
       - run: 'cd nettrine && composer set-config -- $(pwd)/app/config/local.neon \
         --dbDriver=mysql \
@@ -43,4 +43,4 @@ jobs:
       - run: php nettrine/bin/console migrations:migrate -n
       - run: php nettrine/bin/console doctrine:fixtures:load -n
       - run: php nettrine/bin/console orm:validate
-      - run: php nettrine/vendor/bin/phpstan analyze -c nettrine/phpstan.neon
+      - run: cd nettrine && make qa
