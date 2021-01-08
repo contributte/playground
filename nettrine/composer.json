@@ -33,6 +33,7 @@
   "minimum-stability": "stable",
   "prefer-stable": true,
   "require-dev": {
+    "ninjify/qa": "^0.12",
     "phpstan/phpstan": "^0.12.36",
     "phpstan/extension-installer": "^1.0",
     "phpstan/phpstan-nette": "^0.12.8",
@@ -42,6 +43,25 @@
   "scripts": {
     "set-config": [
       "Contributte\\Neonizer\\NeonizerExtension::set"
+    ],
+    "post-install-cmd": [
+      "Contributte\\Neonizer\\NeonizerExtension::process"
+    ],
+    "post-update-cmd": [
+      "Contributte\\Neonizer\\NeonizerExtension::process"
     ]
+  },
+  "extra": {
+    "neonizer": {
+      "files": [
+        {
+          "dist-file": "app/config/local.neon.dist"
+        },
+        {
+          "dist-file": "app/config/local.neon.dist",
+          "file": "app/config/local.neon"
+        }
+      ]
+    }
   }
 }

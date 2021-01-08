@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
+
+namespace App\Mode\Database\Fixtures;
 
 use App\Model\Database\Advanced\Entity\Article;
 use App\Model\Database\Advanced\Entity\ArticleCategory;
@@ -39,7 +41,7 @@ class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 		$article = new Article();
 
 		$article->setTitle('Nadpis v češtině');
-		$article->setContent("Text v češtině");
+		$article->setContent('Text v češtině');
 		$article->setTranslatableLocale('cs_CZ');
 		$article->setCategory($categoryA);
 
@@ -47,7 +49,7 @@ class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 		$manager->flush();
 
 		$article->setTitle('Title in English');
-		$article->setContent("Content in English");
+		$article->setContent('Content in English');
 		$article->setTranslatableLocale('en_GB');
 
 		$manager->persist($article);

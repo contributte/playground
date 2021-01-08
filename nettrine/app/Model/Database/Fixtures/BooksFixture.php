@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
+
+namespace App\Mode\Database\Fixtures;
 
 use App\Model\Database\Basic\Entity\Book;
 use App\Model\Database\Basic\Entity\Category;
@@ -27,17 +29,17 @@ class BooksFixture implements FixtureInterface, OrderedFixtureInterface
 		$bookA = new Book();
 		$bookA->setTitle('Book title A');
 		$bookA->setCategory($categoryA);
-		$bookA->setAlreadyRead(FALSE);
+		$bookA->setAlreadyRead(false);
 
 		$bookB = new Book();
 		$bookB->setTitle('Book title B');
 		$bookB->setCategory($categoryA);
-		$bookB->setAlreadyRead(TRUE);
+		$bookB->setAlreadyRead(true);
 
 		$bookC = new Book();
 		$bookC->setTitle('Book title C');
 		$bookC->setCategory($categoryB);
-		$bookC->setAlreadyRead(FALSE);
+		$bookC->setAlreadyRead(false);
 
 		$manager->persist($bookA);
 		$manager->persist($bookB);

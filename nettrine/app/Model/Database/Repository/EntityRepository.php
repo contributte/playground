@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Repository;
 
@@ -25,6 +25,7 @@ abstract class EntityRepository extends DoctrineEntityRepository
 		foreach ($categories as $category) {
 			$select[$category[$key]] = $category[$value];
 		}
+
 		return $select;
 	}
 

@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Advanced\Entity;
 
@@ -15,6 +15,7 @@ use Gedmo\Translatable\Translatable;
  */
 class Article implements Translatable
 {
+
 	/**
 	 * @ORM\Id
 	 * @ORM\GeneratedValue
@@ -49,15 +50,15 @@ class Article implements Translatable
 	private string $content;
 
 	/**
-	 * @Gedmo\Locale
 	 * Used locale to override Translation listener`s locale
 	 * this is not a mapped field of entity metadata, just a simple property
+	 *
+	 * @Gedmo\Locale
 	 */
-	private ?string $locale = NULL;
+	private ?string $locale = null;
 
 	/**
-	 * @var \DateTime $created
-	 *
+	 * @var DateTime $created
 	 * @Gedmo\Timestampable(on="create")
 	 * @ORM\Column(type="datetime")
 	 */
@@ -75,9 +76,7 @@ class Article implements Translatable
 	 */
 	private ?DateTime $contentChanged;
 
-	/**
-	 * @ORM\Column(name="deletedAt", type="datetime", nullable=true)
-	 */
+	/** @ORM\Column(name="deletedAt", type="datetime", nullable=true) */
 	private ?DateTime $deletedAt;
 
 	public function getId(): int
@@ -149,4 +148,5 @@ class Article implements Translatable
 	{
 		$this->deletedAt = $deletedAt;
 	}
+
 }

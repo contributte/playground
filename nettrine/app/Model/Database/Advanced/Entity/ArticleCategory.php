@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Advanced\Entity;
 
@@ -14,6 +14,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
  */
 class ArticleCategory
 {
+
 	/**
 	 * @ORM\Column(name="id", type="integer")
 	 * @ORM\Id
@@ -21,9 +22,7 @@ class ArticleCategory
 	 */
 	private int $id;
 
-	/**
-	 * @ORM\Column(name="title", type="string", length=64)
-	 */
+	/** @ORM\Column(name="title", type="string", length=64) */
 	private string $title;
 
 	/**
@@ -49,25 +48,25 @@ class ArticleCategory
 	 * @ORM\ManyToOne(targetEntity="ArticleCategory")
 	 * @ORM\JoinColumn(name="tree_root", referencedColumnName="id", onDelete="CASCADE")
 	 */
-	private ?self $root = NULL;
+	private ?self $root = null;
 
 	/**
 	 * @Gedmo\TreeParent
 	 * @ORM\ManyToOne(targetEntity="ArticleCategory", inversedBy="children")
 	 * @ORM\JoinColumn(name="parent_id", referencedColumnName="id", onDelete="CASCADE")
 	 */
-	private ?self $parent = NULL;
+	private ?self $parent = null;
 
 	/**
+	 * @var Collection&iterable<ArticleCategory>
 	 * @ORM\OneToMany(targetEntity="ArticleCategory", mappedBy="parent")
 	 * @ORM\OrderBy({"lft" = "ASC"})
-	 * @var Collection&iterable<ArticleCategory>
 	 */
 	private Collection $children;
 
 	/**
-	 * @ORM\OneToMany(targetEntity="Article", mappedBy="category")
 	 * @var Collection&iterable<Article>
+	 * @ORM\OneToMany(targetEntity="Article", mappedBy="category")
 	 */
 	private Collection $articles;
 
@@ -112,7 +111,7 @@ class ArticleCategory
 		$this->title = $title;
 	}
 
-	public function setParent(?ArticleCategory $parent = NULL): void
+	public function setParent(?ArticleCategory $parent = null): void
 	{
 		$this->parent = $parent;
 	}
@@ -121,4 +120,5 @@ class ArticleCategory
 	{
 		$this->articles = $articles;
 	}
+
 }

@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database;
 
@@ -11,4 +11,5 @@ final class EntityManagerDecorator extends NettrineEntityManagerDecorator
 {
 
 	use TRepositories;
+
 }

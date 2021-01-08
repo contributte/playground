@@ -1,4 +1,4 @@
-<?php declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Model\Database\Basic\Entity;
 
@@ -16,9 +16,7 @@ class Category extends Entity
 
 	use Id;
 
-	/**
-	 * @ORM\Column(type="string")
-	 */
+	/** @ORM\Column(type="string") */
 	private string $title;
 
 	/**
@@ -52,4 +50,5 @@ class Category extends Entity
 	{
 		return $this->books;
 	}
+
 }
