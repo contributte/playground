@@ -52,14 +52,14 @@ class Article implements Translatable
 	/**
 	 * Used locale to override Translation listener`s locale
 	 * this is not a mapped field of entity metadata, just a simple property
-     *
-     * @Gedmo\Locale
+	 *
+	 * @Gedmo\Locale
 	 */
 	private ?string $locale = null;
 
 	/**
 	 * @var DateTime $created
-     * @Gedmo\Timestampable(on="create")
+	 * @Gedmo\Timestampable(on="create")
 	 * @ORM\Column(type="datetime")
 	 */
 	private DateTime $created;
