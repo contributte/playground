@@ -15,7 +15,7 @@
     "nette/security": "~3.1.0",
     "nette/tokenizer": "~3.1.",
     "nette/utils": "~3.2.0",
-    "latte/latte": "~2.9.1",
+    "latte/latte": "~2.10.1",
     "tracy/tracy": "~2.8.0",
     "contributte/console": "~0.9.0",
     "nettrine/orm": "~0.8.0",
