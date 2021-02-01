@@ -75,9 +75,9 @@ nettrine.orm.annotations:
 		App\Model\Database\Basic\Entity: %appDir%/Model/Database/Basic/Entity
 		App\Model\Database\Advanced\Entity: %appDir%/Model/Database/Advanced/Entity
 		# doctrine extensions entities
-		Gedmo\Loggable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Loggable/Entity
-		Gedmo\Translatable: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Translatable/Entity
-		Gedmo\Tree: %appDir%/../vendor/gedmo/doctrine-extensions/lib/Gedmo/Tree/Entity
+		Gedmo\Loggable: %appDir%/../vendor/gedmo/doctrine-extensions/src/Loggable/Entity
+		Gedmo\Translatable: %appDir%/../vendor/gedmo/doctrine-extensions/src/Translatable/Entity
+		Gedmo\Tree: %appDir%/../vendor/gedmo/doctrine-extensions/src/Tree/Entity
 
 translation:
 	locales:
