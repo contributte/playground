@@ -1,22 +1,18 @@
-<h1 align=center>Planette Playground</h1>
+![](https://heatbadger.now.sh/github/readme/planette/playground/)
 
 <p align=center>
-   Prepared examples from community members of the <a href="https://nette.org">Nette Framework</a>. 
+  <a href="https://github.com/planette/playground/actions">
+    <img src="https://badgen.net/github/checks/planette/playground/master?cache=300">
+  </a>
 </p>
 
 <p align=center>
-   In this repository you can find snippet and examples of <a href="https://contributte.org">Contributte</a>,
-   <a href="https://contributte.org/apitte/">Apitte</a> and <a href="https://contributte.org/nettrine/">Nettrine</a> projects.
+Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
 </p>
 
-<p align=center>
-🕹 <a href="https://f3l1x.io">f3l1x.io</a> | 💻 <a href="https://github.com/f3l1x">f3l1x</a> | 🐦 <a href="https://twitter.com/xf3l1x">@xf3l1x</a>
-</p>
-
----
+## Documentation
 
 Minimal PHP version is 7.2. You are more then welcomed to create your example? Just [fork](https://github.com/planette/playground/fork) this repository and [send a PR](https://github.com/planette/playground/pulls).
-
 
 If you want to test some example just clone this repository and take a look at prepared examples.
 
@@ -24,8 +20,11 @@ If you want to test some example just clone this repository and take a look at p
 git clone git@github.com:planette/playground.git
 ```
 
+For more details on how to use this package, check out example documentation below.
+
+
 | Project | Description |
-|-|-|
+|---|---|
 | [apitte-fullstack](https://github.com/planette/playground/tree/master/apitte-fullstack) | Fullstack application with example of all plugins. |
 | [apitte-micro](https://github.com/planette/playground/tree/master/apitte-micro) | Micro application with direct dispatching. |
 | [apitte-simple](https://github.com/planette/playground/tree/master/apitte-simple) | Simple middleware application. |
@@ -43,9 +42,11 @@ git clone git@github.com:planette/playground.git
 | [nettrine](https://github.com/planette/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. <a href="https://github.com/planette/playground/actions"><img src="https://github.com/planette/playground/workflows/Tests/badge.svg"></a> |
 | [nextras-orm-generator](https://github.com/planette/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
----
+## Development
 
-## Maintainers
+See [how to contribute](https://contributte.org/contributing.html) to this package.
+
+This package is currently maintaining by these authors.
 
 <table>
   <tbody>
@@ -97,3 +98,8 @@ git clone git@github.com:planette/playground.git
     </tr>
   </tbody>
 </table>
+
+-----
+
+Consider to [support](https://contributte.com/partners) **contributte** development team.
+Also thank you for using this package.
