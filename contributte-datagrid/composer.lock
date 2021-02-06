@@ -300,21 +300,21 @@
         },
         {
             "name": "nette/bootstrap",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/bootstrap.git",
-                "reference": "87b56eac5de9359f95b587304e42e918847282da"
+                "reference": "efe6c30fc009451f59fe56f3b309eb85c48b2baf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/bootstrap/zipball/87b56eac5de9359f95b587304e42e918847282da",
-                "reference": "87b56eac5de9359f95b587304e42e918847282da",
+                "url": "https://api.github.com/repos/nette/bootstrap/zipball/efe6c30fc009451f59fe56f3b309eb85c48b2baf",
+                "reference": "efe6c30fc009451f59fe56f3b309eb85c48b2baf",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "^3.0.5",
-                "nette/utils": "^3.0",
+                "nette/utils": "^3.2.1",
                 "php": ">=7.2 <8.1"
             },
             "conflict": {
@@ -373,7 +373,7 @@
                 "configurator",
                 "nette"
             ],
-            "time": "2020-12-31T19:03:24+00:00"
+            "time": "2021-01-25T00:31:21+00:00"
         },
         {
             "name": "nette/caching",
@@ -650,12 +650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "5480882b79f550e223ac448ede3abcea6874d1a6"
+                "reference": "cbb0f31c43f0872e5dfb7aa83caf314b905e6c97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/5480882b79f550e223ac448ede3abcea6874d1a6",
-                "reference": "5480882b79f550e223ac448ede3abcea6874d1a6",
+                "url": "https://api.github.com/repos/nette/finder/zipball/cbb0f31c43f0872e5dfb7aa83caf314b905e6c97",
+                "reference": "cbb0f31c43f0872e5dfb7aa83caf314b905e6c97",
                 "shasum": ""
             },
             "require": {
@@ -702,7 +702,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2021-01-25T20:14:58+00:00"
+            "time": "2021-02-05T20:43:05+00:00"
         },
         {
             "name": "nette/forms",
