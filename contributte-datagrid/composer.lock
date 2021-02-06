@@ -136,16 +136,16 @@
         },
         {
             "name": "latte/latte",
-            "version": "v2.9.2",
+            "version": "v2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "f66806cb6dff34ae536348524bb20965f74766fe"
+                "reference": "0787008cc4aecb0d741a143081cb5038b4a4fd43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/f66806cb6dff34ae536348524bb20965f74766fe",
-                "reference": "f66806cb6dff34ae536348524bb20965f74766fe",
+                "url": "https://api.github.com/repos/nette/latte/zipball/0787008cc4aecb0d741a143081cb5038b4a4fd43",
+                "reference": "0787008cc4aecb0d741a143081cb5038b4a4fd43",
                 "shasum": ""
             },
             "require": {
@@ -173,7 +173,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.9-dev"
+                    "dev-master": "2.10-dev"
                 }
             },
             "autoload": {
@@ -209,7 +209,7 @@
                 "template",
                 "twig"
             ],
-            "time": "2020-12-16T23:52:58+00:00"
+            "time": "2021-01-26T13:15:35+00:00"
         },
         {
             "name": "nette/application",
@@ -650,12 +650,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "5480882b79f550e223ac448ede3abcea6874d1a6"
+                "reference": "cbb0f31c43f0872e5dfb7aa83caf314b905e6c97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/5480882b79f550e223ac448ede3abcea6874d1a6",
-                "reference": "5480882b79f550e223ac448ede3abcea6874d1a6",
+                "url": "https://api.github.com/repos/nette/finder/zipball/cbb0f31c43f0872e5dfb7aa83caf314b905e6c97",
+                "reference": "cbb0f31c43f0872e5dfb7aa83caf314b905e6c97",
                 "shasum": ""
             },
             "require": {
@@ -702,7 +702,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2021-01-25T20:14:58+00:00"
+            "time": "2021-02-05T20:43:05+00:00"
         },
         {
             "name": "nette/forms",
