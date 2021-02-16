@@ -5,9 +5,7 @@ This is example of Google reCAPTCHA for Nette Framework.
 ## Installation
 
 ```
-git clone git@github.com:contributte/playground.git
-cd playground/reCAPTCHA
-composer install
+$ composer install
 ```
 
 Generate keys at [reCAPTCHA administration](https://www.google.com/recaptcha/admin#list)

@@ -8,16 +8,16 @@ This application demonstrates usage of these Apitte plugins compatible with [net
 - [`apitte/debug`](https://github.com/apitte/debug)
 - [`apitte/openapi`](https://github.com/apitte/openapi)
 
-## Setup
+## Installation
 
 ```bash
-composer install
+$ composer install
 ```
 
 ## Usage
 
 ```bash
-composer webserver
+$ composer webserver
 ```
 
 ## Showcase

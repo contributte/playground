@@ -7,9 +7,7 @@ This is example usage of contributte/thepay for Nette Framework.
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd thepay
-composer install
+$ composer install
 ```
 
 ## See

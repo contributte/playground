@@ -2,16 +2,16 @@
 
 This micro application demonstrates usage of [`apitte/core`](https://github.com/apitte/core). 
 
-## Setup
+## Installation
 
 ```bash
-composer install
+$ composer install
 ```
 
 ## Usage
 
 ```bash
-composer webserver
+$ composer webserver
 ```
 
 ## Showcase

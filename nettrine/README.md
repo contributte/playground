@@ -6,16 +6,19 @@ This is example of nettrine/orm
 
 Run commands:
 ```
-git clone git@github.com:contributte/playground.git
-cd playground/nettrine`
-composer install
+$ composer install
 ```
 
 Fill DB host, DB name, DB user, DB password and run commands:
 
+Run migrations:
+```bash
+$ php bin/console migrations:migrate
 ```
-php bin/console migrations:migrate
-php bin/console doctrine:fixtures:load
+
+and load sample data:
+```bash
+$ bin/console doctrine:fixtures:load
 ```
 
 ## See
