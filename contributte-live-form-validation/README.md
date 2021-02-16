@@ -5,9 +5,7 @@ This is example of live form validation for nette/forms.
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd live-form-validation
-composer install
+$ composer install
 ```
 
 ## See

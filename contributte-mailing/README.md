@@ -5,9 +5,7 @@ This is example of contributte/mailing
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd mailing
-composer install
+$ composer install
 ```
 
 ## See

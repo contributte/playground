@@ -5,9 +5,7 @@ This is example of contributte/neonizer usage.
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd neonizer
-composer install
+$ composer install
 ```
 
 ## See

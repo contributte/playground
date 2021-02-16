@@ -6,16 +6,16 @@ This simple application demonstrates usage of of these Apitte plugins:
 - [`apitte/middlewares`](https://github.com/apitte/middlewares)
 - [`apitte/debug`](https://github.com/apitte/debug)
 
-## Setup
+## Installation
 
 ```bash
-composer install
+$ composer install
 ```
 
 ## Usage
 
 ```bash
-composer webserver
+$ composer webserver
 ```
 
 ## Showcase

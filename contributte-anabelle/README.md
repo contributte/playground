@@ -5,23 +5,23 @@ See [DEMO](https://examples.contributte.org/packages/anabelle/).
 ## Installation
 
 ```
-composer install
+$ composer install
 ```
 
 ## Generating API Documentation
 
 ```
-composer generateDocs
+$ composer generateDocs
 ```
 
 or
 
 ```
-vendor/bin/anabelle docs-src docs --overwriteOutputDir
+$ vendor/bin/anabelle docs-src docs --overwriteOutputDir
 ```
 
 ## View documentation
 
 ```
-php -S localhost:8000 -t docs
+$ php -S localhost:8000 -t docs
 ```

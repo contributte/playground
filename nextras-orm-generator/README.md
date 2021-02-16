@@ -5,9 +5,7 @@ This is example of contributte/nextras-orm-generator
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd nextras-orm-generator
-composer install
+$ composer install
 ```
 
 ## Usage
@@ -16,11 +14,11 @@ composer install
 2) Configure database connection in **together.php** or **seperate.php**
 3) run 
 ```
-php together.php
+$ php together.php
 ```
 and/or
 ```
-php seperate.php
+$ php seperate.php
 ```
 
 For complete configuration check:

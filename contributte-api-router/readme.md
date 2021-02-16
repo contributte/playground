@@ -5,9 +5,7 @@ This repository is meant as a starter project for [contributte/api-router](https
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd api-router
-composer install
+$ composer install
 ```
 
 ## Usage

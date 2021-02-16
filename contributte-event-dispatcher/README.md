@@ -5,9 +5,7 @@ This is example of symfony/event-dispatcher for Nette Framework.
 ## Installation
 
 ```
-git pull git@github.com:contributte/playground.git
-cd event-dispatcher
-composer install
+$ composer install
 ```
 
 ## See

@@ -2,19 +2,10 @@
 
 Quick example on how to setup and use `contributte/forms-bootstrap`. 
 
-## How to run project:
-
-### Download project
+## Installation
 
 ```bash
-git clone git@github.com:planette/playground.git
-cd playground/contributte-forms-bootstrap
-```
-
-### composer dependencies 🤪
-
-```bash
-composer install
+$ composer install
 ```
 
 ### Run PHP server ⚡️
