@@ -18,7 +18,7 @@ di:
 
 
 services:
-	router: App\Router\RouterFactory::createRouter
+	- App\Router\RouterFactory::createRouter
 
 	-
 		factory: Contributte\PdfResponse\PdfResponse
