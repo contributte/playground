@@ -8,25 +8,26 @@
     "packages": [
         {
             "name": "contributte/pdf",
-            "version": "v6.0.2",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/pdf.git",
-                "reference": "1e746334a36fbcdd2337484a39f4ee5520024a90"
+                "reference": "9c3feafefb970e92ffc3e98defbc3854733fb7eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/pdf/zipball/1e746334a36fbcdd2337484a39f4ee5520024a90",
-                "reference": "1e746334a36fbcdd2337484a39f4ee5520024a90",
+                "url": "https://api.github.com/repos/contributte/pdf/zipball/9c3feafefb970e92ffc3e98defbc3854733fb7eb",
+                "reference": "9c3feafefb970e92ffc3e98defbc3854733fb7eb",
                 "shasum": ""
             },
             "require": {
                 "mpdf/mpdf": "^8.0",
+                "nette/application": "~3.0",
+                "nette/http": "~3.0",
                 "php": ">=7.1"
             },
             "require-dev": {
-                "latte/latte": "~2.10.0",
-                "nette/application": "~3.0.0",
+                "latte/latte": "^2.10",
                 "nette/di": "^3.0.0",
                 "ninjify/nunjuck": "^0.3.0",
                 "ninjify/qa": "^0.12",
@@ -34,8 +35,8 @@
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-nette": "^0.12",
                 "phpstan/phpstan-strict-rules": "^0.12",
-                "symfony/css-selector": "~4.4.0",
-                "symfony/dom-crawler": "~4.4.0"
+                "symfony/css-selector": "^4.4|^5.0",
+                "symfony/dom-crawler": "^4.4|^5.0"
             },
             "suggest": {
                 "nette/nette": "PHP framework to which this extension belongs to.",
@@ -44,7 +45,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0-dev"
+                    "dev-master": "6.1-dev"
                 }
             },
             "autoload": {
@@ -84,7 +85,7 @@
             "description": "Pdf response extension for Nette Framework",
             "support": {
                 "issues": "https://github.com/contributte/pdf/issues",
-                "source": "https://github.com/contributte/pdf/tree/v6.0.2"
+                "source": "https://github.com/contributte/pdf/tree/v6.1.0"
             },
             "funding": [
                 {
@@ -96,7 +97,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-27T21:41:35+00:00"
+            "time": "2021-02-28T18:30:39+00:00"
         },
         {
             "name": "latte/latte",
