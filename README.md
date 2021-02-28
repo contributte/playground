@@ -37,6 +37,7 @@ For more details on how to use this package, check out example documentation bel
 | [contributte-live-form-validation](https://github.com/contributte/playground/tree/master/contributte-live-form-validation) | Example of live form validation. |
 | [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | Example of contributte/mailing usage. |
 | [contributte-neonizer](https://github.com/contributte/playground/tree/master/contributte-neonizer) | Example of contributte/neonizer usage. |
+| [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
 | [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
 | [nettrine](https://github.com/planette/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. <a href="https://github.com/planette/playground/actions"><img src="https://github.com/planette/playground/workflows/Tests/badge.svg"></a> |
