@@ -1,0 +1,28 @@
+{
+  "require": {
+    "php": ">= 7.4",
+    "nette/application": "~3.0.0",
+    "nette/bootstrap": "~3.0.0",
+    "nette/caching": "~3.0.0",
+    "nette/di": "~3.0.0",
+    "nette/finder": "^2.5",
+    "nette/http": "~3.0.0",
+    "nette/robot-loader": "^3.0",
+    "nette/utils": "^3.0",
+    "latte/latte": "^2.5",
+    "tracy/tracy": "^2.6",
+    "contributte/pdf": "^6.0"
+  },
+  "require-dev": {
+    "ninjify/qa": "^0.12",
+    "phpstan/phpstan-nette": "^0.12",
+    "phpstan/phpstan-strict-rules": "^0.12.9",
+    "phpstan/extension-installer": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app"
+    }
+  },
+  "minimum-stability": "stable"
+}
