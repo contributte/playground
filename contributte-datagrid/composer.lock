@@ -70,16 +70,16 @@
         },
         {
             "name": "dibi/dibi",
-            "version": "v4.2.0",
+            "version": "v4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dg/dibi.git",
-                "reference": "ca744886361ad233d2ff948211c6e54befa59e42"
+                "reference": "d09b462eef89bd9f068dda743492c5608d8e81f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dg/dibi/zipball/ca744886361ad233d2ff948211c6e54befa59e42",
-                "reference": "ca744886361ad233d2ff948211c6e54befa59e42",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/d09b462eef89bd9f068dda743492c5608d8e81f8",
+                "reference": "d09b462eef89bd9f068dda743492c5608d8e81f8",
                 "shasum": ""
             },
             "require": {
@@ -132,7 +132,7 @@
                 "sqlite",
                 "sqlsrv"
             ],
-            "time": "2020-11-25T20:02:22+00:00"
+            "time": "2021-03-01T14:17:15+00:00"
         },
         {
             "name": "latte/latte",
@@ -650,22 +650,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/finder.git",
-                "reference": "cbb0f31c43f0872e5dfb7aa83caf314b905e6c97"
+                "reference": "600c25b01037ca6a5a7d2cf14244bcb7899d76a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/finder/zipball/cbb0f31c43f0872e5dfb7aa83caf314b905e6c97",
-                "reference": "cbb0f31c43f0872e5dfb7aa83caf314b905e6c97",
+                "url": "https://api.github.com/repos/nette/finder/zipball/600c25b01037ca6a5a7d2cf14244bcb7899d76a4",
+                "reference": "600c25b01037ca6a5a7d2cf14244bcb7899d76a4",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.0",
-                "php": ">=7.1"
+                "nette/utils": "^3.0 || ^4.0",
+                "php": ">=7.2 <8.1"
             },
             "require-dev": {
-                "nette/tester": "^2.2",
+                "nette/tester": "^2.4",
                 "phpstan/phpstan": "^0.12",
-                "tracy/tracy": "^2.6"
+                "tracy/tracy": "^2.8"
             },
             "type": "library",
             "extra": {
@@ -702,7 +702,7 @@
                 "iterator",
                 "nette"
             ],
-            "time": "2021-02-05T20:43:05+00:00"
+            "time": "2021-03-02T01:04:03+00:00"
         },
         {
             "name": "nette/forms",
