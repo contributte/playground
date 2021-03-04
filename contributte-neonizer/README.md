@@ -4,8 +4,8 @@ This is example of contributte/neonizer usage.
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## See

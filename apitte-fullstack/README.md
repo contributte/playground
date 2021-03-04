@@ -11,13 +11,13 @@ This fullstack application demonstrates usage of these Apitte plugins:
 ## Installation
 
 ```bash
-$ composer install
+composer install
 ```
 
 ## Usage
 
 ```bash
-$ composer webserver
+composer webserver
 ```
 
 ## Showcase

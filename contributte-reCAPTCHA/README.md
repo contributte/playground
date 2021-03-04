@@ -4,8 +4,8 @@ This is example of Google reCAPTCHA for Nette Framework.
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 Generate keys at [reCAPTCHA administration](https://www.google.com/recaptcha/admin#list)

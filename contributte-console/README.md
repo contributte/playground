@@ -6,8 +6,8 @@ This is example of symfony/console for Nette Framework.
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## Usage

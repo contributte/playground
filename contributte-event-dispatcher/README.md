@@ -4,8 +4,8 @@ This is example of symfony/event-dispatcher for Nette Framework.
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## See

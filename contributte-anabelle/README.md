@@ -4,24 +4,24 @@ See [DEMO](https://examples.contributte.org/packages/anabelle/).
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## Generating API Documentation
 
-```
-$ composer generateDocs
+```bash
+composer generateDocs
 ```
 
 or
 
-```
-$ vendor/bin/anabelle docs-src docs --overwriteOutputDir
+```bash
+vendor/bin/anabelle docs-src docs --overwriteOutputDir
 ```
 
 ## View documentation
 
-```
-$ php -S localhost:8000 -t docs
+```bash
+php -S localhost:8000 -t docs
 ```

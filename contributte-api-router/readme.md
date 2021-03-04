@@ -4,8 +4,8 @@ This repository is meant as a starter project for [contributte/api-router](https
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## Usage

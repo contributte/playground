@@ -5,7 +5,7 @@ Quick example on how to setup and use `contributte/forms-bootstrap`.
 ## Installation
 
 ```bash
-$ composer install
+composer install
 ```
 
 ### Run PHP server ⚡️

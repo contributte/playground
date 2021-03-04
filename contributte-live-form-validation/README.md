@@ -4,8 +4,8 @@ This is example of live form validation for nette/forms.
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## See

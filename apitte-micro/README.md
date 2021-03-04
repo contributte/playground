@@ -5,13 +5,13 @@ This micro application demonstrates usage of [`apitte/core`](https://github.com/
 ## Installation
 
 ```bash
-$ composer install
+composer install
 ```
 
 ## Usage
 
 ```bash
-$ composer webserver
+composer webserver
 ```
 
 ## Showcase

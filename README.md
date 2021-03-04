@@ -16,8 +16,8 @@ Minimal PHP version is 7.2. You are more then welcomed to create your example? J
 
 If you want to test some example just clone this repository and take a look at prepared examples.
 
-```
-$ git clone git@github.com:planette/playground.git
+```bash
+git clone git@github.com:planette/playground.git
 ```
 
 For more details on how to use this package, check out example documentation below.
