@@ -10,7 +10,7 @@
 		}
 	],
 	"require": {
-		"php": ">= 7.1",
+		"php": ">= 8.0",
 		"nette/application": "^3.0",
 		"nette/bootstrap": "^3.0",
 		"nette/caching": "^3.0",
@@ -28,7 +28,7 @@
 		"dibi/dibi": "^3.0.0 || ^4.0.0"
 	},
 	"require-dev": {
-		"ninjify/coding-standard": "^0.10",
+		"ninjify/coding-standard": "^0.11",
 		"gamee/php-code-checker-rules": "^1.0"
 	},
 	"autoload": {
