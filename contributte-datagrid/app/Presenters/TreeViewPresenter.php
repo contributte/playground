@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -21,10 +19,9 @@ final class TreeViewPresenter extends AbstractPresenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$join = $this->dibiConnection->select('COUNT(id) AS count, parent_category_id')
 			->from('categories')
@@ -34,7 +31,7 @@ final class TreeViewPresenter extends AbstractPresenter
 			->select('c.*, c_b.count as has_children')
 			->from('categories', 'c')
 			->leftJoin($join, 'c_b')
-				->on('c_b.parent_category_id = c.id')
+			->on('c_b.parent_category_id = c.id')
 			->where('c.parent_category_id IS NULL');
 
 		$grid->setDataSource($fluent);
@@ -92,7 +89,7 @@ final class TreeViewPresenter extends AbstractPresenter
 			->select('c.*, c_b.count as has_children')
 			->from('categories', 'c')
 			->leftJoin($join, 'c_b')
-				->on('c_b.parent_category_id = c.id')
+			->on('c_b.parent_category_id = c.id')
 			->where('c.parent_category_id = ?', (int) $parentCategoryId);
 	}
 
@@ -147,4 +144,5 @@ final class TreeViewPresenter extends AbstractPresenter
 			$this->redirect('this');
 		}
 	}
+
 }

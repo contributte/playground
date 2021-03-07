@@ -1,10 +1,9 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
 use App\UI\TEmptyLayoutView;
+use DateTime;
 use Dibi\Connection;
 use Dibi\Fluent;
 use Dibi\Row;
@@ -13,6 +12,7 @@ use Ublaboo\DataGrid\AggregationFunction\IMultipleAggregationFunction;
 use Ublaboo\DataGrid\Column\ColumnLink;
 use Ublaboo\DataGrid\Column\ColumnStatus;
 use Ublaboo\DataGrid\DataGrid;
+use UnexpectedValueException;
 
 final class ColumnsPresenter extends AbstractPresenter
 {
@@ -25,10 +25,9 @@ final class ColumnsPresenter extends AbstractPresenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDefaultSort(['id' => 'ASC']);
 
@@ -69,8 +68,8 @@ final class ColumnsPresenter extends AbstractPresenter
 			->setSortable();
 
 		$grid->addColumnNumber('age', 'Age')
-			->setRenderer(function(Row $row): int {
-				return $row['birth_date']->diff(new \DateTime)->y;
+			->setRenderer(function (Row $row): int {
+				return $row['birth_date']->diff(new DateTime())->y;
 			});
 
 		$grid->setColumnsHideable();
@@ -80,15 +79,15 @@ final class ColumnsPresenter extends AbstractPresenter
 				return 'Summary renderer: ' . $summary . ' $';
 			});*/
 
-		$grid->addColumnCallback('status', function(ColumnStatus $column, Row $row) {
+		$grid->addColumnCallback('status', function (ColumnStatus $column, Row $row): void {
 			if ($row['id'] === 3) {
 				$column->removeOption('active');
 			}
 		});
 
-		$grid->addColumnCallback('email', function(ColumnLink $column, Row $row) {
+		$grid->addColumnCallback('email', function (ColumnLink $column, Row $row): void {
 			if ($row['id'] === 3) {
-				$column->setRenderer(function() {
+				$column->setRenderer(function (): string {
 					return '';
 				});
 			}
@@ -100,27 +99,22 @@ final class ColumnsPresenter extends AbstractPresenter
 			new class implements IMultipleAggregationFunction
 			{
 
-				/**
-				 * @var int
-				 */
+				/** @var int */
 				private $idsSum = 0;
 
-				/**
-				 * @var float
-				 */
+				/** @var float */
 				private $avgAge = 0.0;
-
 
 				public function getFilterDataType(): string
 				{
 					return IAggregationFunction::DATA_TYPE_PAGINATED;
 				}
 
-
+				/** @param mixed $dataSource */
 				public function processDataSource($dataSource): void
 				{
 					if (!$dataSource instanceof Fluent) {
-						throw new \UnexpectedValueException;
+						throw new UnexpectedValueException();
 					}
 
 					$this->idsSum = (int) $dataSource->getConnection()
@@ -134,20 +128,23 @@ final class ColumnsPresenter extends AbstractPresenter
 						->fetchSingle());
 				}
 
-
-				public function renderResult(string $key)
+				public function renderResult(string $key): string
 				{
 					if ($key === 'id') {
 						return 'Ids sum: ' . $this->idsSum;
 					}
 
 					if ($key === 'age') {
-						return 'Avg Age: ' . (int) (date('Y') - $this->avgAge);
+						return 'Avg Age: ' . ((int) date('Y') - $this->avgAge);
 					}
+
+					return '';
 				}
+
 			}
 		);
 
 		return $grid;
 	}
+
 }

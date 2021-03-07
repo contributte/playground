@@ -1,12 +1,11 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
 use Dibi\Connection;
 use Nette\Application\UI\Presenter;
 use Ublaboo\DataGrid\DataGrid;
+use UnexpectedValueException;
 
 abstract class AbstractPresenter extends Presenter
 {
@@ -16,6 +15,8 @@ abstract class AbstractPresenter extends Presenter
 	 * @inject
 	 */
 	public $dibiConnection;
+
+	abstract public function createComponentGrid(): DataGrid;
 
 
 	/**
@@ -36,9 +37,8 @@ abstract class AbstractPresenter extends Presenter
 		if ($this->isAjax()) {
 			$grid = $this['grid'];
 
-
 			if (!$grid instanceof DataGrid) {
-				throw new \UnexpectedValueException;
+				throw new UnexpectedValueException();
 			}
 
 			$grid->redrawItem($id);
@@ -49,6 +49,4 @@ abstract class AbstractPresenter extends Presenter
 		}
 	}
 
-
-	abstract public function createComponentGrid(): DataGrid;
 }

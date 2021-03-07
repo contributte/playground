@@ -1,0 +1,24 @@
+name:  Tests
+
+on: [push, pull_request]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        php: ['7.4']
+
+      fail-fast: false
+
+    name: PHP ${{ matrix.php }} contributte/datgrid tests
+    steps:
+      - uses: actions/checkout@v2
+      - uses: shivammathur/setup-php@v1
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: gd, json, mbstring, tokenizer
+          coverage: none
+
+      - run: cd contributte-datagrid && make
+      - run: cd contributte-datagrid && make qa

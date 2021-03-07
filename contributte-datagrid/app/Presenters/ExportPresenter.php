@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -21,10 +19,9 @@ final class ExportPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -42,9 +39,9 @@ final class ExportPresenter extends Presenter
 
 		$grid->addColumnText('status', 'Status');
 
-		$grid->addExportCallback('Dump to ajax rq', function(array $rows, DataGrid $grid) {
+		$grid->addExportCallback('Dump to ajax rq', function (array $rows, DataGrid $grid): void {
 			echo 'All fetched data were passed to export callback. Size of data: ';
-			echo sizeof($rows);
+			echo count($rows);
 			die;
 		})->setAjax();
 
@@ -54,7 +51,7 @@ final class ExportPresenter extends Presenter
 		$columnName = new ColumnText($grid, 'name', 'name', 'Name');
 		$columnEven = (new ColumnText($grid, 'even', 'even', 'Even ID (yes/no)'))
 			->setRenderer(
-				function($item) {
+				function ($item) {
 					return $item['id'] % 2 === 0 ? 'No' : 'Yes';
 				}
 			);
@@ -68,4 +65,5 @@ final class ExportPresenter extends Presenter
 
 		return $grid;
 	}
+
 }

@@ -1,10 +1,9 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
 use App\UI\TEmptyLayoutView;
+use DateTime;
 use Dibi\Connection;
 use Dibi\Fluent;
 use Dibi\Row;
@@ -22,10 +21,9 @@ final class FiltersPresenter extends AbstractPresenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -57,11 +55,11 @@ final class FiltersPresenter extends AbstractPresenter
 			->setFilterDateRange();
 
 		$grid->addColumnNumber('age', 'Age')
-			->setRenderer(function(Row $row): int {
-				return $row['birth_date']->diff(new \DateTime)->y;
+			->setRenderer(function (Row $row): int {
+				return $row['birth_date']->diff(new DateTime())->y;
 			})
 			->setFilterRange()
-			->setCondition(function(Fluent $fluent, ArrayHash $values): void {
+			->setCondition(function (Fluent $fluent, ArrayHash $values): void {
 				if ((bool) $values['from']) {
 					$fluent->where('(YEAR(CURDATE()) - YEAR(birth_date)) >= ?', $values['from']);
 				}
@@ -75,4 +73,5 @@ final class FiltersPresenter extends AbstractPresenter
 
 		return $grid;
 	}
+
 }
