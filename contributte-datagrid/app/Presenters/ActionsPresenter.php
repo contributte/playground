@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -21,10 +19,9 @@ class ActionsPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -61,7 +58,7 @@ class ActionsPresenter extends Presenter
 			->setTitle('Hello, sun')
 			->setClass('btn btn-xs btn-default btn-secondary ajax');
 
-		$actionCallback->onClick[] = function($itemId) {
+		$actionCallback->onClick[] = function ($itemId): void {
 			$this->flashMessage('Custom callback triggered, id: ' . $itemId);
 			$this->redrawControl('flashes');
 		};
@@ -100,4 +97,5 @@ class ActionsPresenter extends Presenter
 		$this->flashMessage('Deleted!', 'info');
 		$this->redrawControl('flashes');
 	}
+
 }

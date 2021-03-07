@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -23,10 +21,9 @@ final class EditPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -38,18 +35,18 @@ final class EditPresenter extends Presenter
 
 		$grid->addColumnText('name', 'Name')
 			->setSortable()
-			->setEditableCallback(function($id, $value) {
-				$this->flashMessage("Id: $id, new value: $value");
+			->setEditableCallback(function ($id, $value): void {
+				$this->flashMessage(sprintf('Id: %s, new value: %s', $id, $value));
 				$this->redrawControl('flashes');
 			})->addCellAttributes(['class' => 'text-center']);
 
 		$grid->addColumnLink('link', 'Link', 'this#demo', 'name', ['id', 'surname' => 'name'])
 			->setEditableValueCallback(
-				function(Row $row) {
+				function (Row $row) {
 					return $row['name'];
 				}
 			)
-			->setEditableCallback(function($id, $value) {
+			->setEditableCallback(function ($id, $value): string {
 				$this->flashMessage(sprintf('Id: %s, new value: %s', $id, $value));
 				$this->redrawControl('flashes');
 
@@ -63,8 +60,8 @@ final class EditPresenter extends Presenter
 		$grid->addColumnStatus('status', 'Status');
 
 		$inlineEdit = $grid->addInlineEdit();
-		
-		$inlineEdit->onControlAdd[] = function($container) {
+
+		$inlineEdit->onControlAdd[] = function ($container): void {
 				$container->addText('name', '')
 					->setRequired('aaa');
 				$container->addText('birth_date', '');
@@ -74,9 +71,9 @@ final class EditPresenter extends Presenter
 					'inactive' => 'Inactive',
 					'deleted' => 'Deleted',
 				]);
-			};
+		};
 
-		$inlineEdit->onSetDefaults[] = function(Container $container, Row $row) {
+		$inlineEdit->onSetDefaults[] = function (Container $container, Row $row): void {
 			$container->setDefaults([
 				'id' => $row['id'],
 				'name' => $row['name'],
@@ -86,7 +83,7 @@ final class EditPresenter extends Presenter
 			]);
 		};
 
-		$inlineEdit->onSubmit[] = function($id, $values) {
+		$inlineEdit->onSubmit[] = function ($id, $values): void {
 			$this->flashMessage('Record was updated! (not really)', 'success');
 			$this->redrawControl('flashes');
 		};
@@ -95,4 +92,5 @@ final class EditPresenter extends Presenter
 
 		return $grid;
 	}
+
 }

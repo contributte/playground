@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -21,16 +19,15 @@ final class RowPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
 		$grid->setItemsPerPageList([20, 50, 100]);
 
-		$grid->setRowCallback(function($item, $tr) {
+		$grid->setRowCallback(function ($item, $tr): void {
 			$tr->addClass('super-' . $item->id);
 		});
 
@@ -57,15 +54,15 @@ final class RowPresenter extends Presenter
 
 		$grid->addGroupAction('Delete')->onSelect[] = [$this, 'groupDelete'];
 
-		$grid->allowRowsGroupAction(function($item): bool {
+		$grid->allowRowsGroupAction(function ($item): bool {
 			return $item->id % 2 === 0;
 		});
 
-		$grid->allowRowsAction('delete', function($item) {
+		$grid->allowRowsAction('delete', function ($item): bool {
 			return $item->id % 3 === 0;
 		});
 
-		$grid->allowRowsAction('detail', function($item) {
+		$grid->allowRowsAction('detail', function ($item): bool {
 			return $item->id % 4 === 0;
 		});
 
@@ -83,7 +80,7 @@ final class RowPresenter extends Presenter
 	public function groupDelete(array $ids): void
 	{
 		$this->flashMessage(
-			sprintf('These items: [%s] are being deleted', implode($ids, ',')),
+			sprintf('These items: [%s] are being deleted', implode(',', $ids)),
 			'info'
 		);
 
@@ -94,4 +91,5 @@ final class RowPresenter extends Presenter
 			$this->redirect('this');
 		}
 	}
+
 }

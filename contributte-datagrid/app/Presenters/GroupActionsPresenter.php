@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -20,10 +18,9 @@ class GroupActionsPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -156,4 +153,5 @@ class GroupActionsPresenter extends Presenter
 			$this->redirect('this');
 		}
 	}
+
 }

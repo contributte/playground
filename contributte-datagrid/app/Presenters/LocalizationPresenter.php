@@ -1,10 +1,9 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
 use App\UI\TEmptyLayoutView;
+use DateTime;
 use Dibi\Connection;
 use Dibi\Row;
 use Nette\Application\UI\Presenter;
@@ -22,10 +21,9 @@ final class LocalizationPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -45,10 +43,9 @@ final class LocalizationPresenter extends Presenter
 			->setFormat('j. n. Y');
 
 		$grid->addColumnNumber('age', 'Age')
-			->setRenderer(function(Row $row): int {
-				return $row['birth_date']->diff(new \DateTime)->y;
+			->setRenderer(function (Row $row): int {
+				return $row['birth_date']->diff(new DateTime())->y;
 			});
-
 
 		$translator = new SimpleTranslator([
 			'ublaboo_datagrid.no_item_found_reset' => 'Žádné položky nenalezeny. Filtr můžete vynulovat',
@@ -76,4 +73,5 @@ final class LocalizationPresenter extends Presenter
 
 		return $grid;
 	}
+
 }

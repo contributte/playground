@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App\Presenters;
 
@@ -20,10 +18,9 @@ final class AddPresenter extends Presenter
 	 */
 	public $dibiConnection;
 
-
 	public function createComponentGrid(): DataGrid
 	{
-		$grid = new DataGrid;
+		$grid = new DataGrid();
 
 		$grid->setDataSource($this->dibiConnection->select('*')->from('users'));
 
@@ -41,7 +38,7 @@ final class AddPresenter extends Presenter
 		$inlineAdd = $grid->addInlineAdd();
 
 		$inlineAdd->setPositionTop()
-			->onControlAdd[] = function($container) {
+			->onControlAdd[] = function ($container): void {
 				$container->addText('name', '')
 					->setRequired('aaa');
 				$container->addText('birth_date', '');
@@ -53,11 +50,12 @@ final class AddPresenter extends Presenter
 				]);
 			};
 
-		$inlineAdd->onSubmit[] = function($values) {
+		$inlineAdd->onSubmit[] = function ($values): void {
 			$this->flashMessage('Record was added! (not really)', 'success');
 			$this->redrawControl('flashes');
 		};
 
 		return $grid;
 	}
+
 }

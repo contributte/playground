@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types = 1);
 
 namespace App;
 
@@ -11,8 +9,9 @@ final class Bootstrap
 
 	public static function boot(): Configurator
 	{
-		$configurator = new Configurator;
+		$configurator = new Configurator();
 
+		$configurator->setDebugMode(true);
 		$configurator->enableTracy(__DIR__ . '/../log');
 
 		$configurator->setTimeZone('Europe/Prague');
@@ -26,4 +25,5 @@ final class Bootstrap
 
 		return $configurator;
 	}
+
 }
