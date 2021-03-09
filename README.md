@@ -113,5 +113,5 @@ This package is currently maintaining by these authors.
 
 -----
 
-Consider to [support](https://contributte.com/partners) **contributte** development team.
+Consider to [support](https://contributte.org/partners) **contributte** development team.
 Also thank you for using this package.
