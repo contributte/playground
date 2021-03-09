@@ -6,8 +6,8 @@ This is example usage of contributte/thepay for Nette Framework.
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## See

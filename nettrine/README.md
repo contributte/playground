@@ -9,20 +9,20 @@ This is example of nettrine/dbal, nettrine/orm, nettrine/migrations, nettrine/fi
 ## Installation
 
 Run commands:
-```
-$ composer install
+```bash
+composer install
 ```
 
 Fill DB host, DB name, DB user, DB password and run commands:
 
 Run migrations:
 ```bash
-$ php bin/console migrations:migrate
+php bin/console migrations:migrate
 ```
 
 and load sample data:
 ```bash
-$ bin/console doctrine:fixtures:load
+bin/console doctrine:fixtures:load
 ```
 
 ## See

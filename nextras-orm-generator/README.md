@@ -4,8 +4,8 @@ This is example of contributte/nextras-orm-generator
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## Usage
@@ -13,12 +13,12 @@ $ composer install
 1) Import **db.sql** to your MySQL database.
 2) Configure database connection in **together.php** or **seperate.php**
 3) run 
-```
-$ php together.php
+```bash
+php together.php
 ```
 and/or
-```
-$ php seperate.php
+```bash
+php seperate.php
 ```
 
 For complete configuration check:

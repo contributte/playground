@@ -11,13 +11,13 @@ This application demonstrates usage of these Apitte plugins compatible with [net
 ## Installation
 
 ```bash
-$ composer install
+composer install
 ```
 
 ## Usage
 
 ```bash
-$ composer webserver
+composer webserver
 ```
 
 ## Showcase

@@ -4,8 +4,8 @@ This is example of contributte/mailing
 
 ## Installation
 
-```
-$ composer install
+```bash
+composer install
 ```
 
 ## See
