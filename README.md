@@ -17,7 +17,7 @@ Minimal PHP version is 7.2. You are more then welcomed to create your example? J
 If you want to test some example just clone this repository and take a look at prepared examples.
 
 ```
-$ git clone git@github.com:planette/playground.git
+git clone git@github.com:planette/playground.git
 ```
 
 For more details on how to use this package, check out example documentation below.
@@ -113,5 +113,5 @@ This package is currently maintaining by these authors.
 
 -----
 
-Consider to [support](https://contributte.com/partners) **contributte** development team.
+Consider to [support](https://contributte.org/partners) **contributte** development team.
 Also thank you for using this package.

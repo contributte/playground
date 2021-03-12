@@ -5,27 +5,27 @@ This project is here for super-simple demonstration how to create a project with
 ## Installation
 
 ```bash
-$ composer install
+composer install
 ```
 
 ### database with dummy data 🗂
 
 ```bash
-$ docker-compose -f docker-compose.yml up -d
+docker-compose -f docker-compose.yml up -d
 ```
 
 - Create database "datagrid"
 - Import dummy data from data/dummy.sql
 
 ```bash
-$ docker exec -it contributte-datagrid-mysql /usr/share/datagrid/db-init.sh
+docker exec -it contributte-datagrid-mysql /usr/share/datagrid/db-init.sh
 ```
 
 ### Run PHP server ⚡️
 
 ```bash
-$ php -S localhost:8000 -t www # with /www root directory
-$ php -S localhost:8000 # when your are in /www
+php -S localhost:8000 -t www # with /www root directory
+php -S localhost:8000 # when your are in /www
 ```
 
 ### Go to http://localhost:8000/ 👍
