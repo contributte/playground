@@ -1449,16 +1449,16 @@
         },
         {
             "name": "nette/robot-loader",
-            "version": "v3.1.2",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "6f9cea738178dbb1b5fba6387a715b0da1a4e0d4"
+                "reference": "d9a653a1f0f347fe4c12e98b39b2adeb59ba0d96"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/6f9cea738178dbb1b5fba6387a715b0da1a4e0d4",
-                "reference": "6f9cea738178dbb1b5fba6387a715b0da1a4e0d4",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/d9a653a1f0f347fe4c12e98b39b2adeb59ba0d96",
+                "reference": "d9a653a1f0f347fe4c12e98b39b2adeb59ba0d96",
                 "shasum": ""
             },
             "require": {
@@ -1510,7 +1510,7 @@
                 "nette",
                 "trait"
             ],
-            "time": "2020-11-06T00:02:37+00:00"
+            "time": "2021-03-06T15:39:14+00:00"
         },
         {
             "name": "nette/security",
