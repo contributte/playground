@@ -1,8 +1,8 @@
-![](https://heatbadger.now.sh/github/readme/planette/playground/)
+![](https://heatbadger.now.sh/github/readme/contributte/playground/)
 
 <p align=center>
-  <a href="https://github.com/planette/playground/actions">
-    <img src="https://badgen.net/github/checks/planette/playground/master?cache=300">
+  <a href="https://github.com/contributte/playground/actions">
+    <img src="https://badgen.net/github/checks/contributte/playground/master?cache=300">
   </a>
 </p>
 
@@ -12,12 +12,12 @@ Website ðŸš€ <a href="https://contributte.org">contributte.org</a> | Contact ðŸ‘
 
 ## Documentation
 
-Minimal PHP version is 7.2. You are more then welcomed to create your example? Just [fork](https://github.com/planette/playground/fork) this repository and [send a PR](https://github.com/planette/playground/pulls).
+Minimal PHP version is 7.2. You are more then welcomed to create your example? Just [fork](https://github.com/contributte/playground/fork) this repository and [send a PR](https://github.com/contributte/playground/pulls).
 
 If you want to test some example just clone this repository and take a look at prepared examples.
 
 ```
-git clone git@github.com:planette/playground.git
+git clone git@github.com:contributte/playground.git
 ```
 
 For more details on how to use this package, check out example documentation below.
@@ -25,10 +25,10 @@ For more details on how to use this package, check out example documentation bel
 
 | Project | Description |
 |---|---|
-| [apitte-fullstack](https://github.com/planette/playground/tree/master/apitte-fullstack) | Fullstack application with example of all plugins. |
-| [apitte-micro](https://github.com/planette/playground/tree/master/apitte-micro) | Micro application with direct dispatching. |
-| [apitte-simple](https://github.com/planette/playground/tree/master/apitte-simple) | Simple middleware application. |
-| [apitte-nette-simple](https://github.com/planette/playground/tree/master/apitte-nette-simple) | Simple Nette |
+| [apitte-fullstack](https://github.com/contributte/playground/tree/master/apitte-fullstack) | Fullstack application with example of all plugins. |
+| [apitte-micro](https://github.com/contributte/playground/tree/master/apitte-micro) | Micro application with direct dispatching. |
+| [apitte-simple](https://github.com/contributte/playground/tree/master/apitte-simple) | Simple middleware application. |
+| [apitte-nette-simple](https://github.com/contributte/playground/tree/master/apitte-nette-simple) | Simple Nette |
 | [contributte-api-router](https://github.com/contributte/playground/tree/master/contributte-api-router) | Starter project for ApiRouter. |
 | [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | Example of writing own commands and how to install console-extra with all commands. |
 | [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
@@ -40,8 +40,8 @@ For more details on how to use this package, check out example documentation bel
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
 | [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
-| [nettrine](https://github.com/planette/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. <a href="https://github.com/planette/playground/actions"><img src="https://github.com/planette/playground/workflows/Tests/badge.svg"></a> |
-| [nextras-orm-generator](https://github.com/planette/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
+| [nettrine](https://github.com/contributte/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. <a href="https://github.com/contributte/playground/actions"><img src="https://github.com/contributte/playground/workflows/Tests/badge.svg"></a> |
+| [nextras-orm-generator](https://github.com/contributte/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
 ## Development
 

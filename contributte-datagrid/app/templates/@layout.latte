@@ -70,7 +70,7 @@
 			<h5 class="">
 				{var $reflection = new ReflectionClass($control)}
 				{var $presenterFile = basename($reflection->getFileName())}
-				<span class="fa fa-info"></span>&nbsp;&nbsp;See the code below 👇 or see <a href="https://github.com/planette/playground/blob/master/contributte-datagrid/app/Presenters/{$presenterFile}" target="_blank">GitHub</a>
+				<span class="fa fa-info"></span>&nbsp;&nbsp;See the code below 👇 or see <a href="https://github.com/contributte/playground/blob/master/contributte-datagrid/app/Presenters/{$presenterFile}" target="_blank">GitHub</a>
 			</h5>
 
 			<pre><code class="language-php">{include 'datagridFactoryCode.latte', method => 'createComponentGrid'}</code></pre>
