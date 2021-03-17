@@ -16,7 +16,7 @@ Minimal PHP version is 7.2. You are more then welcomed to create your example? J
 
 If you want to test some example just clone this repository and take a look at prepared examples.
 
-```
+```bash
 git clone git@github.com:contributte/playground.git
 ```
 
@@ -40,7 +40,7 @@ For more details on how to use this package, check out example documentation bel
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
 | [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
-| [nettrine](https://github.com/contributte/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. <a href="https://github.com/contributte/playground/actions"><img src="https://github.com/contributte/playground/workflows/Tests/badge.svg"></a> |
+| [nettrine](https://github.com/contributte/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. |
 | [nextras-orm-generator](https://github.com/contributte/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
 ## Development
