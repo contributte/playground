@@ -74,16 +74,16 @@
         },
         {
             "name": "dibi/dibi",
-            "version": "v4.2.1",
+            "version": "v4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dg/dibi.git",
-                "reference": "d09b462eef89bd9f068dda743492c5608d8e81f8"
+                "reference": "95c3f72a1791e0efe93a511664f7b5444398ca36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dg/dibi/zipball/d09b462eef89bd9f068dda743492c5608d8e81f8",
-                "reference": "d09b462eef89bd9f068dda743492c5608d8e81f8",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/95c3f72a1791e0efe93a511664f7b5444398ca36",
+                "reference": "95c3f72a1791e0efe93a511664f7b5444398ca36",
                 "shasum": ""
             },
             "require": {
@@ -138,9 +138,9 @@
             ],
             "support": {
                 "issues": "https://github.com/dg/dibi/issues",
-                "source": "https://github.com/dg/dibi/tree/v4.2.1"
+                "source": "https://github.com/dg/dibi/tree/v4.2.2"
             },
-            "time": "2021-03-01T14:17:15+00:00"
+            "time": "2021-04-21T11:56:00+00:00"
         },
         {
             "name": "latte/latte",
