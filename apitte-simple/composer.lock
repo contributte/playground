@@ -327,34 +327,31 @@
         },
         {
             "name": "contributte/http",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/http.git",
-                "reference": "b2d5b4144fbc23076f7e53df996afeb1a47639d5"
+                "reference": "3f926d0e0ec0807e68714149df55ae0e8e4888a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/http/zipball/b2d5b4144fbc23076f7e53df996afeb1a47639d5",
-                "reference": "b2d5b4144fbc23076f7e53df996afeb1a47639d5",
+                "url": "https://api.github.com/repos/contributte/http/zipball/3f926d0e0ec0807e68714149df55ae0e8e4888a4",
+                "reference": "3f926d0e0ec0807e68714149df55ae0e8e4888a4",
                 "shasum": ""
             },
             "require": {
-                "nette/http": "~3.0.1",
+                "nette/http": "^3.0.1",
                 "php": ">=7.2"
             },
-            "conflict": {
-                "nette/di": "<3.0.0"
-            },
             "require-dev": {
-                "nette/di": "~3.0.0",
+                "nette/di": "^3.0.0",
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.12",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
                 "phpstan/phpstan-nette": "^0.12",
                 "phpstan/phpstan-strict-rules": "^0.12",
-                "tracy/tracy": "~2.5.1"
+                "tracy/tracy": "^2.5.1"
             },
             "suggest": {
                 "nette/di": "to use CompilerExtensions"
@@ -390,7 +387,17 @@
                 "request",
                 "response"
             ],
-            "time": "2020-12-15T15:52:06+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-03-12T22:31:30+00:00"
         },
         {
             "name": "contributte/middlewares",
@@ -1646,12 +1653,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "74071061ebc0fe6263700258506ae780d779939a"
+                "reference": "3753a290d9be87e60305573a6fc6a658ef589375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/74071061ebc0fe6263700258506ae780d779939a",
-                "reference": "74071061ebc0fe6263700258506ae780d779939a",
+                "url": "https://api.github.com/repos/nette/utils/zipball/3753a290d9be87e60305573a6fc6a658ef589375",
+                "reference": "3753a290d9be87e60305573a6fc6a658ef589375",
                 "shasum": ""
             },
             "require": {
@@ -1716,7 +1723,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2020-12-03T16:10:13+00:00"
+            "time": "2021-01-25T20:39:24+00:00"
         },
         {
             "name": "psr/http-message",
