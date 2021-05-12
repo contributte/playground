@@ -7,7 +7,7 @@ namespace App\Controllers;
 use App\Http\ApiResponse;
 use Nette\Application\IResponse;
 use Nette\Application\Request;
-use Ublaboo\ApiRouter\ApiRoute;
+use Contributte\ApiRouter\ApiRoute;
 
 /**
  * API for logging users in

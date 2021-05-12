@@ -1,5 +1,5 @@
 extensions:
-	apiRouter: Ublaboo\ApiRouter\DI\ApiRouterExtension
+	apiRouter: Contributte\ApiRouter\DI\ApiRouterExtension
 
 
 parameters:
