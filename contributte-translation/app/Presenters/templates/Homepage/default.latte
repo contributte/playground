@@ -1,0 +1,77 @@
+{block content}
+    <div class="content">
+        <a n:href="Homepage:default locale=>cs">cs</a>
+        <a n:href="Homepage:default locale=>en">en</a>
+        <h2>{_messages.books.books}</h2>
+        <table>
+            <tr>
+                <th>{_messages.books.id}</th>
+                <th>{_messages.books.title}</th>
+                <th>{_messages.books.category}</th>
+                <th>{_messages.books.tags}</th>
+                <th>{_messages.books.read}</th>
+                <th>{_messages.books.createdAt}</th>
+                <th>{_messages.books.changedAt}</th>
+            </tr>
+            <tr class="text-center">
+                <td>1</td>
+                <td>Book title A</td>
+                <td>Book category A</td>
+                <td>
+                    Book tag A
+                </td>
+                <td>{_messages.no}</td>
+                <td>18.5.2021 20:24:33</td>
+                <td></td>
+            </tr>
+            <tr class="text-center">
+                <td>2</td>
+                <td>Book title B</td>
+                <td>Book category A</td>
+                <td>
+                    Book tag A
+                </td>
+                <td>{_messages.yes}</td>
+                <td>18.5.2021 20:24:33</td>
+                <td>18.5.2021 20:31:24</td>
+                <td></td>
+            </tr>
+            <tr class="text-center">
+                <td>3</td>
+                <td>Book title C</td>
+                <td>Book category B</td>
+                <td>
+                </td>
+                <td>{_messages.no}</td>
+                <td>18.5.2021 20:24:33</td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div class="content">
+        <h2>{_messages.categories.categories}</h2>
+        <table>
+            <tr>
+                <th>{_messages.categories.id}</th>
+                <th>{_messages.categories.title}</th>
+                <th>{_messages.categories.books}</th>
+            </tr>
+            <tr class="text-center">
+                <td>1</td>
+                <td>Book category A</td>
+                <td>
+                    Book title A,
+                    Book title B
+                </td>
+            </tr>
+            <tr class="text-center">
+                <td>2</td>
+                <td>Book category B</td>
+                <td>
+                    Book title C
+                </td>
+            </tr>
+        </table>
+    </div>
+{/block}

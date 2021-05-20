@@ -1,0 +1,5 @@
+parameters:
+	dbHost: localhost
+	dbName: contributte-translator
+	dbUser: root
+	dbPassword:
