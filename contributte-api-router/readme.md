@@ -14,3 +14,13 @@ composer install
 - Implementing `IPresenter` in endpoints (`App\Controllers\LoginController`) instead of extending `UI\Presenter`
 - Extending `ApiResponse` from Nette `JsonResponse`, just to make it more simple to add more custom headers and so on
 - `LoginController` and `ErrorController` is using `ApiResponseFormatter` for formatting succes message, payload data or and exception
+
+- Run:
+```bash
+# return JSON
+curl 'http://contributte-api-router.playground.local/api/login'  -H 'Content-Type: application/x-www-form-urlencoded' --data-raw run
+
+# generating API documentation for the action
+curl 'http://contributte-api-router.playground.local/api/login?__apiDocuGenerate'  -H 'Content-Type: application/x-www-form-urlencoded' --data-raw run
+
+```

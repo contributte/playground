@@ -13,12 +13,13 @@ use Contributte\ApiRouter\ApiRoute;
  * API for logging users in
  * 
  * @ApiRoute(
- * 	"/api/login",
- * 	methods={
- * 		"POST"="run"
- * 	},
- *  presenter="Login",
- *  format="json"
+ *      "/api/login",
+ *      methods={
+ * 		    "POST"="run"
+ *      },
+ *      presenter="Login",
+ *      section="Login",
+ *      format="json"
  * )
  */
 final class LoginController extends AbstractController

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http;
 
-use Nette\Application\Responses\JsonResponse;
+use Contributte\Application\Response\JsonPrettyResponse;
 
-final class ApiResponse extends JsonResponse
+final class ApiResponse extends JsonPrettyResponse
 {
 }

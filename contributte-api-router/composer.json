@@ -1,15 +1,26 @@
 {
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/petrparolek/contributte-api-docu"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/petrparolek/contributte-api-router"
+    }
+  ],
   "require": {
     "php": ">= 7.1",
-    "contributte/application": "^0.4.0",
-    "contributte/bootstrap": "^0.4.0",
+    "contributte/application": "^0.4",
+    "contributte/bootstrap": "^0.4",
     "contributte/cache": "^0.5",
-    "contributte/di": "^0.4",
+    "contributte/di": "^0.5",
     "contributte/http": "^0.3",
-    "contributte/security": "^0.3.0",
-    "contributte/utils": "^0.4",
-    "contributte/tracy": "^0.4",
-    "contributte/api-router": "~4.0.0"
+    "contributte/security": "^0.3",
+    "contributte/utils": "^0.5",
+    "contributte/tracy": "^0.5",
+    "contributte/api-router": "dev-patch-1 as 4.0.0",
+    "contributte/api-docu": "dev-patch-1"
   },
   "require-dev": {
     "nette/tester": "^2.0.0"

@@ -1,5 +1,9 @@
 extensions:
 	apiRouter: Contributte\ApiRouter\DI\ApiRouterExtension
+	apiDocu: Contributte\ApiDocu\DI\ApiDocuExtension
+
+apiDocu:
+	apiDir: "%wwwDir%/api"
 
 
 parameters:
