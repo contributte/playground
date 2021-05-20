@@ -1,0 +1,12 @@
+books:
+	books: 'Books'
+	id: 'Book ID'
+	title: 'Title'
+	category: 'Category'
+	tags: 'Tags'
+	read: 'Read'
+	createdAt: 'Created at'
+	changedAt: 'Changed at'
+
+no: 'no'
+yes: 'yes'

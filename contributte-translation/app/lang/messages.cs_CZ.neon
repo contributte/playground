@@ -1,0 +1,12 @@
+books:
+	books: 'Knihy'
+	id: 'ID knihy'
+	title: 'Nadpis'
+	category: 'Kategorie'
+	tags: 'Štítky'
+	read: 'Přečteno'
+	createdAt: 'Datum a čas vytvoření'
+	changedAt: 'Datum a čas úpravy'
+
+no: 'ne'
+yes: 'ano'
