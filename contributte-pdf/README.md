@@ -1,4 +1,4 @@
-![](https://heatbadger.now.sh/github/readme/contributte/playground/)
+![](https://heatbadger.now.sh/github/readme/contributte/pdf/)
 
 <p align=center>
 Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
@@ -20,8 +20,7 @@ Visit HomepagePresenter through browser.
 
 ## Documentation
 
-For details on how to use Nettrine packages, check out our documentations:
-- [contributte/pdf](https://contributte.org/packages/contributte/pdf.html)
+For details on how to use contributte/pdf package, check out our documentations at [contributte/pdf](https://contributte.org/packages/contributte/pdf.html)
 
 
 ## Development
