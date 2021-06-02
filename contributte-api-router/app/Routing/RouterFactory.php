@@ -12,6 +12,8 @@ final class RouterFactory
 	{
 		$router = new RouteList;
 
+		$router->addRoute('<presenter>/<action>', 'Homepage:default');
+
 		return $router;
 	}
 }

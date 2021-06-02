@@ -1,0 +1,79 @@
+{block content}
+    <button id="view" type="button" class="btn btn-primary" data-toggle="modal" data-target="#viewModal">View API docs</button>
+    <button id="generate" type="button" class="btn btn-secondary">Generate API docs</button>
+    <a href="{$basePath}/api/index.php" target="_blank">View generated API docs</a>
+
+    <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="viewModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Generated JSON</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content-->
+        </div>
+        <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
+
+    <div class="modal fade" id="generatedModal" tabindex="-1" role="dialog" aria-labelledby="generateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Generated API docs</h4>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="750px" height="800px" src="{$basePath}/api/index.php"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            <!-- /.modal-content-->
+        </div>
+        <!-- /.modal-dialog-->
+    </div>
+    <!-- /.modal-->
+{/block}
+
+{block scripts}
+{include parent}
+<script>
+    $( "#generate" ).click(function() {
+        naja.makeRequest('POST', '/api/login?__apiDocuGenerate', '{ run }');
+
+        $('#generate').replaceWith('<a href="#" class="btn btn-info disabled" id="generate"><div class="spinner-border" role="status"> <span class="sr-only">Loading...</span> </div> Processing request</a>');
+
+        naja.addEventListener('complete', () => {
+            $('#generate').button('reset');
+            $('#generate').replaceWith('<a href="#" class="btn btn-success disabled" id="load">API docs was successfully generated</a>');
+        });
+    });
+
+    $( "#view" ).click(function() {
+        naja.makeRequest('POST', '/api/login', '{ run }')
+            .then((response) => {
+                str = "<div class='container'>";
+                str += "<pre>";
+                str += JSON.stringify(response, null, 4);
+                str += "</pre>";
+                str += "</div>";
+                $('.modal-body').replaceWith(str);
+            });
+    });
+</script>
+{/block}

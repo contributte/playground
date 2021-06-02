@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0fed4c3c57c6d39b4d48adb08ebe0333",
+    "content-hash": "8af4cefb69f60c9af1b897c05fd65a0d",
     "packages": [
         {
             "name": "contributte/api-docu",
-            "version": "dev-patch-1",
+            "version": "dev-petrparolek-patch-1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/petrparolek/contributte-api-docu.git",
-                "reference": "48aba86eb51c20505cfa901e1d4aa51f9221659b"
+                "reference": "d35f4a27ea138e16b32928fdfb1f6cb24aa7ea63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/petrparolek/contributte-api-docu/zipball/48aba86eb51c20505cfa901e1d4aa51f9221659b",
-                "reference": "48aba86eb51c20505cfa901e1d4aa51f9221659b",
+                "url": "https://api.github.com/repos/petrparolek/contributte-api-docu/zipball/d35f4a27ea138e16b32928fdfb1f6cb24aa7ea63",
+                "reference": "d35f4a27ea138e16b32928fdfb1f6cb24aa7ea63",
                 "shasum": ""
             },
             "require": {
@@ -31,9 +31,9 @@
             "require-dev": {
                 "contributte/code-rules": "^1.0",
                 "gamee/php-code-checker-rules": "^2.0",
-                "mockery/mockery": "~1.2.2",
+                "mockery/mockery": "~1.3.4",
                 "ninjify/coding-standard": "^0.11.0",
-                "ninjify/nunjuck": "^0.4",
+                "ninjify/nunjuck": "^0.3",
                 "ninjify/qa": "^0.12",
                 "phpstan/phpstan": "^0.12",
                 "phpstan/phpstan-deprecation-rules": "^0.12",
@@ -79,7 +79,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/api-docu/issues",
-                "source": "https://github.com/petrparolek/contributte-api-docu/tree/patch-1"
+                "source": "https://github.com/petrparolek/contributte-api-docu/tree/petrparolek-patch-1"
             },
             "funding": [
                 {
@@ -91,28 +91,28 @@
                     "url": "https://contributte.org/partners.html"
                 }
             ],
-            "time": "2021-05-12T12:52:23+00:00"
+            "time": "2021-06-02T11:30:48+00:00"
         },
         {
             "name": "contributte/api-router",
-            "version": "dev-patch-1",
+            "version": "dev-petrparolek-patch-1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/petrparolek/contributte-api-router.git",
-                "reference": "e13c17e1188772aed43cefe9e2dc1472527ebf4e"
+                "reference": "afc6922a4d391b8496d54abda7a4bfb6e18dcc69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/petrparolek/contributte-api-router/zipball/e13c17e1188772aed43cefe9e2dc1472527ebf4e",
-                "reference": "e13c17e1188772aed43cefe9e2dc1472527ebf4e",
+                "url": "https://api.github.com/repos/petrparolek/contributte-api-router/zipball/afc6922a4d391b8496d54abda7a4bfb6e18dcc69",
+                "reference": "afc6922a4d391b8496d54abda7a4bfb6e18dcc69",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "~1.3",
                 "doctrine/cache": "^1.6",
-                "nette/application": "~3.0.0",
-                "nette/di": "~3.0.0",
-                "nette/http": "~3.0.0",
+                "nette/application": "^3.0",
+                "nette/di": "^3.0",
+                "nette/http": "^3.0",
                 "nette/reflection": "^2.4",
                 "nette/utils": "^3.0",
                 "php": ">= 7.1.0"
@@ -164,7 +164,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/api-router/issues",
-                "source": "https://github.com/petrparolek/contributte-api-router/tree/patch-1"
+                "source": "https://github.com/petrparolek/contributte-api-router/tree/petrparolek-patch-1"
             },
             "funding": [
                 {
@@ -176,7 +176,7 @@
                     "url": "https://contributte.org/partners.html"
                 }
             ],
-            "time": "2021-05-12T13:55:16+00:00"
+            "time": "2021-06-02T11:32:58+00:00"
         },
         {
             "name": "contributte/application",
@@ -731,28 +731,30 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.12.1",
+            "version": "1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b"
+                "reference": "e6e7b7d5b45a2f2abc5460cc6396480b2b1d321f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/b17c5014ef81d212ac539f07a1001832df1b6d3b",
-                "reference": "b17c5014ef81d212ac539f07a1001832df1b6d3b",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/e6e7b7d5b45a2f2abc5460cc6396480b2b1d321f",
+                "reference": "e6e7b7d5b45a2f2abc5460cc6396480b2b1d321f",
                 "shasum": ""
             },
             "require": {
                 "doctrine/lexer": "1.*",
                 "ext-tokenizer": "*",
-                "php": "^7.1 || ^8.0"
+                "php": "^7.1 || ^8.0",
+                "psr/cache": "^1 || ^2 || ^3"
             },
             "require-dev": {
-                "doctrine/cache": "1.*",
+                "doctrine/cache": "^1.11 || ^2.0",
                 "doctrine/coding-standard": "^6.0 || ^8.1",
                 "phpstan/phpstan": "^0.12.20",
-                "phpunit/phpunit": "^7.5 || ^9.1.5"
+                "phpunit/phpunit": "^7.5 || ^8.0 || ^9.1.5",
+                "symfony/cache": "^4.4 || ^5.2"
             },
             "type": "library",
             "autoload": {
@@ -795,22 +797,22 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.12.1"
+                "source": "https://github.com/doctrine/annotations/tree/1.13.1"
             },
-            "time": "2021-02-21T21:00:45+00:00"
+            "time": "2021-05-16T18:07:53+00:00"
         },
         {
             "name": "doctrine/cache",
-            "version": "1.11.0",
+            "version": "1.11.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/cache.git",
-                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0"
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/cache/zipball/a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
-                "reference": "a9c1b59eba5a08ca2770a76eddb88922f504e8e0",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/3bb5588cec00a0268829cc4a518490df6741af9d",
+                "reference": "3bb5588cec00a0268829cc4a518490df6741af9d",
                 "shasum": ""
             },
             "require": {
@@ -880,7 +882,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/cache/issues",
-                "source": "https://github.com/doctrine/cache/tree/1.11.0"
+                "source": "https://github.com/doctrine/cache/tree/1.11.3"
             },
             "funding": [
                 {
@@ -896,7 +898,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-04-13T14:46:17+00:00"
+            "time": "2021-05-25T09:01:55+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -2127,6 +2129,55 @@
             "time": "2020-11-25T20:53:17+00:00"
         },
         {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/master"
+            },
+            "time": "2016-08-06T20:24:11+00:00"
+        },
+        {
             "name": "tracy/tracy",
             "version": "v2.8.4",
             "source": {
@@ -2277,7 +2328,7 @@
     "aliases": [
         {
             "package": "contributte/api-router",
-            "version": "dev-patch-1",
+            "version": "dev-petrparolek-patch-1",
             "alias": "4.0.0",
             "alias_normalized": "4.0.0.0"
         }

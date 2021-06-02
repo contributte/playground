@@ -19,8 +19,8 @@
     "contributte/security": "^0.3",
     "contributte/utils": "^0.5",
     "contributte/tracy": "^0.5",
-    "contributte/api-router": "dev-patch-1 as 4.0.0",
-    "contributte/api-docu": "dev-patch-1"
+    "contributte/api-router": "dev-petrparolek-patch-1 as 4.0.0",
+    "contributte/api-docu": "dev-petrparolek-patch-1"
   },
   "require-dev": {
     "nette/tester": "^2.0.0"
