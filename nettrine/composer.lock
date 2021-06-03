@@ -2943,16 +2943,16 @@
         },
         {
             "name": "nette/safe-stream",
-            "version": "v2.4.1",
+            "version": "v2.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/safe-stream.git",
-                "reference": "ae6f314041892138cb38b4ff8782e92e03750918"
+                "reference": "921bd889860cf697a022642e628d086c9048ca67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/safe-stream/zipball/ae6f314041892138cb38b4ff8782e92e03750918",
-                "reference": "ae6f314041892138cb38b4ff8782e92e03750918",
+                "url": "https://api.github.com/repos/nette/safe-stream/zipball/921bd889860cf697a022642e628d086c9048ca67",
+                "reference": "921bd889860cf697a022642e628d086c9048ca67",
                 "shasum": ""
             },
             "require": {
@@ -3000,9 +3000,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/safe-stream/issues",
-                "source": "https://github.com/nette/safe-stream/tree/v2.4.1"
+                "source": "https://github.com/nette/safe-stream/tree/v2.4.2"
             },
-            "time": "2020-03-16T14:26:30+00:00"
+            "time": "2021-06-02T14:42:24+00:00"
         },
         {
             "name": "nette/schema",
