@@ -91,16 +91,16 @@
         },
         {
             "name": "contributte/api-router",
-            "version": "v4.1.0",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/api-router.git",
-                "reference": "eb2262c5a5261e9c4ef7d89c5dcbeb36d79f627f"
+                "reference": "bfdd67351c02c14a3ffb9391d36eb6fff661a96a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/api-router/zipball/eb2262c5a5261e9c4ef7d89c5dcbeb36d79f627f",
-                "reference": "eb2262c5a5261e9c4ef7d89c5dcbeb36d79f627f",
+                "url": "https://api.github.com/repos/contributte/api-router/zipball/bfdd67351c02c14a3ffb9391d36eb6fff661a96a",
+                "reference": "bfdd67351c02c14a3ffb9391d36eb6fff661a96a",
                 "shasum": ""
             },
             "require": {
@@ -156,7 +156,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/api-router/issues",
-                "source": "https://github.com/contributte/api-router/tree/v4.1.0"
+                "source": "https://github.com/contributte/api-router/tree/v4.2.0"
             },
             "funding": [
                 {
@@ -168,7 +168,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-03T06:51:42+00:00"
+            "time": "2021-06-18T10:30:09+00:00"
         },
         {
             "name": "contributte/application",
@@ -2344,5 +2344,5 @@
         "php": ">= 7.1"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
