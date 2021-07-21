@@ -61,7 +61,7 @@ class BasicPresenter extends Presenter
 
 		$book = $bookRepository->find($id);
 
-		if ($book) {
+		if ($book instanceof Book) {
 			$this->em->remove($book);
 			$this->em->flush();
 		}

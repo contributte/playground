@@ -158,10 +158,13 @@ class AdvancedPresenter extends Presenter
 		$articleRepository = $this->em->getArticleRepository();
 		$article = $articleRepository->find($id);
 
-		$this->em->remove($article);
-		$this->em->flush();
+		if ($article instanceof Article) {
+			$this->em->remove($article);
+			$this->em->flush();
 
-		$this->flashMessage($this->translator->translate('messages.articles.success_delete'));
+			$this->flashMessage($this->translator->translate('messages.articles.success_delete'));
+		}
+
 		$this->redirect('Advanced:');
 	}
 
@@ -172,12 +175,14 @@ class AdvancedPresenter extends Presenter
 			$articleCategoryRepository = $this->em->getArticleCategoryRepository();
 			$category = $articleCategoryRepository->find($id);
 
-			$this->em->remove($category);
-			$this->em->flush();
+			if ($category instanceof ArticleCategory) {
+				$this->em->remove($category);
+				$this->em->flush();
 
-			$this->em->commit();
+				$this->em->commit();
 
-			$this->flashMessage($this->translator->translate('messages.categories.success_delete'));
+				$this->flashMessage($this->translator->translate('messages.categories.success_delete'));
+			}
 		} catch (Throwable $e) {
 			$this->em->rollback();
 			$this->flashMessage($e->getMessage());
