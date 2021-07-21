@@ -1,0 +1,28 @@
+parameters:
+
+
+application:
+	errorPresenter: Error
+	mapping:
+		*: App\*Module\Presenters\*Presenter
+
+
+session:
+	expiration: 14 days
+
+
+services:
+	router: App\Router\RouterFactory::createRouter
+	- App\Model\MyUploadModel
+
+
+extensions:
+    fileUpload: Zet\FileUpload\FileUploadExtension
+
+
+fileUpload:
+	maxFiles: 10
+	maxFileSize: 2M
+	fileFilter: Zet\FileUpload\Filter\ImageFilter
+	uploadModel: App\Model\MyUploadModel
+	uiMode: full
