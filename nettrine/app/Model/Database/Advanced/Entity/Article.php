@@ -38,7 +38,7 @@ class Article implements Translatable
 
 	/**
 	 * @Gedmo\Slug(fields={"title"})
-	 * @ORM\Column(length=128, unique=true)
+	 * @ORM\Column(type="string", length=128, unique=true)
 	 */
 	private string $slug;
 

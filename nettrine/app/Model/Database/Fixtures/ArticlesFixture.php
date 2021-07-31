@@ -42,7 +42,7 @@ class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 
 		$article->setTitle('Nadpis v češtině');
 		$article->setContent('Text v češtině');
-		$article->setTranslatableLocale('cs_CZ');
+		$article->setTranslatableLocale('cs');
 		$article->setCategory($categoryA);
 
 		$manager->persist($article);
@@ -50,7 +50,7 @@ class ArticlesFixture implements FixtureInterface, OrderedFixtureInterface
 
 		$article->setTitle('Title in English');
 		$article->setContent('Content in English');
-		$article->setTranslatableLocale('en_GB');
+		$article->setTranslatableLocale('en');
 
 		$manager->persist($article);
 		$manager->flush();
