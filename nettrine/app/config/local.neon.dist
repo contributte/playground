@@ -1,5 +1,0 @@
-parameters:
-	dbHost: localhost
-	dbName: nettrine
-	dbUser: root
-	dbPassword:

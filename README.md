@@ -40,8 +40,20 @@ For more details on how to use this package, check out example documentation bel
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
 | [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
-| [nettrine](https://github.com/contributte/playground/tree/master/nettrine) | Example of doctrine/dbal, doctrine/orm, doctrine/migrations and doctrine/data-fixtures. |
 | [nextras-orm-generator](https://github.com/contributte/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
+
+## Skeletons
+
+List of prepared skeleton projects.
+
+- [contributte/webapp-skeleton](https://github.com/contributte/webapp-skeleton)
+- [contributte/apitte-skeleton](https://github.com/contributte/apitte-skeleton)
+- [contributte/console-skeleton](https://github.com/contributte/console-skeleton)
+- [contributte/doctrine-skeleton](https://github.com/contributte/doctrine-skeleton)
+- [contributte/api-router-skeleton](https://github.com/contributte/api-router-skeleton)
+- [contributte/starter-skeleton](https://github.com/contributte/starter-skeleton)
+- [contributte/micro-skeleton](https://github.com/contributte/micro-skeleton)
+
 
 ## Development
 

@@ -1,9 +1,0 @@
-parameters:
-	level: max
-	paths:
-		- app
-
-	checkGenericClassInNonGenericObjectType: false
-
-	doctrine:
-		objectManagerLoader: build/object-manager.php
