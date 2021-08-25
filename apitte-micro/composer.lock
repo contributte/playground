@@ -147,12 +147,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/psr7-http-message.git",
-                "reference": "6fb871a28f4837d60b1eab219ea14f08b23d0a07"
+                "reference": "5620253a7c9bc8d9bf5664c1eecf37e7fa72e283"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/6fb871a28f4837d60b1eab219ea14f08b23d0a07",
-                "reference": "6fb871a28f4837d60b1eab219ea14f08b23d0a07",
+                "url": "https://api.github.com/repos/contributte/psr7-http-message/zipball/5620253a7c9bc8d9bf5664c1eecf37e7fa72e283",
+                "reference": "5620253a7c9bc8d9bf5664c1eecf37e7fa72e283",
                 "shasum": ""
             },
             "require": {
@@ -212,7 +212,7 @@
                 "request",
                 "response"
             ],
-            "time": "2020-12-20T18:20:32+00:00"
+            "time": "2020-12-03T21:26:07+00:00"
         },
         {
             "name": "contributte/tracy",
@@ -714,21 +714,21 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.0.5",
+            "version": "v3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "24647c6c52a9ed008b2d39494a8c4fc23c48e487"
+                "reference": "d22f1023cb8ac68f833264ec61f21b9427649d56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/24647c6c52a9ed008b2d39494a8c4fc23c48e487",
-                "reference": "24647c6c52a9ed008b2d39494a8c4fc23c48e487",
+                "url": "https://api.github.com/repos/nette/http/zipball/d22f1023cb8ac68f833264ec61f21b9427649d56",
+                "reference": "d22f1023cb8ac68f833264ec61f21b9427649d56",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^3.1",
-                "php": ">=7.1"
+                "php": ">=7.1 <8.1"
             },
             "conflict": {
                 "nette/di": "<3.0.3"
@@ -784,7 +784,7 @@
                 "session",
                 "url"
             ],
-            "time": "2020-11-02T15:42:36+00:00"
+            "time": "2021-08-25T15:24:32+00:00"
         },
         {
             "name": "nette/neon",
@@ -1035,16 +1035,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.0",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "d0427c1811462dbb6c503143eabe5478b26685f7"
+                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/d0427c1811462dbb6c503143eabe5478b26685f7",
-                "reference": "d0427c1811462dbb6c503143eabe5478b26685f7",
+                "url": "https://api.github.com/repos/nette/utils/zipball/5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
+                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
                 "shasum": ""
             },
             "require": {
@@ -1112,7 +1112,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2020-11-25T23:47:50+00:00"
+            "time": "2021-08-16T21:05:00+00:00"
         },
         {
             "name": "psr/http-message",
