@@ -636,21 +636,21 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "c903d0f0b793ed2045a442f338e756e1d3954c22"
+                "reference": "5777e50f69566732579bf381d2cbcb2f2695d015"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/c903d0f0b793ed2045a442f338e756e1d3954c22",
-                "reference": "c903d0f0b793ed2045a442f338e756e1d3954c22",
+                "url": "https://api.github.com/repos/nette/http/zipball/5777e50f69566732579bf381d2cbcb2f2695d015",
+                "reference": "5777e50f69566732579bf381d2cbcb2f2695d015",
                 "shasum": ""
             },
             "require": {
                 "nette/utils": "^3.1",
-                "php": ">=7.2 <8.1"
+                "php": ">=7.2 <8.2"
             },
             "conflict": {
                 "nette/di": "<3.0.3",
@@ -706,7 +706,7 @@
                 "session",
                 "url"
             ],
-            "time": "2021-01-25T20:15:01+00:00"
+            "time": "2021-08-25T15:26:03+00:00"
         },
         {
             "name": "nette/mail",
