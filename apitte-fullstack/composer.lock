@@ -11,12 +11,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/core.git",
+                "url": "https://github.com/contributte/apitte-core.git",
                 "reference": "05c10a4dee7f26b46462723c890c21aa71247a1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/05c10a4dee7f26b46462723c890c21aa71247a1c",
+                "url": "https://api.github.com/repos/contributte/apitte-core/zipball/05c10a4dee7f26b46462723c890c21aa71247a1c",
                 "reference": "05c10a4dee7f26b46462723c890c21aa71247a1c",
                 "shasum": ""
             },
@@ -82,6 +82,16 @@
                 "nette",
                 "rest"
             ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-01T11:41:15+00:00"
         },
         {
@@ -89,12 +99,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/debug.git",
+                "url": "https://github.com/contributte/apitte-debug.git",
                 "reference": "58d4ea1782e92c3415c1e49447bde5e8913bb6bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/debug/zipball/58d4ea1782e92c3415c1e49447bde5e8913bb6bd",
+                "url": "https://api.github.com/repos/contributte/apitte-debug/zipball/58d4ea1782e92c3415c1e49447bde5e8913bb6bd",
                 "reference": "58d4ea1782e92c3415c1e49447bde5e8913bb6bd",
                 "shasum": ""
             },
@@ -144,6 +154,16 @@
                 "debugging",
                 "tracy"
             ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-01T13:08:28+00:00"
         },
         {
@@ -151,12 +171,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/fullstack.git",
+                "url": "https://github.com/contributte/apitte-fullstack.git",
                 "reference": "820a7270eea9bfe4cbb56682c12b8062a97c16cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/fullstack/zipball/820a7270eea9bfe4cbb56682c12b8062a97c16cb",
+                "url": "https://api.github.com/repos/contributte/apitte-fullstack/zipball/820a7270eea9bfe4cbb56682c12b8062a97c16cb",
                 "reference": "820a7270eea9bfe4cbb56682c12b8062a97c16cb",
                 "shasum": ""
             },
@@ -193,6 +213,16 @@
                 "meta",
                 "rest"
             ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-02T12:44:46+00:00"
         },
         {
@@ -200,12 +230,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/middlewares.git",
+                "url": "https://github.com/contributte/apitte-middlewares.git",
                 "reference": "fa9bbb90ab20f3094635ee9d5e114153b04fbfde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/middlewares/zipball/fa9bbb90ab20f3094635ee9d5e114153b04fbfde",
+                "url": "https://api.github.com/repos/contributte/apitte-middlewares/zipball/fa9bbb90ab20f3094635ee9d5e114153b04fbfde",
                 "reference": "fa9bbb90ab20f3094635ee9d5e114153b04fbfde",
                 "shasum": ""
             },
@@ -253,6 +283,16 @@
                 "apitte",
                 "middlewares"
             ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-01T15:08:08+00:00"
         },
         {
@@ -260,12 +300,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/negotiation.git",
+                "url": "https://github.com/contributte/apitte-negotiation.git",
                 "reference": "06b93600ff8ad4b2b5b850bbc512434190cbe7a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/negotiation/zipball/06b93600ff8ad4b2b5b850bbc512434190cbe7a2",
+                "url": "https://api.github.com/repos/contributte/apitte-negotiation/zipball/06b93600ff8ad4b2b5b850bbc512434190cbe7a2",
                 "reference": "06b93600ff8ad4b2b5b850bbc512434190cbe7a2",
                 "shasum": ""
             },
@@ -312,6 +352,16 @@
                 "negotiation",
                 "view-resolver"
             ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
             "time": "2020-12-01T15:08:44+00:00"
         },
         {
@@ -319,12 +369,12 @@
             "version": "v0.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/openapi.git",
+                "url": "https://github.com/contributte/apitte-openapi.git",
                 "reference": "0d76fe0c79e69a21a85048a26537349ed4850e73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/openapi/zipball/0d76fe0c79e69a21a85048a26537349ed4850e73",
+                "url": "https://api.github.com/repos/contributte/apitte-openapi/zipball/0d76fe0c79e69a21a85048a26537349ed4850e73",
                 "reference": "0d76fe0c79e69a21a85048a26537349ed4850e73",
                 "shasum": ""
             },
@@ -380,6 +430,16 @@
                 "json",
                 "openapi",
                 "rest"
+            ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
             ],
             "time": "2020-12-01T15:08:25+00:00"
         },
@@ -1424,16 +1484,16 @@
         },
         {
             "name": "nette/robot-loader",
-            "version": "v3.4.0",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/robot-loader.git",
-                "reference": "3973cf3970d1de7b30888fd10b92dac9e0c2fd82"
+                "reference": "e2adc334cb958164c050f485d99c44c430f51fe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/robot-loader/zipball/3973cf3970d1de7b30888fd10b92dac9e0c2fd82",
-                "reference": "3973cf3970d1de7b30888fd10b92dac9e0c2fd82",
+                "url": "https://api.github.com/repos/nette/robot-loader/zipball/e2adc334cb958164c050f485d99c44c430f51fe2",
+                "reference": "e2adc334cb958164c050f485d99c44c430f51fe2",
                 "shasum": ""
             },
             "require": {
@@ -1483,7 +1543,7 @@
                 "nette",
                 "trait"
             ],
-            "time": "2021-03-07T15:12:01+00:00"
+            "time": "2021-08-25T15:53:54+00:00"
         },
         {
             "name": "nette/schema",
