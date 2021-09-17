@@ -11,12 +11,12 @@
             "version": "v0.7.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/apitte/core.git",
+                "url": "https://github.com/contributte/apitte-core.git",
                 "reference": "ad6005ee601f19267deb6620a3ca614e724a8f98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/apitte/core/zipball/ad6005ee601f19267deb6620a3ca614e724a8f98",
+                "url": "https://api.github.com/repos/contributte/apitte-core/zipball/ad6005ee601f19267deb6620a3ca614e724a8f98",
                 "reference": "ad6005ee601f19267deb6620a3ca614e724a8f98",
                 "shasum": ""
             },
@@ -80,6 +80,16 @@
                 "http",
                 "nette",
                 "rest"
+            ],
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
             ],
             "time": "2020-12-20T15:05:50+00:00"
         },
@@ -714,16 +724,16 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.0.6",
+            "version": "v3.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "d22f1023cb8ac68f833264ec61f21b9427649d56"
+                "reference": "f0a72562c784c337633c34eeef5abc2470c49bc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/d22f1023cb8ac68f833264ec61f21b9427649d56",
-                "reference": "d22f1023cb8ac68f833264ec61f21b9427649d56",
+                "url": "https://api.github.com/repos/nette/http/zipball/f0a72562c784c337633c34eeef5abc2470c49bc6",
+                "reference": "f0a72562c784c337633c34eeef5abc2470c49bc6",
                 "shasum": ""
             },
             "require": {
@@ -784,7 +794,7 @@
                 "session",
                 "url"
             ],
-            "time": "2021-08-25T15:24:32+00:00"
+            "time": "2021-09-17T13:51:54+00:00"
         },
         {
             "name": "nette/neon",
