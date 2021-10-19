@@ -1051,16 +1051,16 @@
         },
         {
             "name": "nette/php-generator",
-            "version": "v3.6.2",
+            "version": "v3.6.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/php-generator.git",
-                "reference": "bce6abcd4090ab5eec24b78f26c753c6525a425c"
+                "reference": "fa374ae7b36be45241fd0b5acd49479a6d1227a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/php-generator/zipball/bce6abcd4090ab5eec24b78f26c753c6525a425c",
-                "reference": "bce6abcd4090ab5eec24b78f26c753c6525a425c",
+                "url": "https://api.github.com/repos/nette/php-generator/zipball/fa374ae7b36be45241fd0b5acd49479a6d1227a3",
+                "reference": "fa374ae7b36be45241fd0b5acd49479a6d1227a3",
                 "shasum": ""
             },
             "require": {
@@ -1069,9 +1069,9 @@
             },
             "require-dev": {
                 "nette/tester": "^2.4",
-                "nikic/php-parser": "^4.11",
+                "nikic/php-parser": "^4.13",
                 "phpstan/phpstan": "^0.12",
-                "tracy/tracy": "^2.3"
+                "tracy/tracy": "^2.8"
             },
             "suggest": {
                 "nikic/php-parser": "to use ClassType::withBodiesFrom() & GlobalFunction::withBodyFrom()"
@@ -1113,9 +1113,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/php-generator/issues",
-                "source": "https://github.com/nette/php-generator/tree/v3.6.2"
+                "source": "https://github.com/nette/php-generator/tree/v3.6.3"
             },
-            "time": "2021-09-23T21:48:24+00:00"
+            "time": "2021-10-14T22:12:56+00:00"
         },
         {
             "name": "nette/robot-loader",
@@ -1248,21 +1248,21 @@
         },
         {
             "name": "nette/schema",
-            "version": "v1.2.1",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/schema.git",
-                "reference": "f5ed39fc96358f922cedfd1e516f0dadf5d2be0d"
+                "reference": "9a39cef03a5b34c7de64f551538cbba05c2be5df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/schema/zipball/f5ed39fc96358f922cedfd1e516f0dadf5d2be0d",
-                "reference": "f5ed39fc96358f922cedfd1e516f0dadf5d2be0d",
+                "url": "https://api.github.com/repos/nette/schema/zipball/9a39cef03a5b34c7de64f551538cbba05c2be5df",
+                "reference": "9a39cef03a5b34c7de64f551538cbba05c2be5df",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.1.4 || ^4.0",
-                "php": ">=7.1 <8.1"
+                "nette/utils": "^2.5.7 || ^3.1.5 ||  ^4.0",
+                "php": ">=7.1 <8.2"
             },
             "require-dev": {
                 "nette/tester": "^2.3 || ^2.4",
@@ -1304,9 +1304,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/schema/issues",
-                "source": "https://github.com/nette/schema/tree/v1.2.1"
+                "source": "https://github.com/nette/schema/tree/v1.2.2"
             },
-            "time": "2021-03-04T17:51:11+00:00"
+            "time": "2021-10-15T11:40:02+00:00"
         },
         {
             "name": "nette/security",
@@ -1465,21 +1465,22 @@
         },
         {
             "name": "symfony/inflector",
-            "version": "v4.4.25",
+            "version": "v4.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/inflector.git",
-                "reference": "fc695ab721136b27aa84427a0fa80189761266ef"
+                "reference": "2eb2095edc03a4f0780a417c2cf5b6f6ac5a7284"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/inflector/zipball/fc695ab721136b27aa84427a0fa80189761266ef",
-                "reference": "fc695ab721136b27aa84427a0fa80189761266ef",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/2eb2095edc03a4f0780a417c2cf5b6f6ac5a7284",
+                "reference": "2eb2095edc03a4f0780a417c2cf5b6f6ac5a7284",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
-                "symfony/polyfill-ctype": "~1.8"
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-php80": "^1.16"
             },
             "type": "library",
             "autoload": {
@@ -1515,7 +1516,7 @@
                 "words"
             ],
             "support": {
-                "source": "https://github.com/symfony/inflector/tree/v4.4.25"
+                "source": "https://github.com/symfony/inflector/tree/v4.4.27"
             },
             "funding": [
                 {
@@ -1532,7 +1533,7 @@
                 }
             ],
             "abandoned": "use `EnglishInflector` from the String component instead",
-            "time": "2021-05-26T17:39:37+00:00"
+            "time": "2021-07-21T12:19:41+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1614,22 +1615,106 @@
             "time": "2021-02-19T12:13:01+00:00"
         },
         {
-            "name": "symfony/property-access",
-            "version": "v4.4.25",
+            "name": "symfony/polyfill-php80",
+            "version": "v1.23.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/property-access.git",
-                "reference": "3af7c21b4128eadbace0800b51054a81bff896c6"
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/property-access/zipball/3af7c21b4128eadbace0800b51054a81bff896c6",
-                "reference": "3af7c21b4128eadbace0800b51054a81bff896c6",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.23-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-07-28T13:41:28+00:00"
+        },
+        {
+            "name": "symfony/property-access",
+            "version": "v4.4.30",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/property-access.git",
+                "reference": "727edd3a5fd2feca1562e0f2520ed6888805c0fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/property-access/zipball/727edd3a5fd2feca1562e0f2520ed6888805c0fa",
+                "reference": "727edd3a5fd2feca1562e0f2520ed6888805c0fa",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.3",
-                "symfony/inflector": "^3.4|^4.0|^5.0"
+                "symfony/inflector": "^3.4|^4.0|^5.0",
+                "symfony/polyfill-php80": "^1.16"
             },
             "require-dev": {
                 "symfony/cache": "^3.4|^4.0|^5.0"
@@ -1674,7 +1759,7 @@
                 "reflection"
             ],
             "support": {
-                "source": "https://github.com/symfony/property-access/tree/v4.4.25"
+                "source": "https://github.com/symfony/property-access/tree/v4.4.30"
             },
             "funding": [
                 {
@@ -1690,7 +1775,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-26T17:39:37+00:00"
+            "time": "2021-08-09T12:05:14+00:00"
         },
         {
             "name": "tracy/tracy",
@@ -1768,16 +1853,16 @@
         },
         {
             "name": "ublaboo/datagrid",
-            "version": "v6.9.0",
+            "version": "v6.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/datagrid.git",
-                "reference": "eeaeae63d09df62e1206f3b4834f6bb290c51fea"
+                "reference": "8da97ce01e323cf53af7b944a87c97c5db947190"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/datagrid/zipball/eeaeae63d09df62e1206f3b4834f6bb290c51fea",
-                "reference": "eeaeae63d09df62e1206f3b4834f6bb290c51fea",
+                "url": "https://api.github.com/repos/contributte/datagrid/zipball/8da97ce01e323cf53af7b944a87c97c5db947190",
+                "reference": "8da97ce01e323cf53af7b944a87c97c5db947190",
                 "shasum": ""
             },
             "require": {
@@ -1790,6 +1875,7 @@
             },
             "require-dev": {
                 "dibi/dibi": "^3.0.0 || ^4.0.0",
+                "doctrine/cache": "^1.11",
                 "doctrine/orm": "^2.6.12",
                 "elasticsearch/elasticsearch": "^7.1",
                 "gamee/php-code-checker-rules": "^2.0.21",
@@ -1806,7 +1892,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.7.x-dev"
+                    "dev-master": "6.10.x-dev"
                 }
             },
             "autoload": {
@@ -1839,7 +1925,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/datagrid/issues",
-                "source": "https://github.com/contributte/datagrid/tree/v6.9.0"
+                "source": "https://github.com/contributte/datagrid/tree/v6.9.2"
             },
             "funding": [
                 {
@@ -1851,7 +1937,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-05-20T08:25:14+00:00"
+            "time": "2021-10-19T08:21:03+00:00"
         }
     ],
     "packages-dev": [
