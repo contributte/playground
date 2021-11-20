@@ -5,10 +5,10 @@ services:
     image: contributte_playground
     build: .docker
     volumes:
-    - ./:/var/www/html
-    - ./.docker/apache/sites-enabled:/etc/apache2/sites-enabled
+      - .docker/nginx/sites:/etc/nginx/sites.d
+      - ./:/srv
     ports:
-    - 8080:80
+      - 80:80
 
     links:
       - database
@@ -16,7 +16,7 @@ services:
   database:
     image: mariadb:latest
     volumes:
-    - ./.docker/database:/docker-entrypoint-initdb.d:cached,ro
+      - ./.docker/database:/docker-entrypoint-initdb.d:cached,ro
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_USER: playground
@@ -26,4 +26,4 @@ services:
   adminer:
     image: adminer:latest
     ports:
-    - 8081:8080
+      - 8081:8080

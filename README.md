@@ -28,11 +28,11 @@ If you are using Docker you can run all example by command
 docker-compose up -d
 ```
 
-2) install composer packages via>
+2) install composer packages:
 
 ```bash
 docker-compose exec web bash
-cd example
+cd example-project
 composer install
 ```
 
@@ -46,7 +46,7 @@ password: root
 
 4) Follow instruction from example project readme.
 
-5) Visit `http://projectname.localhost:8080/`, for example `http://nettrine.localhost:8080/`.
+5) Visit `http://projectname.localhost/`, for example `http://nettrine.localhost/`.
 
 For more details on how to use chosen package, check out example documentation below.
 
