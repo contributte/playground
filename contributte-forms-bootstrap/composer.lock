@@ -639,16 +639,16 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.1.3",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "999f54884deed7a419b13552271c7059a5acb428"
+                "reference": "f37bb201546003e4fad877f47643c598dc54dab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/999f54884deed7a419b13552271c7059a5acb428",
-                "reference": "999f54884deed7a419b13552271c7059a5acb428",
+                "url": "https://api.github.com/repos/nette/http/zipball/f37bb201546003e4fad877f47643c598dc54dab9",
+                "reference": "f37bb201546003e4fad877f47643c598dc54dab9",
                 "shasum": ""
             },
             "require": {
@@ -709,7 +709,7 @@
                 "session",
                 "url"
             ],
-            "time": "2021-09-17T14:09:41+00:00"
+            "time": "2021-11-24T10:21:40+00:00"
         },
         {
             "name": "nette/mail",
