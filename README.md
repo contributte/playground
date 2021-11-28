@@ -29,6 +29,7 @@ For more details on how to use this package, check out example documentation bel
 | apitte-micro - moved to https://github.com/contributte/apitte-skeleton | Micro application with direct dispatching. |
 | apitte-simple - moved to https://github.com/contributte/apitte-skeleton | Simple middleware application. |
 | apitte-nette-simple - moved to https://github.com/contributte/apitte-skeleton | Simple Nette |
+| [contributte-anabelle](https://github.com/contributte/playground/tree/master/contributte-anabelle) | Example of contributte-anabelle usage. |
 | contributte-api-router - moved to https://github.com/contributte/api-router-skeleton | Starter project for ApiRouter. |
 | contributte-console - moved to https://github.com/contributte/console-skeleton | Example of writing own commands and how to install console-extra with all commands. |
 | contributte-datagrid - moved to https://github.com/contributte/datagrid-skeleton | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
