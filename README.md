@@ -25,20 +25,20 @@ For more details on how to use this package, check out example documentation bel
 
 | Project | Description |
 |---|---|
-| [apitte-fullstack](https://github.com/contributte/playground/tree/master/apitte-fullstack) | Fullstack application with example of all plugins. |
-| [apitte-micro](https://github.com/contributte/playground/tree/master/apitte-micro) | Micro application with direct dispatching. |
-| [apitte-simple](https://github.com/contributte/playground/tree/master/apitte-simple) | Simple middleware application. |
-| [apitte-nette-simple](https://github.com/contributte/playground/tree/master/apitte-nette-simple) | Simple Nette |
-| [contributte-api-router](https://github.com/contributte/playground/tree/master/contributte-api-router) | Starter project for ApiRouter. |
-| [contributte-console](https://github.com/contributte/playground/tree/master/contributte-console) | Example of writing own commands and how to install console-extra with all commands. |
-| [contributte-datagrid](https://github.com/contributte/playground/tree/master/contributte-datagrid) | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
-| [contributte-event-dispatcher](https://github.com/contributte/playground/tree/master/contributte-event-dispatcher) | Example of dispatching and subscribing events. |
-| [contributte-forms-bootstrap](https://github.com/contributte/playground/tree/master/contributte-forms-bootstrap) | Example of contributte/forms-bootstrap usage. |
-| [contributte-live-form-validation](https://github.com/contributte/playground/tree/master/contributte-live-form-validation) | Example of live form validation. |
+| apitte-fullstack - moved to https://github.com/contributte/apitte-skeleton | Fullstack application with example of all plugins. |
+| apitte-micro - moved to https://github.com/contributte/apitte-skeleton | Micro application with direct dispatching. |
+| apitte-simple - moved to https://github.com/contributte/apitte-skeleton | Simple middleware application. |
+| apitte-nette-simple - moved to https://github.com/contributte/apitte-skeleton | Simple Nette |
+| contributte-api-router - moved to https://github.com/contributte/api-router-skeleton | Starter project for ApiRouter. |
+| contributte-console - moved to https://github.com/contributte/console-skeleton | Example of writing own commands and how to install console-extra with all commands. |
+| contributte-datagrid - moved to https://github.com/contributte/datagrid-skeleton | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
+| contributte-event-dispatcher moved to https://github.com/contributte/webapp-skeleton | Example of dispatching and subscribing events. |
+| contributte-forms-bootstrap - moved to https://github.com/contributte/gui-skeleton | Example of contributte/forms-bootstrap usage. |
+| contributte-live-form-validation - moved to https://github.com/contributte/gui-skeleton | Example of live form validation. |
 | [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | Example of contributte/mailing usage. |
 | [contributte-neonizer](https://github.com/contributte/playground/tree/master/contributte-neonizer) | Example of contributte/neonizer usage. |
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
-| [contributte-reCAPTCHA](https://github.com/contributte/playground/tree/master/contributte-reCAPTCHA) | Example of Google reCaptcha. |
+| contributte-reCAPTCHA - moved to https://github.com/contributte/gui-skeleton | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
 | [nextras-orm-generator](https://github.com/contributte/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
@@ -46,14 +46,16 @@ For more details on how to use this package, check out example documentation bel
 
 List of prepared skeleton projects.
 
-- [contributte/webapp-skeleton](https://github.com/contributte/webapp-skeleton)
-- [contributte/apitte-skeleton](https://github.com/contributte/apitte-skeleton)
-- [contributte/console-skeleton](https://github.com/contributte/console-skeleton)
-- [contributte/doctrine-skeleton](https://github.com/contributte/doctrine-skeleton)
 - [contributte/api-router-skeleton](https://github.com/contributte/api-router-skeleton)
-- [contributte/starter-skeleton](https://github.com/contributte/starter-skeleton)
+- [contributte/apitte-skeleton](https://github.com/contributte/apitte-skeleton)
+- [contributte/console-skeleton](https://github.com/contributte/apitte-skeleton)
+- [contributte/datagrid-skeleton](https://github.com/contributte/datagrid-skeleton)
+- [contributte/doctrine-skeleton](https://github.com/contributte/doctrine-skeleton)
+- [contributte/gui-skeleton](https://github.com/contributte/gui-skeleton)
 - [contributte/micro-skeleton](https://github.com/contributte/micro-skeleton)
-
+- [contributte/starter-skeleton](https://github.com/contributte/starter-skeleton)
+- [contributte/webapp-skeleton](https://github.com/contributte/webapp-skeleton)
+- [contributte/webpack-skeleton](https://github.com/contributte/webpack-skeleton)
 
 ## Development
 

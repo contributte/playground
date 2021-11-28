@@ -1,5 +1,0 @@
-# Redirect request to www folder
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteRule ^(.*)$ www/$1 [ns,L,QSA]
-</IfModule>
