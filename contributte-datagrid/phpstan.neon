@@ -1,7 +1,0 @@
-parameters:
-	level: max
-	paths:
-		- app
-	ignoreErrors:
-		- '/Call to an undefined method Nette\\ComponentModel\\IComponent::redrawControl\(\)\./'
-	checkMissingIterableValueType: false

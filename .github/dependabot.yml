@@ -65,6 +65,6 @@ updates:
     schedule:
       interval: daily
   - package-ecosystem: composer
-    directory: "/nextras-orm-generator"
+    directory: "/contributte-nextras-orm-generator"
     schedule:
       interval: daily
