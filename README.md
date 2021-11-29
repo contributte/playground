@@ -37,7 +37,7 @@ For more details on how to use this package, check out example documentation bel
 | contributte-forms-bootstrap - moved to https://github.com/contributte/gui-skeleton | Example of contributte/forms-bootstrap usage. |
 | contributte-live-form-validation - moved to https://github.com/contributte/gui-skeleton | Example of live form validation. |
 | [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | Example of contributte/mailing usage. |
-| [contributte-neonizer](https://github.com/contributte/playground/tree/master/contributte-neonizer) | Example of contributte/neonizer usage. |
+| contributte-neonizer - moved to https://github.com/contributte/webapp-skeleton | Example of contributte/neonizer usage. |
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
 | contributte-reCAPTCHA - moved to https://github.com/contributte/gui-skeleton | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
