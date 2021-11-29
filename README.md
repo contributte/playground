@@ -25,22 +25,22 @@ For more details on how to use this package, check out example documentation bel
 
 | Project | Description |
 |---|---|
-| apitte-fullstack - moved to https://github.com/contributte/apitte-skeleton | Fullstack application with example of all plugins. |
-| apitte-micro - moved to https://github.com/contributte/apitte-skeleton | Micro application with direct dispatching. |
-| apitte-simple - moved to https://github.com/contributte/apitte-skeleton | Simple middleware application. |
-| apitte-nette-simple - moved to https://github.com/contributte/apitte-skeleton | Simple Nette |
+| apitte-fullstack <br> moved to https://github.com/contributte/apitte-skeleton | Fullstack application with example of all plugins. |
+| apitte-micro <br> moved to https://github.com/contributte/apitte-skeleton | Micro application with direct dispatching. |
+| apitte-simple <br> moved to https://github.com/contributte/apitte-skeleton | Simple middleware application. |
+| apitte-nette-simple <br> moved to https://github.com/contributte/apitte-skeleton | Simple Nette |
 | [contributte-anabelle](https://github.com/contributte/playground/tree/master/contributte-anabelle) | Example of contributte-anabelle usage. |
-| contributte-api-router - moved to https://github.com/contributte/api-router-skeleton | Starter project for ApiRouter. |
-| contributte-console - moved to https://github.com/contributte/console-skeleton | Example of writing own commands and how to install console-extra with all commands. |
-| contributte-datagrid - moved to https://github.com/contributte/datagrid-skeleton | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
-| contributte-event-dispatcher moved to https://github.com/contributte/webapp-skeleton | Example of dispatching and subscribing events. |
-| contributte-forms-bootstrap - moved to https://github.com/contributte/gui-skeleton | Example of contributte/forms-bootstrap usage. |
-| contributte-live-form-validation - moved to https://github.com/contributte/gui-skeleton | Example of live form validation. |
+| contributte-api-router <br> moved to https://github.com/contributte/api-router-skeleton | Starter project for ApiRouter. |
+| contributte-console <br> moved to https://github.com/contributte/console-skeleton | Example of writing own commands and how to install console-extra with all commands. |
+| contributte-datagrid <br> moved to https://github.com/contributte/datagrid-skeleton | Dockerized example of our datagrid. [DEMO](https://examples.contributte.org/packages/datagrid/) |
+| contributte-event-dispatcher <br> moved to https://github.com/contributte/webapp-skeleton | Example of dispatching and subscribing events. |
+| contributte-forms-bootstrap <br> moved to https://github.com/contributte/gui-skeleton | Example of contributte/forms-bootstrap usage. |
+| contributte-live-form-validation <br> moved to https://github.com/contributte/gui-skeleton | Example of live form validation. |
 | [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | Example of contributte/mailing usage. |
-| contributte-nextras-orm-generator moved tp https://github.com/contributte/nextras-orm-generator/tree/master/examples |
-| contributte-neonizer - moved to https://github.com/contributte/webapp-skeleton | Example of contributte/neonizer usage. |
+| contributte-nextras-orm-generator <br> moved tp https://github.com/contributte/nextras-orm-generator/tree/master/examples |
+| contributte-neonizer <br> moved to https://github.com/contributte/webapp-skeleton | Example of contributte/neonizer usage. |
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
-| contributte-reCAPTCHA - moved to https://github.com/contributte/gui-skeleton | Example of Google reCaptcha. |
+| contributte-reCAPTCHA <br> moved to https://github.com/contributte/gui-skeleton | Example of Google reCaptcha. |
 | [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
 | [nextras-orm-generator](https://github.com/contributte/playground/tree/master/nextras-orm-generator) | Example of nextras entity generation |
 
