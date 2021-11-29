@@ -33,8 +33,9 @@ For more details on how to use this package, check out example documentation bel
 
 
 
-## Moved examples:
+## Moved playground examples
 
+| Project | Description |
 |---|---|
 | [apitte/fullstack](https://github.com/contributte/apitte-skeleton) | Fullstack application with example of all plugins. |
 | [apitte-micro](https://github.com/contributte/apitte-skeleton) | Micro application with direct dispatching. |
