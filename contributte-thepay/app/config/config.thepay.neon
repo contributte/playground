@@ -1,2 +1,0 @@
-extensions:
-	contributte.thepay: Contributte\ThePay\DI\ThePayExtension
