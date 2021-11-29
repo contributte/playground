@@ -28,7 +28,6 @@ For more details on how to use this package, check out example documentation bel
 | [contributte-anabelle](https://github.com/contributte/playground/tree/master/contributte-anabelle) | Example of contributte-anabelle usage. |
 | [contributte-mailing](https://github.com/contributte/playground/tree/master/contributte-mailing) | Example of contributte/mailing usage. |
 | [contributte-pdf ](https://github.com/contributte/playground/tree/master/contributte-pdf) | Example of contributte/pdf usage. |
-| [contributte-thepay](https://github.com/contributte/playground/tree/master/contributte-thepay) | Example of contributte/thepay usage. |
 
 ## Skeletons
 
